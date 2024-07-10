@@ -1,0 +1,68 @@
+<style type="text/css">
+  p {
+    font-size: 1rem
+  }
+  p a {
+    text-decoration: underline;
+  }
+  .asset-preview + .asset-preview {
+    margin-top: 30px;
+  }
+  .asset-header {
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 6px;
+  }
+  .asset-icon {
+    margin-right: 6px;
+    color: var(--lookbook-accent-500);
+  }
+  .asset-title {
+    font-size: 12px;
+    opacity: 0.75;
+  }
+  .asset-contents {
+    background: #fff;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid var(--lookbook-divider);
+  }
+  .notice {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    padding: 16px 20px;
+    border: 1px solid rgb(191,219,254);
+    background: #eff6ffcc;
+    color: rgba(29,78,216, 0.7);
+    text-align: center;
+    line-height: 1.4;
+  }
+  .no-assets {
+    opacity: 0.7;
+    text-align: center;
+    line-height: 1.6;
+    padding: 30px;
+  }
+</style>
+
+<div class="lookbook-panel">
+  <% if assets.any? %>
+    <% assets.each do |asset| %>
+      <div class="asset-preview">
+        <header class="asset-header">
+          <%= icon :file, size: 3.5, class: "asset-icon" %>
+          <h4 class="asset-title font-mono"><%= asset.basename %></h4>
+        </header>
+        <div class="asset-contents">
+          <%= code language: Lookbook::Lang.guess(asset, :ruby)[:name], line_numbers: true do %><%== File.read(asset) %><% end %>
+        </div>
+      </div>
+    <% end %>
+  <% else %>
+    <p class="no-assets">
+      <strong>No assets to display.</strong><br>
+    </p>
+  <% end %>
+</div>
