@@ -1,0 +1,27 @@
+:where(.table) {
+  font-size: var(--text-sm);
+  inline-size: var(--size-full);
+
+  thead {
+    color: var(--color-text-subtle);
+  }
+
+  tbody tr {
+    border-block-start-width: var(--border);
+  }
+
+  th {
+    font-weight: var(--font-medium);
+    text-align: start;
+  }
+
+  th, td {
+    padding: var(--size-4);
+  }
+
+  tfoot {
+    background-color: var(--color-secondary);
+    border-block-start-width: var(--border);
+    font-weight: var(--font-medium);
+  }
+}

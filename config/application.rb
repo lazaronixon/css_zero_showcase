@@ -24,6 +24,7 @@ module CssZeroShowcase
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    config.lookbook.preview_layout = "component_preview"
     config.lookbook.preview_inspector.drawer_panels = [:source, :notes]
 
     # Reduce action view log spam

@@ -1,3 +1,8 @@
+PATH
+  remote: ../css-zero
+  specs:
+    css-zero (0.0.18)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -284,6 +289,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
+  css-zero!
   debug
   importmap-rails
   lookbook (>= 2.3.2)

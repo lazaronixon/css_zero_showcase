@@ -1,0 +1,24 @@
+.alert {
+  border-color: var(--alert-border-color, var(--color-border));
+  border-radius: var(--rounded-lg);
+  border-width: var(--border);
+  color: var(--alert-color, var(--color-text));
+  padding: var(--size-4);
+  inline-size: var(--size-full);
+
+  img {
+    filter: var(--alert-icon-color, var(--color-filter-text-reversed));
+  }
+}
+
+.alert--positive {
+  --alert-border-color: var(--color-positive);
+  --alert-color: var(--color-positive);
+  --alert-icon-color: var(--color-filter-positive);
+}
+
+.alert--negative {
+  --alert-border-color: var(--color-negative);
+  --alert-color: var(--color-negative);
+  --alert-icon-color: var(--color-filter-negative);
+}
