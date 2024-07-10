@@ -24,8 +24,14 @@ module CssZeroShowcase
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+
+    config.lookbook.preview_controller = "Lookbook::CustomPreviewController"
+
     config.lookbook.preview_layout = "component_preview"
-    config.lookbook.preview_inspector.drawer_panels = [:source, :notes]
+    config.lookbook.preview_inspector.drawer_panels = [:source, :css, :js, :notes]
+
+    Lookbook.add_panel(:css, "lookbook/panels/css", { label: "CSS" })
+    Lookbook.add_panel(:js,  "lookbook/panels/javascript",  { label: "Java Script" })
 
     # Reduce action view log spam
     %w[render_template render_partial render_collection].each do |event|
