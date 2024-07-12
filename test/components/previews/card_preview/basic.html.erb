@@ -4,20 +4,22 @@
     <p class="text-sm text-subtle">Deploy your new project in one-click.</p>
   </div>
 
-  <div class="flex flex-col gap">
-    <div class="flex flex-col gap-sm">
-      <%= label_tag "name", "Name", class: "text-sm font-medium" %>
-      <%= text_field_tag "name", nil, placeholder: "Name of your project", class: "input" %>
+  <%= form_with url: lookbook.regular_action_path, class: "flex flex-col gap" do |form| %>
+    <div class="flex flex-col gap">
+      <div class="flex flex-col gap-sm">
+        <%= form.label :name, class: "text-sm font-medium" %>
+        <%= form.text_field :name, placeholder: "Name of your project", class: "input" %>
+      </div>
+
+      <div class="flex flex-col gap-sm">
+        <%= form.label :framework, class: "text-sm font-medium" %>
+        <%= form.select :framework, [["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]], {}, class: "input" %>
+      </div>
     </div>
 
-    <div class="flex flex-col gap-sm">
-      <%= label_tag "framework", "Framework", class: "text-sm font-medium" %>
-      <%= select_tag "framework", options_for_select([["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]]), class: "input" %>
+    <div class="flex justify-between">
+      <%= button_tag "Cancel", type: :button, class: "btn btn--outline" %>
+      <%= form.submit "Destroy", class: "btn" %>
     </div>
-  </div>
-
-  <div class="flex justify-between">
-    <%= button_tag "Cancel", class: "btn btn--outline" %>
-    <%= button_tag "Destroy", class: "btn" %>
-  </div>
+  <% end %>
 </div>

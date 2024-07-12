@@ -1,5 +1,6 @@
 Lookbook::Engine.routes.draw do
   resource :slow_action, only: :create
+  resource :regular_action, only: :create
 end
 
 Rails.application.routes.draw do
