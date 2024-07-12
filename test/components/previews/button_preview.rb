@@ -23,7 +23,8 @@ class ButtonPreview < Lookbook::Preview
   def with_icon
   end
 
-  # Turbo automatically adds aria-busy on forms and disabled on buttons when submitting.
+  # Turbo automatically adds aria-busy on forms
+  # and disabled on buttons when submitting.
   def loading
   end
 end

@@ -1,8 +1,3 @@
-Lookbook::Engine.routes.draw do
-  resource :slow_action, only: :create
-  resource :regular_action, only: :create
-end
-
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -14,4 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   mount Lookbook::Engine, at: "/lookbook"
+
+  resource :slow_action,    only: :create
+  resource :regular_action, only: :create
 end
