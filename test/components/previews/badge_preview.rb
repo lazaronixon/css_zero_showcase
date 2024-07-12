@@ -1,6 +1,6 @@
 # @css app/assets/stylesheets/badge.css
 class BadgePreview < Lookbook::Preview
-  # @!group Basic
+  # @!group Default
   def primary
   end
 

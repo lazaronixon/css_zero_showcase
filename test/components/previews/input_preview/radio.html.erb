@@ -1,0 +1,18 @@
+<fieldset class="flex flex-col gap-sm" do %>
+  <div class="flex items-center gap-sm">
+    <%= radio_button_tag :setting, :recents, class: "radio" %>
+    <%= label_tag :setting_recents, "Recents", class: "text-sm" %>
+  </div>
+  <div class="flex items-center gap-sm">
+    <%= radio_button_tag :setting, :home, class: "radio" %>
+    <%= label_tag :setting_home, "Home", class: "text-sm" %>
+  </div>
+  <div class="flex items-center gap-sm">
+    <%= radio_button_tag :setting, :applications, class: "radio" %>
+    <%= label_tag :setting_applications, "Applications", class: "text-sm" %>
+  </div>
+  <div class="flex items-center gap-sm">
+    <%= radio_button_tag :setting, :desktop, class: "radio" %>
+    <%= label_tag :setting_desktop, "Desktop", class: "text-sm" %>
+  </div>
+</fieldset>

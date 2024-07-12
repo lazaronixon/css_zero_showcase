@@ -1,0 +1,4 @@
+<%= text_field_tag "autocomplete", nil, list: "ice_cream_flavors", class: "input" %>
+<%= tag.datalist id: "ice_cream_flavors" do %>
+  <%= options_for_select(["Chocolate", "Coconut", "Mint", "Strawberry", "Vanilla"]) %>
+<% end %>

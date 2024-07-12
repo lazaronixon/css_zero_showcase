@@ -1,5 +1,5 @@
 # @css app/assets/stylesheets/breadcrumb.css
 class BreadcrumbPreview < Lookbook::Preview
-  def basic
+  def default
   end
 end

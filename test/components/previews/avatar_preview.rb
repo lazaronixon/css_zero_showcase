@@ -1,7 +1,7 @@
 # @css app/assets/stylesheets/avatar.css
 class AvatarPreview < Lookbook::Preview
-  # @!group Basic
-  def basic
+  # @!group Default
+  def default
   end
 
   def fallback
