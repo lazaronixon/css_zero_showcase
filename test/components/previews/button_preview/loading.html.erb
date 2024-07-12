@@ -1,5 +1,3 @@
 <%= form_with(url: lookbook.slow_action_path) do |form| %>
-  <%= form.button class: "btn btn--loading" do %>
-    <%= tag.span "Click and wait" %>
-  <% end %>
+  <%= form.button tag.span("Client and wait"), class: "btn btn--loading" %>
 <% end %>

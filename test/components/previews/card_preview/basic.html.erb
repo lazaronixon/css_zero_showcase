@@ -1,4 +1,4 @@
-<div class="card flex flex-col gap" style="inline-size: 350px; gap: 1.5rem;">
+<div class="card flex flex-col gap" style="gap: 1.5rem;">
   <div class="flex flex-col gap-sm">
     <h1 class="text-2xl font-semibold leading-none">Create project</h1>
     <p class="text-sm text-subtle">Deploy your new project in one-click.</p>
@@ -6,23 +6,18 @@
 
   <div class="flex flex-col gap">
     <div class="flex flex-col gap-sm">
-      <label for="name" class="text-sm font-medium">Name</label>
-      <input type="text" id="name" placeholder="Name of your project" class="input">
+      <%= label_tag "name", "Name", class: "text-sm font-medium" %>
+      <%= text_field_tag "name", nil, placeholder: "Name of your project", class: "input" %>
     </div>
 
     <div class="flex flex-col gap-sm">
-      <label for="framework" class="text-sm font-medium">Framework</label>
-      <select id="framework" class="input">
-        <option value="">Select</option>
-        <option value="rails">Ruby on Rails</option>
-        <option value="laravel">Laravel</option>
-        <option value="next">Next</option>
-      </select>
+      <%= label_tag "framework", "Framework", class: "text-sm font-medium" %>
+      <%= select_tag "framework", options_for_select([["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]]), class: "input" %>
     </div>
   </div>
 
   <div class="flex justify-between">
-    <button class="btn btn--outline">Cancel</button>
-    <button class="btn">Destroy</button>
+    <%= button_tag "Cancel", class: "btn btn--outline" %>
+    <%= button_tag "Destroy", class: "btn" %>
   </div>
 </div>
