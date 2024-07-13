@@ -5,6 +5,9 @@ class InputPreview < Lookbook::Preview
   def text_field
   end
 
+  def text_field_with_datalist
+  end
+
   def email_field
   end
 
@@ -12,9 +15,6 @@ class InputPreview < Lookbook::Preview
   end
 
   def date_field
-  end
-
-  def datalist_field
   end
 
   def file_field
@@ -48,4 +48,7 @@ class InputPreview < Lookbook::Preview
   def radio
   end
   # @!endgroup
+
+  def range
+  end
 end
