@@ -49,6 +49,11 @@ class InputPreview < Lookbook::Preview
   end
   # @!endgroup
 
+  # @!group Range
   def range
   end
+
+  def range_with_tick_marks
+  end
+  # @!endgroup
 end

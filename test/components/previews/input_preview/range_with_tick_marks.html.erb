@@ -1,0 +1,8 @@
+<%= range_field_tag "range_with_tick_marks", 25, step: 25, list: "tickmarks", class: "range w-full" %>
+<%= tag.datalist nil, id: "tickmarks", class: "flex justify-between w-full text-sm text-center" do %>
+  <option value="0"   style="width: 20px">0</option>
+  <option value="25"  style="width: 20px">25</option>
+  <option value="50"  style="width: 20px">50</option>
+  <option value="75"  style="width: 20px">75</option>
+  <option value="100" style="width: 20px">100</option>
+<% end %>
