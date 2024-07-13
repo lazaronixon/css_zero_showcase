@@ -5,9 +5,6 @@ class InputPreview < Lookbook::Preview
   def text_field
   end
 
-  def text_field_with_datalist
-  end
-
   def email_field
   end
 
@@ -19,6 +16,9 @@ class InputPreview < Lookbook::Preview
 
   def file_field
   end
+
+  def text_field_with_datalist
+  end
   # @!endgroup
 
   # @!group Select
@@ -29,6 +29,9 @@ class InputPreview < Lookbook::Preview
   end
 
   def select_with_separator
+  end
+
+  def select_with_multiple
   end
   # @!endgroup
 
