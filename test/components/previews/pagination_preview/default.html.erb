@@ -1,0 +1,19 @@
+<%= tag.nav "aria-label": "Pagination", class: "pagination" do %>
+  <%= link_to "#page-1", "aria-label": "Previous page" do %>
+    <%= image_tag "chevron-left.svg", role: "presentation", size: 16 %>
+    <%= tag.span "Previous" %>
+  <% end %>
+
+  <%= link_to "1", "#page-1" %>
+  <%= link_to "2", "#page-2", role: "link", aria: { disabled: true, current: "page" } %>
+  <%= link_to "3", "#page-3" %>
+
+  <%= link_to role: "link", "aria-disabled": true, class: "pi-3" do %>
+    <%= image_tag "ellipsis.svg", role: "presentation", size: 16 %>
+  <% end %>
+
+  <%= link_to "#page-3", "aria-label": "Next page" do %>
+    <%= tag.span "Next" %>
+    <%= image_tag "chevron-right.svg", role: "presentation", size: 16 %>
+  <% end %>
+<% end %>
