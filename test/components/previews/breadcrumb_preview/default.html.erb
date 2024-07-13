@@ -1,7 +1,7 @@
-<nav aria-label="breadcrumb" class="breadcrumb">
-  <%= link_to "Home", "#" %>
-  <%= image_tag "chevron-right.svg", role: "presentation", aria: { hidden: true }, size: 24 %>
-  <%= link_to "Components", "#" %>
-  <%= image_tag "chevron-right.svg", role: "presentation", aria: { hidden: true }, size: 24 %>
-  <%= link_to "Breadcrumb", "#", role: "link", aria: { disabled: true, current: "page" }, class: "text-primary" %>
-</nav>
+<%= tag.nav "aria-label": "Breadcrumb", class: "breadcrumb" do %>
+  <%= link_to "Home", "#home" %>
+  <%= image_tag "chevron-right.svg", role: "presentation", "aria-hidden": true, size: 24 %>
+  <%= link_to "Components", "#components" %>
+  <%= image_tag "chevron-right.svg", role: "presentation", "aria-hidden": true, size: 24 %>
+  <%= link_to "Breadcrumb", "#breadcrumb", role: "link", aria: { disabled: true, current: "page" }, class: "text-primary" %>
+<% end %>
