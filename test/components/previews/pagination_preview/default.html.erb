@@ -8,7 +8,7 @@
   <%= link_to "2", "#page-2", role: "link", aria: { disabled: true, current: "page" } %>
   <%= link_to "3", "#page-3" %>
 
-  <%= link_to role: "link", "aria-disabled": true, class: "pi-3" do %>
+  <%= tag.a nil, role: "link", "aria-disabled": true, class: "pi-3" do %>
     <%= image_tag "ellipsis.svg", role: "presentation", size: 16 %>
   <% end %>
 
