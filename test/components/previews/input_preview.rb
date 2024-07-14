@@ -25,13 +25,13 @@ class InputPreview < Lookbook::Preview
   def select
   end
 
+  def select_with_multiple
+  end  
+
   def select_with_groups
   end
 
   def select_with_separator
-  end
-
-  def select_with_multiple
   end
   # @!endgroup
 
