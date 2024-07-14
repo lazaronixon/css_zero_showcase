@@ -1,5 +1,4 @@
 # @display max_width 450px
-# @css app/assets/stylesheets/progress.css
 class SeparatorPreview < Lookbook::Preview
   # @!group Separator
   def default
