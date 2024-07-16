@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 51a10c7779382e2ce0b908b8234aabcac21b5601
+  revision: 16549bbc51cb1c6bfe1730a43043e363c7d7c331
   specs:
-    css-zero (0.0.18)
+    css-zero (0.0.20)
 
 GEM
   remote: https://rubygems.org/
@@ -184,7 +184,7 @@ GEM
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.8.0)
-    rack (3.1.6)
+    rack (3.1.7)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -232,7 +232,7 @@ GEM
     regexp_parser (2.9.2)
     reline (0.5.9)
       io-console (~> 0.5)
-    rexml (3.3.1)
+    rexml (3.3.2)
       strscan
     rouge (4.3.0)
     rubyzip (2.3.2)
@@ -260,7 +260,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    view_component (3.12.1)
+    view_component (3.13.0)
       activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
