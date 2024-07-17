@@ -1,5 +1,8 @@
 # @css app/assets/stylesheets/prose.css
 class ProsePreview < Lookbook::Preview
+  def example
+  end
+
   def headings
   end
 
