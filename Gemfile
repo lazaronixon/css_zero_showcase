@@ -45,7 +45,9 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem "lookbook", ">= 2.3.2"
-gem "css-zero", git: "https://github.com/lazaronixon/css-zero.git"
+gem "css-zero", github: "lazaronixon/css-zero"
+
+# gem "css-zero", path: "~/Development/css-zero"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
