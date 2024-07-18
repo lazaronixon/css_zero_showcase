@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static values = { startingOpacity: String, name: String }
+  static values = { startingOpacity: String, var: String }
 
   run() {
     if (this.element.style.animation != '') {
@@ -22,6 +22,6 @@ export default class extends Controller {
   }
 
   #setAnimation() {
-    this.element.style.animation = `var(--animate-${this.nameValue}) forwards`
+    this.element.style.animation = `var(${this.varValue}) forwards`
   }
 }
