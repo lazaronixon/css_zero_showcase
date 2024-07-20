@@ -8,7 +8,7 @@ class InputPreview < Lookbook::Preview
   def email_field
   end
 
-  def number_field
+  def integer_field
   end
 
   def decimal_field
