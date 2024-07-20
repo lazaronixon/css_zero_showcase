@@ -11,6 +11,9 @@ class InputPreview < Lookbook::Preview
   def number_field
   end
 
+  def decimal_field
+  end
+
   def date_field
   end
 
@@ -26,7 +29,7 @@ class InputPreview < Lookbook::Preview
   end
 
   def select_with_multiple
-  end  
+  end
 
   def select_with_groups
   end
