@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: c49d00747909a6728854b76fc8fca74559f05300
+  revision: 310283f3098f3a1982e6ce14f121f25b836c52ba
   specs:
-    css-zero (0.0.23)
+    css-zero (0.0.24)
 
 GEM
   remote: https://rubygems.org/
