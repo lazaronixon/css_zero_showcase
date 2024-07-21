@@ -1,0 +1,33 @@
+<div data-controller="dialog">
+  <%= button_tag "Open sheet", class: "btn", "data-action": "dialog#showModal" %>
+
+  <dialog data-dialog-target="box" data-action="click->dialog#closeOnClickOutside" class="sheet">
+    <%= button_to_close_dialog class: "btn btn--plain p-0 sheet__close" do %>
+      <%= image_tag "x.svg", aria: { hidden: "true" }, size: 16 %>
+      <%= tag.span "Close", class: "sr-only" %>
+    <% end %>
+
+    <%= form_with url: main_app.regular_action_path, class: "flex flex-col gap" do |form| %>
+      <div class="flex flex-col gap-sm">
+        <h1 class="text-lg leading-none font-semibold">Edit profile</h1>
+        <p class="text-sm text-subtle">Make changes to your profile here. Click save when you're done.</p>
+      </div>
+
+      <div class="flex flex-col mb-4 gap">
+        <div class="grid grid-cols-4 items-center gap">
+          <%= form.label :name, class: "text-sm font-medium text-end" %>
+          <%= form.text_field :name, value: "Lázaro Nixon", class: "input col-span-3" %>
+        </div>
+
+        <div class="grid grid-cols-4 items-center gap">
+          <%= form.label :username, class: "text-sm font-medium text-end" %>
+          <%= form.text_field :username, value: "@lazaronixon", class: "input col-span-3" %>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-end">
+        <%= form.submit "Save changes", class: "btn" %>
+      </div>
+    <% end %>
+  </dialog>
+</div>
