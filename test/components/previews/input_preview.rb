@@ -14,16 +14,16 @@ class InputPreview < Lookbook::Preview
   def decimal_field
   end
 
-  def password_field
-  end
-
   def date_field
   end
 
   def datetime_field
   end
 
-  def file_field
+  def time_field
+  end
+
+  def password_field
   end
 
   def pattern_field
@@ -31,6 +31,9 @@ class InputPreview < Lookbook::Preview
 
   def autocomplete_field
   end
+
+  def file_field
+  end  
   # @!endgroup
 
   # @!group Select
