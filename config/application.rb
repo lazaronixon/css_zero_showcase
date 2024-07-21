@@ -26,7 +26,6 @@ module CssZeroShowcase
 
     config.lookbook.preview_layout = "lookbook/component_preview"
     config.lookbook.preview_inspector.drawer_panels = [:source, :css, :js, :notes]
-    config.lookbook.preview_display_options = { theme: ["light", "dark"] }
 
     Lookbook.add_tag :css, %i[file_path]
     Lookbook.add_tag :js,  %i[file_path]
