@@ -8,13 +8,13 @@ class InputPreview < Lookbook::Preview
   def email_field
   end
 
+  def pattern_field
+  end  
+
   def integer_field
   end
 
   def decimal_field
-  end
-
-  def pattern_field
   end
 
   def date_field
