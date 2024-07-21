@@ -20,11 +20,14 @@ class InputPreview < Lookbook::Preview
   def date_field
   end
 
+  def datetime_field
+  end
+
   def file_field
   end
 
   def pattern_field
-  end  
+  end
 
   def autocomplete_field
   end
