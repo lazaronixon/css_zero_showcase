@@ -1,3 +1,3 @@
-<%= form_with(url: main_app.slow_action_path) do |form| %>
-  <%= form.button tag.span("Click and wait"), class: "btn btn--loading" %>
+<%= form_with url: nil, html: { "aria-busy": true } do |form| %>
+  <%= button_tag tag.span("Click and wait"), class: "btn btn--loading", disabled: true %>
 <% end %>
