@@ -26,14 +26,14 @@ class InputPreview < Lookbook::Preview
   def password_field
   end
 
-  def pattern_field
+  def validation_field
   end
 
   def autocomplete_field
   end
 
   def file_field
-  end  
+  end
   # @!endgroup
 
   # @!group Select
