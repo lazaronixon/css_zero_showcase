@@ -1,4 +1,2 @@
-<div>
-  <%= text_field_tag "validation_field", nil, placeholder: "000.000.000-00", pattern: '\d{3}\.\d{3}\.\d{3}-\d{2}', maxlength: "14", class: "input" %>
-  <%= tag.div "Please provide a valid CPF.", class: "invalid-feedback text-sm text-negative mbs-1", hidden: true %>
-</div>
+<%= text_field_tag "validation_field", nil, placeholder: "000.000.000-00", pattern: '\d{3}\.\d{3}\.\d{3}-\d{2}', maxlength: "14", class: "input" %>
+<%= tag.div "Please provide a valid CPF.", class: "invalid-feedback text-sm text-negative mbs-1", hidden: true %>
