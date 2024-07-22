@@ -3,4 +3,10 @@
 class FlashPreview < Lookbook::Preview
   def default
   end
+
+  def positive
+  end
+
+  def negative
+  end
 end
