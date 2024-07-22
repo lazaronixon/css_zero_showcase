@@ -20,20 +20,14 @@ class InputPreview < Lookbook::Preview
   def datetime_field
   end
 
-  def time_field
-  end
-
-  def password_field
-  end
-
-  def validation_field
+  def file_field
   end
 
   def autocomplete_field
   end
 
-  def file_field
-  end
+  def validation_field
+  end  
   # @!endgroup
 
   # @!group Select
