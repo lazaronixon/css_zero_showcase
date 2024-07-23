@@ -3,4 +3,7 @@
 class CarouselPreview < Lookbook::Preview
   def default
   end
+
+  def sizes
+  end
 end
