@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 0624b2b1f63d918e825dc7f0d989488192e3e01a
+  revision: 542243922b4387d23d11d96adc7b9dd7d00cd988
   specs:
-    css-zero (0.0.26)
+    css-zero (0.0.27)
 
 GEM
   remote: https://rubygems.org/
@@ -180,7 +180,7 @@ GEM
       railties (>= 7.0.0)
     psych (5.1.2)
       stringio
-    public_suffix (6.0.0)
+    public_suffix (6.0.1)
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.8.0)
