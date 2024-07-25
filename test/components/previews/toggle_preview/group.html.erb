@@ -1,0 +1,20 @@
+<%= label_tag :check_bold, "aria-label": "Toggle bold", class: "toggle" do %>
+  <%= check_box_tag :check_bold %>
+  <%= tag.span nil,  class: "btn btn--plain" do %>
+    <%= image_tag "bold.svg", role: "presentation", size: 16 %>
+  <% end %>
+<% end %>
+
+<%= label_tag :check_italic, "aria-label": "Toggle italic", class: "toggle" do %>
+  <%= check_box_tag :check_italic %>
+  <%= tag.span nil,  class: "btn btn--plain" do %>
+    <%= image_tag "italic.svg", role: "presentation", size: 16 %>
+  <% end %>
+<% end %>
+
+<%= label_tag :check_underline, "aria-label": "Toggle underline", class: "toggle" do %>
+  <%= check_box_tag :check_underline %>
+  <%= tag.span nil,  class: "btn btn--plain" do %>
+    <%= image_tag "underline.svg", role: "presentation", size: 16 %>
+  <% end %>
+<% end %>

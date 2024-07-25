@@ -1,0 +1,6 @@
+<%= label_tag :check_bold, "aria-label": "Toggle bold", class: "toggle" do %>
+  <%= check_box_tag :check_bold %>
+  <%= tag.span nil,  class: "btn btn--plain" do %>
+    <%= image_tag "bold.svg", role: "presentation", size: 16 %>
+  <% end %>
+<% end %>
