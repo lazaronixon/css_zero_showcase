@@ -18,6 +18,9 @@ class ButtonPreview < Lookbook::Preview
 
   def negative
   end
+
+  def disabled
+  end
   # @!endgroup
 
   def with_icon

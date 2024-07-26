@@ -27,7 +27,10 @@ class InputPreview < Lookbook::Preview
   end
 
   def validation_field
-  end  
+  end
+
+  def disabled_field
+  end
   # @!endgroup
 
   # @!group Select
