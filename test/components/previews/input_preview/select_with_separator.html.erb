@@ -1,7 +1,16 @@
-<%= select :store, :fruits, nil, {}, class: "input" do %>
-  <%= tag.option "Fine Arts", value: "finearts" %>
-  <%= tag.option "Graphic Design", value: "gdes" %>
-  <%= tag.hr %>
-  <%= tag.option "Aerospace Engineering", value: "aeroeng" %>
-  <%= tag.option "Biochemical Engineering", value: "biochemeng" %>
-<% end %>
+<%= select_tag :majors, raw("
+  <option value=''>Select a major</option>
+  <hr>
+  <option value='arth'>Art History</option>
+  <option value='finearts'>Fine Arts</option>
+  <option value='gdes'>Graphic Design</option>
+  <option value='lit'>Literature</option>
+  <option value='music'>Music</option>
+  <hr>
+  <option value='aeroeng'>Aerospace Engineering</option>
+  <option value='biochemeng'>Biochemical Engineering</option>
+  <option value='civileng'>Civil Engineering</option>
+  <option value='compeng'>Computer Engineering</option>
+  <option value='eleng'>Electrical Engineering</option>
+  <option value='mecheng'>Mechanical Engineering</option>
+"), class: "input" %>
