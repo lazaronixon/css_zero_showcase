@@ -23,10 +23,10 @@ class InputPreview < Lookbook::Preview
   def file_field
   end
 
-  def autocomplete_field
-  end
+  def pattern_field
+  end  
 
-  def validation_field
+  def autocomplete_field
   end
 
   def disabled_field
