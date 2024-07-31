@@ -14,14 +14,14 @@
       </div>
 
       <div class="flex flex-col mb-4 gap">
-        <div class="grid grid-cols-4 items-center gap">
-          <%= form.label :name, class: "text-sm font-medium text-end" %>
-          <%= form.text_field :name, value: "Lázaro Nixon", class: "input col-span-3" %>
+        <div class="flex items-center gap">
+          <%= form.label :name, class: "text-sm font-medium text-end min-w-0", style: "inline-size: 25%;" %>
+          <%= form.text_field :name, value: "Lázaro Nixon", class: "input" %>
         </div>
 
-        <div class="grid grid-cols-4 items-center gap">
-          <%= form.label :username, class: "text-sm font-medium text-end" %>
-          <%= form.text_field :username, value: "@lazaronixon", class: "input col-span-3" %>
+        <div class="flex items-center gap">
+          <%= form.label :username, class: "text-sm font-medium text-end min-w-0", style: "inline-size: 25%;" %>
+          <%= form.text_field :username, value: "@lazaronixon", class: "input" %>
         </div>
       </div>
 
