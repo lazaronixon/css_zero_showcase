@@ -26,7 +26,7 @@ class ButtonPreview < Lookbook::Preview
   def with_icon
   end
 
-  # Turbo adds [aria-busy to the form and disabled to the form submitter while the form request is in progress](https://turbo.hotwired.dev/reference/attributes#automatically-added-attributes).
+  # Turbo adds [aria-busy] to the form while the form request is in progress](https://turbo.hotwired.dev/reference/attributes#automatically-added-attributes).
   def loading
   end
 end
