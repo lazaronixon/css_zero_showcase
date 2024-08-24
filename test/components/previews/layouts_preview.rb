@@ -8,4 +8,7 @@ class LayoutsPreview < ViewComponent::Preview
 
   def centered
   end
+
+  def container
+  end  
 end
