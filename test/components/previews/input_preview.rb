@@ -23,8 +23,11 @@ class InputPreview < Lookbook::Preview
   def file_field
   end
 
+  def actor_field
+  end
+
   def pattern_field
-  end  
+  end
 
   def autocomplete_field
   end
