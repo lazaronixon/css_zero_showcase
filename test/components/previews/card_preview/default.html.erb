@@ -1,10 +1,10 @@
-<%= form_with url: nil, class: "card flex flex-col gap-lg" do |form| %>
-  <div class="flex flex-col gap-sm">
+<%= form_with url: nil, class: "card flex flex-col gap" do |form| %>
+  <div class="flex flex-col gap-sm mbe-2">
     <h1 class="text-2xl font-semibold leading-none">Create project</h1>
     <p class="text-sm text-subtle">Deploy your new project in one-click.</p>
   </div>
 
-  <div class="flex flex-col gap">
+  <div class="flex flex-col gap mbe-2">
     <div class="flex flex-col gap-sm">
       <%= form.label :name, class: "text-sm font-medium" %>
       <%= form.text_field :name, placeholder: "Name of your project", class: "input" %>
