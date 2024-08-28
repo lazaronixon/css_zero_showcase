@@ -1,25 +1,23 @@
-<div class="card flex flex-col gap">
+<%= form_with url: nil, class: "card flex flex-col gap-lg" do |form| %>
   <div class="flex flex-col gap-sm">
     <h1 class="text-2xl font-semibold leading-none">Create project</h1>
     <p class="text-sm text-subtle">Deploy your new project in one-click.</p>
   </div>
 
-  <%= form_with url: nil, class: "flex flex-col gap" do |form| %>
-    <div class="flex flex-col gap">
-      <div class="flex flex-col gap-sm">
-        <%= form.label :name, class: "text-sm font-medium" %>
-        <%= form.text_field :name, placeholder: "Name of your project", class: "input" %>
-      </div>
-
-      <div class="flex flex-col gap-sm">
-        <%= form.label :framework, class: "text-sm font-medium" %>
-        <%= form.select :framework, [["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]], {}, class: "input" %>
-      </div>
+  <div class="flex flex-col gap">
+    <div class="flex flex-col gap-sm">
+      <%= form.label :name, class: "text-sm font-medium" %>
+      <%= form.text_field :name, placeholder: "Name of your project", class: "input" %>
     </div>
 
-    <div class="flex justify-between">
-      <%= button_tag "Cancel", type: :button, class: "btn btn--outline" %>
-      <%= form.submit "Destroy", class: "btn" %>
+    <div class="flex flex-col gap-sm">
+      <%= form.label :framework, class: "text-sm font-medium" %>
+      <%= form.select :framework, [["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]], {}, class: "input" %>
     </div>
-  <% end %>
-</div>
+  </div>
+
+  <div class="flex justify-between">
+    <%= button_tag "Cancel", type: :button, class: "btn btn--outline" %>
+    <%= form.submit "Destroy", class: "btn" %>
+  </div>
+<% end %>

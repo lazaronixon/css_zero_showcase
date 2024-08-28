@@ -7,19 +7,19 @@
       <%= tag.span "Close", class: "sr-only" %>
     <% end %>
 
-    <%= form_with url: nil, class: "flex flex-col gap" do |form| %>
+    <%= form_with url: nil, class: "flex flex-col gap-lg" do |form| %>
       <div class="flex flex-col gap-sm">
         <h1 class="text-lg leading-none font-semibold">Edit profile</h1>
         <p class="text-sm text-subtle">Make changes to your profile here. Click save when you're done.</p>
       </div>
 
       <div class="flex flex-col mb-4 gap">
-        <div class="flex items-center gap">
+        <div class="flex items-center gap-sm">
           <%= form.label :name, class: "text-sm font-medium text-end min-w-0", style: "inline-size: 25%;" %>
           <%= form.text_field :name, value: "Lázaro Nixon", class: "input" %>
         </div>
 
-        <div class="flex items-center gap">
+        <div class="flex items-center gap-sm">
           <%= form.label :username, class: "text-sm font-medium text-end min-w-0", style: "inline-size: 25%;" %>
           <%= form.text_field :username, value: "@lazaronixon", class: "input" %>
         </div>
