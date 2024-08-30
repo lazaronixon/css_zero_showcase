@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 17ee6c13aa5d20839525844d96d10bc8faf2ebb4
+  revision: 833eaa4301d4459dbb973c2aa531a84804dee6ca
   specs:
-    css-zero (0.0.30)
+    css-zero (0.0.32)
 
 GEM
   remote: https://rubygems.org/
@@ -252,7 +252,7 @@ GEM
       railties (>= 6.0.0)
     stringio (3.1.1)
     strscan (3.1.0)
-    thor (1.3.1)
+    thor (1.3.2)
     timeout (0.4.1)
     turbo-rails (2.0.6)
       actionpack (>= 6.0.0)
