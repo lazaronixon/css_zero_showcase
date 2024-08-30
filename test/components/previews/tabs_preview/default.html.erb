@@ -1,14 +1,14 @@
-<div class="tabs" data-controller="tabs" data-tabs-selected-value="account" style="max-inline-size: 400px">
-  <div class="tabs__list">
-    <%= tab_button "Account", value: "account" %>
-    <%= tab_button "Password", value: "password" %>
+<div class="tabs" data-controller="tabs" data-tabs-selected-value="tab_account" style="max-inline-size: 400px">
+  <div class="tabs__list" role="tablist">
+    <%= tab_button "Account",  id: "trigger_account",  value: "tab_account" %>
+    <%= tab_button "Password", id: "trigger_password", value: "tab_password" %>
   </div>
 
-  <div class="card flex flex-col gap" data-tabs-target="tab" data-value="account">
+  <%= tab_panel "tab_account", labelled_by: "trigger_account" do %>
     <%= render "account_form" %>
-  </div>
+  <% end %>
 
-  <div class="card flex flex-col gap" data-tabs-target="tab" data-value="password">
+  <%= tab_panel "tab_password", labelled_by: "trigger_password" do %>
     <%= render "password_form" %>
-  </div>
+  <% end %>
 </div>
