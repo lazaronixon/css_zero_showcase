@@ -1,7 +1,7 @@
 <div data-controller="dialog">
   <%= button_tag "Show dialog", class: "btn", "data-action": "dialog#showModal" %>
 
-  <dialog data-dialog-target="box" data-action="click->dialog#closeOnClickOutside" class="dialog" style="--dialog-width: 430px;">
+  <dialog data-dialog-target="box" data-action="click->dialog#closeOnClickOutside" class="dialog" aria-label="Edit profile" style="--dialog-width: 430px;">
     <%= button_to_close_dialog class: "btn btn--plain p-0 dialog__close" do %>
       <%= image_tag "x.svg", aria: { hidden: "true" }, size: 16 %>
       <%= tag.span "Close", class: "sr-only" %>
