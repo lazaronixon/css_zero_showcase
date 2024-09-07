@@ -1,24 +1,24 @@
 <div class="carousel w-full" data-controller="carousel" style="max-inline-size: 460px" role="region" aria-roledescription="carousel">
-  <%= button_tag "data-action": "carousel#previous", class: "btn btn--outline rounded-full p-2" do %>
-    <%= image_tag "arrow-left.svg", role: "presentation", size: 16 %>
+  <%= button_tag class: "btn btn--outline rounded-full p-2", "data-action": "carousel#previous" do %>
+    <%= image_tag "arrow-left.svg", size: 16, role: "presentation" %>
     <%= tag.span "Previous slide", class: "sr-only" %>
   <% end %>
-  <div data-carousel-target="content" class="carousel__content">
-    <div role="group" aria-roledescription="slide" class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;">
+  <div class="carousel__content" data-carousel-target="content">
+    <div class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;" role="group" aria-roledescription="slide">
       <span class="text-4xl font-semibold">1</span>
     </div>
-    <div role="group" aria-roledescription="slide" class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;">
+    <div class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;" role="group" aria-roledescription="slide">
       <span class="text-4xl font-semibold">2</span>
     </div>
-    <div role="group" aria-roledescription="slide" class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;">
+    <div class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;" role="group" aria-roledescription="slide">
       <span class="text-4xl font-semibold">3</span>
     </div>
-    <div role="group" aria-roledescription="slide" class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;">
+    <div class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;" role="group" aria-roledescription="slide">
       <span class="text-4xl font-semibold">4</span>
     </div>
   </div>
-  <%= button_tag "data-action": "carousel#next", class: "btn btn--outline rounded-full p-2" do %>
-    <%= image_tag "arrow-right.svg", role: "presentation", size: 16 %>
+  <%= button_tag class: "btn btn--outline rounded-full p-2", "data-action": "carousel#next" do %>
+    <%= image_tag "arrow-right.svg", size: 16, role: "presentation" %>
     <%= tag.span "Next slide", class: "sr-only" %>
   <% end %>
 </div>

@@ -1,9 +1,9 @@
 <div data-controller="dialog">
   <%= button_tag "Show dialog", class: "btn", "data-action": "dialog#showModal" %>
 
-  <dialog data-dialog-target="box" class="dialog" role="alertdialog" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
-    <h1 id="dialog_label" class="text-lg font-semibold">Are you absolutely sure?</h1>
-    <p id="dialog_desc" class="text-sm text-subtle mbs-2">
+  <dialog class="dialog" data-dialog-target="box" role="alertdialog" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
+    <h1 class="text-lg font-semibold" id="dialog_label">Are you absolutely sure?</h1>    
+    <p class="text-sm text-subtle mbs-2" id="dialog_desc">
       This action cannot be undone. This will permanently delete your account and remove your data from our servers.
     </p>
 

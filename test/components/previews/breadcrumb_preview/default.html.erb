@@ -1,7 +1,7 @@
-<%= tag.nav "aria-label": "Breadcrumb", class: "breadcrumb" do %>
+<%= tag.nav class: "breadcrumb", "aria-label": "Breadcrumb" do %>
   <%= link_to "Home", "#home" %>
-  <%= image_tag "chevron-right.svg", role: "presentation", "aria-hidden": true, size: 24 %>
+  <%= image_tag "chevron-right.svg", size: 24, role: "presentation", "aria-hidden": true %>
   <%= link_to "Components", "#components" %>
-  <%= image_tag "chevron-right.svg", role: "presentation", "aria-hidden": true, size: 24 %>
-  <%= link_to "Breadcrumb", "#breadcrumb", role: "link", aria: { disabled: true, current: "page" }, class: "text-primary" %>
+  <%= image_tag "chevron-right.svg", size: 24, role: "presentation", "aria-hidden": true %>
+  <%= link_to "Breadcrumb", "#breadcrumb", class: "text-primary", role: "link", aria: { disabled: true, current: "page" } %>
 <% end %>

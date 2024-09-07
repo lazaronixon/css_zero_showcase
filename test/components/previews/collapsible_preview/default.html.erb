@@ -3,8 +3,8 @@
     <h4 class="text-sm font-semibold">
       @lazaronixon starred 3 repositories
     </h4>
-    <%= button_tag "data-action": "collapsible#toggle", class: "btn btn--plain p-0" do %>
-      <%= image_tag "chevrons-up-down.svg", size: 16 %>
+    <%= button_tag class: "btn btn--plain p-0", "data-action": "collapsible#toggle" do %>
+      <%= image_tag "chevrons-up-down.svg", size: 16, role: "presentation" %>
       <%= tag.span "Toggle", class: "sr-only" %>
     <% end %>
   </div>

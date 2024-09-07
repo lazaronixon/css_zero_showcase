@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 41b04409d1dc15ab8b309a0545813196a88b2bf8
+  revision: cb4975f544be0d7bcbf8ac40dca0cb796e8e7fd0
   specs:
-    css-zero (0.0.33)
+    css-zero (0.0.34)
 
 GEM
   remote: https://rubygems.org/
@@ -123,7 +123,7 @@ GEM
     irb (1.14.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    logger (1.6.0)
+    logger (1.6.1)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -151,7 +151,7 @@ GEM
     minitest (5.25.1)
     msgpack (1.7.2)
     mutex_m (0.2.0)
-    net-imap (0.4.15)
+    net-imap (0.4.16)
       date
       net-protocol
     net-pop (0.1.2)
@@ -230,10 +230,9 @@ GEM
     redis-client (0.22.2)
       connection_pool
     regexp_parser (2.9.2)
-    reline (0.5.9)
+    reline (0.5.10)
       io-console (~> 0.5)
-    rexml (3.3.6)
-      strscan
+    rexml (3.3.7)
     rouge (4.3.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.24.0)
@@ -251,7 +250,6 @@ GEM
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.1)
-    strscan (3.1.0)
     thor (1.3.2)
     timeout (0.4.1)
     turbo-rails (2.0.6)
@@ -276,8 +274,8 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    yard (0.9.36)
-    zeitwerk (2.6.17)
+    yard (0.9.37)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   aarch64-linux

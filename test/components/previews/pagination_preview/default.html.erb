@@ -1,6 +1,6 @@
-<%= tag.nav "aria-label": "Pagination", class: "pagination" do %>
+<%= tag.nav class: "pagination", "aria-label": "Pagination" do %>
   <%= link_to "#page-1", "aria-label": "Previous page" do %>
-    <%= image_tag "chevron-left.svg", role: "presentation", size: 16 %>
+    <%= image_tag "chevron-left.svg", size: 16, role: "presentation" %>
     <%= tag.span "Previous" %>
   <% end %>
 
@@ -8,12 +8,12 @@
   <%= link_to "2", "#page-2", role: "link", aria: { disabled: true, current: "page" } %>
   <%= link_to "3", "#page-3" %>
 
-  <%= tag.a nil, role: "link", "aria-disabled": true, class: "pi-3" do %>
-    <%= image_tag "ellipsis.svg", role: "presentation", size: 16 %>
+  <%= tag.a nil, class: "pi-3", role: "link", "aria-disabled": true do %>
+    <%= image_tag "ellipsis.svg", size: 16, role: "presentation" %>
   <% end %>
 
   <%= link_to "#page-3", "aria-label": "Next page" do %>
     <%= tag.span "Next" %>
-    <%= image_tag "chevron-right.svg", role: "presentation", size: 16 %>
+    <%= image_tag "chevron-right.svg", size: 16, role: "presentation" %>
   <% end %>
 <% end %>
