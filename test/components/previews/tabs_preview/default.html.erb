@@ -1,14 +1,14 @@
 <div class="tabs" data-controller="tabs" data-tabs-selected-value="tab_account" style="max-inline-size: 400px">
   <div class="tabs__list" role="tablist">
-    <%= tab_button "Account", id: "trigger_account", value: "tab_account" %>
-    <%= tab_button "Password", id: "trigger_password", value: "tab_password" %>
+    <%= button_tag "Account",  id: "trigger_account",  role: "tab", "aria-controls": "tab_account",  data: { tabs_target: "button", action: "tabs#select", value: "tab_account" },  class: "btn" %>
+    <%= button_tag "Password", id: "trigger_password", role: "tab", "aria-controls": "tab_password", data: { tabs_target: "button", action: "tabs#select", value: "tab_password" }, class: "btn" %>
   </div>
 
-  <%= tab_panel "tab_account", labelled_by: "trigger_account" do %>
+  <div id="tab_account" role="tabpanel" aria-labelledby="trigger_account" data-tabs-target="tab">
     <%= render "account_form" %>
-  <% end %>
+  </div>
 
-  <%= tab_panel "tab_password", labelled_by: "trigger_password" do %>
+  <div id="tab_password" role="tabpanel" aria-labelledby="trigger_password" data-tabs-target="tab">
     <%= render "password_form" %>
-  <% end %>
+  </div>
 </div>
