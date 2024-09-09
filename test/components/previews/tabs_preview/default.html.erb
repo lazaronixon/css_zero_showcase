@@ -1,7 +1,7 @@
 <div class="tabs" style="max-inline-size: 400px" data-controller="tabs" data-tabs-selected-value="tab_account">
   <div class="tabs__list" role="tablist">
-    <%= button_tag "Account",  class: "btn", id: "trigger_account",  data: { tabs_target: "button", action: "tabs#select", value: "tab_account" },  role: "tab", "aria-controls": "tab_account" %>
-    <%= button_tag "Password", class: "btn", id: "trigger_password", data: { tabs_target: "button", action: "tabs#select", value: "tab_password" }, role: "tab", "aria-controls": "tab_password" %>
+    <button id="trigger_account"  class="btn" data-tabs-target="button" data-action="tabs#select" data-value="tab_account"  aria-controls="tab_account"  role="tab">Account</button>
+    <button id="trigger_password" class="btn" data-tabs-target="button" data-action="tabs#select" data-value="tab_password" aria-controls="tab_password" role="tab">Password</button>
   </div>
 
   <div id="tab_account" role="tabpanel" aria-labelledby="trigger_account" data-tabs-target="tab">

@@ -1,15 +1,15 @@
 <div data-controller="dialog">
-  <%= button_tag "Show dialog", class: "btn", "data-action": "dialog#showModal" %>
+  <button class="btn" data-action="dialog#showModal">Show dialog</button>
 
   <dialog class="dialog" data-dialog-target="box" role="alertdialog" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
-    <h1 class="text-lg font-semibold" id="dialog_label">Are you absolutely sure?</h1>    
+    <h1 class="text-lg font-semibold" id="dialog_label">Are you absolutely sure?</h1>
     <p class="text-sm text-subtle mbs-2" id="dialog_desc">
       This action cannot be undone. This will permanently delete your account and remove your data from our servers.
     </p>
 
     <div class="flex justify-end gap-sm mbs-4">
       <%= button_to_close_dialog "Cancel", class: "btn btn--outline" %>
-      <%= button_tag "Continue", class: "btn btn--primary" %>
+      <button class="btn btn--primary">Continue</button>
     </div>
   </dialog>
 </div>

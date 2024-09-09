@@ -1,8 +1,2 @@
 <%= range_field_tag "range_with_tick_marks", 25, step: 25, list: "tickmarks", class: "range w-full" %>
-<%= tag.datalist nil, id: "tickmarks" do %>
-  <%= tag.option nil, value: "0" %>
-  <%= tag.option nil, value: "25" %>
-  <%= tag.option nil, value: "50" %>
-  <%= tag.option nil, value: "75" %>
-  <%= tag.option nil, value: "100" %>
-<% end %>
+<%= tag.datalist options_for_select(["0", "25", "50", "75", "100"]), id: "tickmarks" %>

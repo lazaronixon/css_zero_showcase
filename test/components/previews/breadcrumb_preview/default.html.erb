@@ -1,7 +1,7 @@
-<%= tag.nav class: "breadcrumb", "aria-label": "Breadcrumb" do %>
+<nav class="breadcrumb" aria-label="Breadcrumb">
   <%= link_to "Home", "#home" %>
   <%= image_tag "chevron-right.svg", size: 24, role: "presentation", "aria-hidden": true %>
   <%= link_to "Components", "#components" %>
   <%= image_tag "chevron-right.svg", size: 24, role: "presentation", "aria-hidden": true %>
   <%= link_to "Breadcrumb", "#breadcrumb", class: "text-primary", role: "link", aria: { disabled: true, current: "page" } %>
-<% end %>
+</nav>

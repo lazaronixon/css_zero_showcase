@@ -1,7 +1,7 @@
-<%= label_tag :check_bold, class: "toggle" do %>
+<label class="toggle">
   <%= check_box_tag :check_bold %>
-  <%= tag.span nil,  class: "btn btn--plain" do %>
+  <div class="btn btn--plain">
     <%= image_tag "bold.svg", size: 16, role: "presentation" %>
-    <%= tag.span "Toggle bold", class: "sr-only" %>
-  <% end %>
-<% end %>
+    <span class="sr-only">Toggle bold</span>
+  </div>
+</label>

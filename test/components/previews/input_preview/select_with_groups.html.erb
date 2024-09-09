@@ -1,5 +1,1 @@
-<%= select_tag :cars, grouped_options_for_select({
-  "American Cars" => ["Ford", "Chevrolet", "Dodge"],
-  "European Cars" => ["BMW", "Mercedes-Benz", "Volkswagen"],
-  "Asian Cars"    => ["Toyota", "Honda", "Nissan"]
-}), class: "input" %>
+<%= select_tag :cars, grouped_options_for_select({"American" => ["Ford", "Chevrolet", "Dodge"], "European" => ["BMW", "Mercedes-Benz", "Volkswagen"], "Asian" => ["Toyota", "Honda", "Nissan"]}), class: "input" %>

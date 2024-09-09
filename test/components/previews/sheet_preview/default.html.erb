@@ -1,10 +1,10 @@
 <div data-controller="dialog">
-  <%= button_tag "Open sheet", class: "btn", "data-action": "dialog#showModal" %>
+  <button class="btn" data-action="dialog#showModal">Open sheet</button>
 
   <dialog class="sheet sheet--right" data-dialog-target="box" data-action="click->dialog#closeOnClickOutside">
     <%= button_to_close_dialog class: "btn btn--plain p-0 sheet__close" do %>
       <%= image_tag "x.svg", size: 16, "aria-hidden": "true" %>
-      <%= tag.span "Close", class: "sr-only" %>
+      <span class="sr-only">Close</span>
     <% end %>
 
     <%= form_with url: nil, class: "flex flex-col gap" do |form| %>

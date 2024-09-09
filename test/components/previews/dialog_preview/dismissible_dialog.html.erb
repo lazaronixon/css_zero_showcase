@@ -1,10 +1,10 @@
 <div data-controller="dialog">
-  <%= button_tag "Show dialog", class: "btn", "data-action": "dialog#showModal" %>
+  <button class="btn" data-action="dialog#showModal">Show dialog</button>
 
   <dialog class="dialog" style="--dialog-width: 430px;" data-dialog-target="box" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
     <%= button_to_close_dialog class: "btn btn--plain p-0 dialog__close" do %>
       <%= image_tag "x.svg", size: 16, "aria-hidden": "true" %>
-      <%= tag.span "Close", class: "sr-only" %>
+      <span class="sr-only">Close</span>
     <% end %>
 
     <%= form_with url: nil, class: "flex flex-col gap" do |form| %>

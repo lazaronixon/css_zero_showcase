@@ -1,8 +1,8 @@
 <div class="carousel w-full" data-controller="carousel" style="max-inline-size: 460px" role="region" aria-roledescription="carousel">
-  <%= button_tag class: "btn btn--outline rounded-full p-2", "data-action": "carousel#previous" do %>
+  <button class="btn btn--outline rounded-full p-2" data-action="carousel#previous">
     <%= image_tag "arrow-left.svg", size: 16, role: "presentation" %>
-    <%= tag.span "Previous slide", class: "sr-only" %>
-  <% end %>
+    <span class="sr-only">Previous slide</span>
+  </button>
   <div class="carousel__content" data-carousel-target="content">
     <div class="card flex items-center justify-center aspect-square" style="flex-basis: 100px;" role="group" aria-roledescription="slide">
       <span class="text-4xl font-semibold">1</span>
@@ -17,8 +17,8 @@
       <span class="text-4xl font-semibold">4</span>
     </div>
   </div>
-  <%= button_tag class: "btn btn--outline rounded-full p-2", "data-action": "carousel#next" do %>
+  <button class="btn btn--outline rounded-full p-2" data-action="carousel#next">
     <%= image_tag "arrow-right.svg", size: 16, role: "presentation" %>
-    <%= tag.span "Next slide", class: "sr-only" %>
-  <% end %>
+    <span class="sr-only">Next slide</span>
+  </button>
 </div>

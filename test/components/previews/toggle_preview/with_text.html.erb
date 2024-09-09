@@ -1,7 +1,7 @@
-<%= label_tag :check_text_italic, class: "toggle" do %>
+<label class="toggle">
   <%= check_box_tag :check_text_italic %>
-  <%= tag.span nil,  class: "btn btn--plain" do %>
+  <div class="btn btn--outline">
     <%= image_tag "italic.svg", size: 16, role: "presentation" %>
-    <%= tag.span "Italic" %>
-  <% end %>
-<% end %>
+    <span>Italic</span>
+  </div>
+</label>
