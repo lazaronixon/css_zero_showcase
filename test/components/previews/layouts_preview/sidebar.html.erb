@@ -1,6 +1,20 @@
 <div class="layout-sidebar border">
-  <header id="header" class="border-be p-4">
-    Header
+  <header id="header" class="border-be p-4 flex items-center gap">
+    <div data-controller="dialog" class="sidebar__toggle">
+      <button class="btn btn--outline" data-action="dialog#showModal">
+        <%= image_tag "menu.svg", size: 16, "aria-hidden": true %>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <dialog class="sheet sheet--left" data-dialog-target="box" data-action="click->dialog#closeOnClickOutside">
+        <%= button_to_close_dialog class: "btn btn--plain p-0 sheet__close" do %>
+          <%= image_tag "x.svg", size: 16, "aria-hidden": "true" %>
+          <span class="sr-only">Close</span>
+        <% end %>
+        <h1>Mobile menu</h1>
+      </dialog>
+    </div>
+    <h1>Header</h1>
   </header>
 
   <nav id="sidebar" class="overflow-hidden">
