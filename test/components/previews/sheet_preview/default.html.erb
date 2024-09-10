@@ -2,32 +2,34 @@
   <button class="btn" data-action="dialog#showModal">Open sheet</button>
 
   <dialog class="sheet sheet--right" data-dialog-target="box" data-action="click->dialog#closeOnClickOutside">
-    <button class="btn btn--plain p-0 sheet__close" data-action="click->dialog#close">
-      <%= image_tag "x.svg", size: 16, "aria-hidden": "true" %>
-      <span class="sr-only">Close</span>
-    </button>
+    <div class="sheet__content">
+      <button class="btn btn--plain p-0 sheet__close" data-action="click->dialog#close">
+        <%= image_tag "x.svg", size: 16, "aria-hidden": "true" %>
+        <span class="sr-only">Close</span>
+      </button>
 
-    <%= form_with url: nil, class: "flex flex-col gap" do |form| %>
-      <div class="flex flex-col gap-sm">
-        <h1 class="text-lg leading-none font-semibold">Edit profile</h1>
-        <p class="text-sm text-subtle">Make changes to your profile here. Click save when you're done.</p>
-      </div>
-
-      <div class="flex flex-col gap mb-2">
-        <div class="flex items-center gap-sm">
-          <%= form.label :name, class: "text-sm font-medium text-end min-w-0", style: "inline-size: 25%;" %>
-          <%= form.text_field :name, value: "Lázaro Nixon", class: "input" %>
+      <%= form_with url: nil, class: "flex flex-col gap" do |form| %>
+        <div class="flex flex-col gap-sm">
+          <h1 class="text-lg leading-none font-semibold">Edit profile</h1>
+          <p class="text-sm text-subtle">Make changes to your profile here. Click save when you're done.</p>
         </div>
 
-        <div class="flex items-center gap-sm">
-          <%= form.label :username, class: "text-sm font-medium text-end min-w-0", style: "inline-size: 25%;" %>
-          <%= form.text_field :username, value: "@lazaronixon", class: "input" %>
-        </div>
-      </div>
+        <div class="flex flex-col gap mb-2">
+          <div class="flex items-center gap-sm">
+            <%= form.label :name, class: "text-sm font-medium text-end min-w-0", style: "inline-size: 25%;" %>
+            <%= form.text_field :name, value: "Lázaro Nixon", class: "input" %>
+          </div>
 
-      <div class="flex items-center justify-end">
-        <%= form.submit "Save changes", class: "btn" %>
-      </div>
-    <% end %>
+          <div class="flex items-center gap-sm">
+            <%= form.label :username, class: "text-sm font-medium text-end min-w-0", style: "inline-size: 25%;" %>
+            <%= form.text_field :username, value: "@lazaronixon", class: "input" %>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-end">
+          <%= form.submit "Save changes", class: "btn" %>
+        </div>
+      <% end %>
+    </div>
   </dialog>
 </div>
