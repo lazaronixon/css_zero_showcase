@@ -1,16 +1,16 @@
 <%= form_with url: nil, class: "card flex flex-col gap" do |form| %>
-  <div class="flex flex-col gap-sm">
+  <div class="flex flex-col gap-half">
     <h3 class="text-2xl font-semibold leading-none">Account</h3>
     <p class="text-sm text-subtle">Make changes to your account here. Click save when you're done.</p>
   </div>
 
   <div class="flex flex-col gap mb-2">
-    <div class="flex flex-col gap-sm">
+    <div class="flex flex-col gap-half">
       <%= form.label :name, class: "text-sm font-medium" %>
       <%= form.text_field :name, value: "Lázaro Nixon", class: "input" %>
     </div>
 
-    <div class="flex flex-col gap-sm">
+    <div class="flex flex-col gap-half">
       <%= form.label :username, class: "text-sm font-medium" %>
       <%= form.text_field :username, value: "@lazaronixon", class: "input" %>
     </div>

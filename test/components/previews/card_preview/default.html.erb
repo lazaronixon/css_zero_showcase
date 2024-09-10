@@ -1,16 +1,16 @@
 <%= form_with url: nil, class: "card flex flex-col gap" do |form| %>
-  <div class="flex flex-col gap-sm">
+  <div class="flex flex-col gap-half">
     <h1 class="text-2xl font-semibold leading-none">Create project</h1>
     <p class="text-sm text-subtle">Deploy your new project in one-click.</p>
   </div>
 
   <div class="flex flex-col gap mb-2">
-    <div class="flex flex-col gap-sm">
+    <div class="flex flex-col gap-half">
       <%= form.label :name, class: "text-sm font-medium" %>
       <%= form.text_field :name, placeholder: "Name of your project", class: "input" %>
     </div>
 
-    <div class="flex flex-col gap-sm">
+    <div class="flex flex-col gap-half">
       <%= form.label :framework, class: "text-sm font-medium" %>
       <%= form.select :framework, [["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]], {}, class: "input" %>
     </div>
