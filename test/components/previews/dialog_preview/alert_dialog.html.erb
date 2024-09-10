@@ -8,7 +8,7 @@
     </p>
 
     <div class="flex justify-end gap-sm mbs-4">
-      <%= button_to_close_dialog "Cancel", class: "btn btn--outline" %>
+      <button class="btn btn--outline" data-action="click->dialog#close">Cancel</button>
       <button class="btn btn--primary">Continue</button>
     </div>
   </dialog>
