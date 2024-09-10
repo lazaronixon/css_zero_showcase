@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: cb4975f544be0d7bcbf8ac40dca0cb796e8e7fd0
+  revision: 50332c5d1daafa66af26b6d93f7d6d8edd417c76
   specs:
     css-zero (0.0.34)
 
@@ -173,7 +173,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
-    propshaft (0.9.1)
+    propshaft (1.0.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
       rack
