@@ -4,10 +4,16 @@ class SeparatorPreview < Lookbook::Preview
   def default
   end
 
+  def inline_center
+  end
+
   def inline_solid
   end
 
   def inline_dashed
+  end
+
+  def inline_dotted
   end
   # @!endgroup
 end
