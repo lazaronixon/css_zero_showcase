@@ -17,6 +17,6 @@ class SeparatorPreview < Lookbook::Preview
   end
 
   def vertical
-  end  
+  end
   # @!endgroup
 end
