@@ -15,5 +15,8 @@ class SeparatorPreview < Lookbook::Preview
 
   def inline_dotted
   end
+
+  def vertical
+  end  
   # @!endgroup
 end
