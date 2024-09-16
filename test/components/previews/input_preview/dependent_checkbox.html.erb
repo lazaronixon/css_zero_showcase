@@ -1,4 +1,5 @@
-<div class="flex flex-col gap-half" data-controller="dependent-checkbox">
+<fieldset class="flex flex-col gap-half" data-controller="dependent-checkbox">
+  <legend class="sr-only">Notifications</legend>
   <div class="flex items-center gap">
     <%= check_box_tag :check_all, class: "checkbox", data: { action: "dependent-checkbox#check" } %>
     <%= label_tag :check_all, "Check all", class: "text-sm" %>
@@ -15,4 +16,4 @@
     <%= check_box_tag :notify_via_telegram, class: "checkbox", data: { dependent_checkbox_target: "dependent" } %>
     <%= label_tag :notify_via_telegram, "Notify via telegram", class: "text-sm" %>
   </div>
-</div>
+</fieldset>
