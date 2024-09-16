@@ -4,7 +4,7 @@ class InputPreview < Lookbook::Preview
   # @!group Default
   # JS
   # ---
-  # - [clear button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/clear_button_controller.js)  
+  # - [clear button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/clear_button_controller.js)
   # - [reveal button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/reveal_button_controller.js)
   def text_field
   end
@@ -27,7 +27,7 @@ class InputPreview < Lookbook::Preview
   def file_field
   end
 
-  def password_field
+  def revealable_field
   end
 
   def clearable_field
