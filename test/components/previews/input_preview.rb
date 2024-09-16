@@ -75,15 +75,15 @@ class InputPreview < Lookbook::Preview
   # @!group Checkbox and Radio
   # JS
   # ---
-  # - [dependent checkbox controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/dependent_checkbox_controller.js)  
+  # - [dependent checkbox controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/dependent_checkbox_controller.js)
   def checkbox
-  end
-
-  def dependent_checkbox
   end
 
   def radio
   end
+
+  def dependent_checkbox
+  end  
   # @!endgroup
 
   # @!group Range
