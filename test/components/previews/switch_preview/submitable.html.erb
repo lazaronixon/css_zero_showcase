@@ -1,0 +1,6 @@
+<%= form_with url: nil, data: { controller: "form", action: "change->form#submit" } do |form| %>
+  <div class="flex items-center gap">
+    <%= check_box_tag :status, checked: false, class: "switch", role: "switch" %>
+    <%= label_tag :status, "Airplane Mode", class: "text-sm font-medium" %>
+  </div>
+<% end %>

@@ -7,4 +7,7 @@ class SwitchPreview < Lookbook::Preview
   def disabled
   end
   # @!endgroup
+
+  def submitable
+  end
 end
