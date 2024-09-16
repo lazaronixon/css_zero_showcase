@@ -24,13 +24,16 @@ class InputPreview < Lookbook::Preview
   def datetime_field
   end
 
-  def file_field
+  def clearable_field
   end
+
+  def copyable_field
+  end    
 
   def revealable_field
   end
 
-  def clearable_field
+  def file_field
   end
 
   def pattern_field
