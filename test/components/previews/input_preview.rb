@@ -2,10 +2,6 @@
 # @css app/assets/stylesheets/input.css
 class InputPreview < Lookbook::Preview
   # @!group Default
-  # JS
-  # ---
-  # - [clear button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/clear_button_controller.js)
-  # - [reveal button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/reveal_button_controller.js)
   def text_field
   end
 
@@ -24,15 +20,6 @@ class InputPreview < Lookbook::Preview
   def datetime_field
   end
 
-  def clearable_field
-  end
-
-  def copyable_field
-  end    
-
-  def revealable_field
-  end
-
   def file_field
   end
 
@@ -43,6 +30,22 @@ class InputPreview < Lookbook::Preview
   end
 
   def disabled_field
+  end
+  # @!endgroup
+
+  # @!group Concerns
+  # JS
+  # ---
+  # - [clear button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/clear_button_controller.js)
+  # - [copy button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/copy_button_controller.js)
+  # - [reveal button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/reveal_button_controller.js)  
+  def clearable_field
+  end
+
+  def copyable_field
+  end
+
+  def revealable_field
   end
   # @!endgroup
 
