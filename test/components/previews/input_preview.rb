@@ -23,6 +23,9 @@ class InputPreview < Lookbook::Preview
   def file_field
   end
 
+  def password_field
+  end
+
   def clearable_field
   end
 
