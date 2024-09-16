@@ -38,7 +38,7 @@ class InputPreview < Lookbook::Preview
   # ---
   # - [clear button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/clear_button_controller.js)
   # - [copy button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/copy_button_controller.js)
-  # - [reveal button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/reveal_button_controller.js)  
+  # - [reveal button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/reveal_button_controller.js)
   def clearable_field
   end
 
@@ -73,7 +73,13 @@ class InputPreview < Lookbook::Preview
   # @!endgroup
 
   # @!group Checkbox and Radio
+  # JS
+  # ---
+  # - [dependent checkbox controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/dependent_checkbox_controller.js)  
   def checkbox
+  end
+
+  def dependent_checkbox
   end
 
   def radio
