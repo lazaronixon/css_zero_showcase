@@ -23,7 +23,7 @@ class InputPreview < Lookbook::Preview
   def file_field
   end
 
-  def search_field
+  def clearable_field
   end
 
   def pattern_field
