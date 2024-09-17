@@ -42,11 +42,11 @@ class InputPreview < Lookbook::Preview
   def clearable_field
   end
 
-  def copyable_field
-  end
-
   def revealable_field
   end
+
+  def copyable_field
+  end  
   # @!endgroup
 
   # @!group Select
@@ -83,7 +83,7 @@ class InputPreview < Lookbook::Preview
   end
 
   def dependent_checkbox
-  end  
+  end
   # @!endgroup
 
   # @!group Range

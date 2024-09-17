@@ -1,7 +1,7 @@
 <label data-controller="clear-button" class="input input--actor flex items-center gap">
   <%= text_field_tag "clearable_field", nil, class: "input__character", data: { clear_button_target: "input" } %>
-  <%= button_tag class: "btn btn--plain p-1", data: { action: "clear-button#clear" } do %>
-    <%= image_tag "x.svg", size: 16, role: "presentation" %>
+  <%= button_tag class: "btn btn--plain p-0", data: { action: "clear-button#clear" } do %>
+    <%= image_tag "x.svg", size: 20, role: "presentation" %>
     <span class="sr-only">Clear input</span>
   <% end %>
 </label>
