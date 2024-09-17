@@ -36,9 +36,13 @@ class InputPreview < Lookbook::Preview
   # @!group Concerns
   # JS
   # ---
+  # - [clear button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/autoselect_controller.js)
   # - [clear button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/clear_button_controller.js)
   # - [copy button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/copy_button_controller.js)
   # - [reveal button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/reveal_button_controller.js)
+  def autoselect_field
+  end
+
   def clearable_field
   end
 
@@ -46,7 +50,7 @@ class InputPreview < Lookbook::Preview
   end
 
   def copyable_field
-  end  
+  end
   # @!endgroup
 
   # @!group Select
