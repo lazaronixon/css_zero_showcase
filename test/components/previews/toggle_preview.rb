@@ -4,7 +4,7 @@ class TogglePreview < Lookbook::Preview
   def default
   end
 
-  def outline
+  def plain
   end
 
   def with_text

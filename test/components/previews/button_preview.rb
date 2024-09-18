@@ -1,13 +1,13 @@
 # @css app/assets/stylesheets/button.css
 class ButtonPreview < Lookbook::Preview
   # @!group Default
+  def default
+  end
+
   def primary
   end
 
   def secondary
-  end
-
-  def outline
   end
 
   def plain
