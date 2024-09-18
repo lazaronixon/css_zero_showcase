@@ -1,18 +1,18 @@
 <nav class="pagination" aria-label="Pagination">
-  <%= link_to "#page-1", "aria-label": "Previous page" do %>
+  <%= link_to "#page-1", class: "btn", "aria-label": "Previous page" do %>
     <%= image_tag "chevron-left.svg", size: 16, role: "presentation" %>
     <span>Previous</span>
   <% end %>
 
-  <%= link_to "1", "#page-1" %>
-  <%= link_to "2", "#page-2", role: "link", aria: { disabled: true, current: "page" } %>
-  <%= link_to "3", "#page-3" %>
+  <%= link_to "1", "#page-1", class: "btn" %>
+  <%= link_to "2", "#page-2", class: "btn", role: "link", aria: { disabled: true, current: "page" } %>
+  <%= link_to "3", "#page-3", class: "btn" %>
 
   <a href="" class="pi-3" role="link" aria-disabled="true">
     <%= image_tag "ellipsis.svg", size: 16, role: "presentation" %>
   </a>
 
-  <%= link_to "#page-3", "aria-label": "Next page" do %>
+  <%= link_to "#page-3", class: "btn", "aria-label": "Next page" do %>
     <span>Next</span>
     <%= image_tag "chevron-right.svg", size: 16, role: "presentation" %>
   <% end %>
