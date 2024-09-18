@@ -1,1 +1,1 @@
-<button class="btn" data-controller="web-share" data-action="web-share#share" data-web-share-file-value="<%= image_url('cartoon.jpg') %>"  data-web-share-title-value="cartoon.jpg" hidden>Share File</button>
+<%= button_tag "Share File", class: "btn", hidden: true, data: { controller: "web-share", action: "web-share#share", web_share_text_file: asset_url("cartoon.jpg"), web_share_title_value: "cartoon.jpg" } %>
