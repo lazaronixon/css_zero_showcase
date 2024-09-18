@@ -4,7 +4,7 @@
   <dialog class="dialog" style="--dialog-width: 430px;" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
     <div class="dialog__content">
       <button class="btn btn--plain p-0 dialog__close" data-action="click->dialog#close">
-        <%= image_tag "x.svg", size: 16, "aria-hidden": "true" %>
+        <%= image_tag "x.svg", size: 16, aria: { hidden: true } %>
         <span class="sr-only">Close</span>
       </button>
 

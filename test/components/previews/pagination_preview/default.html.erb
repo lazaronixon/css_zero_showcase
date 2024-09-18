@@ -1,5 +1,5 @@
 <nav class="pagination" aria-label="Pagination">
-  <%= link_to "#page-1", class: "btn", "aria-label": "Previous page" do %>
+  <%= link_to "#page-1", class: "btn", aria: { label: "Previous page" } do %>
     <%= image_tag "chevron-left.svg", size: 16, role: "presentation" %>
     <span>Previous</span>
   <% end %>
@@ -12,7 +12,7 @@
     <%= image_tag "ellipsis.svg", size: 16, role: "presentation" %>
   </a>
 
-  <%= link_to "#page-3", class: "btn", "aria-label": "Next page" do %>
+  <%= link_to "#page-3", class: "btn", aria: { label: "Next page" } do %>
     <span>Next</span>
     <%= image_tag "chevron-right.svg", size: 16, role: "presentation" %>
   <% end %>
