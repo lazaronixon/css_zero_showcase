@@ -5,12 +5,12 @@
   <% end %>
 
   <%= link_to "1", "#page-1", class: "btn" %>
-  <%= link_to "2", "#page-2", class: "btn", aria: { disabled: true, current: "page" }, role: "link" %>
+  <a class="btn" aria-disabled="true" aria-current="page">2</a>
   <%= link_to "3", "#page-3", class: "btn" %>
 
-  <a href="" class="pi-3" aria-disabled="true" role="link">
+  <span class="pi-3" aria-hidden="true">
     <%= image_tag "ellipsis.svg", size: 16, role: "presentation" %>
-  </a>
+  </span>
 
   <%= link_to "#page-3", class: "btn", aria: { label: "Next page" } do %>
     <span>Next</span>
