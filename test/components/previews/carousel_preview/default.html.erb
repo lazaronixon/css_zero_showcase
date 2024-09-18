@@ -1,19 +1,19 @@
-<div class="carousel w-full" style="max-inline-size: 460px" data-controller="carousel" data-action="keydown.left->carousel#previous keydown.right->carousel#next" role="region" aria-roledescription="carousel">
+<div class="carousel w-full" style="max-inline-size: 460px" data-controller="carousel" data-action="keydown.left->carousel#previous keydown.right->carousel#next" aria-roledescription="carousel" role="region">
   <button class="btn rounded-full p-2" data-action="carousel#previous">
     <%= image_tag "arrow-left.svg", size: 16, role: "presentation" %>
     <span class="sr-only">Previous slide</span>
   </button>
   <div class="carousel__content" data-carousel-target="content">
-    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
+    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
       <span class="text-4xl font-semibold">1</span>
     </div>
-    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
+    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
       <span class="text-4xl font-semibold">2</span>
     </div>
-    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
+    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
       <span class="text-4xl font-semibold">3</span>
     </div>
-    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
+    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
       <span class="text-4xl font-semibold">4</span>
     </div>
   </div>
