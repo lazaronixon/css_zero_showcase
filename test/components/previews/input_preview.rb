@@ -33,26 +33,6 @@ class InputPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  # @!group Concerns
-  # JS
-  # ---
-  # - [autoselect button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/autoselect_controller.js)
-  # - [clear button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/clear_button_controller.js)
-  # - [reveal button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/reveal_button_controller.js)
-  # - [copy button controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/copy_button_controller.js)  
-  def replaceable_field
-  end
-
-  def clearable_field
-  end
-
-  def revealable_field
-  end
-
-  def copyable_field
-  end
-  # @!endgroup
-
   # @!group Select
   def select
   end
@@ -86,7 +66,7 @@ class InputPreview < Lookbook::Preview
   def radio
   end
 
-  def dependent_checkbox
+  def check_all
   end
   # @!endgroup
 

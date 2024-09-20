@@ -1,19 +1,19 @@
-<fieldset class="flex flex-col gap-half" data-controller="dependent-checkbox">
+<fieldset class="flex flex-col gap-half" data-controller="check-all">
   <legend class="sr-only">Notifications</legend>
   <div class="flex items-center gap">
-    <%= check_box_tag :check_all, class: "checkbox", data: { action: "dependent-checkbox#check" } %>
+    <%= check_box_tag :check_all, class: "checkbox", data: { action: "check-all#check" } %>
     <%= label_tag :check_all, "Check all", class: "text-sm" %>
   </div>
   <div class="flex items-center gap">
-    <%= check_box_tag :notify_via_email, class: "checkbox", data: { dependent_checkbox_target: "dependent" } %>
+    <%= check_box_tag :notify_via_email, class: "checkbox", data: { check_all_target: "dependent" } %>
     <%= label_tag :notify_via_email, "Notify via email", class: "text-sm" %>
   </div>
   <div class="flex items-center gap">
-    <%= check_box_tag :notify_via_sms, class: "checkbox", data: { dependent_checkbox_target: "dependent" } %>
+    <%= check_box_tag :notify_via_sms, class: "checkbox", data: { check_all_target: "dependent" } %>
     <%= label_tag :notify_via_sms, "Notify via SMS", class: "text-sm" %>
   </div>
   <div class="flex items-center gap">
-    <%= check_box_tag :notify_via_telegram, class: "checkbox", data: { dependent_checkbox_target: "dependent" } %>
+    <%= check_box_tag :notify_via_telegram, class: "checkbox", data: { check_all_target: "dependent" } %>
     <%= label_tag :notify_via_telegram, "Notify via telegram", class: "text-sm" %>
   </div>
 </fieldset>
