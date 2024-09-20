@@ -1,6 +1,6 @@
 class FontsPreview < Lookbook::Preview
   # @!group Default
-  # These fonts are available as CSS variables in
+  # These fonts are available as CSS variables at
   # [typography.css](https://github.com/lazaronixon/css-zero/blob/master/app/assets/stylesheets/typography.css).
   def system_ui
   end

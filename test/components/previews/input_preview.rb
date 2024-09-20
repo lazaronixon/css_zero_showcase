@@ -51,15 +51,14 @@ class InputPreview < Lookbook::Preview
   def text_area
   end
 
-  # Text area with auto grow [is not supported in all browsers](https://caniuse.com/mdn-css_properties_field-sizing).
+  # Text area with auto grow is not supported in [all browsers](https://caniuse.com/mdn-css_properties_field-sizing).
   def text_area_with_auto_grow
   end
   # @!endgroup
 
   # @!group Checkbox and Radio
-  # JS
-  # ---
-  # - [dependent checkbox controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/dependent_checkbox_controller.js)
+  # The javascript is available at
+  # [check all controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/check_all_controller.js)
   def checkbox
   end
 
