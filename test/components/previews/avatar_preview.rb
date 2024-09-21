@@ -4,6 +4,9 @@ class AvatarPreview < Lookbook::Preview
   def default
   end
 
+  def button
+  end  
+
   def fallback
   end
   # @!endgroup
