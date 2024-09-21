@@ -1,6 +1,6 @@
 <label data-controller="copy-button" class="input input--actor flex items-center gap">
   <%= text_field_tag "copyable_field", "7f43zlcQNLTxeU-yfatoQDJAakluo=tLfFNYd94u", class: "input__character", readonly: "readonly", data: { copy_button_target: "input" } %>
-  <%= button_tag class: "btn btn--plain p-0", data: { action: "copy-button#copy" } do %>
+  <%= button_tag class: "btn btn--plain btn--pressed p-0", data: { action: "copy-button#copy" } do %>
     <%= image_tag "copy.svg", size: 20, role: "presentation" %>
     <span class="sr-only">Copy to clipboard</span>
   <% end %>
