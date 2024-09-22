@@ -10,6 +10,9 @@ class ButtonPreview < Lookbook::Preview
   def secondary
   end
 
+  def borderless
+  end
+
   def plain
   end
 
