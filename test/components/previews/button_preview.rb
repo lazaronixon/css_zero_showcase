@@ -13,14 +13,14 @@ class ButtonPreview < Lookbook::Preview
   def borderless
   end
 
-  def plain
-  end
-
   def positive
   end
 
   def negative
   end
+
+  def plain
+  end  
 
   def disabled
   end
