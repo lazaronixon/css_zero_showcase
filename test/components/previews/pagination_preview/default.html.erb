@@ -1,18 +1,18 @@
-<nav class="pagination" aria-label="Pagination">
-  <%= link_to "#page-1", class: "btn", aria: { label: "Previous page" } do %>
+<nav class="flex items-center gap" aria-label="Pagination">
+  <%= link_to "#page-1", class: "btn btn--borderless", aria: { label: "Previous page" } do %>
     <%= image_tag "chevron-left.svg", size: 16, role: "presentation" %>
     <span>Previous</span>
   <% end %>
 
-  <%= link_to "1", "#page-1", class: "btn" %>
-  <a class="btn" aria-disabled="true" aria-current="page">2</a>
-  <%= link_to "3", "#page-3", class: "btn" %>
+  <%= link_to "1", "#page-1", class: "btn btn--borderless" %>
+  <a class="btn" aria-disabled="true" aria-current="page" >2</a>
+  <%= link_to "3", "#page-3", class: "btn btn--borderless" %>
 
   <span class="pi-3" aria-hidden="true">
     <%= image_tag "ellipsis.svg", size: 16, role: "presentation" %>
   </span>
 
-  <%= link_to "#page-3", class: "btn", aria: { label: "Next page" } do %>
+  <%= link_to "#page-3", class: "btn btn--borderless", aria: { label: "Next page" } do %>
     <span>Next</span>
     <%= image_tag "chevron-right.svg", size: 16, role: "presentation" %>
   <% end %>
