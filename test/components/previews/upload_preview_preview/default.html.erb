@@ -1,7 +1,7 @@
 <%= tag.div class: "flex items-center gap", data: { controller: "upload-preview", upload_preview_default_image_value: asset_url("default-picture.webp") } do %>
   <label class="btn rounded-full p-2">
     <%= file_field_tag :avatar, class: "sr-only", accept: "image/*", data: { upload_preview_target: "input", action: "upload-preview#previewImage" } %>
-    <%= image_tag "camera.svg", size: 20, role: "presentation" %>
+    <%= image_tag "camera.svg", size: 20, aria: { hidden: true } %>
     <span class="sr-only">Upload avatar</span>
   </label>
 
@@ -11,7 +11,7 @@
 
   <label class="btn rounded-full p-2 btn--negative" data-action="click->upload-preview#clear">
     <%= hidden_field_tag "remove_avatar", false, data: { upload_preview_target: "removeInput" } %>
-    <%= image_tag "minus.svg", size: 20, role: "presentation" %>
+    <%= image_tag "minus.svg", size: 20, aria: { hidden: true } %>
     <span class="sr-only">Remove avatar</span>
   </label>
 <% end %>

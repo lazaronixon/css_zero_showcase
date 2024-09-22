@@ -1,17 +1,17 @@
 <label class="toggle btn">
   <%= check_box_tag :check_bold %>
-  <%= image_tag "bold.svg", size: 16, role: "presentation" %>
+  <%= image_tag "bold.svg", size: 16, aria: { hidden: true }%>
   <span class="sr-only">Toggle bold</span>
 </label>
 
 <label class="toggle btn">
   <%= check_box_tag :check_italic %>
-  <%= image_tag "italic.svg", size: 16, role: "presentation" %>
+  <%= image_tag "italic.svg", size: 16, aria: { hidden: true } %>
   <span class="sr-only">Toggle italic</span>
 </label>
 
 <label class="toggle btn">
   <%= check_box_tag :check_underline %>
-  <%= image_tag "underline.svg", size: 16, role: "presentation" %>
+  <%= image_tag "underline.svg", size: 16, aria: { hidden: true } %>
   <span class="sr-only">Toggle underline</span>
 </label>
