@@ -1,7 +1,7 @@
 <%= tag.label class: "input input--actor flex items-center gap", data: { controller: "reveal-button", reveal_button_show_image_value: asset_url("eye.svg"), reveal_button_hide_image_value: asset_url("eye-off.svg") } do %>
   <%= password_field_tag "revealable_field", nil, class: "input__character", data: { reveal_button_target: "input" } %>
-  <%= button_tag class: "btn btn--plain", data: { action: "reveal-button#reveal" } do %>
+  <button class="btn btn--plain" data-action="reveal-button#reveal">
     <%= image_tag "eye.svg", size: 20, aria: { hidden: true }, data: { reveal_button_target: "image" } %>
     <span class="sr-only">Reveal password</span>
-  <% end %>
+  </button>
 <% end %>

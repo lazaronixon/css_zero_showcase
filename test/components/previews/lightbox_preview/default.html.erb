@@ -6,17 +6,17 @@
 <dialog class="lightbox" aria-label="Image Viewer (Press escape to close)" data-lightbox-target="dialog" data-action="close->lightbox#reset">
   <img src="" class="lightbox__image" data-lightbox-target="zoomedImage" />
 
-  <button class="btn btn--rounded lightbox__close" data-action="lightbox#close">
+  <button class="btn btn--rounded p-2 lightbox__close" data-action="lightbox#close">
     <%= image_tag "x.svg", aria: { hidden: "true" } %>
     <span class="sr-only">Close image viewer</span>
   </button>
 
-  <a href="" class="btn btn--rounded lightbox__download" data-lightbox-target="download" download>
+  <a href="" class="btn btn--rounded p-2 lightbox__download" data-lightbox-target="download" download>
     <%= image_tag "download.svg", aria: { hidden: "true" } %>
     <span class="sr-only">Download file</span>
   </a>
 
-  <button class="btn btn--rounded lightbox__share" data-controller="web-share" data-action="web-share#share" data-web-share-file-value="" data-lightbox-target="share">
+  <button class="btn btn--rounded p-2 lightbox__share" data-controller="web-share" data-action="web-share#share" data-web-share-file-value="" data-lightbox-target="share">
     <%= image_tag "share.svg", aria: { hidden: "true" } %>
     <span class="sr-only">Share file</span>
   </button>
