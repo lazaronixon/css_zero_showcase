@@ -1,0 +1,25 @@
+.lightbox {
+  background-color: rgba(0, 0, 0, .8);
+  block-size: var(--size-full);
+  inline-size: var(--size-full);
+  max-block-size:  none;
+  max-inline-size: none;
+  padding: var(--size-4);
+
+  &[open] {
+    display: grid;
+    place-items: center;
+  }
+}
+
+.lightbox__image {
+  grid-area: 1/1;
+  max-block-size: var(--size-full);
+  max-inline-size: var(--size-full);
+}
+
+.lightbox__btn {
+  align-self: start;
+  grid-area: 1/1;
+  justify-self: end;
+}

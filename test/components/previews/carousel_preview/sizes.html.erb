@@ -1,5 +1,5 @@
 <div class="carousel w-full" data-controller="carousel" data-action="keydown.left->carousel#previous keydown.right->carousel#next" style="max-inline-size: 460px" aria-roledescription="carousel" role="region">
-  <button class="btn rounded-full p-2" data-action="carousel#previous">
+  <button class="btn btn--rounded" data-action="carousel#previous">
     <%= image_tag "arrow-left.svg", size: 16, aria: { hidden: true } %>
     <span class="sr-only">Previous slide</span>
   </button>
@@ -17,7 +17,7 @@
       <span class="text-4xl font-semibold">4</span>
     </div>
   </div>
-  <button class="btn rounded-full p-2" data-action="carousel#next">
+  <button class="btn btn--rounded" data-action="carousel#next">
     <%= image_tag "arrow-right.svg", size: 16, aria: { hidden: true } %>
     <span class="sr-only">Next slide</span>
   </button>

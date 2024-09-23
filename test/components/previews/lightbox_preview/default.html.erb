@@ -1,0 +1,12 @@
+<%= link_to asset_path("cover.jpg?disposition=attachment"), data: { action: "lightbox#show:prevent" } do %>
+  <%= image_tag "cover.jpg", size: 300, alt: "Cover for the book", class: "book__cover margin-block-none center" %>
+<% end %>
+
+<dialog class="lightbox" aria-label="Image Viewer (Press escape to close)" data-lightbox-target="dialog" data-action="close->lightbox#reset">
+  <img src="" class="lightbox__image" data-lightbox-target="zoomedImage" />
+
+  <button class="btn btn--rounded lightbox__btn" data-action="lightbox#close">
+    <%= image_tag "x.svg", aria: { hidden: "true" } %>
+    <span class="sr-only">Close image viewer</span>
+  </button>
+</dialog>
