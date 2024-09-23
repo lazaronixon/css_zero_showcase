@@ -1,4 +1,4 @@
-<%= link_to asset_path("cover.jpg?disposition=attachment"), data: { action: "lightbox#show:prevent" } do %>
+<%= link_to asset_path("cover.jpg?disposition=attachment"), class: "inline-block", data: { action: "lightbox#show:prevent" } do %>
   <%= image_tag "cover.jpg", size: 300, alt: "Cover for the book", class: "book__cover margin-block-none center" %>
 <% end %>
 
