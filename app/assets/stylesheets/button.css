@@ -70,7 +70,7 @@
 }
 
 .btn--rounded {
-  --btn-padding: var(--size-2);  
+  --btn-padding: var(--size-2);
   --btn-radius: var(--rounded-full);
 }
 
