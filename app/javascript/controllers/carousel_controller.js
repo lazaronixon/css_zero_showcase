@@ -4,11 +4,19 @@ export default class extends Controller {
   static targets = [ "content" ]
 
   next() {
-    this.contentTarget.scrollTo({ left: this.#scrollLeft + this.#slideSize, behavior: "smooth" })
+    this.contentTarget.scrollTo({ left: this.#nextPosition, behavior: "smooth" })
   }
 
-  previous() {
-    this.contentTarget.scrollTo({ left: this.#scrollLeft - this.#slideSize, behavior: "smooth" })
+  prev() {
+    this.contentTarget.scrollTo({ left: this.#prevPosition, behavior: "smooth" })
+  }
+
+  get #nextPosition() {
+    return this.#scrollLeft + this.#slideSize
+  }
+
+  get #prevPosition() {
+    return this.#scrollLeft - this.#slideSize
   }
 
   get #scrollLeft() {
