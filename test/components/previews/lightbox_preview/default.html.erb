@@ -1,12 +1,24 @@
-<%= link_to asset_path("cover.jpg?disposition=attachment"), class: "inline-flex", data: { action: "lightbox#show:prevent" } do %>
+<%= link_to asset_path("cover.jpg"), class: "inline-flex", data: { action: "lightbox#show:prevent", lightbox_url_value: asset_path("cover.jpg?disposition=attachment") } do %>
   <%= image_tag "cover.jpg", size: 300, alt: "Cover for the book", class: "book__cover margin-block-none center" %>
 <% end %>
 
+<!-- BEGIN: This dialog will be reused, put it somewhere in your layout.html.erb -->
 <dialog class="lightbox" aria-label="Image Viewer (Press escape to close)" data-lightbox-target="dialog" data-action="close->lightbox#reset">
   <img src="" class="lightbox__image" data-lightbox-target="zoomedImage" />
 
-  <button class="btn btn--rounded lightbox__btn" data-action="lightbox#close">
+  <button class="btn btn--rounded lightbox__close" data-action="lightbox#close">
     <%= image_tag "x.svg", aria: { hidden: "true" } %>
     <span class="sr-only">Close image viewer</span>
   </button>
+
+  <a href="" class="btn btn--rounded lightbox__download" data-lightbox-target="download" download>
+    <%= image_tag "download.svg", aria: { hidden: "true" } %>
+    <span class="sr-only">Download file</span>
+  </a>
+
+  <button class="btn btn--rounded lightbox__share" data-controller="web-share" data-action="web-share#share" data-web-share-file-value="" data-lightbox-target="share">
+    <%= image_tag "share.svg", aria: { hidden: "true" } %>
+    <span class="sr-only">Share file</span>
+  </button>
 </dialog>
+<!-- END -->
