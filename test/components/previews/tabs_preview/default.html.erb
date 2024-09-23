@@ -1,4 +1,4 @@
-<div class="tabs" style="max-inline-size: 400px" data-controller="tabs">
+<div class="tabs" style="max-inline-size: 400px" data-controller="tabs" data-action="keydown.left->tabs#prev keydown.right->tabs#next">
   <div class="tabs__list" role="tablist">
     <button id="trigger_account"  class="btn" data-tabs-target="button" data-action="tabs#select" data-index="0" aria-controls="tab_account"  role="tab">Account</button>
     <button id="trigger_password" class="btn" data-tabs-target="button" data-action="tabs#select" data-index="1" aria-controls="tab_password" role="tab">Password</button>
