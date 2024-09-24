@@ -66,6 +66,7 @@
 .btn--plain {
   --btn-background: transparent;
   --btn-border-color: transparent;
+  --btn-filter-hover: none;
   --btn-padding: 0;
 }
 
