@@ -9,9 +9,6 @@ class LightboxPreview < Lookbook::Preview
   #   <%= yield %>
   # </body>
   # ```
-  #
-  # This component depends on `web_share_controller.js`.
-  #
   def default
   end
 end
