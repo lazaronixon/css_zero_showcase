@@ -15,7 +15,7 @@
         <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
         <span>Seach Emoji</span>
       <% end %>
-      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { command_target: "option", value: "calculator" }, aria: { disabled: true }, role: "option" do %>
+      <%= tag.a class: "btn btn--borderless font-normal justify-start", data: { command_target: "option", value: "calculator" }, aria: { disabled: true }, role: "option" do %>
         <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
         <span>Calculator</span>
       <% end %>
