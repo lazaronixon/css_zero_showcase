@@ -1,0 +1,42 @@
+<div class="flex flex-col shadow-sm border rounded-lg" data-controller="command" style="max-inline-size: 450px">
+  <label class="input input--actor flex items-center gap bg-transparent border-0" style="outline: initial">
+    <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
+    <%= tag.input type: "search", id: "search", class: "input__character", data: { action: "input->command#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
+  </label>
+  <div role="listbox" aria-label="Commands">
+    <div class="text-center text-sm border-bs pb-6" data-command-target="empty" hidden>Not results found</div>
+    <div class="flex flex-col gap border-bs p-1" style="--row-gap: .25rem" data-command-target="group" role="group" aria-labelledby="suggestions">
+      <span class="text-xs font-medium text-subtle pi-4 pb-2" id="suggestions" aria-hidden="true">Suggestions</span>
+      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { command_target: "option", value: "calendar" }, role: "option" do %>
+        <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
+        <span>Calendar</span>
+      <% end %>
+      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { command_target: "option", value: "search emoji" }, role: "option" do %>
+        <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
+        <span>Seach Emoji</span>
+      <% end %>
+      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { command_target: "option", value: "calculator" }, aria: { disabled: true }, role: "option" do %>
+        <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
+        <span>Calculator</span>
+      <% end %>
+    </div>
+    <div class="flex flex-col gap border-bs p-1" style="--row-gap: .25rem" data-command-target="group" role="group" aria-labelledby="settings">
+      <span class="text-xs font-medium text-subtle pi-4 pb-2" id="settings" aria-hidden="true">Settings</span>
+      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { command_target: "option", value: "profile" }, role: "option" do %>
+        <%= image_tag "user.svg", size: 14, aria: { hidden: true } %>
+        <span>Profile</span>
+        <span class="mis-auto text-xs text-subtle">⌘P</span>
+      <% end %>
+      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { command_target: "option", value: "billing" }, role: "option" do %>
+        <%= image_tag "credit-card.svg", size: 14, aria: { hidden: true } %>
+        <span>Billing</span>
+        <span class="mis-auto text-xs text-subtle">⌘B</span>
+      <% end %>
+      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { command_target: "option", value: "settings" }, role: "option" do %>
+        <%= image_tag "settings.svg", size: 14, aria: { hidden: true } %>
+        <span>Settings</span>
+        <span class="mis-auto text-xs text-subtle">⌘P</span>
+      <% end %>
+    </div>
+  </div>
+</div>
