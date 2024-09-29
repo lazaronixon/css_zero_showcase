@@ -3,7 +3,8 @@ import { debounce } from "helpers/timing_helpers"
 
 export default class extends Controller {
   static targets = [ "list" ]
-  static classes = [ "active", "selected" ]
+
+  #activeClass = "command__list--filtering"
 
   initialize() {
     this.filter = debounce(this.filter.bind(this), 300)
@@ -21,22 +22,22 @@ export default class extends Controller {
   }
 
   #activate() {
-    this.listTarget.classList.add(this.activeClass)
+    this.listTarget.classList.add(this.#activeClass)
   }
 
   #deactivate() {
-    this.listTarget.classList.remove(this.activeClass)
+    this.listTarget.classList.remove(this.#activeClass)
   }
 
   #selectMatches(value) {
     this.listTarget.querySelectorAll(`[data-value*=${value.toLowerCase()}]`).forEach((element) => {
-      element.classList.add(this.selectedClass)
+      element.classList.add("selected")
     })
   }
 
   #reset() {
-    this.listTarget.querySelectorAll(`.${this.selectedClass}`).forEach((element) => {
-      element.classList.remove(this.selectedClass)
+    this.listTarget.querySelectorAll(".selected").forEach((element) => {
+      element.classList.remove("selected")
     })
   }
 }

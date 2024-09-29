@@ -1,42 +1,42 @@
-<div class="flex flex-col shadow-sm border rounded-lg" data-controller="filter" data-filter-active-class="filter--active" data-filter-selected-class="selected" style="max-inline-size: 450px">
-  <label class="input input--actor flex items-center gap bg-transparent border-0" style="outline: initial">
+<div class="command" data-controller="command" style="max-inline-size: 450px">
+  <label class="command__input input input--actor">
     <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
-    <%= tag.input type: "search", id: "search", class: "input__character", data: { action: "input->filter#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
+    <%= tag.input type: "search", id: "search", class: "input__character", data: { action: "input->command#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
   </label>
-  <div data-filter-target="list" role="listbox" aria-label="Commands">
-    <div class="no-results justify-center text-sm border-bs pb-6" aria-hidden="true">Not results found.</div>
-    <div class="flex flex-col gap border-bs p-1" style="--row-gap: .25rem; --btn-padding: .25rem .5rem;" role="group" aria-labelledby="suggestions">
-      <span class="text-xs font-medium text-subtle pi-2 pb-1" id="suggestions" aria-hidden="true">Suggestions</span>
-      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { value: "calendar" }, role: "option" do %>
+  <div data-command-target="list" role="listbox" aria-label="Commands">
+    <div class="command__group" role="group" aria-labelledby="suggestions">
+      <span class="command__group-header" id="suggestions" aria-hidden="true">Suggestions</span>
+      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "calendar" }, role: "option" do %>
         <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
         <span>Calendar</span>
       <% end %>
-      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { value: "search emoji" }, role: "option" do %>
+      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "search emoji" }, role: "option" do %>
         <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
         <span>Seach Emoji</span>
       <% end %>
-      <%= tag.a class: "btn btn--borderless font-normal justify-start", data: { value: "calculator" }, aria: { disabled: true }, role: "option" do %>
+      <%= tag.a class: "command__item btn btn--borderless", data: { value: "calculator" }, aria: { disabled: true }, role: "option" do %>
         <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
         <span>Calculator</span>
       <% end %>
     </div>
-    <div class="flex flex-col gap border-bs p-1" style="--row-gap: .25rem; --btn-padding: .25rem .5rem;" role="group" aria-labelledby="settings">
-      <span class="text-xs font-medium text-subtle pi-2 pb-1" id="settings" aria-hidden="true">Settings</span>
-      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { value: "profile" }, role: "option" do %>
+    <div class="command__group" role="group" aria-labelledby="settings">
+      <span class="command__group-header" id="settings" aria-hidden="true">Settings</span>
+      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "profile" }, role: "option" do %>
         <%= image_tag "user.svg", size: 14, aria: { hidden: true } %>
         <span>Profile</span>
-        <span class="mis-auto text-xs text-subtle">⌘P</span>
+        <span class="command__item-key">⌘P</span>
       <% end %>
-      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { value: "billing" }, role: "option" do %>
+      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "billing" }, role: "option" do %>
         <%= image_tag "credit-card.svg", size: 14, aria: { hidden: true } %>
         <span>Billing</span>
-        <span class="mis-auto text-xs text-subtle">⌘B</span>
+        <span class="command__item-key">⌘B</span>
       <% end %>
-      <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { value: "settings" }, role: "option" do %>
+      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "settings" }, role: "option" do %>
         <%= image_tag "settings.svg", size: 14, aria: { hidden: true } %>
         <span>Settings</span>
-        <span class="mis-auto text-xs text-subtle">⌘P</span>
+        <span class="command__item-key">⌘P</span>
       <% end %>
     </div>
+    <div class="command__empty" aria-hidden="true">Not results found.</div>
   </div>
 </div>
