@@ -1,5 +1,5 @@
 <div class="command" data-controller="command" style="max-inline-size: 450px">
-  <label class="command__input input input--actor">
+  <label class="command__input input input--actor flex items-center gap">
     <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
     <%= tag.input type: "search", id: "search", class: "input__character", data: { action: "input->command#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
   </label>

@@ -7,12 +7,9 @@
 }
 
 .command__input {
-  align-items: center;
-  background-color: transparent;
-  border-width: 0 !important;
-  display: flex;
-  gap: var(--size-2);
-  outline: initial !important;
+  --input-background: transparent;
+  --input-border-color: transparent;
+  --input-outline-size: 0;
 }
 
 .command__group {
@@ -37,13 +34,13 @@
 }
 
 .command__item {
-  font-weight: var(--font-normal);
-  justify-content: start;
-  padding: var(--size-1_5) var(--size-2);
+  --btn-font-weight: var(--font-normal);
+  --btn-justify-content: start;
+  --btn-outline-size: 0;
+  --btn-padding: var(--size-1_5) var(--size-2);
 
   &:focus-visible {
-    background-color: var(--color-secondary);
-    outline: initial;
+    --btn-background: var(--color-secondary);
   }
 }
 
