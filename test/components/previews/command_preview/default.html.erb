@@ -4,6 +4,7 @@
     <%= tag.input type: "search", id: "search", class: "input__character", data: { action: "input->filter#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
   </label>
   <div data-filter-target="list" role="listbox" aria-label="Commands">
+    <div class="no-results justify-center text-sm border-bs pb-6" aria-hidden="true">Not results found.</div>
     <div class="flex flex-col gap border-bs p-1" style="--row-gap: .25rem; --btn-padding: .25rem .5rem;" role="group" aria-labelledby="suggestions">
       <span class="text-xs font-medium text-subtle pi-2 pb-1" id="suggestions" aria-hidden="true">Suggestions</span>
       <%= link_to "", class: "btn btn--borderless font-normal justify-start", data: { value: "calendar" }, role: "option" do %>
