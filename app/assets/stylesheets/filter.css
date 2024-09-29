@@ -1,0 +1,7 @@
+.filter--active {
+  [role=group] { display: none; }
+  [role=group]:has(.selected) { display: flex; }
+
+  [role=option] { display: none; }
+  [role=option].selected { display: flex; }
+}
