@@ -9,25 +9,15 @@ export default class extends Controller {
     this.filter = debounce(this.filter.bind(this), 300)
   }
 
-  connect() {
-    this.element.focus()
-  }
-
-  async filter(event) {
+  filter(event) {
     this.#reset()
 
     if (event.target.value != "") {
       this.#selectMatches(event.target.value)
       this.#activate()
+    } else {
+      this.#deactivate()
     }
-  }
-
-  #reset() {
-    this.#deactivate()
-
-    this.listTarget.querySelectorAll(`.${this.selectedClass}`).forEach((element) => {
-      element.classList.remove(this.selectedClass)
-    })
   }
 
   #activate() {
@@ -41,6 +31,12 @@ export default class extends Controller {
   #selectMatches(value) {
     this.listTarget.querySelectorAll(`[data-value*=${value.toLowerCase()}]`).forEach((element) => {
       element.classList.add(this.selectedClass)
+    })
+  }
+
+  #reset() {
+    this.listTarget.querySelectorAll(`.${this.selectedClass}`).forEach((element) => {
+      element.classList.remove(this.selectedClass)
     })
   }
 }
