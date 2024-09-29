@@ -19,9 +19,6 @@ class ButtonPreview < Lookbook::Preview
   def negative
   end
 
-  def rounded
-  end  
-
   def plain
   end
 
