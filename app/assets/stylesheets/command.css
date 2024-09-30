@@ -30,14 +30,6 @@
   padding: var(--size-1_5) var(--size-2);
 }
 
-.command__empty {
-  border-block-start-width: var(--border);
-  display: none;
-  font-size: var(--text-sm);
-  justify-content: center;
-  padding-block: var(--size-6);
-}
-
 .command__item {
   --btn-font-weight: var(--font-normal);
   --btn-justify-content: start;
@@ -61,8 +53,4 @@
 
   .command__item { display: none; }
   .command__item:is(.selected) { display: flex; }
-}
-
-.command__list--filtering:not(:has(.command__item.selected)) {
-  .command__empty { display: flex; }
 }
