@@ -35,7 +35,7 @@ export default class extends Controller {
   }
 
   #reset() {
-    Array.from(this.listTarget.getElementsByClassName(this.selectedClass)).forEach((element) => {
+    this.listTarget.querySelectorAll(`.${this.selectedClass}`).forEach((element) => {
       element.classList.remove(this.selectedClass)
     })
   }
