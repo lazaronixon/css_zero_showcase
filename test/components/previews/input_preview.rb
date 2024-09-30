@@ -29,6 +29,9 @@ class InputPreview < Lookbook::Preview
   def autocomplete_field
   end
 
+  def actor_field
+  end
+
   def disabled_field
   end
   # @!endgroup
