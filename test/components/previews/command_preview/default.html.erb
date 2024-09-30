@@ -1,4 +1,4 @@
-<div class="command" data-controller="command" style="max-inline-size: 450px">
+<div class="command" data-controller="command" data-command-active-class="command__list--filtering" data-command-selected-class="selected" style="max-inline-size: 450px">
   <label class="command__input input input--actor flex items-center gap">
     <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
     <%= tag.input type: "search", id: "search", class: "input__character", data: { action: "input->command#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
@@ -6,32 +6,32 @@
   <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">
     <div class="command__group" role="group" aria-labelledby="suggestions">
       <span class="command__group-header" id="suggestions" aria-hidden="true">Suggestions</span>
-      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "calendar" }, role: "option" do %>
+      <%= link_to "", class: "command__item btn", data: { value: "calendar" }, role: "option" do %>
         <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
         <span>Calendar</span>
       <% end %>
-      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "search emoji" }, role: "option" do %>
+      <%= link_to "", class: "command__item btn", data: { value: "search emoji" }, role: "option" do %>
         <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
         <span>Seach Emoji</span>
       <% end %>
-      <%= tag.a class: "command__item btn btn--borderless", data: { value: "calculator" }, aria: { disabled: true }, role: "option" do %>
+      <%= tag.a class: "command__item btn", data: { value: "calculator" }, aria: { disabled: true }, role: "option" do %>
         <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
         <span>Calculator</span>
       <% end %>
     </div>
     <div class="command__group" role="group" aria-labelledby="settings">
       <span class="command__group-header" id="settings" aria-hidden="true">Settings</span>
-      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "profile" }, role: "option" do %>
+      <%= link_to "", class: "command__item btn", data: { value: "profile" }, role: "option" do %>
         <%= image_tag "user.svg", size: 14, aria: { hidden: true } %>
         <span>Profile</span>
         <span class="command__item-key">⌘P</span>
       <% end %>
-      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "billing" }, role: "option" do %>
+      <%= link_to "", class: "command__item btn", data: { value: "billing" }, role: "option" do %>
         <%= image_tag "credit-card.svg", size: 14, aria: { hidden: true } %>
         <span>Billing</span>
         <span class="command__item-key">⌘B</span>
       <% end %>
-      <%= link_to "", class: "command__item btn btn--borderless", data: { value: "settings" }, role: "option" do %>
+      <%= link_to "", class: "command__item btn", data: { value: "settings" }, role: "option" do %>
         <%= image_tag "settings.svg", size: 14, aria: { hidden: true } %>
         <span>Settings</span>
         <span class="command__item-key">⌘P</span>

@@ -31,6 +31,7 @@
 }
 
 .command__item {
+  --btn-border-color: transparent;
   --btn-font-weight: var(--font-normal);
   --btn-justify-content: start;
   --btn-outline-size: 0;
@@ -50,7 +51,6 @@
 .command__list--filtering {
   .command__group { display: none; }
   .command__group:has(.selected) { display: flex; }
-
   .command__item { display: none; }
   .command__item:is(.selected) { display: flex; }
 }
