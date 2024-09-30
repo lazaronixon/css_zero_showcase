@@ -12,6 +12,11 @@
   --input-outline-size: 0;
 }
 
+.command__list {
+  max-block-size: 300px;
+  overflow-y: auto;
+}
+
 .command__group {
   border-block-start-width: var(--border);
   display: flex;
@@ -56,6 +61,8 @@
 
   .command__item { display: none; }
   .command__item:is(.selected) { display: flex; }
+}
 
-  &:not(:has(.selected)) > .command__empty { display: flex; }
+.command__list--filtering:not(:has(.command__item.selected)) {
+  .command__empty { display: flex; }
 }

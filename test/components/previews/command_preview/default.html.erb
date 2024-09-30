@@ -3,7 +3,7 @@
     <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
     <%= tag.input type: "search", id: "search", class: "input__character", data: { action: "input->command#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
   </label>
-  <div data-command-target="list" role="listbox" aria-label="Commands">
+  <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">
     <div class="command__group" role="group" aria-labelledby="suggestions">
       <span class="command__group-header" id="suggestions" aria-hidden="true">Suggestions</span>
       <%= link_to "", class: "command__item btn btn--borderless", data: { value: "calendar" }, role: "option" do %>
