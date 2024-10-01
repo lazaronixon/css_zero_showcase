@@ -12,7 +12,7 @@
   &:is(.btn) {
     --btn-padding: 0;
     --btn-icon-color: none;
-    --btn-radius: var(--radius);    
+    --btn-radius: var(--radius);
   }
 
   img {
