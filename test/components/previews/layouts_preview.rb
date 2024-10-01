@@ -12,4 +12,7 @@ class LayoutsPreview < ViewComponent::Preview
 
   def centered_layout
   end
+
+  def container
+  end
 end
