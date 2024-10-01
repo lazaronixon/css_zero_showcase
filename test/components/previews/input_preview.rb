@@ -60,15 +60,10 @@ class InputPreview < Lookbook::Preview
   # @!endgroup
 
   # @!group Checkbox and Radio
-  # The javascript is available at
-  # [check all controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/check_all_controller.js)
   def checkbox
   end
 
   def radio
-  end
-
-  def check_all
   end
   # @!endgroup
 
