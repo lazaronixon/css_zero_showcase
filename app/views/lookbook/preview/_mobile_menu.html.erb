@@ -1,14 +1,16 @@
-<button class="btn btn--icon" data-action="dialog#showModal">
-  <%= image_tag "menu.svg", size: 20, aria: { hidden: true } %>
-  <span class="sr-only">Open menu</span>
-</button>
+<div class="hide@md" data-controller="dialog">
+  <button class="btn btn--icon" data-action="dialog#showModal">
+    <%= image_tag "menu.svg", size: 20, aria: { hidden: true } %>
+    <span class="sr-only">Open menu</span>
+  </button>
 
-<dialog class="sheet sheet--left" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside">
-  <div class="sheet__content">
-    <button class="btn btn--plain sheet__close" data-action="click->dialog#close">
-      <%= image_tag "x.svg", size: 16, aria: { hidden: true } %>
-      <span class="sr-only">Close</span>
-    </button>
-    <h1>Mobile menu</h1>
-  </div>
-</dialog>
+  <dialog class="sheet sheet--left" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside">
+    <div class="sheet__content">
+      <button class="btn btn--plain sheet__close" data-action="click->dialog#close">
+        <%= image_tag "x.svg", size: 16, aria: { hidden: true } %>
+        <span class="sr-only">Close</span>
+      </button>
+      <h1>Mobile menu</h1>
+    </div>
+  </dialog>
+</div>

@@ -1,16 +1,14 @@
-<div class="sidebar-layout border">
-  <header id="header" class="border-be p-4 flex items-center gap">
-    <div class="hide@md" data-controller="dialog">
-      <%= render "mobile_menu" %>
-    </div>
+<div class="sidebar-layout">
+  <header id="header">
+    <%= render "mobile_menu" %>
     <h1>Header</h1>
   </header>
 
-  <nav id="sidebar" class="overflow-hidden">
-    <div class="border-ie p-4 b-full">Sidebar</div>
-  </nav>
+  <aside id="sidebar">
+    <span class="p-4">Sidebar</span>
+  </aside>
 
-  <main id="main" class="p-4">
+  <main id="main">
     Main
   </main>
 </div>
