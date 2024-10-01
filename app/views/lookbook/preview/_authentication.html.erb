@@ -1,0 +1,22 @@
+<%= form_with url: nil, class: "card flex flex-col gap" do |form| %>
+  <div class="flex flex-col gap-half">
+    <h3 class="text-2xl font-semibold leading-none">Login</h3>
+    <p class="text-sm text-subtle">Enter your email below to login to your account.</p>
+  </div>
+
+  <div class="flex flex-col gap mb-2">
+    <div class="flex flex-col gap-half">
+      <%= form.label :email, class: "text-sm font-medium leading-none" %>
+      <%= form.email_field :email, placeholder: "m@example.com", class: "input" %>
+    </div>
+
+    <div class="flex flex-col gap-half">
+      <%= form.label :password, class: "text-sm font-medium leading-none" %>
+      <%= form.password_field :password, class: "input" %>
+    </div>
+  </div>
+
+  <div class="flex items-center">
+    <%= form.submit "Sign in", class: "btn btn--primary i-full" %>
+  </div>
+<% end %>
