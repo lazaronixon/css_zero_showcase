@@ -5,7 +5,7 @@
   <% end %>
 
   <%= link_to "1", "#page-1", class: "btn btn--borderless" %>
-  <a class="btn" aria-disabled="true" aria-current="page">2</a>
+  <%= link_to "2", "#page-2", class: "btn", aria: { current: "page" } %>
   <%= link_to "3", "#page-3", class: "btn btn--borderless" %>
 
   <span class="pi-3" aria-hidden="true">
