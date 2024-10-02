@@ -4,7 +4,7 @@ export default class extends Controller {
   static values = { startingOpacity: String, var: String }
 
   run() {
-    if (this.element.style.animation != '') {
+    if (this.element.style.animation != "") {
       this.element.style = null
     } else if (this.hasStartingOpacityValue) {
       this.#setOpacity(); setTimeout(()=> { this.#setAnimation() }, 300)
