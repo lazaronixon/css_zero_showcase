@@ -2,14 +2,21 @@
   <button class="btn" data-action="dialog#showModal">Show command</button>
 
   <dialog class="dialog" style="--dialog-width: 430px;" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
-    <div class="command" data-controller="command" data-command-active-class="command__list--filtering" data-command-selected-class="selected" style="max-inline-size: 450px">
-      <label class="command__input input input--actor flex items-center gap">
-        <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
-        <%= tag.input type: "search", id: "search", data: { action: "input->command#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
-      </label>
-      <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">
-        <div class="command__empty" aria-hidden="true">Not results found.</div>
-        <%= render "command_options" %>
+    <div class="dialog__content p-0">
+      <button class="btn btn--plain dialog__close" data-action="click->dialog#close">
+        <%= image_tag "x.svg", size: 16, aria: { hidden: true } %>
+        <span class="sr-only">Close</span>
+      </button>
+
+      <div class="command" data-controller="command" data-command-active-class="command__list--filtering" data-command-selected-class="selected" style="max-inline-size: 450px">
+        <label class="command__input input input--actor flex items-center gap">
+          <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
+          <%= tag.input type: "search", id: "search", data: { action: "input->command#filter" }, autocorrect: "off", autocomplete: "off", placeholder: "Type a command or search..." %>
+        </label>
+        <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">
+          <div class="command__empty" aria-hidden="true">Not results found.</div>
+          <%= render "command_options" %>
+        </div>
       </div>
     </div>
   </dialog>
