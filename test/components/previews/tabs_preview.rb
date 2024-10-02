@@ -3,8 +3,8 @@
 class TabsPreview < Lookbook::Preview
   # Partials
   # ---
-  # - [Account form](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_account_form.html.erb)
-  # - [Password form](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_password_form.html.erb)
+  # - [account_form](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_account_form.html.erb)
+  # - [password_form](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_password_form.html.erb)
   def default
   end
 end
