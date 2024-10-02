@@ -20,13 +20,10 @@
 }
 
 .command__group {
+  border-block-start-width: var(--border);
   display: flex;
   flex-direction: column;
   padding: var(--size-1);
-
-  &:not(:last-child) {
-    border-block-end-width: var(--border);
-  }
 }
 
 .command__group-header {
