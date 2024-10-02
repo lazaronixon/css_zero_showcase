@@ -4,12 +4,12 @@ class SheetPreview < Lookbook::Preview
   # Partials
   # ---
   # - [profile_form](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_profile_form.html.erb)
-  def left
+  def right
   end
 
   # Partials
   # ---
   # - [profile_form](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_profile_form.html.erb)
-  def right
-  end
+  def left
+  end  
 end
