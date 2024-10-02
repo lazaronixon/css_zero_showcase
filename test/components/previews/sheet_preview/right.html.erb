@@ -1,0 +1,14 @@
+<div data-controller="dialog">
+  <button class="btn" data-action="dialog#showModal">Open sheet</button>
+
+  <dialog class="sheet sheet--right" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside">
+    <div class="sheet__content">
+      <button class="btn btn--plain sheet__close" data-action="click->dialog#close">
+        <%= image_tag "x.svg", size: 16, aria: { hidden: true } %>
+        <span class="sr-only">Close</span>
+      </button>
+
+      <%= render "profile_form" %>
+    </div>
+  </dialog>
+</div>
