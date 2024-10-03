@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 53ab73815e7f848a4b1c25088d95d1b3769b9b90
+  revision: f95e2aa7765c9b79846ccef29d38a824c84a3326
   specs:
-    css-zero (0.0.40)
+    css-zero (0.0.42)
 
 GEM
   remote: https://rubygems.org/
@@ -173,7 +173,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
-    propshaft (1.0.1)
+    propshaft (1.1.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
       rack
@@ -257,7 +257,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    view_component (3.15.1)
+    view_component (3.16.0)
       activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
