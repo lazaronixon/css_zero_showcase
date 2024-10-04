@@ -10,6 +10,6 @@ class FlashPreview < Lookbook::Preview
   def negative
   end
 
-  def important
+  def extended
   end
 end
