@@ -9,4 +9,7 @@ class FlashPreview < Lookbook::Preview
 
   def negative
   end
+
+  def duration
+  end
 end
