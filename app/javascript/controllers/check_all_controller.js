@@ -8,11 +8,11 @@ export default class extends Controller {
   }
 
   check({ target }) {
-    if (target === this.dependeeTarget) {
-      this.#checkDependants()
-    } else {
-      this.#checkDependee()
-    }
+    target === this.dependeeTarget ? this.#checkDependants() : this.#checkDependee()
+  }
+
+  #checkDependants() {
+    this.dependantTargets.forEach(e => e.checked = this.dependeeTarget.checked)
   }
 
   #checkDependee() {
@@ -20,19 +20,15 @@ export default class extends Controller {
     this.dependeeTarget.indeterminate = this.#indeterminate
   }
 
-  #checkDependants() {
-    this.dependantTargets.forEach(e => e.checked = this.dependeeTarget.checked)
-  }
-
   get #indeterminate() {
     return this.#atLeastOneChecked && !this.#allChecked;
   }
 
-  get #allChecked() {
-    return this.dependantTargets.every(e => e.checked)
-  }
-
   get #atLeastOneChecked() {
     return this.dependantTargets.some(e => e.checked)
+  }
+
+  get #allChecked() {
+    return this.dependantTargets.every(e => e.checked)
   }
 }
