@@ -1,0 +1,13 @@
+<% states = [["California", "CA"], ["Florida", "FL"], ["Texas", "TX"]] %>
+<% cities = [
+  ["Los Angeles", "data-value": "CA"], ["San Diego", "data-value": "CA"], ["San Francisco", "data-value": "CA"],
+  ["Jacksonville", "data-value": "FL"], ["Miami", "data-value": "FL"], ["Tampa", "data-value": "FL"],
+  ["Austin", "data-value": "TX"], ["Dallas", "data-value": "TX"], ["Houston", "data-value": "TX"]
+] %>
+
+<div data-controller="cascade-select" class="flex flex-col gap-half">
+  <template id="city_options"><%= options_for_select(cities) %></template>
+
+  <%= select_tag :state, options_for_select(states), include_blank: "Select a state", class: "input", data: { action: "cascade-select#select" } %>
+  <%= select_tag :city, "", include_blank: "Select a city", class: "input", data: { cascade_select_target: "dependant", dependee: "state", options: "city_options" } %>
+</div>
