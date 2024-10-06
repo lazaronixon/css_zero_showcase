@@ -24,7 +24,8 @@ export default class extends Controller {
   }
 
   #reset(dependant) {
-    dependant.value = ""; dependant.innerHTML = "";
+    dependant.value = ""
+    dependant.querySelectorAll("[data-value]").forEach(e => e.remove())
   }
 
   #copyMatches(optionsTemplate, dependant, value) {
