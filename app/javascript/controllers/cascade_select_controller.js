@@ -4,32 +4,28 @@ export default class extends Controller {
   static targets = [ "dependant" ]
 
   select() {
-    this.#updateDependants()
-  }
-
-  #updateDependants() {
     this.dependantTargets.forEach(dependant => this.#filter(dependant))
   }
 
   #filter(dependant) {
     const dependee = this.#getDependeeFor(dependant)
-    const optionsTemplate = this.#getOptionsTemplateFor(dependant)
+    const optsTemplate = this.#getOptionsTemplateFor(dependant)
 
     if (dependee.value != "") {
       this.#reset(dependant)
-      this.#copyMatches(optionsTemplate, dependant, dependee.value)
+      this.#insertMatches(optsTemplate, dependant, dependee.value)
     } else {
       this.#reset(dependant)
     }
   }
 
   #reset(dependant) {
+    dependant.querySelectorAll('option:not([value=""])').forEach(e => e.remove())
     dependant.value = ""
-    dependant.querySelectorAll("[data-value]").forEach(e => e.remove())
   }
 
-  #copyMatches(optionsTemplate, dependant, value) {
-    optionsTemplate.content.querySelectorAll(`[data-value=${value}]`).forEach(e => this.#append(dependant, e))
+  #insertMatches(optsTemplate, dependant, value) {
+    optsTemplate.content.querySelectorAll(`[data-dependee-value=${value}]`).forEach(e => this.#append(dependant, e))
   }
 
   #append(parent, node) {
