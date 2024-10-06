@@ -1,14 +1,12 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = [ "dependant" ]
-
-  select() {
-    this.dependantTargets.forEach(dependant => this.#filter(dependant))
+  select({ target }) {
+    this.#filterDependant(target)
   }
 
-  #filter(dependant) {
-    const dependee = this.#getDependeeFor(dependant)
+  #filterDependant(dependee) {
+    const dependant = this.#getDependantFor(dependee)
     const optsTemplate = this.#getOptionsTemplateFor(dependant)
 
     if (dependee.value != "") {
@@ -32,11 +30,11 @@ export default class extends Controller {
     parent.insertAdjacentHTML("beforeend", node.outerHTML)
   }
 
-  #getDependeeFor(dependant) {
-    return this.element.querySelector(`#${dependant.dataset.dependee}`)
+  #getDependantFor(dependee) {
+    return this.element.querySelector(`#${dependee.dataset.dependantId}`)
   }
 
   #getOptionsTemplateFor(dependant) {
-    return this.element.querySelector(`#${dependant.dataset.options}`)
+    return this.element.querySelector(`#${dependant.dataset.optionsTemplateId}`)
   }
 }

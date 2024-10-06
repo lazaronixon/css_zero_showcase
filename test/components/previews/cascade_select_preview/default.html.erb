@@ -14,6 +14,6 @@
 <div data-controller="cascade-select" class="flex flex-col gap-half">
   <template id="brand_options"><%= options_for_select(brands) %></template>
 
-  <%= select_tag :continent, options_for_select(continents), include_blank: "Select a continent", class: "input", data: { action: "cascade-select#select" } %>
-  <%= select_tag :car_brand, "", include_blank: "Select a brand", class: "input", data: { cascade_select_target: "dependant", dependee: "continent", options: "brand_options" } %>
+  <%= select_tag :continent, options_for_select(continents), include_blank: "Select a continent", class: "input", data: { action: "cascade-select#select", dependant_id: "car_brand" } %>
+  <%= select_tag :car_brand, "", include_blank: "Select a brand", class: "input", data: { options_template_id: "brand_options" } %>
 </div>
