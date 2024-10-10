@@ -1,0 +1,24 @@
+<%= form_with url: nil, class: "flex flex-col gap p-4" do |form| %>
+  <div class="flex flex-col gap-half">
+    <h4 class="font-medium leading-none">Dimensions</h4>
+    <p class="text-sm text-subtle">Set the dimensions for the layer.</p>
+  </div>
+  <div class="flex flex-col gap-half">
+    <div class="flex items-center leading-none gap">
+      <%= form.label :width, class: "text-sm font-medium", style: "min-inline-size: 30%;" %>
+      <%= form.text_field :width, value: "100%", class: "input pi-3 leading-none" %>
+    </div>
+    <div class="flex items-center leading-none gap">
+      <%= form.label :max_width, class: "text-sm font-medium", style: "min-inline-size: 30%;" %>
+      <%= form.text_field :max_width, value: "300px", class: "input pi-3 leading-none" %>
+    </div>
+    <div class="flex items-center leading-none gap">
+      <%= form.label :height, class: "text-sm font-medium", style: "min-inline-size: 30%;" %>
+      <%= form.text_field :height, value: "25px", class: "input pi-3 leading-none" %>
+    </div>
+    <div class="flex items-center leading-none gap">
+      <%= form.label :max_height, class: "text-sm font-medium", style: "min-inline-size: 30%;" %>
+      <%= form.text_field :max_height, value: "none", class: "input pi-3 leading-none" %>
+    </div>
+  </div>
+<% end %>
