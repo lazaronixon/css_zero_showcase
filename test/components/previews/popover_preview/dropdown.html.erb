@@ -1,0 +1,46 @@
+<main class="centered-layout">
+  <div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
+    <button class="btn" data-action="popover#toggle">
+      Open dropdown
+    </button>
+
+    <dialog class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside toggle->popover#orient" tabindex="-1">
+      <div class="menu" aria-label="Menu" role="menu">
+        <div class="menu__header">Menu</div>
+        <hr class="menu__separator" role="separator"/>
+        <div class="menu__group" role="group">
+          <%= link_to "", class: "btn menu__item", role: "menuitem" do %>
+            <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
+            <span>Calendar</span>
+          <% end %>
+          <%= link_to "", class: "btn menu__item", role: "menuitem" do %>
+            <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
+            <span>Seach Emoji</span>
+          <% end %>
+          <%= tag.a class: "btn menu__item", aria: { disabled: true }, role: "menuitem" do %>
+            <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
+            <span>Calculator</span>
+          <% end %>
+        </div>
+        <hr class="menu__separator" role="separator"/>
+        <div class="menu__group" role="group">
+          <%= link_to "", class: "btn menu__item", role: "menuitem" do %>
+            <%= image_tag "user.svg", size: 14, aria: { hidden: true } %>
+            <span>Profile</span>
+            <span class="menu__item-key">⌘P</span>
+          <% end %>
+          <%= link_to "", class: "btn menu__item", role: "menuitem" do %>
+            <%= image_tag "credit-card.svg", size: 14, aria: { hidden: true } %>
+            <span>Billing</span>
+            <span class="menu__item-key">⌘B</span>
+          <% end %>
+          <%= link_to "", class: "btn menu__item", role: "menuitem" do %>
+            <%= image_tag "settings.svg", size: 14, aria: { hidden: true } %>
+            <span>Settings</span>
+            <span class="menu__item-key">⌘P</span>
+          <% end %>
+        </div>
+      </div>
+    </dialog>
+  </div>
+</main>
