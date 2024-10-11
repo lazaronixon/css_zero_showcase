@@ -1,0 +1,11 @@
+<main class="centered-layout">
+  <div class="relative" data-controller="popover" data-popover-flip-class="popover--flip" data-action="mouseenter->popover#show mouseleave->popover#closeLater">
+    <button class="btn">
+      Hover to open
+    </button>
+
+    <dialog class="popover" data-popover-target="menu" data-action="toggle->popover#orient">
+      <%= render "dimensions_form" %>
+    </dialog>
+  </div>
+</main>
