@@ -1,5 +1,4 @@
 # @css app/assets/stylesheets/command.css
-# @js app/javascript/controllers/filter_controller.js
 class CommandPreview < Lookbook::Preview
   # Links
   # ---

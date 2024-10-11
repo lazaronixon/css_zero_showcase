@@ -19,11 +19,4 @@ class PopoverPreview < Lookbook::Preview
   # - [dimensions_form](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_dimensions_form.html.erb)
   def position_custom
   end
-
-  # Links
-  # ---
-  # - [menu_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/menu_controller.js)
-  # - [popover_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/popover_controller.js)
-  def dropdown
-  end
 end
