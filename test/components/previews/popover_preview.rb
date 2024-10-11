@@ -20,6 +20,10 @@ class PopoverPreview < Lookbook::Preview
   def position_custom
   end
 
-  def dropdown    
+  # Links
+  # ---
+  # - [menu_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/menu_controller.js)
+  # - [popover_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/popover_controller.js)
+  def dropdown
   end
 end
