@@ -28,10 +28,14 @@
   }
 }
 
-.popover--inline-end {
-  --popover-position: auto;
-}
-
 .popover--block-start {
   inset-block-end: 100%;
+}
+
+.popover--inline-start {
+  --popover-position: 0;
+}
+
+.popover--inline-end {
+  --popover-position: auto;
 }
