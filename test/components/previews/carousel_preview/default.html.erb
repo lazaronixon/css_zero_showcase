@@ -1,22 +1,22 @@
-<div class="flex items-center gap" data-controller="carousel" data-action="keydown.left->carousel#prev keydown.right->carousel#next" aria-roledescription="carousel" role="region">
+<div class="flex items-center gap" data-controller="carousel" data-action="keydown.left->carousel#prev keydown.right->carousel#next" role="region" aria-roledescription="carousel">
   <button class="btn btn--icon" data-action="carousel#prev">
     <%= image_tag "arrow-left.svg", size: 16, aria: { hidden: true } %>
     <span class="sr-only">Previous slide</span>
   </button>
   <div class="carousel__content" style="max-inline-size: 20rem" data-carousel-target="content" index="-1">
-    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
+    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
       <span class="text-4xl leading-none font-semibold">1</span>
     </div>
-    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
+    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
       <span class="text-4xl leading-none font-semibold">2</span>
     </div>
-    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
+    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
       <span class="text-4xl leading-none font-semibold">3</span>
     </div>
-    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
+    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
       <span class="text-4xl leading-none font-semibold">4</span>
     </div>
-    <div class="card flex items-center justify-center aspect-square" aria-roledescription="slide" role="group">
+    <div class="card flex items-center justify-center aspect-square" role="group" aria-roledescription="slide">
       <span class="text-4xl leading-none font-semibold">5</span>
     </div>
   </div>
