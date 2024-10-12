@@ -1,10 +1,10 @@
 <main class="centered-layout">
   <div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
-    <button class="btn" data-action="popover#toggle">
+    <button class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="dialog" aria-controls="dialog">
       Open popover
     </button>
 
-    <dialog class="popover popover--end" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside toggle->popover#orient">
+    <dialog id="dialog" class="popover popover--end" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside">
       <%= render "dimensions_form" %>
     </dialog>
   </div>

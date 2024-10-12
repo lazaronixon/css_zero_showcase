@@ -45,7 +45,7 @@ export default class extends Controller {
   }
 
   #updateExpanded() {
-    if (this.hasButtonTarget) this.buttonTarget.ariaExpanded = this.menuTarget.open
+    this.buttonTarget.ariaExpanded = this.menuTarget.open
   }
 
   get #distanceToBottom() {
