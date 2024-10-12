@@ -22,6 +22,8 @@ export default class extends Controller {
   }
 
   #focusSelectedItem() {
+    this.itemTargets.forEach(item => item.tabIndex = -1)
+    this.itemTargets[this.indexValue].tabIndex = 0
     this.itemTargets[this.indexValue].focus()
   }
 

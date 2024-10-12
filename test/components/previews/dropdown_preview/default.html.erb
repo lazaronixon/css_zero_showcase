@@ -1,11 +1,11 @@
 <main class="centered-layout">
-  <div class="relative" data-controller="popover menu" data-popover-flip-class="popover--flip">
+  <div class="relative" data-controller="popover menu" data-action="keydown.up->menu#prev keydown.down->menu#next keydown.esc->popover#close" data-popover-flip-class="popover--flip">
     <button class="btn" data-action="popover#toggle menu#reset">
       Open dropdown
     </button>
 
-    <dialog class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside" tabindex="-1">
-      <div class="menu" data-action="keydown.up->menu#prev keydown.down->menu#next keydown.esc->popover#close" role="menu" aria-label="Menu" tabindex="-1">
+    <dialog class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside">
+      <div class="menu" role="menu" aria-label="Menu">
         <div class="menu__header">Menu</div>
         <hr class="menu__separator" role="separator"/>
         <div class="menu__group" role="group">
