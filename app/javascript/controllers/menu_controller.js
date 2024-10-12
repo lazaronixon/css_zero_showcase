@@ -6,6 +6,7 @@ export default class extends Controller {
   static values  = { index: Number }
 
   indexValueChanged() {
+    this.#removeTabstops()
     this.#focusSelectedItem()
   }
 
@@ -21,8 +22,11 @@ export default class extends Controller {
     this.indexValue = 0
   }
 
-  #focusSelectedItem() {
+  #removeTabstops() {
     this.itemTargets.forEach(item => item.tabIndex = -1)
+  }
+
+  #focusSelectedItem() {
     this.itemTargets[this.indexValue].tabIndex = 0
     this.itemTargets[this.indexValue].focus()
   }

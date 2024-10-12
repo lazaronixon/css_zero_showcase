@@ -58,7 +58,7 @@
 }
 
 .command__list--filtering {
-  &:not(:has(.selected)) > .command__empty { display: flex; }
+  .command__empty:not(.command__list:has(.selected)) { display: flex; }
   .command__group { display: none; }
   .command__group:has(.selected) { display: flex; }
   .command__item { display: none; }
