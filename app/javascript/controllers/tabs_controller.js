@@ -8,8 +8,8 @@ export default class extends Controller {
     this.#showSelectedTab()
   }
 
-  select({ params }) {
-    this.indexValue = params.index
+  select({ target }) {
+    this.indexValue = this.buttonTargets.indexOf(target)
   }
 
   prev() {
@@ -21,12 +21,13 @@ export default class extends Controller {
   }
 
   #showSelectedTab() {
-    this.buttonTargets.forEach((element, index) => {
-      element.ariaSelected = index === this.indexValue
+    this.buttonTargets.forEach((button, index) => {
+      button.ariaSelected = index == this.indexValue
+      button.tabIndex     = index == this.indexValue ? 0 : -1
     })
 
-    this.tabTargets.forEach((element, index) => {
-      element.hidden = index !== this.indexValue
+    this.tabTargets.forEach((tab, index) => {
+      tab.hidden = index !== this.indexValue
     })
   }
 
