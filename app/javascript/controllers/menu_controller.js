@@ -6,8 +6,7 @@ export default class extends Controller {
   static values  = { index: Number }
 
   indexValueChanged() {
-    this.#removeTabstops()
-    this.#focusSelectedItem()
+    this.#focusCurrentItem()
   }
 
   prev() {
@@ -22,13 +21,14 @@ export default class extends Controller {
     this.indexValue = 0
   }
 
-  #removeTabstops() {
-    this.itemTargets.forEach(item => item.tabIndex = -1)
-  }
-
-  #focusSelectedItem() {
+  #focusCurrentItem() {
+    this.#removeTabstops()
     this.itemTargets[this.indexValue].tabIndex = 0
     this.itemTargets[this.indexValue].focus()
+  }
+
+  #removeTabstops() {
+    this.itemTargets.forEach(item => item.tabIndex = -1)
   }
 
   get #lastIndex() {

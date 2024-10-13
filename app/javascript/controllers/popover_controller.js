@@ -13,9 +13,9 @@ export default class extends Controller {
   }
 
   show() {
+    this.#resetTimer()
     this.menuTarget.show()
     this.#updateExpanded()
-    this.#resetTimer()
     this.#orient()
   }
 
