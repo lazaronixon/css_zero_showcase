@@ -1,5 +1,4 @@
 import { Controller } from "@hotwired/stimulus"
-import { onNextEventLoopTick } from "helpers/timing_helpers"
 
 export default class extends Controller {
   static targets = [ "button", "tab" ]
@@ -34,11 +33,7 @@ export default class extends Controller {
   }
 
   #focusCurrentButton(shouldFocus) {
-    shouldFocus && this.#focusInvisible(this.buttonTargets[this.indexValue])
-  }
-
-  #focusInvisible(element) {
-    onNextEventLoopTick(() => element.focus())
+    shouldFocus && this.buttonTargets[this.indexValue].focus()
   }
 
   get #lastIndex() {
