@@ -8,10 +8,6 @@ export default class extends Controller {
 
   #closeTimer
 
-  connect() {
-    this.#updateExpanded()
-  }
-
   show() {
     this.#resetTimer()
     this.menuTarget.show()

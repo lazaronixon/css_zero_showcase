@@ -1,11 +1,11 @@
 <main class="centered-layout">
-  <div class="relative" data-controller="popover menu" data-action="keydown.up->menu#prev keydown.down->menu#next keydown.esc->popover#close" data-popover-flip-class="popover--flip">
+  <div class="relative" data-controller="popover menu" data-popover-flip-class="popover--flip">
     <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#toggle menu#reset" aria-haspopup="menu" aria-controls="menu">
       Open dropdown
     </button>
 
     <dialog class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside">
-      <div id="menu" class="menu" role="menu" aria-labelledby="menu_button">
+      <div id="menu" class="menu" data-action="keydown.up->menu#prev keydown.down->menu#next keydown.esc->popover#close" role="menu" aria-labelledby="menu_button">
         <div class="menu__header">Menu</div>
         <hr class="menu__separator" role="separator"/>
         <div class="menu__group" role="group">
@@ -17,7 +17,7 @@
             <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
             <span>Seach Emoji</span>
           <% end %>
-          <%= tag.a class: "btn menu__item", aria: { disabled: true }, role: "menuitem" do %>
+          <%= tag.a class: "btn menu__item", role: "menuitem", aria: { disabled: true } do %>
             <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
             <span>Calculator</span>
           <% end %>
