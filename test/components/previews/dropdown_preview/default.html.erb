@@ -4,8 +4,8 @@
       Open dropdown
     </button>
 
-    <dialog class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside">
-      <div id="menu" class="menu" data-action="keydown.up->menu#prev keydown.down->menu#next keydown.esc->popover#close" role="menu" aria-labelledby="menu_button">
+    <dialog autofocus class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside keydown.up->menu#prev keydown.down->menu#next keydown.esc->popover#close">
+      <div id="menu" class="menu" role="menu" aria-labelledby="menu_button">
         <div class="menu__header">Menu</div>
         <hr class="menu__separator" role="separator"/>
         <div class="menu__group" role="group">
