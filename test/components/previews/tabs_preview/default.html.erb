@@ -4,11 +4,11 @@
     <button id="trigger_password" class="btn btn--tab" data-tabs-target="button" data-action="tabs#select" role="tab" aria-controls="tab_password">Password</button>
   </div>
 
-  <div id="tab_account" data-tabs-target="tab" role="tabpanel" tabindex="0" aria-labelledby="trigger_account">
+  <div hidden id="tab_account" data-tabs-target="tab" role="tabpanel" tabindex="0" aria-labelledby="trigger_account">
     <%= render "account_form" %>
   </div>
 
-  <div id="tab_password" data-tabs-target="tab" role="tabpanel" tabindex="0" aria-labelledby="trigger_password" hidden>
+  <div hidden id="tab_password" data-tabs-target="tab" role="tabpanel" tabindex="0" aria-labelledby="trigger_password">
     <%= render "password_form" %>
   </div>
 </div>
