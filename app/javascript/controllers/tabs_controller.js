@@ -4,30 +4,23 @@ export default class extends Controller {
   static targets = [ "button", "tab" ]
   static values  = { index: Number }
 
-  connect() {
-    this.#showCurrentTab()
+  indexValueChanged(index, previousIndex) {
+    this.#showCurrentTab(previousIndex !== undefined)
   }
 
   select({ target }) {
     this.indexValue = this.buttonTargets.indexOf(target)
-    this.#showCurrentTab()
   }
 
   prev() {
-    if (this.indexValue > 0) {
-      this.indexValue--
-      this.#showCurrentTab(true)
-    }
+    this.indexValue > 0 && this.indexValue--
   }
 
   next() {
-    if (this.indexValue < this.#lastIndex) {
-      this.indexValue++
-      this.#showCurrentTab(true)
-    }
+    this.indexValue < this.#lastIndex && this.indexValue++
   }
 
-  #showCurrentTab(shouldFocus = false) {
+  #showCurrentTab(shouldFocus) {
     this.buttonTargets.forEach((element, index) => {
       element.ariaSelected = index == this.indexValue
       element.tabIndex     = index == this.indexValue ? 0 : -1
