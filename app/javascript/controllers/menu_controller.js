@@ -4,34 +4,46 @@ export default class extends Controller {
   static targets = [ "item" ]
   static values  = { index: Number }
 
-  indexValueChanged() {
-    this.#removeTabstops()
+  #intersectionObserver
+
+  initialize() {
+    this.#intersectionObserver = new IntersectionObserver(this.#reset.bind(this))
+  }
+
+  connect() {
+    this.#intersectionObserver.observe(this.element)
+  }
+
+  disconnect() {
+    this.#intersectionObserver.disconnect()
   }
 
   prev() {
-    const hasPrevious = this.indexValue > 0
-    hasPrevious && this.indexValue--
-    hasPrevious && this.#focusCurrentItem()
+    if (this.indexValue > 0) {
+      this.indexValue--
+      this.#updateTabstops(true)
+    }
   }
 
   next() {
-    const hasNext = this.indexValue < this.#lastIndex
-    hasNext && this.indexValue++
-    hasNext && this.#focusCurrentItem()
+    if (this.indexValue < this.#lastIndex) {
+      this.indexValue++
+      this.#updateTabstops(true)
+    }
   }
 
-  reset() {
-    this.indexValue = 0
-    this.#focusCurrentItem()
+  #reset() {
+    this.indexValue = 0; this.#updateTabstops()
   }
 
-  #removeTabstops() {
-    this.itemTargets.forEach(item => item.tabIndex = -1)
-  }
+  #updateTabstops(shouldFocus = false) {
+    this.itemTargets.forEach((element, index) => {
+      element.tabIndex = index == this.indexValue ? 0 : -1
+    })
 
-  #focusCurrentItem() {
-    this.itemTargets[this.indexValue].tabIndex = 0
-    this.itemTargets[this.indexValue].focus()
+    if (shouldFocus) {
+      this.itemTargets[this.indexValue].focus()
+    }
   }
 
   get #lastIndex() {

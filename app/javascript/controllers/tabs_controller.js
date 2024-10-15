@@ -4,39 +4,42 @@ export default class extends Controller {
   static targets = [ "button", "tab" ]
   static values  = { index: Number }
 
-  indexValueChanged() {
+  connect() {
     this.#showCurrentTab()
   }
 
   select({ target }) {
     this.indexValue = this.buttonTargets.indexOf(target)
+    this.#showCurrentTab()
   }
 
   prev() {
-    const hasPrevious = this.indexValue > 0
-    hasPrevious && this.indexValue--
-    hasPrevious && this.#focusCurrentButton()
+    if (this.indexValue > 0) {
+      this.indexValue--
+      this.#showCurrentTab(true)
+    }
   }
 
   next() {
-    const hasNext = this.indexValue < this.#lastIndex
-    hasNext && this.indexValue++
-    hasNext && this.#focusCurrentButton()
+    if (this.indexValue < this.#lastIndex) {
+      this.indexValue++
+      this.#showCurrentTab(true)
+    }
   }
 
-  #showCurrentTab() {
-    this.buttonTargets.forEach((button, index) => {
-      button.ariaSelected = index == this.indexValue
-      button.tabIndex     = index == this.indexValue ? 0 : -1
+  #showCurrentTab(shouldFocus = false) {
+    this.buttonTargets.forEach((element, index) => {
+      element.ariaSelected = index == this.indexValue
+      element.tabIndex     = index == this.indexValue ? 0 : -1
     })
 
-    this.tabTargets.forEach((tab, index) => {
-      tab.hidden = index !== this.indexValue
+    this.tabTargets.forEach((element, index) => {
+      element.hidden = index !== this.indexValue
     })
-  }
 
-  #focusCurrentButton() {
-    this.buttonTargets[this.indexValue].focus()
+    if (shouldFocus) {
+      this.buttonTargets[this.indexValue].focus()
+    }
   }
 
   get #lastIndex() {
