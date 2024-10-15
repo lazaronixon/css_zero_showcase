@@ -17,7 +17,7 @@ export default class extends Controller {
   }
 
   next() {
-    this.indexValue < this.#lastIndex && this.indexValue++
+    this.indexValue < this.tabTargets.length -1 && this.indexValue++
   }
 
   #showCurrentTab(shouldFocus) {
@@ -33,9 +33,5 @@ export default class extends Controller {
     if (shouldFocus) {
       this.buttonTargets[this.indexValue].focus()
     }
-  }
-
-  get #lastIndex() {
-    return this.tabTargets.length -1
   }
 }

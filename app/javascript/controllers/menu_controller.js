@@ -13,7 +13,7 @@ export default class extends Controller {
   }
 
   next() {
-    this.indexValue < this.#lastIndex && this.indexValue++
+    this.indexValue < this.itemTargets.length -1 && this.indexValue++
   }
 
   reset() {
@@ -28,9 +28,5 @@ export default class extends Controller {
     if (shouldFocus) {
       this.itemTargets[this.indexValue].focus()
     }
-  }
-
-  get #lastIndex() {
-    return this.itemTargets.length -1
   }
 }
