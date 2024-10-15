@@ -20,6 +20,9 @@ class InputPreview < Lookbook::Preview
   def datetime_field
   end
 
+  def color_field
+  end
+
   def file_field
   end
 
