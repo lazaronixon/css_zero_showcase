@@ -4,39 +4,23 @@ export default class extends Controller {
   static targets = [ "item" ]
   static values  = { index: Number }
 
-  #intersectionObserver
-
-  initialize() {
-    this.#intersectionObserver = new IntersectionObserver(this.#reset.bind(this))
-  }
-
-  connect() {
-    this.#intersectionObserver.observe(this.element)
-  }
-
-  disconnect() {
-    this.#intersectionObserver.disconnect()
+  indexValueChanged(index, previousIndex) {
+    this.#updateTabstops(previousIndex !== undefined)
   }
 
   prev() {
-    if (this.indexValue > 0) {
-      this.indexValue--
-      this.#updateTabstops(true)
-    }
+    this.indexValue > 0 && this.indexValue--
   }
 
   next() {
-    if (this.indexValue < this.#lastIndex) {
-      this.indexValue++
-      this.#updateTabstops(true)
-    }
+    this.indexValue < this.#lastIndex && this.indexValue++
   }
 
-  #reset() {
-    this.indexValue = 0; this.#updateTabstops()
+  reset() {
+    this.indexValue = 0
   }
 
-  #updateTabstops(shouldFocus = false) {
+  #updateTabstops(shouldFocus) {
     this.itemTargets.forEach((element, index) => {
       element.tabIndex = index == this.indexValue ? 0 : -1
     })
