@@ -7,9 +7,4 @@ class SwitchPreview < Lookbook::Preview
   def disabled
   end
   # @!endgroup
-
-  # The javascript is avilable at
-  # [form controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/form_controller.js)
-  def submitable
-  end
 end
