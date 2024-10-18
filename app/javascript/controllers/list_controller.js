@@ -1,12 +1,17 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = [ "list", "option" ]
+  static targets = [ "option" ]
   static values  = { index: Number }
 
   connect() {
     this.#removeTabstops()
     this.#selectFirstOption()
+  }
+
+  reset() {
+    this.indexValue = 0
+    this.#selectCurrentOption()
   }
 
   navigate(event) {
@@ -24,11 +29,6 @@ export default class extends Controller {
         this.#clickSelected()
         break
     }
-  }
-
-  reset() {
-    this.indexValue = 0
-    this.#selectCurrentOption()
   }
 
   #prev() {
@@ -69,11 +69,11 @@ export default class extends Controller {
     })
   }
 
-  get #lastIndex() {
-    return this.#visibleOptions.length -1
-  }
-
   get #visibleOptions() {
     return this.optionTargets.filter(e => e.offsetParent != null)
+  }
+
+  get #lastIndex() {
+    return this.#visibleOptions.length -1
   }
 }
