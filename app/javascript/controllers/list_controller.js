@@ -4,29 +4,63 @@ export default class extends Controller {
   static targets = [ "list", "option" ]
   static values  = { index: Number }
 
-  indexValueChanged() {
-    this.#updateSelected()
+  connect() {
+    this.#removeTabstops()
+    this.#selectFirstItem()
   }
 
   navigate(event) {
     switch (event.key) {
       case "ArrowUp":
         event.preventDefault()
-        this.indexValue > 0 && this.indexValue--
+        this.#prev()
         break
       case "ArrowDown":
         event.preventDefault()
-        this.indexValue < this.#lastIndex && this.indexValue++
+        this.#next()
         break
       case "Enter":
         event.preventDefault()
-        this.#visibleOptions[this.indexValue].click()
+        this.#clickSelected()
         break
     }
   }
 
-  #updateSelected() {
-    this.optionTargets.forEach((element) => {
+  reset() {
+    this.indexValue = 0
+    this.#selectCurrentItem()
+  }
+
+  #prev() {
+    if (this.indexValue > 0) {
+      this.indexValue--
+      this.#selectCurrentItem()
+    }
+  }
+
+  #next() {
+    if (this.indexValue < this.#lastIndex) {
+      this.indexValue++
+      this.#selectCurrentItem()
+    }
+  }
+
+  #clickSelected() {
+    this.#visibleOptions[this.indexValue]?.click()
+  }
+
+  #removeTabstops() {
+    this.optionTargets.forEach(e => e.tabIndex = -1)
+  }
+
+  #selectFirstItem() {
+    this.optionTargets.forEach((element, index) => {
+      element.ariaSelected = index === 0
+    })
+  }
+
+  #selectCurrentItem() {
+    this.optionTargets.forEach((element, index) => {
       element.ariaSelected = false
     })
 
