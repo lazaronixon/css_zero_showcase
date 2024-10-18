@@ -6,7 +6,7 @@ export default class extends Controller {
 
   connect() {
     this.#removeTabstops()
-    this.#selectFirstItem()
+    this.#selectFirstOption()
   }
 
   navigate(event) {
@@ -28,20 +28,20 @@ export default class extends Controller {
 
   reset() {
     this.indexValue = 0
-    this.#selectCurrentItem()
+    this.#selectCurrentOption()
   }
 
   #prev() {
     if (this.indexValue > 0) {
       this.indexValue--
-      this.#selectCurrentItem()
+      this.#selectCurrentOption()
     }
   }
 
   #next() {
     if (this.indexValue < this.#lastIndex) {
       this.indexValue++
-      this.#selectCurrentItem()
+      this.#selectCurrentOption()
     }
   }
 
@@ -53,13 +53,13 @@ export default class extends Controller {
     this.optionTargets.forEach(e => e.tabIndex = -1)
   }
 
-  #selectFirstItem() {
+  #selectFirstOption() {
     this.optionTargets.forEach((element, index) => {
       element.ariaSelected = index === 0
     })
   }
 
-  #selectCurrentItem() {
+  #selectCurrentOption() {
     this.optionTargets.forEach((element, index) => {
       element.ariaSelected = false
     })
