@@ -1,14 +1,17 @@
 # @css app/assets/stylesheets/command.css
-# @js app/javascript/controllers/filter_controller.js
 class CommandPreview < Lookbook::Preview
-  # Partials
+  # Links
   # ---
+  # - [filter_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/filter_controller.js)
+  # - [list_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/list_controller.js)
   # - [command_options](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_command_options.html.erb)
   def default
   end
 
-  # Partials
+  # Links
   # ---
+  # - [filter_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/filter_controller.js)
+  # - [list_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/list_controller.js)
   # - [command_options](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_command_options.html.erb)
   def dialog
   end
