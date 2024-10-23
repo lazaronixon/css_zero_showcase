@@ -1,54 +1,47 @@
 .ts-control {
-  background-color: var(--color-bg) !important;
-  background-image: url("select-arrow.svg") !important;
-  background-position: center right var(--size-2) !important;
-  background-repeat: no-repeat !important;
-  background-size: var(--size-4) auto !important;
+  align-items: center;
+  background-color: var(--color-bg);
   border: 1px solid var(--color-border) !important;
   border-radius: var(--rounded-md);
-  block-size: var(--size-10);
+  min-block-size: var(--size-10);
   color: var(--color-text);
-  cursor: pointer !important;
+  display: flex;
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
-  line-height: var(--leading-normal);
-  padding: var(--size-2) var(--size-4);
+  gap: var(--size-1);
+  line-height: inherit;
+  padding: var(--size-1_5) var(--size-2);
 
   > input {
-    color: var(--color-text);
-    font-size: var(--text-sm);
+    color: inherit; font-size: inherit;
   }
 }
 
 .ts-dropdown {
+  background-color: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--rounded-md);
   box-shadow: var(--shadow-md);
   color: var(--color-text);
   font-size: var(--text-sm);
-  line-height: var(--leading-normal);
-  overflow: hidden;
+  line-height: inherit;
 
-  .dropdown-input-wrap {
-    background-color: var(--color-bg);
-    background-image: url("combobox-search.svg");
-    background-position: center left var(--size-3);
-    background-repeat: no-repeat;
-    background-size: var(--size-4) auto;
-    border-block-end-width: var(--border);
-    padding-inline: var(--size-3);
-  }
-
-  .dropdown-input {
-    border: 0;
-    outline: 0;
-    padding-block: var(--size-3);
-    padding-inline-start: var(--size-6);
-    padding-inline-end: 0;
-  }
-
-  .ts-dropdown-content {
+  .ts-dropdown-content:not(:has(.optgroup)) {
     padding: var(--size-1);
+  }
+
+  .optgroup:not(:first-child) {
+    border-block-start-width: var(--border);
+  }
+
+  .optgroup {
+    padding: var(--size-1);
+  }
+
+  .optgroup-header {
+    color: var(--color-text-subtle);
+    font-size: var(--text-xs);
+    padding: var(--size-1_5) var(--size-2);
   }
 
   .option {
@@ -59,10 +52,28 @@
 
   .active {
     background-color: var(--color-secondary);
-    color: var(--color-text);
+    color: inherit !important;
   }
 
   .highlight {
     background-color: transparent !important;
   }
 }
+
+.ts-wrapper.single .ts-control {
+  background-color: var(--color-bg) !important;
+  background-image: url("select-arrow.svg") !important;
+  background-position: center right var(--size-2) !important;
+  background-repeat: no-repeat !important;
+  background-size: var(--size-4) auto !important;
+}
+
+.ts-wrapper.multi .ts-control > .item {
+  background: var(--color-secondary);
+  border-radius: var(--rounded-md);
+  color: inherit;
+  margin: 0;
+}
+
+.disabled .ts-control { opacity: var(--opacity-50); }
+.disabled .ts-control * { cursor: not-allowed !important; }
