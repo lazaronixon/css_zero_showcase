@@ -75,5 +75,10 @@
   margin: 0;
 }
 
-.disabled .ts-control { opacity: var(--opacity-50); }
-.disabled .ts-control * { cursor: not-allowed !important; }
+.disabled .ts-control {
+  opacity: var(--opacity-50);
+}
+
+.disabled .ts-control * {
+  cursor: not-allowed !important;
+}

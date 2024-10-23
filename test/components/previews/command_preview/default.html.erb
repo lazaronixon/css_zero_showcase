@@ -4,7 +4,7 @@
     <%= text_field_tag "search", nil, data: { action: "input->filter#filter keydown->list#navigate" }, autocomplete: "off", placeholder: "Filter..." %>
   </label>
   <div class="command__list" data-filter-target="list" role="listbox" aria-label="Commands" tabindex="0">
-    <div class="command__empty">Not results found.</div>
     <%= render "command_options" %>
+    <div class="command__empty">Not results found.</div>
   </div>
 </div>
