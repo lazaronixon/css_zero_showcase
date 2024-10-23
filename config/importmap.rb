@@ -9,3 +9,4 @@ pin_all_from "app/javascript/initializers", under: "initializers"
 pin_all_from "app/javascript/helpers", under: "helpers"
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.esm.js"
+pin "tom-select" # @2.3.1
