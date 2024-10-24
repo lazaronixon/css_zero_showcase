@@ -5,8 +5,6 @@ pin "@hotwired/turbo-rails", to: "turbo.min.js"
 pin "@hotwired/stimulus", to: "stimulus.min.js"
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js"
 pin_all_from "app/javascript/controllers", under: "controllers"
-pin_all_from "app/javascript/initializers", under: "initializers"
-pin_all_from "app/javascript/helpers", under: "helpers"
 pin "trix"
 pin "@rails/actiontext", to: "actiontext.esm.js"
 pin "tom-select" # @2.3.1
