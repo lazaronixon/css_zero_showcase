@@ -14,6 +14,9 @@ class InputPreview < Lookbook::Preview
   def decimal_field
   end
 
+  def search_field
+  end  
+
   def date_field
   end
 
