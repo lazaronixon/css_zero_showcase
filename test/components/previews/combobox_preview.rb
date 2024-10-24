@@ -38,7 +38,7 @@ class ComboboxPreview < Lookbook::Preview
   # ---
   # - `bin/importmaps pin tom-select`
   # - `bin/importmaps pin @rails/request.js`
-  def internationalization
+  def translation
   end
 
   # Dependencies
