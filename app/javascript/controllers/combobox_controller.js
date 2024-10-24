@@ -3,16 +3,15 @@ import TomSelect from "tom-select";
 
 export default class extends Controller {
   static values = {
-    variant: { type: String, default: "default" },
     createText: { type: String, default: "Add" },
     noResultsText: { type: String, default: "No results found" }
   }
 
   connect() {
-    if (this.variantValue === "tags") {
-      this.tomSelect = new TomSelect(this.element, this.#tagsOptions)
+    if (this.element.nodeName === "INPUT") {
+      this.tomSelect = new TomSelect(this.element, this.#inputOptions)
     } else {
-      this.tomSelect = new TomSelect(this.element, this.#defaultOptions)
+      this.tomSelect = new TomSelect(this.element, this.#selectOptions)
     }
   }
 
@@ -20,18 +19,22 @@ export default class extends Controller {
     this.tomSelect.destroy()
   }
 
-  get #tagsOptions() {
+  get #inputOptions() {
     return { render: this.#renderOptions, persist: false, createOnBlur: true, create: true }
   }
 
-  get #defaultOptions() {
+  get #selectOptions() {
     return { render: this.#renderOptions }
   }
 
   get #renderOptions() {
     return {
-      option_create: (data, escape) => `<div class="create">${this.createTextValue} <strong>${escape(data.input)}</strong>&hellip;</div>`,
-      no_results: () => `<div class="no-results">${this.noResultsTextValue}</div>`
+      option_create: (data, escape) => {
+        return `<div class="create">${this.createTextValue} <b>${escape(data.input)}</b>...</div>`
+      },
+      no_results: () =>  {
+        return `<div class="no-results">${this.noResultsTextValue}</div>`
+      }
     }
   }
 }
