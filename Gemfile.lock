@@ -123,6 +123,9 @@ GEM
     irb (1.14.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
+    jbuilder (2.13.0)
+      actionview (>= 5.0.0)
+      activesupport (>= 5.0.0)
     logger (1.6.1)
     loofah (2.22.0)
       crass (~> 1.0.2)
@@ -295,6 +298,7 @@ DEPENDENCIES
   css-zero!
   debug
   importmap-rails
+  jbuilder
   lookbook (>= 2.3.2)
   propshaft
   puma (>= 5.0)

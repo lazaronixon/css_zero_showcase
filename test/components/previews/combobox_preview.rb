@@ -4,20 +4,16 @@
 class ComboboxPreview < Lookbook::Preview
   # Dependencies
   # ---
-  # This component depends on [Tom Select](https://github.com/orchidjs/tom-select).
-  # You'll need to install it first before using this components.
-  #
-  # You can do this using the command `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin @rails/request.js`
   def input
   end
 
   # @!group Select
   # Dependencies
   # ---
-  # This component depends on [Tom Select](https://github.com/orchidjs/tom-select).
-  # You'll need to install it first before using this components.
-  #
-  # You can do this using the command `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin @rails/request.js`
   def single
   end
 
@@ -33,19 +29,22 @@ class ComboboxPreview < Lookbook::Preview
 
   # Dependencies
   # ---
-  # This component depends on [Tom Select](https://github.com/orchidjs/tom-select).
-  # You'll need to install it first before using this components.
-  #
-  # You can do this using the command `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin @rails/request.js`
   def multiple
   end
 
   # Dependencies
   # ---
-  # This component depends on [Tom Select](https://github.com/orchidjs/tom-select).
-  # You'll need to install it first before using this components.
-  #
-  # You can do this using the command `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin @rails/request.js`
   def internationalization
+  end
+
+  # Dependencies
+  # ---
+  # - `bin/importmaps pin tom-select`
+  # - `bin/importmaps pin @rails/request.js`
+  def remote
   end
 end
