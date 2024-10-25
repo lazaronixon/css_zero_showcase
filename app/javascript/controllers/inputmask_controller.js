@@ -10,8 +10,8 @@ export default class extends Controller {
     radixPoint:     { type: String,  default: "." },
     digits:         { type: String,  default: "*" },
     digitsOptional: { type: Boolean, default: true },
-    inputFormat:    String,
-    outputFormat:   String
+    inputFormat:    { type: String,  default: "mm/dd/yyyy HH:MM" },
+    outputFormat:   { type: String,  default: "yyyy-mm-dd HH:MM" }
   }
 
   connect() {
