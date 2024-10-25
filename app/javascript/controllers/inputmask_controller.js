@@ -4,9 +4,8 @@ import Inputmask from "inputmask"
 export default class extends Controller {
   static values = {
     mask:           String,
-    placeholder:    { type: String, default: "_" },
     alias:          String,
-    groupSeparator: String,
+    groupSeparator: { type: String,  default: "" },
     radixPoint:     { type: String,  default: "." },
     digits:         { type: String,  default: "*" },
     digitsOptional: { type: Boolean, default: true },
@@ -16,16 +15,12 @@ export default class extends Controller {
 
   connect() {
     if (this.hasMaskValue) {
-      Inputmask.default(this.#maskOptions).mask(this.element)
+      Inputmask.default({ mask: this.maskValue }).mask(this.element)
     } else if (this.aliasValue == "numeric") {
       Inputmask.default(this.#numericOptions).mask(this.element)
     } else if (this.aliasValue == "datetime") {
       Inputmask.default(this.#datetimeOptions).mask(this.element)
     }
-  }
-
-  get #maskOptions() {
-    return { mask: this.maskValue, placeholder: this.placeholderValue }
   }
 
   get #numericOptions() {
