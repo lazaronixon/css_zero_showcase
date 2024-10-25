@@ -9,3 +9,4 @@ pin "trix"
 pin "@rails/actiontext", to: "actiontext.esm.js"
 pin "tom-select" # @2.3.1
 pin "@rails/request.js", to: "@rails--request.js.js" # @0.0.11
+pin "inputmask" # @5.0.9

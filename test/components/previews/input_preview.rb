@@ -9,7 +9,7 @@ class InputPreview < Lookbook::Preview
   end
 
   def search_field
-  end  
+  end
 
   def integer_field
   end
