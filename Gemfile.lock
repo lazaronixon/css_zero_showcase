@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: d8ed74efec8c84d7287108fe4bad870558b21f8f
+  revision: 2c186513bbc1082bb8477dba5572a424de8fb23e
   specs:
     css-zero (0.0.52)
 
@@ -127,10 +127,10 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     logger (1.6.1)
-    loofah (2.23.0)
+    loofah (2.23.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
-    lookbook (2.3.3)
+    lookbook (2.3.4)
       activemodel
       css_parser
       htmlbeautifier (~> 1.3)
