@@ -1,0 +1,17 @@
+<%= form_with url: main_app.slow_action_path, class: "card flex flex-col gap", data: { controller: "autosave", action: "input->autosave#change" } do |form| %>
+  <div class="flex flex-col gap-half">
+    <h3 class="text-2xl font-semibold leading-none">Autosave</h3>
+    <p class="text-sm text-subtle">Your changes will be saved automatically without the need to click on the save changes button.</p>
+  </div>
+
+  <div class="flex flex-col gap mb-2">
+    <div class="flex flex-col gap-half">
+      <%= form.label :content, class: "text-sm font-medium leading-none" %>
+      <%= form.text_area :content, rows: 10, class: "input" %>
+    </div>
+  </div>
+
+  <div class="flex items-center">
+    <%= button_tag tag.span("Save changes"), class: "btn btn--primary btn--loading", data: { autosave_target: "submitter" } %>
+  </div>
+<% end %>
