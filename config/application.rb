@@ -24,6 +24,13 @@ module CssZeroShowcase
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    config.lookbook.ui_theme = "zinc"
+
+    config.lookbook.project_logo = false
+    config.lookbook.ui_favicon   = false
+
+    config.lookbook.project_name = "Css Zero Showcase"
+
     config.lookbook.preview_layout = "lookbook/component_preview"
     config.lookbook.preview_inspector.drawer_panels = [:source, :css, :js, :notes]
 
