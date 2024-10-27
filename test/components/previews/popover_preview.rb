@@ -20,6 +20,6 @@ class PopoverPreview < Lookbook::Preview
   def position_custom
   end
 
-  def hover    
+  def hover
   end
 end
