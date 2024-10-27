@@ -26,6 +26,8 @@ module CssZeroShowcase
 
     config.lookbook.ui_theme = "zinc"
 
+    config.lookbook.preview_display_options = { theme: ["light", "dark"] }    
+
     config.lookbook.project_logo = false
     config.lookbook.ui_favicon   = false
 
