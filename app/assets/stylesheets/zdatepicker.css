@@ -3,7 +3,7 @@
 }
 
 .flatpickr-calendar {
-  background-color: var(--color-bg);
+  background: var(--color-bg);
   border: 1px solid var(--color-border);
   border-radius: var(--rounded-md);
   box-shadow: var(--shadow-md);
@@ -17,20 +17,24 @@
     max-inline-size: 100%;
   }
 
-  .flatpickr-months > * {
-    position: static;
-  }
+  .flatpickr-months {
+    > * {
+      position: static;
+    }
 
-  .flatpickr-month {
-    color: var(--color-text);
-  }
+    .flatpickr-month {
+      color: var(--color-text);
+    }
 
-  :is(.flatpickr-prev-month, .flatpickr-next-month) {
     svg {
       fill: var(--color-border-dark);
     }
 
-    &:hover svg {
+    .flatpickr-prev-month:hover svg {
+      fill: var(--color-text);
+    }
+
+    .flatpickr-next-month:hover svg {
       fill: var(--color-text);
     }
   }
@@ -45,12 +49,12 @@
     text-align: center;
 
     &:hover {
-      background-color: var(--color-border-light);
+      background: var(--color-border-light);
     }
   }
 
   .numInputWrapper {
-    .cur-year {
+    input {
       border-radius: var(--rounded-md);
       color: var(--color-text);
       font-size: var(--text-sm);
@@ -60,20 +64,24 @@
       text-align: center;
     }
 
-    &:hover {
-      background-color: transparent;
-    }
-
-    :is(.arrowUp, .arrowDown) {
+    span {
       border-color: var(--color-border);
     }
 
+    span:hover {
+      background: transparent;
+    }
+
     span.arrowUp::after {
-      border-block-end-color: var(--color-text);
+      border-bottom-color: var(--color-text);
     }
 
     span.arrowDown::after {
-      border-block-start-color: var(--color-text);
+      border-top-color: var(--color-text);
+    }
+
+    &:hover {
+      background: transparent;
     }
   }
 
@@ -92,7 +100,7 @@
     }
 
     .numInput {
-      background-color: transparent;
+      background: transparent;
       color: var(--color-text);
     }
 
@@ -101,7 +109,7 @@
     }
 
     .flatpickr-am-pm {
-      background-color: transparent;
+      background: transparent;
       color: var(--color-text);
     }
   }
@@ -121,7 +129,7 @@
     }
 
     &:is(.today, .inRange, :hover, :focus) {
-      background-color: var(--color-secondary);
+      background: var(--color-secondary);
     }
 
     &:is(
@@ -156,7 +164,7 @@
       .startRange.nextMonthDay,
       .endRange.nextMonthDay
     ) {
-      background-color: var(--color-primary);
+      background: var(--color-primary);
       color: var(--color-text-reversed);
     }
   }
