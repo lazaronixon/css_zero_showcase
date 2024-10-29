@@ -17,14 +17,15 @@
     max-inline-size: 100%;
   }
 
-  .flatpickr-month {
-    color: var(--color-text);
+  .flatpickr-months > * {
     position: static;
   }
 
-  :is(.flatpickr-prev-month, .flatpickr-next-month) {
-    position: static;
+  .flatpickr-month {
+    color: var(--color-text);
+  }
 
+  :is(.flatpickr-prev-month, .flatpickr-next-month) {
     svg {
       fill: var(--color-border-dark);
     }

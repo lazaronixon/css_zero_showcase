@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: b71ceafa7fe21b963282ed64c2603e6664dd352f
+  revision: 27c5b2339f7ad2194cf7f11211b730a41cecf68e
   specs:
     css-zero (0.0.54)
 
@@ -163,7 +163,7 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.3)
+    nio4r (2.7.4)
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.7-arm-linux)
