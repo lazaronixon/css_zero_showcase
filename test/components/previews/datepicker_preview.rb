@@ -3,9 +3,6 @@
 # @js app/javascript/controllers/datepicker_controller.js
 class DatepickerPreview < Lookbook::Preview
   # @!group Default
-  # Dependencies
-  # ---
-  # - `bin/importmaps pin flatpickr`
   def default
   end
 
