@@ -1,0 +1,9 @@
+<% @chart_data = {
+  labels: [ "January", "February", "March", "April", "May", "June", "July" ],
+  datasets: [
+    { label: 'Dataset 1', borderColor: "#93c5fd", backgroundColor: "#93c5fd", data: [65, 59, 80, 81, 56, 55, 40] },
+    { label: 'Dataset 2', borderColor: "#fda4af", backgroundColor: "#fda4af", data: [55, 49, 70, 71, 46, 45, 30] }
+  ]
+} %>
+
+<canvas aria-label="Example" role="img" data-controller="chart" data-chart-type-value="line" data-chart-data-value="<%= @chart_data.to_json %>"></canvas>
