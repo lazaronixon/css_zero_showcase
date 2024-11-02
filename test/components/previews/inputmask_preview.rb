@@ -2,6 +2,7 @@
 # @js app/javascript/controllers/inputmask_controller.js
 class InputmaskPreview < Lookbook::Preview
   # @!group Default
+  # This components depends on [Inputmask](https://robinherbots.github.io/Inputmask).
   def default
   end
 
