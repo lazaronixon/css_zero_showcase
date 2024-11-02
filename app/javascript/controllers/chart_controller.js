@@ -1,5 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
-import { Chart, Colors, registerables } from "https://cdn.jsdelivr.net/npm/chart.js@4.4.6/+esm"
+import { Chart, Colors, registerables } from "https://cdn.skypack.dev/chart.js@4.4.6"
 
 Chart.register(...registerables)
 
