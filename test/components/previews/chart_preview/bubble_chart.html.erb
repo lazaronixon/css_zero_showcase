@@ -1,0 +1,10 @@
+<% @chart_data = {
+  labels: [ "January", "February", "March", "April" ],
+  datasets: [{
+    label: "Dataset 1",
+    backgroundColor: "#93c5fd",
+    data: [{ x: 20, y: 32, r: 15 }, { x: 30, y: 30, r: 25 }, { x: 35, y: 20, r: 13 }, { x: 40, y: 10, r: 10 }]
+  }]
+} %>
+
+<%= tag.canvas style: "max-block-size: 400px", aria: { label: "Example" }, role: "img", data: { controller: "chart", chart_type_value: "bubble", chart_data_value: @chart_data.to_json } %>

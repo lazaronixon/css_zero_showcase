@@ -6,4 +6,4 @@
   ]
 } %>
 
-<%= tag.canvas style: "max-block-size: 400px", aria: { label: "Example" }, role: "img", data: { controller: "chart", chart_type_value: "bar", chart_data_value: @chart_data.to_json } %>
+<%= tag.canvas style: "max-block-size: 400px", aria: { label: "Example" }, role: "img", data: { controller: "chart", chart_type_value: "bar", chart_options_value: { indexAxis: "y" }, chart_data_value: @chart_data.to_json } %>

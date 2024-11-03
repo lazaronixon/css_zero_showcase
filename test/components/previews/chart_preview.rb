@@ -6,10 +6,27 @@ class ChartPreview < Lookbook::Preview
   end
 
   # This components depends on [Chart.js](https://www.chartjs.org).
+  def bar_y_chart
+  end
+
+  # This components depends on [Chart.js](https://www.chartjs.org).
   def line_chart
   end
 
   # This components depends on [Chart.js](https://www.chartjs.org).
   def pie_chart
+  end
+
+  # This components depends on [Chart.js](https://www.chartjs.org).
+  def doughnut_chart
+  end
+
+  # This components depends on [Chart.js](https://www.chartjs.org).
+  def bubble_chart
+  end
+
+  # This components depends on [Chart.js](https://www.chartjs.org).
+  def mixed_chart
+    
   end
 end
