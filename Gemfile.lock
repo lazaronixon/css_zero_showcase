@@ -113,6 +113,9 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.13.0)
+    geared_pagination (1.2.0)
+      activesupport (>= 5.0)
+      addressable (>= 2.5.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     htmlbeautifier (1.4.3)
@@ -302,6 +305,7 @@ DEPENDENCIES
   capybara
   css-zero!
   debug
+  geared_pagination
   importmap-rails
   jbuilder
   lookbook (>= 2.3.2)

@@ -1,0 +1,5 @@
+<%= turbo_stream.replace :next_page_container, partial: "paginables/paginable", collection: @page.records, as: :movie %>
+
+<% unless @page.last? %>
+  <%= turbo_stream.append :paginables, partial: "paginables/next_page_container", locals: { page: @page.next_param } %>
+<% end %>

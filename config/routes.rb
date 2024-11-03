@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post "slow_action", to: "home#slow_action"
 
   resources :searchables, only: :index
+  resources :paginables,  only: :index
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

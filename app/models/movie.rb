@@ -1,3 +1,3 @@
-class Searchable < ApplicationRecord
+class Movie < ApplicationRecord
   enum :kind, %i[ suggestion historical ]
 end

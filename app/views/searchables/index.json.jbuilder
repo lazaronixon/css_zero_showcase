@@ -1,4 +1,4 @@
-json.array! @searchables do |searchable|
-  json.value searchable.id
-  json.text searchable.term
+json.array! @movies do |movie|
+  json.value movie.id
+  json.text  movie.name
 end

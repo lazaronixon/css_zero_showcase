@@ -230,9 +230,9 @@
   "Wolf of Wall Street",
   "Wonder Woman",
   "Zootopia",
-].each do |searchable| %>
-<% sanitized_term = searchable.downcase.gsub(/[^a-z0-9\s]/, '').gsub(/\s+/, '_') %>
-<%= sanitized_term %>:
-  term: "<%= searchable %>"
+].each do |movie| %>
+<% sanitized_name = movie.downcase.gsub(/[^a-z0-9\s]/, '').gsub(/\s+/, '_') %>
+<%= sanitized_name %>:
+  name: "<%= movie %>"
   kind: "<%= ([ :suggestion ] * 8 + [ :historical ] * 2).sample %>"
 <% end %>

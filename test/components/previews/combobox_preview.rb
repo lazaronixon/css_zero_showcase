@@ -2,12 +2,12 @@
 # @css app/assets/stylesheets/zcombobox.css
 # @js app/javascript/controllers/combobox_controller.js
 class ComboboxPreview < Lookbook::Preview
-  # This components depends on [Tom Select](https://tom-select.js.org).
+  # This component depends on [Tom Select](https://tom-select.js.org).
   def input
   end
 
   # @!group Select
-  # This components depends on [Tom Select](https://tom-select.js.org).
+  # This component depends on [Tom Select](https://tom-select.js.org).
   def single
   end
 
@@ -21,11 +21,11 @@ class ComboboxPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  # This components depends on [Tom Select](https://tom-select.js.org).
+  # This component depends on [Tom Select](https://tom-select.js.org).
   def multiple
   end
 
-  # This components depends on [Tom Select](https://tom-select.js.org).
+  # This component depends on [Tom Select](https://tom-select.js.org).
   def translation
   end
 
@@ -34,7 +34,7 @@ class ComboboxPreview < Lookbook::Preview
   # - [searchables_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/searchables_controller.rb)
   # - [index.json.jbuilder](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/searchables/index.json.jbuilder)
   #
-  # This components depends on [Tom Select](https://tom-select.js.org).
+  # This component depends on [Tom Select](https://tom-select.js.org).
   def remote
   end
 end
