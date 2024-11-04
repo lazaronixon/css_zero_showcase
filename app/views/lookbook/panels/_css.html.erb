@@ -1,6 +1,6 @@
 <% if css_tag = preview.tags(:css).first %>
   <%= lookbook_render :code, language: :css, line_numbers: true, full_height: true do %>
-    <%== File.read(css_tag.file_path) %>
+    <%= File.read(css_tag.file_path) %>
   <% end %>
 <% else %>
   <div class="lookbook-panel bg-white">

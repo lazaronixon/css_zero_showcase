@@ -1,6 +1,6 @@
 <% if js_tag = preview.tags(:js).first %>
   <%= lookbook_render :code, language: :js, line_numbers: true, full_height: true do %>
-    <%== File.read(js_tag.file_path) %>
+    <%= File.read(js_tag.file_path) %>
   <% end %>
 <% else %>
   <div class="lookbook-panel bg-white">
