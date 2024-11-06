@@ -10,6 +10,9 @@ class LayoutsPreview < ViewComponent::Preview
   def sidebar_layout
   end
 
+  # Partials
+  # ---
+  # - [authentication](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_authentication.html.erb)
   def centered_layout
   end
 
