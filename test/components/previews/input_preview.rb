@@ -29,6 +29,9 @@ class InputPreview < Lookbook::Preview
   def file_field
   end
 
+  def one_time_password_field
+  end  
+
   def pattern_field
   end
 
