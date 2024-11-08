@@ -1,7 +1,8 @@
-PATH
-  remote: ../css-zero
+GIT
+  remote: https://github.com/lazaronixon/css-zero.git
+  revision: f8a01362902a9a4094f849cf92fbe94a51818010
   specs:
-    css-zero (0.0.59)
+    css-zero (0.0.60)
 
 GEM
   remote: https://rubygems.org/
@@ -231,7 +232,7 @@ GEM
     redis-client (0.22.2)
       connection_pool
     regexp_parser (2.9.2)
-    reline (0.5.10)
+    reline (0.5.11)
       io-console (~> 0.5)
     rexml (3.3.9)
     rouge (4.4.0)
@@ -264,7 +265,7 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    uri (1.0.0)
+    uri (1.0.1)
     useragent (0.16.10)
     view_component (3.20.0)
       activesupport (>= 5.2.0, < 8.1)
