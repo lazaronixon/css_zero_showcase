@@ -23,20 +23,20 @@ class InputPreview < Lookbook::Preview
   def datetime_field
   end
 
-  def color_field
-  end
-
   def file_field
   end
 
   def one_time_password_field
-  end  
+  end
 
   def pattern_field
   end
 
   def autocomplete_field
   end
+
+  def color_field
+  end  
 
   def actor_field
   end
