@@ -14,7 +14,4 @@ class SortablePreview < Lookbook::Preview
 
   def handle
   end
-
-  def filtered
-  end
 end

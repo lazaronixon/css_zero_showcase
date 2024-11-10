@@ -4,7 +4,6 @@ import Sortable from "https://cdn.skypack.dev/sortablejs"
 export default class extends Controller {
   static values  = {
     ghostClass: String,
-    animation: { type: Number, default: 150 },
     group: String,
     clone: { type: Boolean, default: false },
     pull: { type: Boolean, default: true },
@@ -14,17 +13,15 @@ export default class extends Controller {
   }
 
   connect() {
-    this.sortable = new Sortable(this.element, {
-      animation: this.animationValue,
-      ghostClass: this.ghostClassValue,
-      group: this.#groupOptions,
-      sort: this.sortValue,
-      handle: this.handleValue
-    })
+    this.sortable = new Sortable(this.element, this.#options)
   }
 
   disconnect() {
     this.sortable.destroy()
+  }
+
+  get #options() {
+    return { animation: 150, ghostClass: this.ghostClassValue, group: this.#groupOptions, sort: this.sortValue, handle: this.handleValue }
   }
 
   get #groupOptions() {
