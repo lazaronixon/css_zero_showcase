@@ -10,8 +10,7 @@ export default class extends Controller {
     pull: { type: Boolean, default: true },
     put: { type: Boolean, default: true },
     sort: { type: Boolean, default: true },
-    handle: String,
-    filter: String
+    handle: String
   }
 
   connect() {
@@ -20,8 +19,7 @@ export default class extends Controller {
       ghostClass: this.ghostClassValue,
       group: this.#groupOptions,
       sort: this.sortValue,
-      handle: this.handleValue,
-      filter: this.filterValue
+      handle: this.handleValue
     })
   }
 
