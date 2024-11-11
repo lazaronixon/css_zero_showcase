@@ -3,12 +3,9 @@ class SortablePreview < Lookbook::Preview
   def simple
   end
 
-  def shared
-  end
-
-  def disabling_sorting
-  end
-
   def handle
+  end  
+
+  def shared
   end
 end
