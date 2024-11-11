@@ -2,12 +2,18 @@
 # @css app/assets/stylesheets/zcombobox.css
 # @js app/javascript/controllers/combobox_controller.js
 class ComboboxPreview < Lookbook::Preview
-  # This component depends on [Tom Select](https://tom-select.js.org).
+  # Depencencies
+  # ---
+  # - [Tom Select](https://github.com/orchidjs/tom-select)
+  # - [Request.js](https://github.com/rails/request.js)
   def input
   end
 
   # @!group Select
-  # This component depends on [Tom Select](https://tom-select.js.org).
+  # Depencencies
+  # ---
+  # - [Tom Select](https://github.com/orchidjs/tom-select)
+  # - [Request.js](https://github.com/rails/request.js)
   def single
   end
 
@@ -21,11 +27,17 @@ class ComboboxPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  # This component depends on [Tom Select](https://tom-select.js.org).
+  # Depencencies
+  # ---
+  # - [Tom Select](https://github.com/orchidjs/tom-select)
+  # - [Request.js](https://github.com/rails/request.js)
   def multiple
   end
 
-  # This component depends on [Tom Select](https://tom-select.js.org).
+  # Depencencies
+  # ---
+  # - [Tom Select](https://github.com/orchidjs/tom-select)
+  # - [Request.js](https://github.com/rails/request.js)
   def translation
   end
 
@@ -34,7 +46,10 @@ class ComboboxPreview < Lookbook::Preview
   # - [searchables_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/searchables_controller.rb)
   # - [index.json.jbuilder](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/searchables/index.json.jbuilder)
   #
-  # This component depends on [Tom Select](https://tom-select.js.org).
+  # Depencencies
+  # ---
+  # - [Tom Select](https://github.com/orchidjs/tom-select)
+  # - [Request.js](https://github.com/rails/request.js)
   def remote
   end
 end
