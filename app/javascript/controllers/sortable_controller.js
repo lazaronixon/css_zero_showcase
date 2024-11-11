@@ -6,9 +6,7 @@ export default class extends Controller {
   static values  = {
     url: String,
     group: String,
-    clone: { type: Boolean, default: false },
-    pull: { type: Boolean, default: true },
-    put: { type: Boolean, default: true },
+    put:  { type: Boolean, default: true },
     sort: { type: Boolean, default: true },
     handle: String
   }
@@ -21,23 +19,15 @@ export default class extends Controller {
     this.sortable.destroy()
   }
 
-  #onAdd({ item, newIndex, to }) {
-    put(item.dataset.urlValue, { responseKind: "plain", query: { position: newIndex, parent_id: to.dataset.id } })
-	}
-
-  #onUpdate({ item, newIndex, to }) {
+  #submit({ item, newIndex, to }) {
     put(item.dataset.urlValue, { responseKind: "plain", query: { position: newIndex, parent_id: to.dataset.id } })
 	}
 
   get #options() {
-    return { animation: 150, onAdd: this.#onAdd, onUpdate: this.#onUpdate, group: this.#groupOptions, sort: this.sortValue, handle: this.handleValue }
+    return { animation: 150, onAdd: this.#submit, onUpdate: this.#submit, group: this.#groupOptions, sort: this.sortValue, handle: this.handleValue }
   }
 
   get #groupOptions() {
-    return this.hasGroupValue && { name: this.groupValue, pull: this.#pullOption, put: this.putValue }
-  }
-
-  get #pullOption() {
-    return this.cloneValue ? "clone" : this.pullValue
+    return this.hasGroupValue && { name: this.groupValue, put: this.putValue }
   }
 }

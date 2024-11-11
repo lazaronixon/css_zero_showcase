@@ -6,9 +6,6 @@ class SortablePreview < Lookbook::Preview
   def shared
   end
 
-  def cloning
-  end
-
   def disabling_sorting
   end
 
