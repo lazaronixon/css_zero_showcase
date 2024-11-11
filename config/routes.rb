@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :searchables, only: :index
   resources :paginables,  only: :index
+  resources :sortables,   only: :update
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

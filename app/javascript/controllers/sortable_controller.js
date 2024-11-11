@@ -1,8 +1,10 @@
 import { Controller } from "@hotwired/stimulus"
+import { put } from "https://cdn.skypack.dev/@rails/request.js@0.0.11"
 import Sortable from "https://cdn.skypack.dev/sortablejs"
 
 export default class extends Controller {
   static values  = {
+    url: String,
     group: String,
     clone: { type: Boolean, default: false },
     pull: { type: Boolean, default: true },
@@ -19,8 +21,16 @@ export default class extends Controller {
     this.sortable.destroy()
   }
 
+  #onAdd({ item, newIndex, to }) {
+    put(item.dataset.urlValue, { responseKind: "plain", query: { position: newIndex, parent_id: to.dataset.id } })
+	}
+
+  #onUpdate({ item, newIndex, to }) {
+    put(item.dataset.urlValue, { responseKind: "plain", query: { position: newIndex, parent_id: to.dataset.id } })
+	}
+
   get #options() {
-    return { animation: 150, group: this.#groupOptions, sort: this.sortValue, handle: this.handleValue }
+    return { animation: 150, onAdd: this.#onAdd, onUpdate: this.#onUpdate, group: this.#groupOptions, sort: this.sortValue, handle: this.handleValue }
   }
 
   get #groupOptions() {
