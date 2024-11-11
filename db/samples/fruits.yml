@@ -1,0 +1,31 @@
+- key: apple
+  description: 🍎 Apple
+- key: banana
+  description: 🍌 Banana
+- key: cherry
+  description: 🍒 Cherry
+- key: strawberry
+  description: 🍓 Strawberry
+- key: coconut
+  description: 🥥 Coconut
+- key: kiwi
+  description: 🥝 Kiwi
+- key: grape
+  description: 🍇 Grape
+- key: watermelon
+  description: 🍉 Watermelon
+- key: pineapple
+  description: 🍍 Pineapple
+- key: pear
+  description: 🍐 Pear
+- key: peach
+  description: 🍑 Peach
+- key: blueberry
+  description: 🫐 Blueberry
+- key: orange
+  description: 🍊 Orange
+- key: mango
+  description: 🥭 Mango
+
+
+

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+apple:
+  description: 🍎 Apple
+  key: apple
+
+banana:
+  description: 🍌 Banana
+  key: banana
+
+cherry:
+  description: 🍒 Cherry
+  key: cherry
