@@ -3,7 +3,6 @@ import Sortable from "https://cdn.skypack.dev/sortablejs"
 
 export default class extends Controller {
   static values  = {
-    ghostClass: String,
     group: String,
     clone: { type: Boolean, default: false },
     pull: { type: Boolean, default: true },
@@ -21,7 +20,7 @@ export default class extends Controller {
   }
 
   get #options() {
-    return { animation: 150, ghostClass: this.ghostClassValue, group: this.#groupOptions, sort: this.sortValue, handle: this.handleValue }
+    return { animation: 150, group: this.#groupOptions, sort: this.sortValue, handle: this.handleValue }
   }
 
   get #groupOptions() {
