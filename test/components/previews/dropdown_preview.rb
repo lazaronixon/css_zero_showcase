@@ -1,4 +1,3 @@
-# @display padding 0px
 class DropdownPreview < Lookbook::Preview
   # Links
   # ---

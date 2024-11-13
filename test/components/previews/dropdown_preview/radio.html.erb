@@ -1,30 +1,28 @@
-<main class="centered-layout">
-  <div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
-    <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="menu" aria-controls="menu">
-      Open dropdown
-    </button>
+<div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
+  <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="menu" aria-controls="menu">
+    Open dropdown
+  </button>
 
-    <dialog class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside keydown.esc->popover#close">
-      <div id="menu" class="menu" role="menu" aria-labelledby="menu_button">
-        <div class="menu__header">Settings</div>
-        <hr class="menu__separator" role="separator"/>
-        <label class="btn menu__item" role="menuitemradio">
-          <%= radio_button_tag :setting, :recents, class: "checkbox" %>
-          <span class="text-sm">Recents</span>
-        </label>
-        <label class="btn menu__item" role="menuitemradio">
-          <%= radio_button_tag :setting, :home, class: "checkbox" %>
-          <span class="text-sm">Home</span>
-        </label>
-        <label class="btn menu__item" role="menuitemradio">
-          <%= radio_button_tag :setting, :applications, class: "checkbox" %>
-          <span class="text-sm">Applications</span>
-        </label>
-        <label class="btn menu__item" role="menuitemradio">
-          <%= radio_button_tag :setting, :desktop, class: "checkbox" %>
-          <span class="text-sm">Desktop</span>
-        </label>
-      </div>
-    </dialog>
-  </div>
-</main>
+  <dialog class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside keydown.esc->popover#close">
+    <div id="menu" class="menu" role="menu" aria-labelledby="menu_button">
+      <div class="menu__header">Settings</div>
+      <hr class="menu__separator" role="separator"/>
+      <label class="btn menu__item" role="menuitemradio">
+        <%= radio_button_tag :setting, :recents, class: "checkbox" %>
+        <span class="text-sm">Recents</span>
+      </label>
+      <label class="btn menu__item" role="menuitemradio">
+        <%= radio_button_tag :setting, :home, class: "checkbox" %>
+        <span class="text-sm">Home</span>
+      </label>
+      <label class="btn menu__item" role="menuitemradio">
+        <%= radio_button_tag :setting, :applications, class: "checkbox" %>
+        <span class="text-sm">Applications</span>
+      </label>
+      <label class="btn menu__item" role="menuitemradio">
+        <%= radio_button_tag :setting, :desktop, class: "checkbox" %>
+        <span class="text-sm">Desktop</span>
+      </label>
+    </div>
+  </dialog>
+</div>

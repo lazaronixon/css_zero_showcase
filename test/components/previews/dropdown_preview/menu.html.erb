@@ -1,46 +1,44 @@
-<main class="centered-layout">
-  <div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
-    <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="menu" aria-controls="menu">
-      Open dropdown
-    </button>
+<div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
+  <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="menu" aria-controls="menu">
+    Open dropdown
+  </button>
 
-    <dialog class="popover" style="--popover-size: 14rem;" data-controller="menu" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside keydown.esc->popover#close close->menu#reset keydown.up->menu#prev keydown.down->menu#next">
-      <div id="menu" class="menu" role="menu" aria-labelledby="menu_button">
-        <div class="menu__header">Menu</div>
-        <hr class="menu__separator" role="separator"/>
-        <div class="menu__group" role="group">
-          <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
-            <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
-            <span>Calendar</span>
-          <% end %>
-          <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
-            <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
-            <span>Seach Emoji</span>
-          <% end %>
-          <%= tag.a class: "btn menu__item", role: "menuitem", aria: { disabled: true } do %>
-            <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
-            <span>Calculator</span>
-          <% end %>
-        </div>
-        <hr class="menu__separator" role="separator"/>
-        <div class="menu__group" role="group">
-          <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
-            <%= image_tag "user.svg", size: 14, aria: { hidden: true } %>
-            <span>Profile</span>
-            <span class="menu__item-key">⌘P</span>
-          <% end %>
-          <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
-            <%= image_tag "credit-card.svg", size: 14, aria: { hidden: true } %>
-            <span>Billing</span>
-            <span class="menu__item-key">⌘B</span>
-          <% end %>
-          <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
-            <%= image_tag "settings.svg", size: 14, aria: { hidden: true } %>
-            <span>Settings</span>
-            <span class="menu__item-key">⌘P</span>
-          <% end %>
-        </div>
+  <dialog class="popover" style="--popover-size: 14rem;" data-controller="menu" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside keydown.esc->popover#close close->menu#reset keydown.up->menu#prev keydown.down->menu#next">
+    <div id="menu" class="menu" role="menu" aria-labelledby="menu_button">
+      <div class="menu__header">Menu</div>
+      <hr class="menu__separator" role="separator"/>
+      <div class="menu__group" role="group">
+        <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+          <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
+          <span>Calendar</span>
+        <% end %>
+        <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+          <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
+          <span>Seach Emoji</span>
+        <% end %>
+        <%= tag.a class: "btn menu__item", role: "menuitem", aria: { disabled: true } do %>
+          <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
+          <span>Calculator</span>
+        <% end %>
       </div>
-    </dialog>
-  </div>
-</main>
+      <hr class="menu__separator" role="separator"/>
+      <div class="menu__group" role="group">
+        <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+          <%= image_tag "user.svg", size: 14, aria: { hidden: true } %>
+          <span>Profile</span>
+          <span class="menu__item-key">⌘P</span>
+        <% end %>
+        <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+          <%= image_tag "credit-card.svg", size: 14, aria: { hidden: true } %>
+          <span>Billing</span>
+          <span class="menu__item-key">⌘B</span>
+        <% end %>
+        <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+          <%= image_tag "settings.svg", size: 14, aria: { hidden: true } %>
+          <span>Settings</span>
+          <span class="menu__item-key">⌘P</span>
+        <% end %>
+      </div>
+    </div>
+  </dialog>
+</div>
