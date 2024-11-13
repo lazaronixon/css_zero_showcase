@@ -1,4 +1,4 @@
-# @display padding 0px
+# @display centered true
 # @css app/assets/stylesheets/popover.css
 # @js app/javascript/controllers/popover_controller.js
 class PopoverPreview < Lookbook::Preview

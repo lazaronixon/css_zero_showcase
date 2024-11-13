@@ -12,9 +12,11 @@
 
   <body data-controller="lightbox fullscreen local-time">
     <div style="padding: <%= lookbook_display(:padding, "1.5rem") %>">
-      <div style="max-width: <%= lookbook_display(:max_width, "100%") %>">
-        <%= yield %>
-      </div>
+      <% if params.dig(:lookbook, :display, :centered) == true %>
+        <div class="centered-layout" style="max-width: <%= lookbook_display(:max_width, "100%") %>"><%= yield %></div>
+      <% else %>
+        <div style="max-width: <%= lookbook_display(:max_width, "100%") %>"><%= yield %></div>
+      <% end %>
     </div>
   </body>
 </html>
