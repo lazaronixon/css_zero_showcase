@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: f8a01362902a9a4094f849cf92fbe94a51818010
+  revision: ece4752402dcb30a5bdd6072791ec8c691b3700f
   specs:
-    css-zero (0.0.60)
+    css-zero (0.0.62)
 
 GEM
   remote: https://rubygems.org/
@@ -153,8 +153,8 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     minitest (5.25.1)
-    msgpack (1.7.3)
-    net-imap (0.5.0)
+    msgpack (1.7.5)
+    net-imap (0.5.1)
       date
       net-protocol
     net-pop (0.1.2)
@@ -235,9 +235,9 @@ GEM
     reline (0.5.11)
       io-console (~> 0.5)
     rexml (3.3.9)
-    rouge (4.4.0)
+    rouge (4.5.1)
     rubyzip (2.3.2)
-    securerandom (0.3.1)
+    securerandom (0.3.2)
     selenium-webdriver (4.26.0)
       base64 (~> 0.2)
       logger (~> 1.4)
