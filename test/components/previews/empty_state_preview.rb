@@ -1,5 +1,5 @@
 class EmptyStatePreview < Lookbook::Preview
-  # Depencencies
+  # Dependencies
   # ---
   # - [unDraw](https://undraw.co/illustrations)
   def simple

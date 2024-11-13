@@ -4,7 +4,7 @@ class SortablePreview < Lookbook::Preview
   # ---
   # Each move creates a request like `PUT requests_url?position=3&parent_id=1`.
   #
-  # Depencencies
+  # Dependencies
   # ---
   # - [SortableJS](https://github.com/SortableJS/Sortable)
   # - [Request.js](https://github.com/rails/request.js)
@@ -15,7 +15,7 @@ class SortablePreview < Lookbook::Preview
   # ---
   # Each move creates a request like `PUT requests_url?position=3&parent_id=1`.
   #
-  # Depencencies
+  # Dependencies
   # ---
   # - [SortableJS](https://github.com/SortableJS/Sortable)
   # - [Request.js](https://github.com/rails/request.js)
@@ -26,7 +26,7 @@ class SortablePreview < Lookbook::Preview
   # ---
   # Each move creates a request like `PUT requests_url?position=3&parent_id=1`.
   #
-  # Depencencies
+  # Dependencies
   # ---
   # - [SortableJS](https://github.com/SortableJS/Sortable)
   # - [Request.js](https://github.com/rails/request.js)

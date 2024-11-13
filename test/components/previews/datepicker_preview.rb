@@ -3,7 +3,7 @@
 # @js app/javascript/controllers/datepicker_controller.js
 class DatepickerPreview < Lookbook::Preview
   # @!group Default
-  # Depencencies
+  # Dependencies
   # ---
   # - [Flatpickr](https://github.com/flatpickr/flatpickr)
   def default

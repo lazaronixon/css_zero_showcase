@@ -7,7 +7,7 @@ class InfiniteScrollPreview < Lookbook::Preview
   # - [index.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/paginables/index.html.erb)
   # - [index.turbo_stream.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/paginables/index.turbo_stream.erb)
   #
-  # Depencencies
+  # Dependencies
   # ---
   # - [Geared Pagination](https://github.com/basecamp/geared_pagination)
   def default
