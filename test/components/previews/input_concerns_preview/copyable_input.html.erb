@@ -1,5 +1,5 @@
 <div class="input input--actor flex items-center gap" data-controller="copyable-input">
-  <%= text_field_tag "copyable_field", SecureRandom.base58(32), readonly: "readonly", data: { copyable_input_target: "input" } %>
+  <%= text_field_tag "copyable_input", SecureRandom.base58(32), readonly: "readonly", data: { copyable_input_target: "input" } %>
   <button class="btn btn--plain" data-action="copyable-input#copy">
     <%= image_tag "copy.svg",  size: 20, aria: { hidden: true }, data: { copyable_input_target: "copyIcon" }, hidden: true %>
     <%= image_tag "check.svg", size: 20, aria: { hidden: true }, data: { copyable_input_target: "successIcon" }, hidden: true %>

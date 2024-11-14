@@ -26,9 +26,6 @@ class InputPreview < Lookbook::Preview
   def file_field
   end
 
-  def one_time_password_field
-  end
-
   def pattern_field
   end
 
@@ -36,7 +33,7 @@ class InputPreview < Lookbook::Preview
   end
 
   def color_field
-  end  
+  end
 
   def actor_field
   end
