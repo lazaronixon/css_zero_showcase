@@ -43,7 +43,7 @@ class ComboboxPreview < Lookbook::Preview
 
   # Implementation
   # ---
-  # - [searchables_controller](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/searchables_controller.rb)
+  # - [searchables_controller.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/searchables_controller.rb)
   # - [index.json.jbuilder](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/searchables/index.json.jbuilder)
   #
   # Dependencies

@@ -6,13 +6,13 @@ class LayoutsPreview < ViewComponent::Preview
 
   # Partials
   # ---
-  # - [mobile_menu](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_mobile_menu.html.erb)
+  # - [\_mobile_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_mobile_menu.html.erb)
   def sidebar_layout
   end
 
   # Partials
   # ---
-  # - [authentication](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_authentication.html.erb)
+  # - [_authentication.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_authentication.html.erb)
   def centered_layout
   end
 
