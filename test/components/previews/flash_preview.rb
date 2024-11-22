@@ -4,10 +4,10 @@ class FlashPreview < Lookbook::Preview
   def default
   end
 
-  def positive
+  def notice
   end
 
-  def negative
+  def alert
   end
 
   def extended
