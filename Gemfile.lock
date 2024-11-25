@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 3fe681bf969d45cda9b65a7eeea24d5db5884975
+  revision: d7f6b79599a7ed85c8f9de5a9654982f81bb76de
   specs:
-    css-zero (0.0.66)
+    css-zero (0.0.68)
 
 GEM
   remote: https://rubygems.org/
@@ -238,7 +238,7 @@ GEM
     rouge (4.5.1)
     rubyzip (2.3.2)
     securerandom (0.3.2)
-    selenium-webdriver (4.26.0)
+    selenium-webdriver (4.27.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
