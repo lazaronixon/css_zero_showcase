@@ -4,6 +4,9 @@ class LayoutsPreview < ViewComponent::Preview
   def header_layout
   end
 
+  def header_layout_2
+  end
+
   # Partials
   # ---
   # - [\_mobile_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_mobile_menu.html.erb)
@@ -14,8 +17,5 @@ class LayoutsPreview < ViewComponent::Preview
   # ---
   # - [_authentication.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_authentication.html.erb)
   def centered_layout
-  end
-
-  def container
   end
 end
