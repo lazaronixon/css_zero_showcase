@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 8d44505913894be54ca112194ff1379429ed0b0a
+  revision: 43bf3f8200c983dd7ca4854b669657e53170808d
   specs:
     css-zero (0.0.72)
 
@@ -232,7 +232,7 @@ GEM
     redis-client (0.22.2)
       connection_pool
     regexp_parser (2.9.2)
-    reline (0.5.11)
+    reline (0.5.12)
       io-console (~> 0.5)
     rexml (3.3.9)
     rouge (4.5.1)
