@@ -7,6 +7,9 @@ class LayoutsPreview < ViewComponent::Preview
   def header_layout_2
   end
 
+  def header_layout_3
+  end
+
   # Partials
   # ---
   # - [\_mobile_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_mobile_menu.html.erb)
