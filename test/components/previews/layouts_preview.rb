@@ -1,7 +1,7 @@
 # @display padding 0px
 # @css app/assets/stylesheets/layouts.css
 class LayoutsPreview < ViewComponent::Preview
-  def header_layout
+  def header_layout_1
   end
 
   def header_layout_2
