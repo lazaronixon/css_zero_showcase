@@ -7,13 +7,19 @@ class LayoutsPreview < ViewComponent::Preview
   def header_layout_2
   end
 
-  def header_layout_3
+  def sticky_footer
   end
 
   # Partials
   # ---
   # - [\_mobile_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_mobile_menu.html.erb)
-  def sidebar_layout
+  def sidebar_layout_1
+  end
+
+  # Partials
+  # ---
+  # - [\_mobile_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_mobile_menu.html.erb)
+  def sidebar_layout_2
   end
 
   # Partials
