@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: d84de0dc4357a6126d1aecc1d703d9b1a2b7f95b
+  revision: 8c0e86003cbff89369d895614e36a429e3c0d13f
   specs:
-    css-zero (0.0.74)
+    css-zero (0.0.76)
 
 GEM
   remote: https://rubygems.org/
@@ -102,11 +102,11 @@ GEM
     css_parser (1.21.0)
       addressable
     date (3.4.1)
-    debug (1.9.2)
+    debug (1.10.0)
       irb (~> 1.10)
       reline (>= 0.3.8)
     drb (2.2.1)
-    erubi (1.13.0)
+    erubi (1.13.1)
     geared_pagination (1.2.0)
       activesupport (>= 5.0)
       addressable (>= 2.5.0)
@@ -121,13 +121,13 @@ GEM
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.8.0)
-    irb (1.14.2)
+    irb (1.14.3)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    logger (1.6.3)
+    logger (1.6.4)
     loofah (2.23.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -154,7 +154,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.25.4)
     msgpack (1.7.5)
-    net-imap (0.5.1)
+    net-imap (0.5.2)
       date
       net-protocol
     net-pop (0.1.2)
@@ -181,7 +181,7 @@ GEM
       activesupport (>= 7.0.0)
       rack
       railties (>= 7.0.0)
-    psych (5.2.1)
+    psych (5.2.2)
       date
       stringio
     public_suffix (6.0.1)
@@ -225,7 +225,7 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.2.1)
-    rdoc (6.9.0)
+    rdoc (6.10.0)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
     redis (5.3.0)
@@ -233,12 +233,12 @@ GEM
     redis-client (0.23.0)
       connection_pool
     regexp_parser (2.9.3)
-    reline (0.5.12)
+    reline (0.6.0)
       io-console (~> 0.5)
-    rexml (3.3.9)
+    rexml (3.4.0)
     rouge (4.5.1)
     rubyzip (2.3.2)
-    securerandom (0.4.0)
+    securerandom (0.4.1)
     selenium-webdriver (4.27.0)
       base64 (~> 0.2)
       logger (~> 1.4)
@@ -260,7 +260,7 @@ GEM
     thruster (0.1.9-arm64-darwin)
     thruster (0.1.9-x86_64-darwin)
     thruster (0.1.9-x86_64-linux)
-    timeout (0.4.2)
+    timeout (0.4.3)
     turbo-rails (2.0.11)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
@@ -268,7 +268,7 @@ GEM
       concurrent-ruby (~> 1.0)
     uri (1.0.2)
     useragent (0.16.11)
-    view_component (3.20.0)
+    view_component (3.21.0)
       activesupport (>= 5.2.0, < 8.1)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
