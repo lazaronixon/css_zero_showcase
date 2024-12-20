@@ -14,7 +14,7 @@ export default class extends Controller {
   }
 
   cleanup() {
-    setTimeout(() => { this.element.style = null; }, 500)
+    setTimeout(() => { this.element.style = null }, 500)
   }
 
   #setOpacity() {
