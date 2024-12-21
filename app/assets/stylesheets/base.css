@@ -23,6 +23,9 @@
   --color-filter-text-reversed: invert(1);
   --color-filter-negative: invert(22%) sepia(85%) saturate(1790%) hue-rotate(339deg) brightness(105%) contrast(108%);
   --color-filter-positive: invert(44%) sepia(89%) saturate(409%) hue-rotate(89deg) brightness(94%) contrast(97%);
+
+  /* Colorize browser widgets */
+  color-scheme: light;  
 }
 
 [data-theme="dark"] {
@@ -50,6 +53,9 @@
   --color-filter-text-reversed: invert(0);
   --color-filter-negative: invert(15%) sepia(65%) saturate(2067%) hue-rotate(339deg) brightness(102%) contrast(97%);
   --color-filter-positive: invert(23%) sepia(62%) saturate(554%) hue-rotate(91deg) brightness(93%) contrast(91%);
+
+  /* Colorize browser widgets */
+  color-scheme: dark;
 }
 
 * {
