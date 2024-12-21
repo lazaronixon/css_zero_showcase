@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 3641ffd73361ba28dac3a4dd37b837ae47e961c2
+  revision: 84e60cd70a5698ecda6166d1a338367de74086a3
   specs:
     css-zero (0.0.76)
 
@@ -116,7 +116,7 @@ GEM
     htmlentities (4.3.4)
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
-    importmap-rails (2.0.3)
+    importmap-rails (2.1.0)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
