@@ -1,14 +1,14 @@
-<div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
-  <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="menu" aria-controls="menu">
+<div data-controller="popover" data-popover-placement-value="bottom-start">
+  <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#show">
     Open dropdown
   </button>
 
-  <dialog class="popover" style="--popover-size: 14rem;" data-controller="menu" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside keydown.esc->popover#close close->menu#reset keydown.up->menu#prev keydown.down->menu#next">
+  <div popover class="popover" style="--popover-size: 14rem;" data-controller="menu" data-popover-target="menu" data-action="toggle->menu#reset keydown.up->menu#prev keydown.down->menu#next">
     <div id="menu" class="menu" role="menu" aria-labelledby="menu_button">
       <div class="menu__header">Menu</div>
       <hr class="menu__separator" role="separator"/>
       <div class="menu__group" role="group">
-        <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+        <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem", autofocus: true do %>
           <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
           <span>Calendar</span>
         <% end %>

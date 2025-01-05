@@ -1,9 +1,0 @@
-<div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
-  <button class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="dialog">
-    Open popover
-  </button>
-
-  <dialog id="dialog" class="popover popover--end" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside">
-    <%= render "dimensions_form" %>
-  </dialog>
-</div>

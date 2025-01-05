@@ -1,9 +1,9 @@
-<div class="relative" data-controller="popover" data-popover-flip-class="popover--flip">
-  <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="menu" aria-controls="menu">
+<div data-controller="popover" data-popover-placement-value="bottom-start">
+  <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#show">
     Open dropdown
   </button>
 
-  <dialog class="popover" style="--popover-size: 14rem;" data-popover-target="menu" data-action="click@document->popover#closeOnClickOutside keydown.esc->popover#close">
+  <div popover class="popover" style="--popover-size: 14rem;" data-popover-target="menu">
     <div id="menu" class="menu" role="menu" aria-labelledby="menu_button">
       <div class="menu__header">Settings</div>
       <hr class="menu__separator" role="separator"/>
@@ -24,5 +24,5 @@
         <span class="text-sm">Desktop</span>
       </label>
     </div>
-  </dialog>
+  </div>
 </div>

@@ -4,7 +4,7 @@ class TooltipPreview < Lookbook::Preview
   # @!group Default
   # Dependencies
   # ---
-  # - [Tippy.js](https://github.com/atomiks/tippyjs)  
+  # - [Tippy.js](https://github.com/atomiks/tippyjs)
   def native
   end
 
