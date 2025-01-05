@@ -26,6 +26,6 @@ class PopoverPreview < Lookbook::Preview
   # Dependencies
   # ---
   # - [Floating UI](https://floating-ui.com)
-  def hover
+  def tooltip
   end
 end
