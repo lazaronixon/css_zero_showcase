@@ -22,7 +22,7 @@ export default class extends Controller {
   }
 
   showLater() {
-    setTimeout(() => this.menuTarget.showPopover(), 700)
+    setTimeout(() => this.show(), 700)
   }
 
   hide() {

@@ -9,18 +9,24 @@ class PopoverPreview < Lookbook::Preview
   #
   # Dependencies
   # ---
-  # - [Floating UI](https://floating-ui.com)  
+  # - [Floating UI](https://floating-ui.com)
   def default
   end
-  
+
   # Partials
   # ---
   # - [\_dimensions_form.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_dimensions_form.html.erb)
   #
   # Dependencies
   # ---
-  # - [Floating UI](https://floating-ui.com)  
+  # - [Floating UI](https://floating-ui.com)
   def placement
+  end
+
+  # Dependencies
+  # ---
+  # - [Floating UI](https://floating-ui.com)
+  def hover_card
   end
 
   # Dependencies
