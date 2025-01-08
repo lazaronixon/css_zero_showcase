@@ -12,7 +12,7 @@
           <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
           <span>Calendar</span>
         <% end %>
-        <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+        <%= button_to "", class: "btn menu__item", form: { contents: true }, data: { menu_target: "item" }, role: "menuitem" do %>
           <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
           <span>Seach Emoji</span>
         <% end %>
