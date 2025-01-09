@@ -1,9 +1,9 @@
-<div class="command" style="max-inline-size: 450px" data-controller="filter list" data-action="filter:after->list#reset" data-filter-active-class="command__list--filtering" data-filter-selected-class="selected">
+<div class="command" style="max-inline-size: 450px" data-controller="filter listbox" data-filter-active-class="command__list--filtering" data-filter-selected-class="selected">
   <label class="command__input input input--actor flex items-center gap">
     <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
-    <%= text_field_tag "search", nil, data: { action: "input->filter#filter keydown->list#navigate" }, autocomplete: "off", placeholder: "Filter..." %>
+    <%= text_field_tag "search", nil, data: { listbox_target: "input", action: "input->filter#filter focus->listbox#start blur->listbox#stop" }, autocomplete: "off", placeholder: "Filter..." %>
   </label>
-  <div class="command__list" data-filter-target="list" role="listbox" aria-label="Commands" tabindex="0">
+  <div class="command__list" data-filter-target="list" data-listbox-target="list" role="listbox" aria-label="Commands" tabindex="0">
     <%= render "command_options" %>
     <div class="command__empty">Not results found.</div>
   </div>
