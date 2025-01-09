@@ -5,6 +5,10 @@ class CommandPreview < Lookbook::Preview
   # - [filter_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/filter_controller.js)
   # - [list_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/list_controller.js)
   # - [\_command_options.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_command_options.html.erb)
+  #
+  # Dependencies
+  # ---
+  # - [combobox-nav](https://github.com/github/combobox-nav)
   def default
   end
 
@@ -13,6 +17,10 @@ class CommandPreview < Lookbook::Preview
   # - [filter_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/filter_controller.js)
   # - [list_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/list_controller.js)
   # - [\_command_options.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_command_options.html.erb)
+  #
+  # Dependencies
+  # ---
+  # - [combobox-nav](https://github.com/github/combobox-nav)
   def dialog
   end
 end
