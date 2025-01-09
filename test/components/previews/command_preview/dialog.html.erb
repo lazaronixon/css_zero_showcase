@@ -1,7 +1,7 @@
 <div data-controller="dialog">
   <button class="btn" data-action="dialog#showModal">Show command</button>
 
-  <dialog class="dialog" style="max-inline-size: 430px;" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside">
+  <dialog class="dialog" style="--dialog-size: 430px;" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside">
     <button class="btn btn--plain dialog__close" data-action="click->dialog#close">
       <%= image_tag "x.svg", size: 16, aria: { hidden: true } %>
       <span class="sr-only">Close</span>
