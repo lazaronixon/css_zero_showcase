@@ -16,7 +16,7 @@
           <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
           <span>Seach Emoji</span>
         <% end %>
-        <%= tag.a class: "btn menu__item", role: "menuitem", aria: { disabled: true } do %>
+        <%= tag.a class: "btn menu__item", role: "menuitem", tabindex: "-1", aria: { disabled: true } do %>
           <%= image_tag "calculator.svg", size: 14, aria: { hidden: true } %>
           <span>Calculator</span>
         <% end %>
