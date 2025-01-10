@@ -1,5 +1,5 @@
 <div data-controller="popover" data-popover-placement-value="bottom-start">
-  <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#show">
+  <button id="menu_button" class="btn" data-popover-target="button" data-action="popover#show" aria-haspopup="true" aria-controls="menu">
     Open dropdown
   </button>
 
@@ -12,7 +12,7 @@
           <%= image_tag "calendar.svg", size: 14, aria: { hidden: true } %>
           <span>Calendar</span>
         <% end %>
-        <%= button_to "", class: "btn menu__item", form: { contents: true }, data: { menu_target: "item" }, role: "menuitem" do %>
+        <%= button_to "", class: "btn menu__item", form: { contents: true, role: "menuitem" }, data: { menu_target: "item" } do %>
           <%= image_tag "smile.svg", size: 14, aria: { hidden: true } %>
           <span>Seach Emoji</span>
         <% end %>
