@@ -6,6 +6,6 @@ export default class extends Controller {
   show(event) {
     this.menuTarget.style.insetInlineStart = `${event.clientX - 5}px`
     this.menuTarget.style.insetBlockStart  = `${event.clientY - 5}px`
-    setTimeout(() => this.menuTarget.showPopover(), 100)
+    setTimeout(() => this.menuTarget.showPopover(), 150)
   }
 }
