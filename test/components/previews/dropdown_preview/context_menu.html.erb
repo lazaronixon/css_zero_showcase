@@ -3,9 +3,9 @@
     Right click here
   </div>
 
-  <div popover class="popover" style="--popover-size: 14rem;" data-controller="menu" data-context-menu-target="menu" data-action="toggle->menu#reset keydown.up->menu#prev keydown.down->menu#next">
+  <div popover class="popover" style="--popover-size: 14rem;" data-context-menu-target="menu">
     <div class="menu" role="menu">
-      <%= render "menu_items" %>
+      <%= render partial: "menu_items", locals: { autofocus: false } %>
     </div>
   </div>
 </div>
