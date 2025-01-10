@@ -4,8 +4,8 @@ export default class extends Controller {
   static targets = [ "menu" ]
 
   show(event) {
-    this.menuTarget.style.insetInlineStart = `${event.clientX}px`
-    this.menuTarget.style.insetBlockStart  = `${event.clientY}px`
+    this.menuTarget.style.insetInlineStart = `${event.clientX - 5}px`
+    this.menuTarget.style.insetBlockStart  = `${event.clientY - 5}px`
     setTimeout(() => this.menuTarget.showPopover(), 100)
   }
 }
