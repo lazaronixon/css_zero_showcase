@@ -4,8 +4,8 @@
   </div>
 
   <div popover class="popover" style="--popover-size: 14rem;" data-context-menu-target="menu">
-    <div class="menu" role="menu">
-      <%= render partial: "menu_items", locals: { autofocus: false } %>
+    <div id="context_menu" class="menu" role="menu" aria-label="Context Menu">
+      <%= render partial: "menu_items" %>
     </div>
   </div>
 </div>
