@@ -1,7 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
-import InputmaskModule from "https://cdn.jsdelivr.net/npm/inputmask@5.0.9/+esm"
-
-const Inputmask = InputmaskModule.default
+import Inputmask from "https://esm.sh/inputmask@5.0.9?standalone"
 
 export default class extends Controller {
   static values = {
