@@ -1,1 +1,1 @@
-<%= text_field_tag "defaut_input", nil, class: "input", inputmode: "numeric", data: { controller: "inputmask", inputmask_mask_value: "(999) 999-9999" } %>
+<%= text_field_tag "default_input", nil, class: "input", inputmode: "tel", placeholder: "+1 999 999-99-99", data: { controller: "inputmask", maska: "+1 ### ###-##-##" } %>

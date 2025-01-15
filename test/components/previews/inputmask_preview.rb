@@ -4,7 +4,7 @@ class InputmaskPreview < Lookbook::Preview
   # @!group Default
   # Dependencies
   # ---
-  # - [Inputmask](https://github.com/RobinHerbots/inputmask)
+  # - [Maska](https://github.com/beholdr/maska)
   def default
   end
 
@@ -14,13 +14,13 @@ class InputmaskPreview < Lookbook::Preview
   def decimal
   end
 
-  def currency
-  end
-
   def date
   end
 
   def datetime
+  end
+
+  def dynamic
   end
   # @!endgroup
 end

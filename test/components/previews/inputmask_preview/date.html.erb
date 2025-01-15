@@ -1,1 +1,1 @@
-<%= text_field_tag "date_input", nil, class: "input", data: { controller: "inputmask", inputmask_alias_value: "datetime", inputmask_input_format_value: "mm/dd/yyyy", inputmask_output_format_value: "yyyy-mm-dd" } %>
+<%= text_field_tag "date_input", nil, class: "input", inputmode: "numeric", placeholder: "mm/dd/yyyy", data: { controller: "inputmask", maska: "##/##/####" } %>
