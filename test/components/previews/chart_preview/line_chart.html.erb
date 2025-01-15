@@ -6,4 +6,6 @@
   ]
 } %>
 
-<%= tag.canvas style: "max-block-size: 400px", aria: { label: "Example" }, role: "img", data: { controller: "chart", chart_type_value: "line", chart_data_value: @chart_data.to_json } %>
+<div class="relative i-full" style="block-size: 400px;">
+  <%= tag.canvas aria: { label: "Example" }, role: "img", data: { controller: "chart", chart_type_value: "line", chart_data_value: @chart_data.to_json } %>
+</div>
