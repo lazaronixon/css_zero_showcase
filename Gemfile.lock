@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: c766eeceb7cc7d488bda22d600e8ee5f24967e84
+  revision: 0306804a922cab7e9225bfc1213dd902e402248e
   specs:
-    css-zero (0.0.91)
+    css-zero (0.0.93)
 
 GEM
   remote: https://rubygems.org/
@@ -228,7 +228,7 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.2.1)
-    rdoc (6.10.0)
+    rdoc (6.11.0)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
     redis (5.3.0)
