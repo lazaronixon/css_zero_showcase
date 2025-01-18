@@ -14,7 +14,7 @@
 
   @supports (-moz-appearance: none) {
     scroll-behavior: auto;
-  }  
+  }
 }
 
 .carousel__item {
