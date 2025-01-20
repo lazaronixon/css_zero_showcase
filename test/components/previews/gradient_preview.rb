@@ -10,6 +10,9 @@ class GradientPreview < Lookbook::Preview
   def middle_color
   end
 
+  def angle_direction
+  end
+
   def stop_positions
   end
   # @!endgroup
