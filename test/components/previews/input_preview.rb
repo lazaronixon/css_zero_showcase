@@ -26,9 +26,6 @@ class InputPreview < Lookbook::Preview
   def file_field
   end
 
-  def pattern_field
-  end
-
   def autocomplete_field
   end
 
@@ -78,6 +75,26 @@ class InputPreview < Lookbook::Preview
   end
 
   def range_with_tick_marks
+  end
+  # @!endgroup
+
+  # @!group Validation
+  def required_field
+  end
+
+  def min_length_field
+  end
+
+  def max_length_field
+  end
+
+  def min_field
+  end
+
+  def max_field
+  end
+
+  def pattern_field
   end
   # @!endgroup
 end
