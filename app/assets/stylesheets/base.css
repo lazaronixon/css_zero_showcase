@@ -26,36 +26,36 @@
 
   /* Colorize browser widgets */
   color-scheme: light;
+}
 
-  &[data-color-scheme="dark"] {
-    /* Abstractions */
-    --color-bg: black;
-    --color-text: white;
-    --color-text-reversed: black;
-    --color-text-subtle: var(--zinc-400);
-    --color-link: var(--blue-400);
-    --color-border-light: var(--zinc-900);
-    --color-border: var(--zinc-800);
-    --color-border-dark: var(--zinc-600);
-    --color-selected: var(--blue-950);
-    --color-selected-dark: var(--blue-800);
-    --color-highlight: var(--yellow-900);
+[data-color-scheme="dark"] {
+  /* Abstractions */
+  --color-bg: black;
+  --color-text: white;
+  --color-text-reversed: black;
+  --color-text-subtle: var(--zinc-400);
+  --color-link: var(--blue-400);
+  --color-border-light: var(--zinc-900);
+  --color-border: var(--zinc-800);
+  --color-border-dark: var(--zinc-600);
+  --color-selected: var(--blue-950);
+  --color-selected-dark: var(--blue-800);
+  --color-highlight: var(--yellow-900);
 
-    /* Accent colors */
-    --color-primary: var(--zinc-50);
-    --color-secondary: var(--zinc-800);
-    --color-negative: var(--red-900);
-    --color-positive: var(--green-900);
+  /* Accent colors */
+  --color-primary: var(--zinc-50);
+  --color-secondary: var(--zinc-800);
+  --color-negative: var(--red-900);
+  --color-positive: var(--green-900);
 
-    /* SVG color values */
-    --color-filter-text: invert(1);
-    --color-filter-text-reversed: invert(0);
-    --color-filter-negative: invert(15%) sepia(65%) saturate(2067%) hue-rotate(339deg) brightness(102%) contrast(97%);
-    --color-filter-positive: invert(23%) sepia(62%) saturate(554%) hue-rotate(91deg) brightness(93%) contrast(91%);
+  /* SVG color values */
+  --color-filter-text: invert(1);
+  --color-filter-text-reversed: invert(0);
+  --color-filter-negative: invert(15%) sepia(65%) saturate(2067%) hue-rotate(339deg) brightness(102%) contrast(97%);
+  --color-filter-positive: invert(23%) sepia(62%) saturate(554%) hue-rotate(91deg) brightness(93%) contrast(91%);
 
-    /* Colorize browser widgets */
-    color-scheme: dark;
-  }
+  /* Colorize browser widgets */
+  color-scheme: dark;
 }
 
 * {
