@@ -69,6 +69,7 @@ html {
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
+  overscroll-behavior: none;
   font-synthesis-weight: none;
   text-rendering: optimizeLegibility;
 }
