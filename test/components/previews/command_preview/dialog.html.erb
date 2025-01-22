@@ -12,7 +12,7 @@
         <%= image_tag "search.svg", size: 16, aria: { hidden: true } %>
         <%= text_field_tag "search", nil, data: { command_target: "input", action: "input->command#filter focus->command#start blur->command#stop" }, autofocus: true, autocomplete: "off", placeholder: "Filter..." %>
       </label>
-      <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands" tabindex="0">
+      <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">
         <%= render "command_options" %>
         <div class="command__empty">Not results found.</div>
       </div>
