@@ -67,7 +67,7 @@
 
 /* Checkbox, radio, and range */
 :is(.checkbox, .radio) {
-  accent-color: var(--color-primary); transform: scale(1.15);
+  accent-color: var(--color-primary); transform: scale(1.2);
 }
 
 .range {
