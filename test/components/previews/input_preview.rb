@@ -58,7 +58,7 @@ class InputPreview < Lookbook::Preview
   end
 
   # Text area with auto grow is not supported in [all browsers](https://caniuse.com/mdn-css_properties_field-sizing).
-  def text_area_with_auto_grow
+  def text_area_auto_sizing
   end
   # @!endgroup
 
