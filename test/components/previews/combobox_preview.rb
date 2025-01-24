@@ -1,11 +1,11 @@
 # @display max_width 400px
 # @js app/javascript/controllers/combobox_controller.js
+# @css app/assets/stylesheets/combobox.css
 class ComboboxPreview < Lookbook::Preview
   # Links
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
-  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def input
   end
 
@@ -14,7 +14,6 @@ class ComboboxPreview < Lookbook::Preview
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
-  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def single
   end
 
@@ -32,7 +31,6 @@ class ComboboxPreview < Lookbook::Preview
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
-  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def multiple
   end
 
@@ -40,7 +38,6 @@ class ComboboxPreview < Lookbook::Preview
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
-  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def translation
   end
 
@@ -53,7 +50,6 @@ class ComboboxPreview < Lookbook::Preview
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
-  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def remote
   end
 end
