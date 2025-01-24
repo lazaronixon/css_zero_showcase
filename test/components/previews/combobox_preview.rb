@@ -1,19 +1,20 @@
 # @display max_width 400px
-# @css app/assets/stylesheets/zcombobox.css
 # @js app/javascript/controllers/combobox_controller.js
 class ComboboxPreview < Lookbook::Preview
-  # Dependencies
+  # Links
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
+  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def input
   end
 
   # @!group Select
-  # Dependencies
+  # Links
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
+  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def single
   end
 
@@ -27,17 +28,19 @@ class ComboboxPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  # Dependencies
+  # Links
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
+  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def multiple
   end
 
-  # Dependencies
+  # Links
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
+  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def translation
   end
 
@@ -46,10 +49,11 @@ class ComboboxPreview < Lookbook::Preview
   # - [searchables_controller.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/searchables_controller.rb)
   # - [index.json.jbuilder](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/searchables/index.json.jbuilder)
   #
-  # Dependencies
+  # Links
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
+  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def remote
   end
 end

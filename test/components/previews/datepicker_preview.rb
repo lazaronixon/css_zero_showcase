@@ -1,11 +1,11 @@
 # @display max_width 400px
-# @css app/assets/stylesheets/zdatepicker.css
 # @js app/javascript/controllers/datepicker_controller.js
 class DatepickerPreview < Lookbook::Preview
   # @!group Default
-  # Dependencies
+  # Links
   # ---
   # - [Flatpickr](https://github.com/flatpickr/flatpickr)
+  # - [combobox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/combobox.css)
   def default
   end
 
