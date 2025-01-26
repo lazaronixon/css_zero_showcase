@@ -4,6 +4,6 @@ class HomeController < ApplicationController
   end
 
   def slow_action
-    sleep(3.seconds); head(:created)
+    sleep(2.seconds); head(:created)
   end
 end
