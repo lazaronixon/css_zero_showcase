@@ -94,6 +94,9 @@ class InputPreview < Lookbook::Preview
   def max_field
   end
 
+  def phone_field
+  end
+
   def pattern_field
   end
   # @!endgroup
