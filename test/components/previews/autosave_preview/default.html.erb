@@ -4,11 +4,9 @@
     <p class="text-sm text-subtle">Your changes will be saved automatically without the need to click on the save changes button.</p>
   </div>
 
-  <div class="flex flex-col gap mb-2">
-    <div class="flex flex-col gap-half">
-      <%= form.label :content, class: "text-sm font-medium leading-none" %>
-      <%= form.text_area :content, rows: 10, class: "input" %>
-    </div>
+  <div class="flex flex-col gap-half mb-2">
+    <%= form.label :content, class: "text-sm font-medium leading-none" %>
+    <%= form.text_area :content, rows: 10, class: "input" %>
   </div>
 
   <div class="flex items-center">
