@@ -97,6 +97,9 @@ class InputPreview < Lookbook::Preview
   def phone_field
   end
 
+  def url_field
+  end
+
   def pattern_field
   end
   # @!endgroup
