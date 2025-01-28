@@ -1,0 +1,20 @@
+<div class="flex flex-col p-2">
+  <div class="text-xs text-subtle font-medium p-2">Platform</div>
+
+  <div data-controller="collapsible">
+    <button class="btn btn--borderless bg-transparent i-full p-2" data-action="collapsible#toggle">
+      <%= image_tag "square-terminal.svg", size: 16, aria: { hidden: true } %>
+      <span class="leading-none">Playground</span>
+      <%= image_tag "chevrons-up-down.svg", class: "mis-auto", size: 16, aria: { hidden: true } %>
+    </button>
+
+    <details data-collapsible-target="details">
+      <summary hidden="hidden"></summary>
+      <div class="flex flex-col text-sm border-is mi-4 pi-2">
+        <%= link_to "History",  "#", class: "btn btn--borderless bg-transparent justify-start p-2" %>
+        <%= link_to "Starred",  "#", class: "btn btn--borderless bg-transparent justify-start p-2" %>
+        <%= link_to "Settings", "#", class: "btn btn--borderless bg-transparent justify-start p-2" %>
+      </div>
+    </details>
+  </div>
+</div>
