@@ -1,10 +1,10 @@
-<div class="flex items-center">
-  <%= link_to "#", class: "flex items-center gap mie-4" do %>
+<div class="flex items-center gap">
+  <%= link_to "#", class: "flex items-center gap mie-2" do %>
     <%= image_tag "circle-slash.svg", size: 24, aria: { hidden: true } %>
     <span class="font-bold">CSS Zero</span>
   <% end %>
 
-  <nav class="flex items-center text-sm text-subtle show@md" style="column-gap: 1rem">
+  <nav class="flex items-center gap text-sm text-subtle show@md" style="--column-gap: 1rem">
     <%= link_to "Docs", "#", class: "text-primary" %>
     <%= link_to "Components", "#" %>
     <%= link_to "Blocks", "#" %>
@@ -14,7 +14,7 @@
   </nav>
 </div>
 
-<div class="flex items-center">
+<div class="flex items-center gap">
   <button class="btn avatar">
     <%= image_tag "cartoon.jpg", size: 48, alt: "CN" %>
   </button>
