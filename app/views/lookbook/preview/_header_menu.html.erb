@@ -1,21 +1,17 @@
-<div class="flex items-center show@md">
+<div class="flex items-center">
   <%= link_to "#", class: "flex items-center gap mie-4" do %>
     <%= image_tag "circle-slash.svg", size: 24, aria: { hidden: true } %>
     <span class="font-bold">CSS Zero</span>
   <% end %>
 
-  <nav class="flex items-center text-sm" style="column-gap: 1rem">
+  <nav class="flex items-center text-sm text-subtle show@md" style="column-gap: 1rem">
     <%= link_to "Docs", "#", class: "text-primary" %>
-    <%= link_to "Components", "#", class: "text-subtle" %>
-    <%= link_to "Blocks", "#", class: "text-subtle" %>
-    <%= link_to "Charts", "#", class: "text-subtle" %>
-    <%= link_to "Themes", "#", class: "text-subtle" %>
-    <%= link_to "Colors", "#", class: "text-subtle" %>
+    <%= link_to "Components", "#" %>
+    <%= link_to "Blocks", "#" %>
+    <%= link_to "Charts", "#" %>
+    <%= link_to "Themes", "#" %>
+    <%= link_to "Colors", "#" %>
   </nav>
-</div>
-
-<div class="flex items-center hide@md">
-  <span class="font-bold">CSS Zero</span>
 </div>
 
 <div class="flex items-center">
