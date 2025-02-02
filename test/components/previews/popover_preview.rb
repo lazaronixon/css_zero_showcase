@@ -30,6 +30,8 @@ class PopoverPreview < Lookbook::Preview
   end
 
   # @!group Tooltip
+  # @display centered false
+  # @display padding 1.5rem
   def tooltip_custom
   end
 
