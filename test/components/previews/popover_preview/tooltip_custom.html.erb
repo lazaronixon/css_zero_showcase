@@ -1,4 +1,4 @@
-<div data-controller="popover" data-popover-placement-value="top">
+<div data-controller="popover">
   <%= button_tag "Hover", class: "btn", data: { popover_target: "button", action: "mouseenter->popover#showLater mouseleave->popover#hideClear" } %>
   <div popover class="popover text-xs pb-1 pi-2" data-popover-target="menu" role="tooltip">Add to library</div>
 </div>

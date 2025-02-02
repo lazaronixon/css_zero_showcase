@@ -29,9 +29,11 @@ class PopoverPreview < Lookbook::Preview
   def hover_card
   end
 
-  # Dependencies
-  # ---
-  # - [Floating UI](https://floating-ui.com)
-  def tooltip
+  # @!group Tooltip
+  def tooltip_custom
   end
+
+  def tooltip_native
+  end
+  # @!endgroup
 end
