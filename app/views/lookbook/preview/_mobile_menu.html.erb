@@ -1,11 +1,11 @@
 <div class="hide@md" data-controller="dialog">
-  <button class="btn btn--icon" data-action="dialog#showModal">
+  <button type="button" class="btn btn--icon" data-action="dialog#showModal">
     <%= image_tag "menu.svg", size: 20, aria: { hidden: true } %>
     <span class="sr-only">Open menu</span>
   </button>
 
   <dialog class="sheet sheet--left" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside">
-    <button class="btn btn--plain sheet__close" data-action="click->dialog#close">
+    <button type="button" class="btn btn--plain sheet__close" data-action="click->dialog#close">
       <%= image_tag "x.svg", size: 16, aria: { hidden: true } %>
       <span class="sr-only">Close</span>
     </button>
