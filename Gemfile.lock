@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: f9b4e69e982e06c86747eb62ccecdd928a41dec7
+  revision: 7f246b438f825a3ff9cccae67df0a8f5dfe53af6
   specs:
     css-zero (1.1.0)
 
@@ -155,7 +155,7 @@ GEM
     mini_mime (1.1.5)
     mini_portile2 (2.8.8)
     minitest (5.25.4)
-    msgpack (1.7.5)
+    msgpack (1.8.0)
     net-imap (0.5.5)
       date
       net-protocol
@@ -163,7 +163,7 @@ GEM
       net-protocol
     net-protocol (0.2.2)
       timeout
-    net-smtp (0.5.0)
+    net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
     nokogiri (1.18.2)
@@ -232,7 +232,7 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.2.1)
-    rdoc (6.11.0)
+    rdoc (6.12.0)
       psych (>= 4.0.0)
     redcarpet (3.6.0)
     redis (5.3.0)
