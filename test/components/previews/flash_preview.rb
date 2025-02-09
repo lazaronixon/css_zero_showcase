@@ -4,7 +4,7 @@ class FlashPreview < Lookbook::Preview
   def default
   end
 
-  def icon
+  def with_icon
   end
 
   def extended
