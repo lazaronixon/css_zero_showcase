@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 7f246b438f825a3ff9cccae67df0a8f5dfe53af6
+  revision: 672c87172439b831559094b727e74ab0ad1aa402
   specs:
     css-zero (1.1.0)
 
@@ -156,7 +156,7 @@ GEM
     mini_portile2 (2.8.8)
     minitest (5.25.4)
     msgpack (1.8.0)
-    net-imap (0.5.5)
+    net-imap (0.5.6)
       date
       net-protocol
     net-pop (0.1.2)
