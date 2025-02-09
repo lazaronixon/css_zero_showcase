@@ -4,6 +4,12 @@ class FlashPreview < Lookbook::Preview
   def default
   end
 
+  def positive
+  end
+
+  def negative
+  end
+
   def with_icon
   end
 
