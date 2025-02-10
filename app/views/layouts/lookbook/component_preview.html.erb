@@ -13,7 +13,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body data-controller="lightbox fullscreen local-time custom-confirm">
+  <body data-controller="lightbox fullscreen local-time turbo-confirm">
     <div style="padding: <%= lookbook_display(:padding, "1.5rem") %>">
       <% if params.dig(:lookbook, :display, :centered) == true %>
         <div class="centered-layout" style="max-width: <%= lookbook_display(:max_width, "100%") %>"><%= yield %></div>
