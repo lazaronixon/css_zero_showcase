@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: 4ce8d06c6b7af03d65fb1271456b635f14842012
+  revision: 47daa3ff619555205e26ad809ba4629f65b89fe5
   specs:
     css-zero (1.1.0)
 
