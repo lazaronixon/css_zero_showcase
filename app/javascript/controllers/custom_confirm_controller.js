@@ -7,7 +7,6 @@ export default class extends Controller {
   }
 
   #confirm(message, element) {
-    console.log(element)
     return Swal.fire({ title: message, text: element.dataset.turboCofirmMessage, icon: "warning", showCancelButton: true }).then(result => result.isConfirmed)
   }
 }
