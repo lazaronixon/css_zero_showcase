@@ -5,9 +5,7 @@ class LightboxPreview < Lookbook::Preview
   # Initialization
   # ---
   # ```html
-  # <body data-controller="lightbox">
-  #   <%= yield %>
-  # </body>
+  # <body data-controller="lightbox">...</body>
   # ```
   def default
   end

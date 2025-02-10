@@ -3,9 +3,7 @@ class FullscreenPreview < Lookbook::Preview
   # Initialization
   # ---
   # ```html
-  # <body data-controller="fullscreen">
-  #   <%= yield %>
-  # </body>
+  # <body data-controller="fullscreen">...</body>
   # ```
   def default
   end

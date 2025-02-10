@@ -5,9 +5,7 @@ class CustomConfirmPreview < Lookbook::Preview
   # Initialization
   # ---
   # ```html
-  # <body data-controller="custom-confirm">
-  #   <%= yield %>
-  # </body>
+  # <body data-controller="custom-confirm">...</body>
   # ```
   def button
   end

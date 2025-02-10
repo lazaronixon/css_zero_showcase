@@ -4,9 +4,7 @@ class LocalTimePreview < Lookbook::Preview
   # ----
   #
   # ```html
-  # <body data-controller="local-time">
-  #   <%= yield %>
-  # </body>
+  # <body data-controller="local-time">...</body>
   # ```
   # @!group Default
   def time
