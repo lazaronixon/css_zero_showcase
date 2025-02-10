@@ -15,6 +15,7 @@ export default class extends Controller {
         cancelButtonText: this.cancelValue,
         confirmButtonText: this.continueValue,
         icon: "warning",
+        reverseButtons: true,
         showCancelButton: true
       }).then(it => it.isConfirmed)
     }
