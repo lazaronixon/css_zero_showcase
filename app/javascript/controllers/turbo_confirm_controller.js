@@ -9,7 +9,7 @@ export default class extends Controller {
 
   connect() {
     Turbo.config.forms.confirm = (message, target) => {
-      Swal.fire({
+      return Swal.fire({
         title: message,
         text: target.dataset.turboConfirmText,
         cancelButtonText: this.cancelValue,
