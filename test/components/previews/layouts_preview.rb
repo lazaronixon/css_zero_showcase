@@ -22,18 +22,20 @@ class LayoutsPreview < ViewComponent::Preview
   def sticky_footer
   end
 
-  # Partials
+  # Links
   # ---
   # - [\_mobile_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_mobile_menu.html.erb)
   # - [\_header_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_header_menu.html.erb)
   # - [\_sidebar_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_sidebar_menu.html.erb)
+  # - [sidebar_menu.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/sidebar_menu.css)
   def sidebar_layout_1
   end
 
-  # Partials
+  # Links
   # ---
   # - [\_mobile_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_mobile_menu.html.erb)
   # - [\_sidebar_menu.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_sidebar_menu.html.erb)
+  # - [sidebar_menu.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/sidebar_menu.css)
   def sidebar_layout_2
   end
 
