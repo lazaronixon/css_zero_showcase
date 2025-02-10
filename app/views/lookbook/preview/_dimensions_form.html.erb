@@ -4,20 +4,20 @@
     <p class="text-sm text-subtle">Set the dimensions for the layer.</p>
   </div>
   <div class="flex flex-col gap-half">
-    <div class="flex items-center leading-none gap">
-      <%= form.label :width, class: "text-sm font-medium", style: "min-inline-size: 30%;" %>
+    <div class="flex items-center gap">
+      <%= form.label :width, class: "text-sm font-medium leading-none", style: "min-inline-size: 30%;" %>
       <%= form.text_field :width, value: "100%", class: "input", autofocus: true %>
     </div>
-    <div class="flex items-center leading-none gap">
-      <%= form.label :max_width, class: "text-sm font-medium", style: "min-inline-size: 30%;" %>
+    <div class="flex items-center gap">
+      <%= form.label :max_width, class: "text-sm font-medium leading-none", style: "min-inline-size: 30%;" %>
       <%= form.text_field :max_width, value: "300px", class: "input" %>
     </div>
-    <div class="flex items-center leading-none gap">
-      <%= form.label :height, class: "text-sm font-medium", style: "min-inline-size: 30%;" %>
+    <div class="flex items-center gap">
+      <%= form.label :height, class: "text-sm font-medium leading-none", style: "min-inline-size: 30%;" %>
       <%= form.text_field :height, value: "25px", class: "input" %>
     </div>
-    <div class="flex items-center leading-none gap">
-      <%= form.label :max_height, class: "text-sm font-medium", style: "min-inline-size: 30%;" %>
+    <div class="flex items-center gap">
+      <%= form.label :max_height, class: "text-sm font-medium leading-none", style: "min-inline-size: 30%;" %>
       <%= form.text_field :max_height, value: "none", class: "input" %>
     </div>
   </div>
