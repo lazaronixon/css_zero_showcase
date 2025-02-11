@@ -16,7 +16,7 @@
         <details>
           <summary class="btn sidebar-menu__button">
             <%= image_tag "square-terminal.svg", size: 16, aria: { hidden: true } %>
-            <span>Playground</span>
+            <span class="overflow-ellipsis">Playground</span>
           </summary>
           <div class="sidebar-menu__sub">
             <%= link_to "History", "#", class: "btn sidebar-menu__button" %>
@@ -27,7 +27,7 @@
         <details>
           <summary class="btn sidebar-menu__button">
             <%= image_tag "bot.svg", size: 16, aria: { hidden: true } %>
-            <span>Models</span>
+            <span class="overflow-ellipsis">Models</span>
           </summary>
           <div class="sidebar-menu__sub">
             <%= link_to "Genesis", "#", class: "btn sidebar-menu__button" %>
@@ -38,7 +38,8 @@
         <details>
           <summary class="btn sidebar-menu__button">
             <%= image_tag "book-open.svg", size: 16, aria: { hidden: true } %>
-            <span>Documentation</span>
+            <span class="overflow-ellipsis">Documentation</span>
+            <%- image_tag "chevron-right.svg", class: "mis-auto", size: 16, aria: { hidden: true } -%>
           </summary>
           <div class="sidebar-menu__sub">
             <%= link_to "Documentation", "#", class: "btn sidebar-menu__button" %>
@@ -50,7 +51,7 @@
         <details>
           <summary class="btn sidebar-menu__button">
             <%= image_tag "settings-2.svg", size: 16, aria: { hidden: true } %>
-            <span>Settings</span>
+            <span class="overflow-ellipsis">Settings</span>
           </summary>
           <div class="sidebar-menu__sub">
             <%= link_to "General", "#", class: "btn sidebar-menu__button" %>
