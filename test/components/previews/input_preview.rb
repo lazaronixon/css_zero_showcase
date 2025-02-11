@@ -26,6 +26,9 @@ class InputPreview < Lookbook::Preview
   def datetime_field
   end
 
+  def time_field
+  end
+
   def file_field
   end
 
