@@ -1,6 +1,8 @@
 <div class="sidebar-menu">
   <%= link_to "#", class: "btn sidebar-menu__button" do %>
-    <%= image_tag "sidebar-logo.svg", size: 32, aria: { hidden: true } %>
+    <div class="flex shrink-0 overflow-hidden rounded-lg">
+      <%= image_tag "sidebar-logo.svg", size: 32, alt: "ZI" %>
+    </div>
     <div class="flex flex-col text-start leading-tight">
       <span class="font-semibold">Zero Inc</span>
       <span class="text-xs">Enterprise</span>
