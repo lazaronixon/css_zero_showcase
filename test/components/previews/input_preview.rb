@@ -8,6 +8,9 @@ class InputPreview < Lookbook::Preview
   def email_field
   end
 
+  def email_field_with_multiple
+  end
+
   def search_field
   end
 
@@ -24,6 +27,9 @@ class InputPreview < Lookbook::Preview
   end
 
   def file_field
+  end
+
+  def file_field_with_multiple
   end
 
   def autocomplete_field
