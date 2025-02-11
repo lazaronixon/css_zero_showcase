@@ -3,9 +3,9 @@
     <div class="flex shrink-0 overflow-hidden rounded-lg">
       <%= image_tag "sidebar-logo.svg", size: 32, alt: "ZI" %>
     </div>
-    <div class="flex flex-col text-start leading-tight">
-      <span class="font-semibold">Zero Inc</span>
-      <span class="text-xs">Enterprise</span>
+    <div class="flex flex-col text-start leading-tight overflow-hidden">
+      <span class="overflow-ellipsis font-semibold">Zero Inc</span>
+      <span class="overflow-ellipsis text-xs">Enterprise</span>
     </div>
     <%= image_tag "chevrons-up-down.svg", class: "mis-auto", size: 16, aria: { hidden: true } %>
   <% end %>
@@ -66,19 +66,19 @@
       <div class="sidebar-menu__items">
         <%= link_to "#", class: "btn sidebar-menu__button" do %>
           <%= image_tag "frame.svg", size: 16, aria: { hidden: true } %>
-          <span>Design Engineering</span>
+          <span class="overflow-ellipsis">Design Engineering</span>
         <% end %>
         <%= link_to "#", class: "btn sidebar-menu__button" do %>
           <%= image_tag "chart-pie.svg", size: 16, aria: { hidden: true } %>
-          <span>Sales & Marketing</span>
+          <span class="overflow-ellipsis">Sales & Marketing</span>
         <% end %>
         <%= link_to "#", class: "btn sidebar-menu__button" do %>
           <%= image_tag "map.svg", size: 16, aria: { hidden: true } %>
-          <span>Travel</span>
+          <span class="overflow-ellipsis">Travel</span>
         <% end %>
         <%= tag.a class: "btn sidebar-menu__button", aria: { disabled: true } do %>
           <%= image_tag "ellipsis.svg", size: 16, aria: { hidden: true } %>
-          <span>More</span>
+          <span class="overflow-ellipsis">More</span>
         <% end %>
       </div>
     </div>
@@ -87,9 +87,9 @@
     <div class="flex shrink-0 overflow-hidden rounded-lg">
       <%= image_tag "cartoon.jpg", size: 32, alt: "CN" %>
     </div>
-    <div class="flex flex-col text-start leading-tight">
-      <span class="font-semibold">Lázaro Nixon</span>
-      <span class="text-xs">lazaronixon@hotmail.com</span>
+    <div class="flex flex-col text-start leading-tight overflow-hidden">
+      <span class="overflow-ellipsis max-i-full font-semibold">Lázaro Nixon</span>
+      <span class="overflow-ellipsis max-i-full text-xs">lazaronixon@hotmail.com</span>
     </div>
     <%= image_tag "chevrons-up-down.svg", class: "mis-auto", size: 16, aria: { hidden: true } %>
   <% end %>
