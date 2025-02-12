@@ -1,4 +1,6 @@
 module ApplicationHelper
+  include Pagy::Frontend
+
   def fruit_options
     options_for_select(["Apple", "Banana", "Blueberry", "Grapes", "Pineaple"])
   end

@@ -49,7 +49,8 @@ gem "thruster", require: false
 
 gem "lookbook", ">= 2.3.2"
 
-gem "geared_pagination"
+gem "geared_pagination" # Infinite scroll
+gem "pagy", "~> 9.3" # Pagination
 
 gem "css-zero", github: "lazaronixon/css-zero"
 #gem "css-zero", path: "~/Development/css-zero"

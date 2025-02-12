@@ -1,5 +1,7 @@
 class TasksController < ApplicationController
+  include Pagy::Backend
+
   def index
-    @tasks = Task.all
+    @pagy, @tasks = pagy(Task.all)
   end
 end
