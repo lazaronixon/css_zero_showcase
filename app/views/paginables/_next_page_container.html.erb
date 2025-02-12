@@ -1,4 +1,4 @@
-<%= turbo_frame_tag :next_page_container, loading: :lazy, src: paginables_path(page: page, format: :turbo_stream), class: "flex justify-center pb-4" do %>
+<%= turbo_frame_tag :next_page_container, loading: :lazy, src: paginables_path(page: page, format: :turbo_stream), class: "flex justify-center" do %>
   <%= image_tag "loader-circle.svg", size: 32, aria: { hidden: true }, style: "animation: var(--animate-spin)" %>
   <span class="sr-only">Loading...</span>
 <% end %>
