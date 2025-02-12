@@ -1,0 +1,62 @@
+<% priority_icons = { "high" => "arrow-up.svg", "low" => "arrow-down.svg", "medium" => "arrow-right.svg" } %>
+<% status_icons   = { "in progress" => "timer.svg", "done" => "circle-check-big.svg", "backlog" => "circle-help.svg", "todo" => "circle.svg", "canceled" => "circle-off.svg" } %>
+
+<div class="container flex flex-col p-4">
+  <div class="flex flex-col mbe-8">
+    <h2 class="text-2xl font-bold">Welcome back!</h2>
+    <p class="text-subtle">Here's a list of your tasks for this month!</p>
+  </div>
+
+  <div class="relative i-full overflow-x-auto border rounded-lg">
+    <table class="table" data-controller="check-all">
+      <thead>
+        <tr>
+          <th>
+            <%= check_box_tag :check_all, class: "checkbox", form: "none", data: { action: "check-all#check", check_all_target: "dependee" } %>
+          </th>
+          <th>Task</th>
+          <th>Title</th>
+          <th>Status</th>
+          <th>Priority</th>
+          <th style="min-inline-size: 3rem"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @tasks.each do |task| %>
+          <tr>
+            <td>
+              <%= check_box_tag "selected_ids[]", task.id, class: "checkbox", data: { action: "check-all#check", check_all_target: "dependant" } %>
+            </td>
+            <td class="whitespace-nowrap">
+              <%= task.id %>
+            </td>
+            <td class="whitespace-nowrap">
+              <div class="flex items-center gap">
+                <span class="badge"><%= task.label %></span>
+                <span class="overflow-ellipsis" style="inline-size: 450px"><%= task.title %></span>
+              </div>
+            </td>
+            <td class="whitespace-nowrap">
+              <div class="flex items-center gap">
+                <%= image_tag status_icons[task.status], class: "max-i-none", size: 16, aria: { hidden: true } %>
+                <span><%= task.status.titleize %></span>
+              </div>
+            </td>
+            <td class="whitespace-nowrap">
+              <div class="flex items-center gap">
+                <%= image_tag priority_icons[task.priority], class: "max-i-none", size: 16, aria: { hidden: true } %>
+                <span><%= task.priority.titleize %></span>
+              </div>
+            </td>
+            <td class="whitespace-nowrap">
+              <%= button_tag class: "btn btn--plain p-2" do %>
+                <%= image_tag "ellipsis.svg", size: 16, aria: { hidden: true } %>
+                <span class="sr-only">Open menu</span>
+              <% end %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

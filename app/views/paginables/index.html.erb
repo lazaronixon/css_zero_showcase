@@ -1,4 +1,4 @@
-<div id="paginables" class="flex flex-col gap mb-4 mi-auto" style="max-inline-size: 400px;">
+<div id="paginables" class="container flex flex-col gap p-4" style="max-inline-size: 400px;">
   <%= render partial: "paginables/paginable", collection: @page.records, as: :movie %>
   <%= render "paginables/next_page_container", page: @page.next_param unless @page.last? %>
 </div>

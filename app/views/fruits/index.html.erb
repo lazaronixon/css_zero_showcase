@@ -3,7 +3,7 @@
   <%= turbo_refreshes_with(method: :morph, scroll: :preserve) %>
 <% end %>
 
-<div class="flex flex-col gap mbs-4 mi-auto" style="max-inline-size: 400px">
+<div class="container flex flex-col gap p-4" style="max-inline-size: 400px">
   <div class="flex flex-col gap auto-animate">
     <% @fruits.each do |fruit| %>
       <%= tag.div class: "flex items-center justify-between border rounded-md pi-4 pb-2", style: "view-transition-name: fruit-#{fruit.id}" do %>

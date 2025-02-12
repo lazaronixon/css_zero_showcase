@@ -3,4 +3,7 @@
 class TablePreview < Lookbook::Preview
   def default
   end
+
+  def data_table
+  end
 end
