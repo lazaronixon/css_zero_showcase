@@ -1,71 +1,116 @@
 <div class="flex items-center flex-wrap gap">
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-starting-opacity-value="0" data-animation-var-value="--animate-fade-in">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-fade-in</button>
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-starting-opacity-value="0" data-animation-var-value="--animate-fade-in">
+    <h2 class="text-lg font-semibold">Fade In</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-fade-out">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-fade-out</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-fade-out">
+    <h2 class="text-lg font-semibold">Fade Out</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-starting-opacity-value="0" data-animation-var-value="--animate-fade-in-bloom">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-fade-in-bloom</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-starting-opacity-value="0" data-animation-var-value="--animate-fade-in-bloom">
+    <h2 class="text-lg font-semibold">Fade In Bloom</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-fade-out-bloom">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-fade-out-bloom</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-fade-out-bloom">
+    <h2 class="text-lg font-semibold">Fade Out Bloom</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-scale-up">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-scale-up</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-scale-up">
+    <h2 class="text-lg font-semibold">Scale Up</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-scale-down">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-scale-down</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-scale-down">
+    <h2 class="text-lg font-semibold">Scale Down</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-out-up">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-slide-out-up</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-out-up">
+    <h2 class="text-lg font-semibold">Slide Out Up</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-out-down">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-slide-out-down</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-out-down">
+    <h2 class="text-lg font-semibold">Slide Out Down</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-out-right">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-slide-out-right</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-out-right">
+    <h2 class="text-lg font-semibold">Slide Out Right</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-out-left">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-slide-out-left</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-out-left">
+    <h2 class="text-lg font-semibold">Slide Out Left</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-in-up">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-slide-in-up</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-in-up">
+    <h2 class="text-lg font-semibold">Slide In Up</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-in-down">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-slide-in-down</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-in-down">
+    <h2 class="text-lg font-semibold">Slide In Down</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-in-right">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-slide-in-right</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-in-right">
+    <h2 class="text-lg font-semibold">Slide In Right</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-in-left">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-slide-in-left</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-slide-in-left">
+    <h2 class="text-lg font-semibold">Slide In Left</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-spin">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-spin</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-spin">
+    <h2 class="text-lg font-semibold">Animate Spin</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-ping">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-ping</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-ping">
+    <h2 class="text-lg font-semibold">Animate Ping</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-blink">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-blink</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-blink">
+    <h2 class="text-lg font-semibold">Animate Blink</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-float">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-float</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-float">
+    <h2 class="text-lg font-semibold">Animate Float</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-bounce">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-bounce</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-bounce">
+    <h2 class="text-lg font-semibold">Animate Bounce</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-pulse">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-pulse</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-pulse">
+    <h2 class="text-lg font-semibold">Animate Pulse</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-shake-x">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-shake-x</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-shake-x">
+    <h2 class="text-lg font-semibold">Animate Shake X</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-shake-y">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-shake-y</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-shake-y">
+    <h2 class="text-lg font-semibold">Animate Shake Y</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
-  <div class="card bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-shake-z">
-    <button class="btn btn--plain text-lg font-semibold" data-action="animation#run">--animate-shake-z</button>
+
+  <div class="card flex flex-col gap-half items-center bg-shade" data-controller="animation" data-action="animationend->animation#cleanup" data-animation-var-value="--animate-shake-z">
+    <h2 class="text-lg font-semibold">Animate Shake Z</h2>
+    <button data-action="animation#run"><%= image_tag "circle-play.svg", size: 80 %></button>
   </div>
 </div>
