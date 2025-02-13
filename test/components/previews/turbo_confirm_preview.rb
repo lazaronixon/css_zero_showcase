@@ -1,16 +1,11 @@
 # @js app/javascript/controllers/turbo_confirm_controller.js
-# @css app/assets/stylesheets/turbo_confirm.css
+# @css app/assets/stylesheets/dialog.css
 class TurboConfirmPreview < Lookbook::Preview
-  # @!group Default
-  # Initialization
-  # ---
-  # ```html
-  # <body data-controller="turbo-confirm">...</body>
-  # ```
+  # You must have only one turbo confirm dialog per page.
   def button
   end
 
+  # You must have only one turbo confirm dialog per page.
   def link
   end
-  # @!endgroup
 end

@@ -1,1 +1,13 @@
+<dialog class="dialog" data-controller="turbo-confirm" data-action="close->turbo-confirm#process" role="alertdialog" aria-labelledby="turbo_confirm_title" aria-describedby="turbo_confirm_text">
+  <form method="dialog" class="dialog__content">
+    <h2 class="text-lg font-semibold leading-none" id="turbo_confirm_title" data-turbo-confirm-target="title"></h2>
+    <p class="text-sm text-subtle mbs-2" id="turbo_confirm_text" data-turbo-confirm-target="text"></p>
+
+    <div class="flex items-center justify-end gap mbs-4">
+      <button value="cancel" class="btn">Cancel</button>
+      <button value="confirm" class="btn btn--primary">Continue</button>
+    </div>
+  </form>
+</dialog>
+
 <%= link_to "Click to destroy", "", class: "btn", data: { turbo_method: :delete, turbo_confirm: "Are you absolutely sure?" } %>
