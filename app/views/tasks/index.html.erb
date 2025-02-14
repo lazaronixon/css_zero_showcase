@@ -67,7 +67,7 @@
   </div>
 
   <div class="flex items-center">
-    <div class="text-sm text-subtle show@md">Total of <%= @pagy.count %> records(s).</div>
+    <div class="text-sm text-subtle show@md">Total of <%= @pagy.count %> record(s).</div>
     <% if @pagy.pages > 1 %>
       <div class="flex items-center mis-auto justify-end" style="column-gap: 1rem">
       <%= form_with url: pagy_url_for(@pagy, 1), class: "flex items-center gap show@md", method: :get, data: { controller: "form", action: "change->form#submit" } do |form| %>
