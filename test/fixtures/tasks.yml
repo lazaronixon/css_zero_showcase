@@ -2,7 +2,7 @@
 
 task_8782:
   :title: You can't compress the program without quantifying the open-source SSD pixel!
-  :status: in progress
+  :status: in_progress
   :label: documentation
   :priority: medium
 task_7878:
@@ -40,7 +40,7 @@ task_7262:
 task_1138:
   :title: Generating the driver won't do anything, we need to quantify the 1080p SMTP
     bandwidth!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: medium
 task_7184:
@@ -51,7 +51,7 @@ task_7184:
 task_5160:
   :title: Calculating the bus won't do anything, we need to navigate the back-end
     JSON protocol!
-  :status: in progress
+  :status: in_progress
   :label: documentation
   :priority: high
 task_5618:
@@ -78,13 +78,13 @@ task_9864:
   :priority: high
 task_8404:
   :title: We need to generate the virtual HEX alarm!
-  :status: in progress
+  :status: in_progress
   :label: bug
   :priority: low
 task_5365:
   :title: Backing up the pixel won't do anything, we need to transmit the primary
     IB array!
-  :status: in progress
+  :status: in_progress
   :label: documentation
   :priority: low
 task_1780:
@@ -118,7 +118,7 @@ task_9285:
 task_1024:
   :title: Overriding the microchip won't do anything, we need to transmit the digital
     OCR transmitter!
-  :status: in progress
+  :status: in_progress
   :label: documentation
   :priority: low
 task_7068:
@@ -144,7 +144,7 @@ task_6274:
   :priority: low
 task_1571:
   :title: I'll input the neural DRAM circuit, that should protocol the SMTP interface!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: medium
 task_9518:
@@ -166,7 +166,7 @@ task_2197:
   :priority: low
 task_8484:
   :title: We need to parse the solid state UDP firewall!
-  :status: in progress
+  :status: in_progress
   :label: bug
   :priority: low
 task_9892:
@@ -177,7 +177,7 @@ task_9892:
   :priority: high
 task_9616:
   :title: We need to synthesize the cross-platform ASCII pixel!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: medium
 task_9744:
@@ -210,13 +210,13 @@ task_1533:
 task_4920:
   :title: Bypassing the hard drive won't do anything, we need to input the bluetooth
     JSON program!
-  :status: in progress
+  :status: in_progress
   :label: bug
   :priority: high
 task_5168:
   :title: If we synthesize the bus, we can get to the IP panel through the virtual
     TLS array!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: low
 task_7103:
@@ -227,7 +227,7 @@ task_7103:
 task_4314:
   :title: If we compress the program, we can get to the XML alarm through the multi-byte
     COM matrix!
-  :status: in progress
+  :status: in_progress
   :label: bug
   :priority: high
 task_3415:
@@ -238,7 +238,7 @@ task_3415:
   :priority: high
 task_8339:
   :title: Try to calculate the DNS interface, maybe it will input the bluetooth capacitor!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: low
 task_6995:
@@ -368,13 +368,13 @@ task_9887:
   :priority: medium
 task_3649:
   :title: I'll input the virtual USB system, that should circuit the DNS monitor!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: medium
 task_3586:
   :title: If we quantify the circuit, we can get to the CLI feed through the mobile
     SMS hard drive!
-  :status: in progress
+  :status: in_progress
   :label: bug
   :priority: low
 task_5150:
@@ -395,12 +395,12 @@ task_6884:
   :priority: high
 task_1591:
   :title: We need to connect the mobile XSS driver!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: high
 task_3802:
   :title: Try to override the ASCII protocol, maybe it will parse the virtual matrix!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: low
 task_7253:
@@ -416,7 +416,7 @@ task_9739:
   :priority: medium
 task_4424:
   :title: Try to hack the HEX alarm, maybe it will connect the optical pixel!
-  :status: in progress
+  :status: in_progress
   :label: documentation
   :priority: medium
 task_3922:
@@ -442,7 +442,7 @@ task_2645:
   :priority: medium
 task_4535:
   :title: Try to copy the JSON circuit, maybe it will connect the wireless feed!
-  :status: in progress
+  :status: in_progress
   :label: feature
   :priority: low
 task_4463:
@@ -537,6 +537,6 @@ task_6906:
 task_5207:
   :title: The SMS interface is down, copy the bluetooth bus so we can quantify the
     VGA card!
-  :status: in progress
+  :status: in_progress
   :label: bug
   :priority: low

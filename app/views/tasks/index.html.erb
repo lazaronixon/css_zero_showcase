@@ -1,3 +1,6 @@
+<% status_icons   = { "in_progress" => "timer.svg", "done" => "circle-check-big.svg", "backlog" => "circle-help.svg", "todo" => "circle.svg", "canceled" => "circle-off.svg" } %>
+<% priority_icons = { "high" => "arrow-up.svg", "low" => "arrow-down.svg", "medium" => "arrow-right.svg" } %>
+
 <div class="container flex flex-col p-4">
   <div class="flex flex-col mbe-8">
     <h2 class="text-2xl font-bold">Welcome back!</h2>
@@ -6,8 +9,8 @@
 
   <%= search_form_for @search, class: "flex items-center gap mbe-4", data: { controller: "form" } do |form| %>
     <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autofocus: true, autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
-    <%= form.select :status_eq, [["Backlog", "backlog"], ["Todo", "todo"], ["In Progress", "in progress"], ["Done", "done"], ["Canceled", "canceled"]], { include_blank: "Status" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
-    <%= form.select :priority_eq, [["Low", "low"], ["Medium", "medium"], ["High", "high"]], { include_blank: "Priority" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
+    <%= form.select :status_eq, %w(backlog todo in_progress done canceled), { include_blank: "Status" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
+    <%= form.select :priority_eq, %w(low medium high), { include_blank: "Priority" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
   <% end %>
 
   <div class="relative i-full overflow-x-auto border rounded-lg mbe-4">
@@ -35,14 +38,12 @@
             </td>
             <td class="whitespace-nowrap">
               <div class="flex items-center gap">
-                <% status_icons = { "in progress" => "timer.svg", "done" => "circle-check-big.svg", "backlog" => "circle-help.svg", "todo" => "circle.svg", "canceled" => "circle-off.svg" } %>
                 <%= image_tag status_icons[task.status], class: "max-i-none", size: 16, aria: { hidden: true } %>
                 <span><%= task.status.titleize %></span>
               </div>
             </td>
             <td class="whitespace-nowrap">
               <div class="flex items-center gap">
-                <% priority_icons = { "high" => "arrow-up.svg", "low" => "arrow-down.svg", "medium" => "arrow-right.svg" } %>
                 <%= image_tag priority_icons[task.priority], class: "max-i-none", size: 16, aria: { hidden: true } %>
                 <span><%= task.priority.titleize %></span>
               </div>
