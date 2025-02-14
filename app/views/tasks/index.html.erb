@@ -13,9 +13,9 @@
         <tr>
           <th><%= check_box_tag :check_all, class: "checkbox", data: { action: "check-all#check", check_all_target: "dependee" } %></th>
           <th>Task</th>
-          <th>Title</th>
-          <th>Status</th>
-          <th>Priority</th>
+          <th><%= sort_link(@search, :title, class: "flex items-center") %></th>
+          <th><%= sort_link(@search, :status, class: "flex items-center") %></th>
+          <th><%= sort_link(@search, :priority, class: "flex items-center") %></th>
           <th style="min-inline-size: 3rem"></th>
         </tr>
       </thead>
