@@ -4,17 +4,10 @@
     <p class="text-subtle">Here's a list of your tasks for this month!</p>
   </div>
 
-  <%= search_form_for @search, class: "flex items-center justify-between gap mbe-4" do |form| %>
-    <div class="flex items-center grow gap">
-      <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
-      <%= form.select :status_eq, [["Backlog", "backlog"], ["Todo", "todo"], ["In Progress", "in progress"], ["Done", "done"], ["Canceled", "canceled"]], { include_blank: "Status" }, { class: "input", style: "--input-inline-size: 85px" } %>
-      <%= form.select :priority_eq, [["Low", "low"], ["Medium", "medium"], ["High", "high"]], { include_blank: "Priority" }, { class: "input", style: "--input-inline-size: 85px" } %>
-    </div>
-
-    <div class="flex items-center gap show@md">
-      <%= link_to "Reset", tasks_path, class: "btn btn--borderless" %>
-      <%= form.submit "Search", class: "btn" %>
-    </div>
+  <%= search_form_for @search, class: "flex items-center gap mbe-4", data: { controller: "form" } do |form| %>
+    <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autofocus: true, autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
+    <%= form.select :status_eq, [["Backlog", "backlog"], ["Todo", "todo"], ["In Progress", "in progress"], ["Done", "done"], ["Canceled", "canceled"]], { include_blank: "Status" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
+    <%= form.select :priority_eq, [["Low", "low"], ["Medium", "medium"], ["High", "high"]], { include_blank: "Priority" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
   <% end %>
 
   <div class="relative i-full overflow-x-auto border rounded-lg mbe-4">
