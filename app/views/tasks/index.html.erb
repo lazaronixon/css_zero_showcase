@@ -8,7 +8,7 @@
   </div>
 
   <%= search_form_for @search, class: "flex items-center gap mbe-4", data: { controller: "form" } do |form| %>
-    <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autofocus: true, autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
+    <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
     <%= form.select :status_eq, %w(backlog todo in_progress done canceled), { include_blank: "Status" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
     <%= form.select :priority_eq, %w(low medium high), { include_blank: "Priority" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
   <% end %>
