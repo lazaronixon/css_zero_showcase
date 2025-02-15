@@ -15,7 +15,7 @@
     <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
     <%= form.select :status_eq, %w(backlog todo in_progress done canceled), { include_blank: "Status" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
     <%= form.select :priority_eq, %w(low medium high), { include_blank: "Priority" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
-    <%= link_to "Reset", tasks_path, class: "btn show@md" if params[:q].present? %>
+    <%= link_to "Reset", tasks_path, class: "btn btn--borderless show@md" if params.has_key?(:q) %>
   <% end %>
 
   <div class="relative i-full overflow-x-auto border rounded-lg mbe-4">
@@ -31,6 +31,9 @@
         </tr>
       </thead>
       <tbody>
+        <% if @tasks.empty? %>
+          <tr><td colspan="6" class="text-center p-8">No Result</td></tr>
+        <% else %>
         <% @tasks.each do |task| %>
           <tr>
             <td><%= check_box_tag "selected_ids[]", task.id, class: "checkbox", data: { action: "check-all#check", check_all_target: "dependant" } %></td>
@@ -61,38 +64,37 @@
             </td>
           </tr>
         <% end %>
+        <% end %>
       </tbody>
     </table>
   </div>
 
   <div class="flex items-center">
     <div class="text-sm text-subtle show@md">Total of <%= @pagy.count %> record(s).</div>
-    <% if @pagy.pages > 1 %>
-      <div class="flex items-center mis-auto justify-end" style="column-gap: 1rem">
-        <%= form_with url: pagy_url_for(@pagy, 1), class: "flex items-center gap show@md", method: :get, data: { controller: "form", action: "change->form#submit" } do |form| %>
-          <%= form.label :limit, "Rows per page", class: "text-sm font-medium" %>
-          <%= form.select :limit, [10, 20, 30, 40, 50], { selected: @pagy.limit }, { class: "input", style: "--input-inline-size: 70px" } %>
+    <div class="flex items-center mis-auto justify-end" style="column-gap: 1rem">
+      <%= form_with url: pagy_url_for(@pagy, 1), class: "flex items-center gap show@md", method: :get, data: { controller: "form", action: "change->form#submit" } do |form| %>
+        <%= form.label :limit, "Rows per page", class: "text-sm font-medium" %>
+        <%= form.select :limit, [10, 20, 30, 40, 50], { selected: @pagy.limit }, { class: "input", style: "--input-inline-size: 70px" } %>
+      <% end %>
+      <div class="text-sm font-medium"><%= "Page #{@pagy.page} of #{@pagy.pages}" %></div>
+      <nav class="flex items-center gap shrink-0" style="--btn-padding: .5rem;" aria-label="Pagination">
+        <%= link_to pagy_url_for(@pagy, 1), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
+          <%= image_tag "chevrons-left.svg", size: 16, aria: { hidden: true } %>
+          <span class="sr-only">Go to first page</span>
         <% end %>
-        <div class="text-sm font-medium"><%= "Page #{@pagy.page} of #{@pagy.pages}" %></div>
-        <nav class="flex items-center gap shrink-0" style="--btn-padding: .5rem;" aria-label="Pagination">
-          <%= link_to pagy_url_for(@pagy, 1), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
-            <%= image_tag "chevrons-left.svg", size: 16, aria: { hidden: true } %>
-            <span class="sr-only">Go to first page</span>
-          <% end %>
-          <%= link_to pagy_url_for(@pagy, @pagy.prev || @pagy.page), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
-            <%= image_tag "chevron-left.svg", size: 16, aria: { hidden: true } %>
-            <span class="sr-only">Go to previous page</span>
-          <% end %>
-          <%= link_to pagy_url_for(@pagy, @pagy.next || @pagy.page), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
-            <%= image_tag "chevron-right.svg", size: 16, aria: { hidden: true } %>
-            <span class="sr-only">Go to next page</span>
-          <% end %>
-          <%= link_to pagy_url_for(@pagy, @pagy.last), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
-            <%= image_tag "chevrons-right.svg", size: 16, aria: { hidden: true } %>
-            <span class="sr-only">Go to last page</span>
-          <% end %>
-        </nav>
-      </div>
-    <% end %>
+        <%= link_to pagy_url_for(@pagy, @pagy.prev || @pagy.page), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
+          <%= image_tag "chevron-left.svg", size: 16, aria: { hidden: true } %>
+          <span class="sr-only">Go to previous page</span>
+        <% end %>
+        <%= link_to pagy_url_for(@pagy, @pagy.next || @pagy.page), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
+          <%= image_tag "chevron-right.svg", size: 16, aria: { hidden: true } %>
+          <span class="sr-only">Go to next page</span>
+        <% end %>
+        <%= link_to pagy_url_for(@pagy, @pagy.last), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
+          <%= image_tag "chevrons-right.svg", size: 16, aria: { hidden: true } %>
+          <span class="sr-only">Go to last page</span>
+        <% end %>
+      </nav>
+    </div>
   </div>
 </div>
