@@ -11,6 +11,7 @@
     <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
     <%= form.select :status_eq, %w(backlog todo in_progress done canceled), { include_blank: "Status" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
     <%= form.select :priority_eq, %w(low medium high), { include_blank: "Priority" }, { "data-action": "change->form#submit", class: "input", style: "--input-inline-size: 85px" } %>
+    <%= link_to "Reset", tasks_path, class: "btn show@md" if params[:q].present? %>
   <% end %>
 
   <div class="relative i-full overflow-x-auto border rounded-lg mbe-4">
