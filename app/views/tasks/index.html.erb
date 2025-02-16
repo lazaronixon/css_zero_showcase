@@ -9,14 +9,14 @@
 
   <%= turbo_frame_tag :tasks do %>
     <%= search_form_for @search, class: "flex items-center justify-between gap mbe-4" do |form| %>
-      <div class="flex items-center i-full gap">
+      <div class="flex items-center grow gap">
         <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
         <%= form.select :status_eq, %w(backlog todo in_progress done canceled), { include_blank: "Status" }, { class: "input", style: "--input-inline-size: 85px" } %>
         <%= form.select :priority_eq, %w(low medium high), { include_blank: "Priority" }, { class: "input", style: "--input-inline-size: 85px" } %>
         <%= link_to "Reset", tasks_path, class: "btn btn--borderless show@md" if params.has_key?(:q) %>
       </div>
 
-      <%= form.submit "Search", class: "btn show@md" %>
+      <%= form.submit "Search", class: "btn show@sm" %>
     <% end %>
 
     <div class="relative i-full overflow-x-auto border rounded-lg mbe-4">
