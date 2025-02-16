@@ -1,0 +1,17 @@
+<div class="flex flex-col gap">
+  <label class="card-selectable flex items-start">
+    <%= radio_button_tag :plan, :starter_plan, 1, class: "checkbox" %>
+    <div class="flex flex-col mis-3">
+      <h5 class="text-sm leading-none font-medium mbe-1">Starter Plan</h5>
+      <p class="text-sm text-subtle">Perfect for small businesses getting started with our platform.</p>
+    </div>
+  </label>
+
+  <label class="card-selectable flex items-start">
+    <%= radio_button_tag :plan, :pro_plan, class: "checkbox" %>
+    <div class="flex flex-col mis-3">
+      <h5 class="text-sm leading-none font-medium mbe-1">Pro Plan</h5>
+      <p class="text-sm text-subtle">Advanced features for growing businesses with higher demands.</p>
+    </div>
+  </label>
+</div>
