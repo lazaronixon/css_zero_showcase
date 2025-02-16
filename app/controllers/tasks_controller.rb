@@ -2,7 +2,11 @@ class TasksController < ApplicationController
   include Pagy::Backend
 
   def index
-    @search = Task.all.ransack(params[:q])
-    @pagy, @tasks = pagy(@search.result)
+    records = Task.all
+
+    if stale?(records)
+      @search = records.ransack(params[:q])
+      @pagy, @tasks = pagy(@search.result)
+    end
   end
 end
