@@ -1,0 +1,15 @@
+<div data-controller="popover" data-popover-placement-value="bottom-start">
+  <button type="button" id="menu_button" class="btn" data-popover-target="button" data-action="popover#toggle" aria-haspopup="true" aria-controls="menu">
+    Open dropdown
+  </button>
+
+  <div popover class="popover" style="--popover-size: 14rem;" data-popover-target="menu">
+    <div id="menu" class="menu" data-controller="menu" data-action="keydown.up->menu#prev keydown.down->menu#next" role="menu" aria-labelledby="menu_button">
+      <%= link_to "Edit", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <%= link_to "Make a copy", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <%= link_to "Favorite", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <hr class="menu__separator" role="separator"/>
+      <%= link_to "Delete", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+    </div>
+  </div>
+</div>

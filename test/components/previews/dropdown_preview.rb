@@ -5,12 +5,25 @@ class DropdownPreview < Lookbook::Preview
   # - [popover_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/popover_controller.js)
   # - [menu.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/menu.css)
   # - [menu_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/menu_controller.js)
+  #
+  # Dependencies
+  # ---
+  # - [Floating UI](https://floating-ui.com)
+  def menu_simple
+  end
+
+  # Links
+  # ---
+  # - [popover.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/popover.css)
+  # - [popover_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/popover_controller.js)
+  # - [menu.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/menu.css)
+  # - [menu_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/menu_controller.js)
   # - [_menu_items.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_menu_items.html.erb)
   #
   # Dependencies
   # ---
   # - [Floating UI](https://floating-ui.com)
-  def menu
+  def menu_complete
   end
 
   # Links
