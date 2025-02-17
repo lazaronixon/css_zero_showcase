@@ -4,6 +4,9 @@ class CardPreview < Lookbook::Preview
   def default
   end
 
+  def fieldset
+  end
+
   # @!group Selectable
   def checkbox
   end

@@ -1,0 +1,22 @@
+<%= form_with url: nil, contents: true do |form| %>
+  <fieldset class="card flex flex-col gap">
+    <legend class="font-semibold leading-none">Create project</legend>
+
+    <div class="flex flex-col gap mbe-2">
+      <div class="flex flex-col gap-half">
+        <%= form.label :name, class: "text-sm font-medium leading-none" %>
+        <%= form.text_field :name, placeholder: "Name of your project", class: "input" %>
+      </div>
+
+      <div class="flex flex-col gap-half">
+        <%= form.label :framework, class: "text-sm font-medium leading-none" %>
+        <%= form.select :framework, [["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]], {}, class: "input" %>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-between">
+      <button type="reset" class="btn">Reset</button>
+      <%= form.submit "Destroy", class: "btn btn--primary" %>
+    </div>
+  </fieldset>
+<% end %>
