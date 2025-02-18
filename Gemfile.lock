@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: bb5a75a08a4425e3371ec97733c1edc53da4fd3d
+  revision: eaf04996a9b192f83beb1f33e1665f24b3c87fb5
   specs:
-    css-zero (1.1.4)
+    css-zero (1.2.0)
 
 GEM
   remote: https://rubygems.org/
@@ -297,7 +297,7 @@ GEM
     xpath (3.2.0)
       nokogiri (~> 1.8)
     yard (0.9.37)
-    zeitwerk (2.7.1)
+    zeitwerk (2.7.2)
 
 PLATFORMS
   aarch64-linux
