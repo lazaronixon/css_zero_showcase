@@ -5,6 +5,17 @@ class TabsPreview < Lookbook::Preview
   # ---
   # - [\_account_form.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_account_form.html.erb)
   # - [\_password_form.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_password_form.html.erb)
-  def default
+  def complete
   end
+
+  # @!group Buttons
+  def buttons_simple
+  end
+
+  def buttons_disabled
+  end
+
+  def buttons_icons
+  end
+  # @!group Buttons
 end

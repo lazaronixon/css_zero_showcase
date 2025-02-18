@@ -1,0 +1,11 @@
+<div class="tabs__list">
+  <%= link_to "", class: "btn tabs__button", aria: { selected: true } do %>
+    <%= image_tag "app-window.svg", size: 16, aria: { hidden: true } %>
+    <span>Preview</span>
+  <% end %>
+
+  <%= link_to "", class: "btn tabs__button" do %>
+    <%= image_tag "code.svg", size: 16, aria: { hidden: true } %>
+    <span>Code</span>
+  <% end %>
+</div>
