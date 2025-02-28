@@ -53,7 +53,7 @@ gem "geared_pagination" # Infinite scroll
 gem "pagy", "~> 9.3" # Pagination
 gem "ransack", "~> 4.2" # Form Search
 
-gem "css-zero", github: "lazaronixon/css-zero"
+gem "css-zero"
 #gem "css-zero", path: "~/Development/css-zero"
 
 group :development, :test do
