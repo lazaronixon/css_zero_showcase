@@ -3,8 +3,4 @@
     <%= form.label :content, class: "text-sm font-medium leading-none" %>
     <%= form.text_area :content, rows: 10, class: "input", data: { action: "keydown.meta+enter->form#submit keydown.ctrl+enter->form#submit" } %>
   </div>
-
-  <div class="flex items-center">
-    <%= form.submit "Save changes", class: "btn btn--primary" %>
-  </div>
 <% end %>
