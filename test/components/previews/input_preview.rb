@@ -85,6 +85,9 @@ class InputPreview < Lookbook::Preview
 
   def range_with_tick_marks
   end
+
+  def range_vertical
+  end
   # @!endgroup
 
   # @!group Validation
