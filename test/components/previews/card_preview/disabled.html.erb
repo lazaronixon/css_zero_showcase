@@ -1,0 +1,23 @@
+<%= form_with url: nil, class: "card flex flex-col gap", html: { aria: { disabled: "true" } } do |form| %>
+  <div class="flex flex-col">
+    <h3 class="font-semibold leading-none mbe-1">Create project</h3>
+    <p class="text-sm text-subtle">Deploy your new project in one-click.</p>
+  </div>
+
+  <div class="flex flex-col gap mb-2">
+    <div class="flex flex-col gap-half">
+      <%= form.label :name, class: "text-sm font-medium leading-none" %>
+      <%= form.text_field :name, placeholder: "Name of your project", class: "input" %>
+    </div>
+
+    <div class="flex flex-col gap-half">
+      <%= form.label :framework, class: "text-sm font-medium leading-none" %>
+      <%= form.select :framework, [["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]], {}, class: "input" %>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-between">
+    <button type="reset" class="btn">Reset</button>
+    <%= form.submit "Destroy", class: "btn btn--primary" %>
+  </div>
+<% end %>

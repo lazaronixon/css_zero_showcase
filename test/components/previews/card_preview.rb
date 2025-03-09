@@ -14,4 +14,7 @@ class CardPreview < Lookbook::Preview
   def radio
   end
   # @!endgroup
+
+  def disabled
+  end
 end
