@@ -1,9 +1,9 @@
 <div data-controller="popover">
-  <a href="" class="font-medium underline" data-popover-target="button" data-action="mouseenter->popover#showLater mouseleave->popover#hideClear">
+  <a href="" class="font-medium underline" aria-describedby="rails-tooltip" data-popover-target="button" data-action="mouseenter->popover#showLater mouseleave->popover#hideClear">
     @rails
   </a>
 
-  <div popover="hint" class="popover" data-popover-target="menu">
+  <div popover="hint" id="rails-tooltip" class="popover" data-popover-target="menu">
     <div class="flex flex-col p-4">
       <h2 class="text-lg font-semibold">Ruby on Rails</h2>
       <p class="text-sm text-subtle">The webframework that changed the world.</p>
