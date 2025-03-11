@@ -1,8 +1,7 @@
 <div class="input input--actor flex items-center gap" data-controller="revealable-input">
   <%= password_field_tag "revealable_input", nil, data: { revealable_input_target: "input" } %>
-  <button type="button" class="btn btn--plain" data-action="revealable-input#reveal">
-    <%= image_tag "eye.svg",     hidden: true, size: 20, aria: { hidden: true }, data: { revealable_input_target: "showIcon" } %>
-    <%= image_tag "eye-off.svg", hidden: true, size: 20, aria: { hidden: true }, data: { revealable_input_target: "hideIcon" } %>
-    <span class="sr-only">Reveal password</span>
+  <button type="button" class="btn btn--plain" data-revealable-input-target="button" data-action="revealable-input#reveal">
+    <%= image_tag "eye.svg", size: 20, aria: { hidden: true } %>
+    <span class="sr-only">Toggle password visibility</span>
   </button>
 </div>

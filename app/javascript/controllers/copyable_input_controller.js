@@ -1,38 +1,26 @@
 import { Controller } from "@hotwired/stimulus"
-import debounce from "https://esm.sh/just-debounce-it@3.2.0?standalone"
 
 export default class extends Controller {
-  static targets = [ "input", "copyIcon", "successIcon" ]
-  static values  = { copied: Boolean }
+  static targets = [ "input", "button" ]
 
-  initialize() {
-    this.reset = debounce(this.reset.bind(this), 2500)
+  async copy() {
+    this.#reset()
+    this.#writeToClipboard()
   }
 
-  copiedValueChanged() {
-    this.#update()
-  }
-
-  copy() {
-    this.#copyToClipboard()
-    this.reset()
-  }
-
-  reset() {
-    this.copiedValue = false
-  }
-
-  #copyToClipboard() {
+  async #writeToClipboard() {
     try {
-      navigator.clipboard.writeText(this.inputTarget.value)
-      this.copiedValue = true
-    } catch {
-      this.copiedValue = false
-    }
+      await navigator.clipboard.writeText(this.inputTarget.value)
+      this.buttonTarget.classList.add("btn--copied")
+    } catch {}
   }
 
-  #update() {
-    this.copyIconTarget.hidden = this.copiedValue
-    this.successIconTarget.hidden = !this.copiedValue
+  #reset() {
+    this.buttonTarget.classList.remove("btn--copied")
+    this.#forceReflow()
+  }
+
+  #forceReflow() {
+    this.buttonTarget.offsetWidth
   }
 }

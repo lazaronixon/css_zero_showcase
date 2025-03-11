@@ -1,4 +1,5 @@
 # @display max_width 400px
+# @css app/assets/stylesheets/input_concerns.css
 class InputConcernsPreview < Lookbook::Preview
   # The javascript is avilable at
   # [autoselect_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/autoselect_controller.js)

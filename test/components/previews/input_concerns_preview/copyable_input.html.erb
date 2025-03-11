@@ -1,8 +1,7 @@
 <div class="input input--actor flex items-center gap" data-controller="copyable-input">
   <%= text_field_tag "copyable_input", SecureRandom.base58(32), readonly: "readonly", data: { copyable_input_target: "input" } %>
-  <button type="button" class="btn btn--plain" data-action="copyable-input#copy">
-    <%= image_tag "copy.svg",  hidden: true, size: 20, aria: { hidden: true }, data: { copyable_input_target: "copyIcon" } %>
-    <%= image_tag "check.svg", hidden: true, size: 20, aria: { hidden: true }, data: { copyable_input_target: "successIcon" } %>
+  <button type="button" class="btn btn--plain" data-copyable-input-target="button" data-action="copyable-input#copy">
+    <%= image_tag "copy.svg", size: 20, aria: { hidden: true } %>
     <span class="sr-only">Copy to clipboard</span>
   </button>
 </div>

@@ -1,6 +1,6 @@
-<div class="input input--actor flex items-center gap" data-controller="clearable-input">
-  <%= text_field_tag "clearable_input", nil, data: { clearable_input_target: "input" } %>
-  <button type="button" class="btn btn--plain" data-action="clearable-input#clear">
+<div class="input input--clearable input--actor flex items-center gap" data-controller="clearable-input">
+  <%= search_field_tag "clearable_input", "clear it", data: { clearable_input_target: "input", action: "clearable-input#update" } %>
+  <button hidden type="button" class="btn btn--plain" data-clearable-input-target="button" data-action="clearable-input#clear">
     <%= image_tag "x.svg", size: 20, aria: { hidden: true } %>
     <span class="sr-only">Clear input</span>
   </button>
