@@ -10,7 +10,4 @@ class TogglePreview < Lookbook::Preview
   def with_text
   end
   # @!endgroup
-
-  def group
-  end
 end
