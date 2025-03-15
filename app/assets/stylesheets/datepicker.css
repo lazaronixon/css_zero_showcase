@@ -2,7 +2,7 @@
 
 .flatpickr-calendar {
   --calendar-size: 250px;
-  --calendar-container-size: 220px;
+  --container-size: 220px;
   --day-size: var(--size-8);
 
   background: var(--color-bg);
@@ -18,13 +18,13 @@
   }
 
   .flatpickr-days {
-    inline-size: var(--calendar-container-size);
+    inline-size: var(--container-size);
   }
 
   .dayContainer {
-    inline-size: var(--calendar-container-size);
-    min-inline-size: var(--calendar-container-size);
-    max-inline-size: var(--calendar-container-size);
+    inline-size: var(--container-size);
+    min-inline-size: var(--container-size);
+    max-inline-size: var(--container-size);
   }
 
   .dayContainer + .dayContainer {
