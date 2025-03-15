@@ -12,28 +12,24 @@
     background-color: rgba(0, 0, 0, .8);
   }
 
-  /* Exit Stage To */
-  transform: var(--sheet-transform);
+  /* Setup Transition */
   transition-behavior: allow-discrete;
   transition-duration: var(--time-300);
   transition-property: display, overlay, transform;
 
   &::backdrop {
-    opacity: 0;
     transition-behavior: allow-discrete;
     transition-duration: var(--time-150);
     transition-property: display, overlay, opacity;
   }
 
-  /* On Stage */
-  &[open] {
-    transform: translateX(0);
-    transition-duration: var(--time-500);
-  }
+  /* Exit Stage To */
+  & { transform: var(--sheet-transform); }
+  &::backdrop { opacity: 0; }
 
-  &[open]::backdrop {
-    opacity: 1;
-  }
+  /* On Stage */
+  &[open] { transform: translateX(0); }
+  &[open]::backdrop { opacity: 1; }
 
   /* Enter Stage From */
   @starting-style {

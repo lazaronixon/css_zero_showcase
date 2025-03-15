@@ -12,19 +12,20 @@
     background-color: rgba(0, 0, 0, .8);
   }
 
-  /* Exit Stage To */
-  opacity: 0;
-  transform: var(--scale-95);
+  /* Setup Transition */
   transition-behavior: allow-discrete;
   transition-duration: var(--time-200);
   transition-property: display, overlay, opacity, transform;
 
   &::backdrop {
-    opacity: 0;
     transition-behavior: allow-discrete;
     transition-duration: var(--time-150);
     transition-property: display, overlay, opacity;
   }
+
+  /* Exit Stage To */
+  & { opacity: 0; transform: var(--scale-95); }
+  &::backdrop { opacity: 0; }
 
   /* On Stage */
   &[open] { opacity: 1; transform: var(--scale-100); }

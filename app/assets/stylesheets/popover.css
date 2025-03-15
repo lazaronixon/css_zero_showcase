@@ -6,12 +6,14 @@
   color: var(--color-text);
   inline-size: var(--popover-size, max-content);
 
-  /* Exit Stage To */
-  opacity: 0;
-  transform: var(--scale-95);
+  /* Setup Transition */
   transition-behavior: allow-discrete;
   transition-duration: var(--time-150);
   transition-property: display, overlay, opacity, transform;
+
+  /* Exit Stage To */
+  opacity: 0;
+  transform: var(--scale-95);
 
   /* On Stage */
   &:popover-open {
