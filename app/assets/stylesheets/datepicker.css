@@ -14,7 +14,7 @@
 
   .flatpickr-innerContainer {
     justify-content: center;
-    padding-block-end: var(--size-1);
+    padding-block-end: var(--size-3);
   }
 
   .flatpickr-days {
