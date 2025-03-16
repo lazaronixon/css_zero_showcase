@@ -6,7 +6,7 @@
 <div class="container flex flex-col gap p-4" style="max-inline-size: 400px">
   <div class="flex flex-col gap auto-animate">
     <% @fruits.each do |fruit| %>
-      <%= tag.div class: "flex items-center justify-between border rounded-md pi-4 pb-2", style: "view-transition-name: fruit-#{fruit.id}" do %>
+      <%= tag.div class: "card flex justify-between p-3", style: "view-transition-name: fruit-#{fruit.id}" do %>
         <div><%= fruit.description %></div>
         <div><%= button_to "❌", main_app.fruit_path(fruit), method: :delete, class: "btn btn--plain" %></div>
       <% end %>
