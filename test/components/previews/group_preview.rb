@@ -3,9 +3,6 @@ class GroupPreview < Lookbook::Preview
   def default
   end
 
-  def borderless
-  end
-
   def with_icon
   end
 end
