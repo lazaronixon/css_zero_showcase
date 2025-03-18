@@ -24,7 +24,7 @@ export default class extends Controller {
     event.preventDefault()
   }
 
-  #click(submitter) {
-    this.element.querySelector(submitter).click()
+  #click(selectors) {
+    this.element.querySelector(selectors).click()
   }
-}``
+}
