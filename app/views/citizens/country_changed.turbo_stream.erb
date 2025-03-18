@@ -1,0 +1,8 @@
+<%= turbo_stream.replace :state_id do %>
+  <% states = State.where(country_id: params[:country_id]).order(:name) %>
+  <%= select_tag :state_id, options_from_collection_for_select(states, :id, :name), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "#state_changed" } %>
+<% end %>
+
+<%= turbo_stream.replace :citizen_city_id do %>
+  <%= select_tag :citizen_city_id, nil, name: "citizen[city_id]", include_blank: "Select one", class: "input" %>
+<% end %>

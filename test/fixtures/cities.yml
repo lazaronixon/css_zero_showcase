@@ -1,0 +1,77 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+sydney:
+  name: Sydney
+  state: new_south_wales
+
+newcastle:
+  name: Newcastle
+  state: new_south_wales
+
+wollongong:
+  name: Wollongong
+  state: new_south_wales
+
+brisbane:
+  name: Brisbane
+  state: queensland
+
+townsville:
+  name: Townsville
+  state: queensland
+
+montreal:
+  name: Montreal
+  state: quebec
+
+quebec_city:
+  name: Quebec City
+  state: quebec
+
+ottawa:
+  name: Ottawa
+  state: ontario
+
+toronto:
+  name: Toronto
+  state: ontario
+
+los_angeles:
+  name: Los Angeles
+  state: california
+
+san_diego:
+  name: San Diego
+  state: california
+
+san_francisco:
+  name: San Francisco
+  state: california
+
+jacksonville:
+  name: Jacksonville
+  state: florida
+
+miami:
+  name: Miami
+  state: florida
+
+tampa:
+  name: Tampa
+  state: florida
+
+orlando:
+  name: Orlando
+  state: florida
+
+austin:
+  name: Austin
+  state: texas
+
+dallas:
+  name: Dallas
+  state: texas
+
+houston:
+  name: Houston
+  state: texas

@@ -1,0 +1,37 @@
+<%= form_with model: citizen, html: { class: "card flex flex-col gap", data: { controller: "form" } } do |form| %>
+  <div class="flex flex-col">
+    <h3 class="font-semibold leading-none mbe-1">Citizen</h3>
+    <p class="text-sm text-subtle">Select yout country, state, and city.</p>
+  </div>
+
+  <div class="flex flex-col gap mb-2">
+    <div class="flex flex-col gap-half">
+      <%= form.label :name, class: "text-sm font-medium leading-none" %>
+      <%= form.text_field :name, placeholder: "Full name", class: "input" %>
+    </div>
+
+    <div class="flex flex-col gap-half">
+      <% countries = Country.order(:name) %>
+      <%= label_tag :country_id, "Country", class: "text-sm font-medium leading-none" %>
+      <%= select_tag :country_id, options_from_collection_for_select(countries, :id, :name, citizen.country_id), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "#country_changed" } %>
+    </div>
+
+    <div class="flex flex-col gap-half">
+      <% states = State.where(country_id: citizen.country_id).order(:name) %>
+      <%= label_tag :state_id, "State", class: "text-sm font-medium leading-none" %>
+      <%= select_tag :state_id, options_from_collection_for_select(states, :id, :name, citizen.state_id), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "#state_changed" } %>
+    </div>
+
+    <div class="flex flex-col gap-half">
+      <% cities = City.where(state_id: citizen.state_id).order(:name) %>
+      <%= form.label :city_id, "City", class: "text-sm font-medium leading-none" %>
+      <%= form.collection_select :city_id, cities, :id, :name, { include_blank: "Select one" }, { class: "input" } %>
+    </div>
+  </div>
+
+  <div class="flex items-center">
+    <%= form.submit "Save changes", class: "btn btn--primary" %>
+    <%= form.submit "country_changed", id: "country_changed", hidden: true, formaction: country_changed_citizens_path, formmethod: :post, formnovalidate: true %>
+    <%= form.submit "stated_changed", id: "state_changed", hidden: true, formaction: state_changed_citizens_path, formmethod: :post, formnovalidate: true %>
+  </div>
+<% end %>

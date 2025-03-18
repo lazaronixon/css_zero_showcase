@@ -8,8 +8,12 @@ export default class extends Controller {
     this.search = debounce(this.search.bind(this), 500)
   }
 
-  submit() {
-    this.element.requestSubmit()
+  submit({ params }) {
+    if (params.submitter) {
+      this.element.querySelector(params.submitter).click()
+    } else {
+      this.element.requestSubmit()
+    }
   }
 
   search() {

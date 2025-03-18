@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_12_045509) do
+ActiveRecord::Schema[8.0].define(version: 2025_03_17_205017) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -49,6 +49,28 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_12_045509) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "cities", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "state_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["state_id"], name: "index_cities_on_state_id"
+  end
+
+  create_table "citizens", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "city_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["city_id"], name: "index_citizens_on_city_id"
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "fruits", force: :cascade do |t|
     t.string "description"
     t.string "key"
@@ -63,6 +85,14 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_12_045509) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "states", force: :cascade do |t|
+    t.string "name", null: false
+    t.integer "country_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_states_on_country_id"
+  end
+
   create_table "tasks", force: :cascade do |t|
     t.string "title", null: false
     t.string "label", null: false
@@ -74,4 +104,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_12_045509) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "cities", "states"
+  add_foreign_key "citizens", "cities"
+  add_foreign_key "states", "countries"
 end

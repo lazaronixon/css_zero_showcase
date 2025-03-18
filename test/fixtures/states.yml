@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+new_south_wales:
+  name: New South Wales
+  country: australia
+
+queensland:
+  name: Queensland
+  country: australia
+
+quebec:
+  name: Quebec
+  country: canada
+
+ontario:
+  name: Ontario
+  country: canada
+
+california:
+  name: California
+  country: united_states
+
+florida:
+  name: Florida
+  country: united_states
+
+texas:
+  name: Texas
+  country: united_states

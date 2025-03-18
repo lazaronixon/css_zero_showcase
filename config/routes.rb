@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   resources :sortables,   only: :update
   resources :fruits,      only: %i(index create destroy)
 
+  resources :citizens, only: %i(new edit create update) do
+    post "country_changed", on: :collection
+    post "state_changed", on: :collection
+  end
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
