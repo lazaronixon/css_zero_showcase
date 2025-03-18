@@ -5,8 +5,9 @@ class TablePreview < Lookbook::Preview
 
   # Implementation
   # ---
-  # - [tasks_controller.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/tasks_controller.rb)
   # - [index.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/tasks/index.html.erb)
+  # - [tasks_controller.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/tasks_controller.rb)
+  # - [task.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/models/task.rb)
   # - [pagy.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/config/initializers/pagy.rb)
   # - [ransack.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/config/initializers/ransack.rb)
   #
