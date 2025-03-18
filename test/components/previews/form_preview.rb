@@ -9,4 +9,7 @@ class FormPreview < Lookbook::Preview
 
   def submit_on_cmd_enter
   end
+
+  def submit_with_submitter
+  end
 end
