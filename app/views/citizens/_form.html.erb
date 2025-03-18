@@ -7,7 +7,7 @@
   <div class="flex flex-col gap mb-2">
     <div class="flex flex-col gap-half">
       <%= form.label :name, class: "text-sm font-medium leading-none" %>
-      <%= form.text_field :name, placeholder: "Full name", class: "input" %>
+      <%= form.text_field :name, placeholder: "Full name", required: true, class: "input" %>
     </div>
 
     <div class="flex flex-col gap-half">
@@ -31,7 +31,7 @@
 
   <div class="flex items-center">
     <%= form.submit "Save changes", class: "btn btn--primary" %>
-    <%= form.submit "country_changed", id: "country_changed", hidden: true, formaction: country_changed_citizens_path, formmethod: :post, formnovalidate: true %>
-    <%= form.submit "stated_changed", id: "state_changed", hidden: true, formaction: state_changed_citizens_path, formmethod: :post, formnovalidate: true %>
+    <%= form.submit id: "country_changed", hidden: true, formaction: country_changed_citizens_path, formmethod: :post, formnovalidate: true %>
+    <%= form.submit id: "state_changed",   hidden: true, formaction: state_changed_citizens_path,   formmethod: :post, formnovalidate: true %>
   </div>
 <% end %>
