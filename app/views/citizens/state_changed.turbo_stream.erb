@@ -1,4 +1,5 @@
+<% cities = City.where(state_id: params[:state_id]).order(:name) %>
+
 <%= turbo_stream.replace :citizen_city_id do %>
-  <% cities = City.where(state_id: params[:state_id]).order(:name) %>
   <%= select_tag :citizen_city_id, options_from_collection_for_select(cities, :id, :name), name: "citizen[city_id]", include_blank: "Select one", class: "input" %>
 <% end %>
