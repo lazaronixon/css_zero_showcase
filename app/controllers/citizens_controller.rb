@@ -7,17 +7,17 @@ class CitizensController < ApplicationController
     @citizen = Citizen.first
   end
 
-  def country_changed
-  end
-
-  def state_changed
-  end
-
   def create
     head :created
   end
 
   def update
     head :ok
+  end
+
+  def country_changed
+  end
+
+  def state_changed
   end
 end
