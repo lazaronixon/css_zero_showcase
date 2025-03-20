@@ -3,23 +3,23 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = [ "cancel" ]
 
-  #submitTimer = null
+  #requestTimer = null
 
   submit({ params: { submitter, delay } }) {
-    delay ? this.#requestSubmitLater(submitter, delay) : this.#requestSubmit(submitter)
+    delay ? this.#requestLater(submitter, delay) : this.#request(submitter)
   }
 
   cancel() {
     this.cancelTarget?.click()
   }
 
-  #requestSubmit(submitter) {
+  #request(submitter) {
     submitter ? this.element.requestSubmit(this.#get(submitter)) : this.element.requestSubmit()
   }
 
-  #requestSubmitLater(submitter, delay) {
-    clearTimeout(this.#submitTimer)
-    this.#submitTimer = setTimeout(() => this.#requestSubmit(submitter), delay)
+  #requestLater(submitter, delay) {
+    clearTimeout(this.#requestTimer)
+    this.#requestTimer = setTimeout(() => this.#request(submitter), delay)
   }
 
   #get(id) {
