@@ -9,11 +9,11 @@ export default class extends Controller {
   }
 
   submit({ params }) {
-    params.submitter ? this.#click(params.submitter) : this.element.requestSubmit()
+    params.submitter ? this.#requestSubmitWith(params.submitter) : this.element.requestSubmit()
   }
 
   search({ params }) {
-    params.submitter ? this.#click(params.submitter) : this.element.requestSubmit()
+    params.submitter ? this.#requestSubmitWith(params.submitter) : this.element.requestSubmit()
   }
 
   cancel() {
@@ -24,7 +24,7 @@ export default class extends Controller {
     event.preventDefault()
   }
 
-  #click(selectors) {
-    this.element.querySelector(selectors).click()
+  #requestSubmitWith(submitter) {
+    this.element.requestSubmit(this.element.querySelector(submitter))
   }
 }
