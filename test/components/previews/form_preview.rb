@@ -4,10 +4,10 @@ class FormPreview < Lookbook::Preview
   def submit_on_change
   end
 
-  def submit_on_typing
+  def submit_on_cmd_enter
   end
 
-  def submit_on_cmd_enter
+  def submit_with_delay
   end
 
   # Implementation

@@ -1,30 +1,32 @@
 import { Controller } from "@hotwired/stimulus"
-import debounce from "https://esm.sh/just-debounce-it@3.2.0?standalone"
 
 export default class extends Controller {
   static targets = [ "cancel" ]
 
-  initialize() {
-    this.search = debounce(this.search.bind(this), 500)
-  }
+  #submitTimer = null
 
-  submit({ params }) {
-    params.submitter ? this.#requestSubmitWith(params.submitter) : this.element.requestSubmit()
-  }
-
-  search({ params }) {
-    params.submitter ? this.#requestSubmitWith(params.submitter) : this.element.requestSubmit()
+  submit({ params: { submitter, delay } }) {
+    delay ? this.#requestSubmitLater(submitter, delay) : this.#requestSubmit(submitter)
   }
 
   cancel() {
     this.cancelTarget?.click()
   }
 
-  preventAttachment(event) {
-    event.preventDefault()
+  #requestSubmit(submitter) {
+    submitter ? this.element.requestSubmit(this.#get(submitter)) : this.element.requestSubmit()
   }
 
-  #requestSubmitWith(submitter) {
-    this.element.requestSubmit(this.element.querySelector(submitter))
+  #requestSubmitLater(submitter, delay) {
+    clearTimeout(this.#submitTimer)
+    this.#submitTimer = setTimeout(() => this.#requestSubmit(submitter), delay)
+  }
+
+  #get(id) {
+    return document.getElementById(id) || this.#elementNotFoundWith(id)
+  }
+
+  #elementNotFoundWith(id) {
+    throw new Error(`Element with ID "${id}" not found in the DOM`)
   }
 }
