@@ -3,5 +3,5 @@
 <% end %>
 
 <%= turbo_stream.replace :citizen_city_id do %>
-  <%= select_tag :citizen_city_id, nil, name: "citizen[city_id]", include_blank: "Select one", class: "input" %>
+  <%= select_tag field_id(:citizen, :city_id), nil, name: field_name(:citizen, :city_id), include_blank: "Select one", class: "input" %>
 <% end %>
