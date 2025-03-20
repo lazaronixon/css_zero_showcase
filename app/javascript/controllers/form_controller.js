@@ -3,30 +3,27 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = [ "cancel" ]
 
-  #requestTimer = null
-
-  submit({ params: { submitter, delay } }) {
-    delay ? this.#requestLater(submitter, delay) : this.#request(submitter)
+  submit({ params }) {
+    if (params.submitter) {
+      this.element.requestSubmit(this.#get(params.submitter))
+    } else {
+      this.element.requestSubmit()
+    }
   }
 
   cancel() {
     this.cancelTarget?.click()
   }
 
-  #request(submitter) {
-    submitter ? this.element.requestSubmit(this.#get(submitter)) : this.element.requestSubmit()
-  }
-
-  #requestLater(submitter, delay) {
-    clearTimeout(this.#requestTimer)
-    this.#requestTimer = setTimeout(() => this.#request(submitter), delay)
+  preventAttachment(event) {
+    event.preventDefault()
   }
 
   #get(id) {
-    return document.getElementById(id) || this.#elementNotFoundWith(id)
+    return document.getElementById(id) || this.#notFound(id)
   }
 
-  #elementNotFoundWith(id) {
+  #notFound(id) {
     throw new Error(`Element with ID "${id}" not found in the DOM`)
   }
 }
