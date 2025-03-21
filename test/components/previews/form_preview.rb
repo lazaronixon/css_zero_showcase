@@ -15,6 +15,6 @@ class FormPreview < Lookbook::Preview
   # - [views](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/citizens)
   # - [citizens_controller.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/citizens_controller.rb)
   # - [citizen.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/models/citizen.rb)
-  def submit_with_submitter
+  def event_driven_update
   end
 end
