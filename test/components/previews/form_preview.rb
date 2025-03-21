@@ -7,6 +7,9 @@ class FormPreview < Lookbook::Preview
   def submit_on_cmd_enter
   end
 
+  def submit_with_debounce
+  end
+
   # Implementation
   # ---
   # - [views](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/citizens)
