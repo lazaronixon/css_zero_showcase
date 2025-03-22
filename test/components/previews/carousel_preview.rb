@@ -6,4 +6,7 @@ class CarouselPreview < Lookbook::Preview
 
   def sizes
   end
+
+  def spacing
+  end
 end
