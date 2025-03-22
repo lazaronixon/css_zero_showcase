@@ -1,1 +1,3 @@
-<%= rich_text_area_tag "content", render("trix_content"), placeholder: "Write away..." %>
+<%= form_with url: nil, class: "trix flex flex-col gap" do |form| %>
+  <%= rich_text_area_tag "content", render("trix_content"), placeholder: "Write away..." %>
+<% end %>

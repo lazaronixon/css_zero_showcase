@@ -3,4 +3,7 @@
 class TrixPreview < Lookbook::Preview
   def default
   end
+
+  def minimal
+  end
 end

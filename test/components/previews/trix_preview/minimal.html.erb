@@ -1,0 +1,3 @@
+<%= form_with url: nil, class: "trix trix--minimal flex flex-col gap", data: { controller: "form", action: "trix-file-accept->form#preventAttachment" } do |form| %>
+  <%= rich_text_area_tag "content", render("trix_content"), placeholder: "Write away..." %>
+<% end %>
