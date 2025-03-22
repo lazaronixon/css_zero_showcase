@@ -13,13 +13,13 @@
     <div class="flex flex-col gap-half">
       <% countries = Country.order(:name) %>
       <%= label_tag :country_id, "Country", class: "text-sm font-medium leading-none" %>
-      <%= select_tag :country_id, options_from_collection_for_select(countries, :id, :name, citizen.country_id), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "country_changed" } %>
+      <%= select_tag :country_id, options_from_collection_for_select(countries, :id, :name, citizen.country_id), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "on_country_change" } %>
     </div>
 
     <div class="flex flex-col gap-half">
       <% states = State.where(country_id: citizen.country_id).order(:name) %>
       <%= label_tag :state_id, "State", class: "text-sm font-medium leading-none" %>
-      <%= select_tag :state_id, options_from_collection_for_select(states, :id, :name, citizen.state_id), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "state_changed" } %>
+      <%= select_tag :state_id, options_from_collection_for_select(states, :id, :name, citizen.state_id), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "on_state_change" } %>
     </div>
 
     <div class="flex flex-col gap-half">
@@ -31,7 +31,7 @@
 
   <div class="flex items-center">
     <%= form.submit "Save changes", class: "btn btn--primary" %>
-    <%= form.submit id: "country_changed", hidden: true, formaction: country_changed_citizens_path, formmethod: :post, formnovalidate: true %>
-    <%= form.submit id: "state_changed",   hidden: true, formaction: state_changed_citizens_path,   formmethod: :post, formnovalidate: true %>
+    <%= form.submit id: "on_country_change", hidden: true, formaction: on_country_change_citizens_path, formmethod: :post, formnovalidate: true %>
+    <%= form.submit id: "on_state_change",   hidden: true, formaction: on_state_change_citizens_path,   formmethod: :post, formnovalidate: true %>
   </div>
 <% end %>

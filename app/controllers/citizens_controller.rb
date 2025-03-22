@@ -15,11 +15,11 @@ class CitizensController < ApplicationController
     head :ok
   end
 
-  def country_changed
+  def on_country_change
     @states = State.where(country_id: params[:country_id]).order(:name)
   end
 
-  def state_changed
+  def on_state_change
     @cities = City.where(state_id: params[:state_id]).order(:name)
   end
 end

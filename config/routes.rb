@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   resources :fruits,      only: %i(index create destroy)
 
   resources :citizens, only: %i(new edit create update) do
-    post "country_changed", on: :collection
-    post "state_changed", on: :collection
+    post "on_country_change", on: :collection
+    post "on_state_change", on: :collection
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

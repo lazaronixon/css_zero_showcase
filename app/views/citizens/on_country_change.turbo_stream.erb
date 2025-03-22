@@ -1,5 +1,5 @@
 <%= turbo_stream.replace :state_id do %>
-  <%= select_tag :state_id, options_from_collection_for_select(@states, :id, :name), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "state_changed" } %>
+  <%= select_tag :state_id, options_from_collection_for_select(@states, :id, :name), include_blank: "Select one", class: "input", data: { action: "form#submit", form_submitter_param: "on_state_change" } %>
 <% end %>
 
 <%= turbo_stream.replace :citizen_city_id do %>
