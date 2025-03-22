@@ -1,7 +1,7 @@
 <%= form_with url: main_app.slow_action_path, class: "flex flex-col gap", data: { controller: "form" } do |form| %>
   <div class="flex flex-col gap-half">
     <%= form.label :content, class: "text-sm font-medium leading-none" %>
-    <%= form.text_area :content, rows: 10, class: "input", data: { action: "keydown.meta+enter->form#submit keydown.ctrl+enter->form#submit" } %>
+    <%= form.text_area :content, rows: 10, class: "input", data: { action: "keydown.ctrl+enter->form#submit keydown.meta+enter->form#submit" } %>
   </div>
 
   <div class="flex items-center">
