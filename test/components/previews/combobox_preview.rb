@@ -2,7 +2,7 @@
 # @js app/javascript/controllers/combobox_controller.js
 # @css app/assets/stylesheets/combobox.css
 class ComboboxPreview < Lookbook::Preview
-  # Links
+  # Dependencies
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
@@ -10,7 +10,7 @@ class ComboboxPreview < Lookbook::Preview
   end
 
   # @!group Select
-  # Links
+  # Dependencies
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
@@ -27,14 +27,14 @@ class ComboboxPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  # Links
+  # Dependencies
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
   def multiple
   end
 
-  # Links
+  # Dependencies
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)
@@ -47,7 +47,7 @@ class ComboboxPreview < Lookbook::Preview
   # - [searchables_controller.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/searchables_controller.rb)
   # - [movie.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/models/movie.rb)
   #
-  # Links
+  # Dependencies
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
   # - [Request.js](https://github.com/rails/request.js)

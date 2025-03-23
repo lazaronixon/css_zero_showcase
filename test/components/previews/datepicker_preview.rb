@@ -3,7 +3,7 @@
 # @css app/assets/stylesheets/datepicker.css
 class DatepickerPreview < Lookbook::Preview
   # @!group Default
-  # Links
+  # Dependencies
   # ---
   # - [Flatpickr](https://github.com/flatpickr/flatpickr)
   def default
