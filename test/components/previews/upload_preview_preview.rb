@@ -2,7 +2,7 @@
 class UploadPreviewPreview < Lookbook::Preview
   # Example
   # ---
-  # You can remove the attachment in the same
+  # You can remove the attachment in the update
   # request using the hidden input value.
   #
   # ```ruby
