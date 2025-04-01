@@ -1,4 +1,4 @@
-<div class="inline-flex" data-controller="popover" data-action="mouseenter->popover#showLater mouseleave->popover#hideLater">
+<div class="inline-flex" data-controller="popover" data-action="mouseenter->popover#debouncedShow mouseleave->popover#debouncedHide">
   <%= button_tag "Hover", class: "btn", aria: { describedby: "library-tooltip" }, data: { popover_target: "button" } %>
   <div popover="hint" id="library-tooltip" class="popover bg-black text-reversed text-xs pb-1 pi-2" data-popover-target="menu" role="tooltip">
     Add to library
