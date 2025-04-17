@@ -1,3 +1,3 @@
-<%= form_with url: nil, data: { controller: "form" } do |form| %>
+<%= form_with url: main_app.slow_action_path, data: { controller: "form" } do |form| %>
   <%= form.search_field :filter_tasks, placeholder: "Filter tasks..", autocomplete: "off", class: "input", data: { action: "form#debouncedSubmit" } %>
 <% end %>
