@@ -1,0 +1,10 @@
+<div class="flex flex-row flex-wrap gap">
+  <% @groups.each do |group_name, variables| %>
+    <div>
+      <h2 class="text-xl"><%= group_name %></h2>
+      <% variables.each do |variable| %>
+        <div style="background: var(<%= variable %>)" class="p-2 pi-10"></div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
