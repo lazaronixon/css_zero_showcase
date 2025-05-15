@@ -7,7 +7,7 @@ image: lazaronixon/css-zero-showcase
 # Deploy to these servers.
 servers:
   web:
-    - 5.161.219.21
+    - 2a01:4ff:f0:c57c::1
   # job:
   #   hosts:
   #     - 192.168.0.1
