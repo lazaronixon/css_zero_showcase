@@ -69,8 +69,11 @@ html {
 }
 
 body {
+  /* Antialiased fonts */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
+  /* Default styles */
   background-color: var(--color-bg);
   color: var(--color-text);
   font-synthesis-weight: none;
