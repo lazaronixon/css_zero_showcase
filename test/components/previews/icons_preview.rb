@@ -2,6 +2,9 @@
 # @css app/assets/stylesheets/icons.css
 class IconsPreview < Lookbook::Preview
   # @!group Icon
+  # Dependencies
+  # ---
+  # - [Heroicons](https://heroicons.com)
   def default
   end
 
