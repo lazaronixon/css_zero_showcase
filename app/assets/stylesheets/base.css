@@ -1,4 +1,7 @@
 :root {
+  /* Colorize browser widgets */
+  color-scheme: light;
+
   /* Abstractions */
   --color-bg: white;
   --color-text: black;
@@ -17,12 +20,12 @@
   --color-secondary: var(--zinc-100);
   --color-negative: var(--red-600);
   --color-positive: var(--green-600);
-
-  /* Colorize browser widgets */
-  color-scheme: light;
 }
 
 [data-color-scheme="dark"] {
+  /* Colorize browser widgets */
+  color-scheme: dark;
+
   /* Abstractions */
   --color-bg: var(--zinc-950);
   --color-text: white;
@@ -41,9 +44,6 @@
   --color-secondary: var(--zinc-800);
   --color-negative: var(--red-800);
   --color-positive: var(--green-800);
-
-  /* Colorize browser widgets */
-  color-scheme: dark;
 }
 
 * {
