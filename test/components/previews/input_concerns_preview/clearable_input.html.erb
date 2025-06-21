@@ -1,7 +1,7 @@
 <div class="input input--clearable input--actor flex items-center gap" data-controller="clearable-input">
   <%= search_field_tag "clearable_input", nil, placeholder: "Type something", data: { clearable_input_target: "input" } %>
   <button type="button" class="btn btn--plain" data-action="clearable-input#clear">
-    <%= image_tag "x.svg", size: 20, aria: { hidden: true } %>
+    <span class="icon icon--x-mark" aria-hidden="true"></span>
     <span class="sr-only">Clear input</span>
   </button>
 </div>

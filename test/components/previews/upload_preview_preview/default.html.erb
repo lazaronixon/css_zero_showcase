@@ -2,7 +2,7 @@
   <label class="flex items-center gap">
     <div class="btn btn--icon">
       <%= file_field_tag :avatar, class: "sr-only", accept: "image/*", data: { upload_preview_target: "input", action: "upload-preview#previewImage" } %>
-      <%= image_tag "camera.svg", size: 20, aria: { hidden: true } %>
+      <span class="icon icon--camera" style="--icon-size: 1.25rem" aria-hidden="true"></span>
       <span class="sr-only">Upload avatar</span>
     </div>
 
@@ -13,7 +13,7 @@
 
   <label class="btn btn--icon btn--negative" data-action="click->upload-preview#clear">
     <%= hidden_field_tag "remove_avatar", false, data: { upload_preview_target: "removeInput" } %>
-    <%= image_tag "minus.svg", size: 20, aria: { hidden: true } %>
+    <span class="icon icon--minus" style="--icon-size: 1.25rem" aria-hidden="true"></span>
     <span class="sr-only">Remove avatar</span>
   </label>
 <% end %>

@@ -7,17 +7,17 @@
   <img src="" class="lightbox__image" data-lightbox-target="zoomedImage" />
 
   <button type="button" class="btn btn--icon lightbox__close" data-action="lightbox#close">
-    <%= image_tag "x.svg", aria: { hidden: "true" } %>
+    <span class="icon icon--x-mark" style="--icon-size: 1.5rem" aria-hidden="true"></span>
     <span class="sr-only">Close image viewer</span>
   </button>
 
   <a href="" class="btn btn--icon lightbox__download" data-lightbox-target="download" download>
-    <%= image_tag "download.svg", aria: { hidden: "true" } %>
+    <span class="icon icon--arrow-down-tray" style="--icon-size: 1.5rem" aria-hidden="true"></span>
     <span class="sr-only">Download file</span>
   </a>
 
   <button type="button" class="btn btn--icon lightbox__share" data-controller="web-share" data-action="web-share#share" data-web-share-file-value="" data-lightbox-target="share">
-    <%= image_tag "share.svg", aria: { hidden: "true" } %>
+    <span class="icon icon--share" style="--icon-size: 1.5rem" aria-hidden="true"></span>
     <span class="sr-only">Share file</span>
   </button>
 </dialog>

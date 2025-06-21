@@ -1,11 +1,11 @@
 <nav class="tabs__list" aria-label="Preview and Code">
   <%= link_to "", class: "btn tabs__button", aria: { current: "page" } do %>
-    <%= image_tag "app-window.svg", size: 16, aria: { hidden: true } %>
+    <span class="icon icon--window" aria-hidden="true"></span>
     <span>Preview</span>
   <% end %>
 
   <%= link_to "", class: "btn tabs__button" do %>
-    <%= image_tag "code.svg", size: 16, aria: { hidden: true } %>
+    <span class="icon icon--code-bracket" aria-hidden="true"></span>
     <span>Code</span>
   <% end %>
 </nav>

@@ -1,6 +1,6 @@
 <nav class="flex items-center gap-half" style="--btn-padding: .375rem .75rem" aria-label="Pagination">
   <%= link_to "#page-1", class: "btn btn--borderless", aria: { label: "Previous page" } do %>
-    <%= image_tag "chevron-left.svg", size: 16, aria: { hidden: true } %>
+    <span class="icon icon--chevron-left" aria-hidden="true"></span>
     <span>Previous</span>
   <% end %>
 
@@ -8,12 +8,12 @@
   <%= link_to "2", "#page-2", class: "btn", aria: { current: "page" } %>
   <%= link_to "3", "#page-3", class: "btn btn--borderless" %>
 
-  <span class="pi-2" aria-hidden="true">
-    <%= image_tag "ellipsis.svg", class: "colorize-black", size: 16, aria: { hidden: true } %>
-  </span>
+  <div class="flex align-center" aria-hidden="true">
+    <span class="icon icon--ellipsis-horizontal" aria-hidden="true"></span>
+  </div>
 
   <%= link_to "#page-3", class: "btn btn--borderless", aria: { label: "Next page" } do %>
     <span>Next</span>
-    <%= image_tag "chevron-right.svg", size: 16, aria: { hidden: true } %>
+    <span class="icon icon--chevron-right" aria-hidden="true"></span>
   <% end %>
 </nav>

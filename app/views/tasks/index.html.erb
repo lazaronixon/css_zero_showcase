@@ -44,19 +44,19 @@
                 </td>
                 <td class="whitespace-nowrap">
                   <div class="flex items-center gap">
-                    <%= image_tag status_icons[task.status], class: "max-i-none", size: 16, aria: { hidden: true } %>
+                    <span class="icon <%= status_icons[task.status] %>" aria-hidden="true"></span>
                     <span><%= task.status.titleize %></span>
                   </div>
                 </td>
                 <td class="whitespace-nowrap">
                   <div class="flex items-center gap">
-                    <%= image_tag priority_icons[task.priority], class: "max-i-none", size: 16, aria: { hidden: true } %>
+                    <span class="icon <%= priority_icons[task.priority] %>" aria-hidden="true"></span>
                     <span><%= task.priority.titleize %></span>
                   </div>
                 </td>
                 <td class="whitespace-nowrap">
                   <%= button_tag class: "btn btn--plain p-1" do %>
-                    <%= image_tag "ellipsis.svg", size: 16, aria: { hidden: true } %>
+                    <span class="icon icon--ellipsis-horizontal" aria-hidden="true"></span>
                     <span class="sr-only">Open menu</span>
                   <% end %>
                 </td>
@@ -77,19 +77,19 @@
         <div class="text-sm font-medium"><%= "Page #{@pagy.page} of #{@pagy.pages}" %></div>
         <nav class="flex items-center gap shrink-0" style="--btn-padding: .5rem;" aria-label="Pagination">
           <%= link_to pagy_url_for(@pagy, 1), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
-            <%= image_tag "chevrons-left.svg", size: 16, aria: { hidden: true } %>
+            <span class="icon icon--chevron-double-left" aria-hidden="true"></span>
             <span class="sr-only">Go to first page</span>
           <% end %>
           <%= link_to pagy_url_for(@pagy, @pagy.prev || @pagy.page), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
-            <%= image_tag "chevron-left.svg", size: 16, aria: { hidden: true } %>
+            <span class="icon icon--chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Go to previous page</span>
           <% end %>
           <%= link_to pagy_url_for(@pagy, @pagy.next || @pagy.page), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
-            <%= image_tag "chevron-right.svg", size: 16, aria: { hidden: true } %>
+            <span class="icon icon--chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Go to next page</span>
           <% end %>
           <%= link_to pagy_url_for(@pagy, @pagy.last), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
-            <%= image_tag "chevrons-right.svg", size: 16, aria: { hidden: true } %>
+            <span class="icon icon--chevron-double-right" aria-hidden="true"></span>
             <span class="sr-only">Go to last page</span>
           <% end %>
         </nav>

@@ -3,7 +3,7 @@
 
   <dialog class="sheet sheet--right" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
     <button type="button" class="btn btn--plain sheet__close" data-action="click->dialog#close">
-      <%= image_tag "x.svg", size: 16, aria: { hidden: true } %>
+      <span class="icon icon--x-mark" aria-hidden="true"></span>
       <span class="sr-only">Close</span>
     </button>
     <div class="sheet__content">
