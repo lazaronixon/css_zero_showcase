@@ -4,7 +4,7 @@ class IconsPreview < Lookbook::Preview
   # @!group Icon
   # Dependencies
   # ---
-  # - [Heroicons](https://heroicons.com)
+  # - [Lucide](https://lucide.dev)
   def default
   end
 

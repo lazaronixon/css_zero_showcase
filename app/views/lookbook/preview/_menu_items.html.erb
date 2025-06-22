@@ -6,7 +6,7 @@
     <span>Calendar</span>
   <% end %>
   <%= button_to "", class: "btn menu__item", form: { contents: true, role: "menuitem" }, data: { menu_target: "item" } do %>
-    <span class="icon icon--face-smile" aria-hidden="true"></span>
+    <span class="icon icon--smile" aria-hidden="true"></span>
     <span>Seach Emoji</span>
   <% end %>
   <%= tag.a class: "btn menu__item", role: "menuitem", tabindex: "-1", aria: { disabled: true } do %>
@@ -27,7 +27,7 @@
     <span class="menu__item-key">⌘B</span>
   <% end %>
   <%= link_to "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
-    <span class="icon icon--cog-6-tooth" aria-hidden="true"></span>
+    <span class="icon icon--settings" aria-hidden="true"></span>
     <span>Settings</span>
     <span class="menu__item-key">⌘P</span>
   <% end %>

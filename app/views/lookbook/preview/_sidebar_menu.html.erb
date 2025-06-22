@@ -1,13 +1,13 @@
 <div class="sidebar-menu">
   <%= link_to "#", class: "btn sidebar-menu__button" do %>
     <div class="flex shrink-0 overflow-hidden rounded-lg bg-black text-reversed">
-      <span class="icon icon--rectangle-stack m-2"></span>
+      <span class="icon icon--gallery-vertical-end m-2"></span>
     </div>
     <div class="flex flex-col text-start leading-tight overflow-hidden">
       <span class="overflow-ellipsis font-semibold">Zero Inc</span>
       <span class="overflow-ellipsis text-xs">Enterprise</span>
     </div>
-    <span class="icon icon--chevron-up-down mis-auto" aria-hidden="true"></span>
+    <span class="icon icon--chevrons-up-down mis-auto" aria-hidden="true"></span>
   <% end %>
   <div class="sidebar-menu__content">
     <div class="sidebar-menu__group">
@@ -15,7 +15,7 @@
       <div class="sidebar-menu__items">
         <details open>
           <summary class="btn sidebar-menu__button">
-            <span class="icon icon--command-line" aria-hidden="true"></span>
+            <span class="icon icon--square-terminal" aria-hidden="true"></span>
             <span class="overflow-ellipsis">Playground</span>
           </summary>
           <nav class="sidebar-menu__sub">
@@ -26,7 +26,7 @@
         </details>
         <details>
           <summary class="btn sidebar-menu__button">
-            <span class="icon icon--circle-stack" aria-hidden="true"></span>
+            <span class="icon icon--bot" aria-hidden="true"></span>
             <span class="overflow-ellipsis">Models</span>
           </summary>
           <nav class="sidebar-menu__sub">
@@ -49,7 +49,7 @@
         </details>
         <details>
           <summary class="btn sidebar-menu__button">
-            <span class="icon icon--adjustments-horizontal" aria-hidden="true"></span>
+            <span class="icon icon--settings-2" aria-hidden="true"></span>
             <span class="overflow-ellipsis">Settings</span>
           </summary>
           <nav class="sidebar-menu__sub">
@@ -65,7 +65,7 @@
       <div class="sidebar-menu__group-label">Projects</div>
       <nav class="sidebar-menu__items">
         <%= link_to "#", class: "btn sidebar-menu__button" do %>
-          <span class="icon icon--paint-brush" aria-hidden="true"></span>
+          <span class="icon icon--frame" aria-hidden="true"></span>
           <span class="overflow-ellipsis">Design Engineering</span>
         <% end %>
         <%= link_to "#", class: "btn sidebar-menu__button" do %>
@@ -77,7 +77,7 @@
           <span class="overflow-ellipsis">Travel</span>
         <% end %>
         <%= tag.a class: "btn sidebar-menu__button", aria: { disabled: true } do %>
-          <span class="icon icon--ellipsis-horizontal" aria-hidden="true"></span>
+          <span class="icon icon--ellipsis" aria-hidden="true"></span>
           <span class="overflow-ellipsis">More</span>
         <% end %>
       </nav>
@@ -91,6 +91,6 @@
       <span class="overflow-ellipsis max-i-full font-semibold">Lázaro Nixon</span>
       <span class="overflow-ellipsis max-i-full text-xs">lazaronixon@hotmail.com</span>
     </div>
-    <span class="icon icon--chevron-up-down mis-auto" aria-hidden="true"></span>
+    <span class="icon icon--chevrons-up-down mis-auto" aria-hidden="true"></span>
   <% end %>
 </div>

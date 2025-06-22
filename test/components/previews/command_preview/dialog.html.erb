@@ -3,13 +3,13 @@
 
   <dialog class="dialog" style="--dialog-size: 430px;" data-dialog-target="menu" data-action="click->dialog#closeOnClickOutside">
     <button button="button" class="btn btn--plain dialog__close" data-action="click->dialog#close">
-      <span class="icon icon--x-mark" aria-hidden="true"></span>
+      <span class="icon icon--x" aria-hidden="true"></span>
       <span class="sr-only">Close</span>
     </button>
 
     <div class="command border-0" data-controller="command" data-command-active-class="command__list--filtering" data-command-selected-class="selected">
       <label class="command__input input input--actor flex items-center gap">
-        <span class="icon icon--magnifying-glass" aria-hidden="true"></span>
+        <span class="icon icon--search" aria-hidden="true"></span>
         <%= text_field_tag "search", nil, data: { command_target: "input", action: "input->command#filter focus->command#start blur->command#stop" }, autofocus: true, autocomplete: "off", placeholder: "Filter..." %>
       </label>
       <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">

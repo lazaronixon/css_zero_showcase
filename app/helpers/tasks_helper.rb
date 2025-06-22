@@ -1,6 +1,6 @@
 module TasksHelper
   def status_icons
-    { "in_progress" => "icon--clock", "done" => "icon--check-circle", "backlog" => "icon--question-mark-circle", "todo" => "icon--information-circle", "canceled" => "icon--x-circle" }
+    { "in_progress" => "icon--timer", "done" => "icon--circle-check-big", "backlog" => "icon--circle-question-mark", "todo" => "icon--circle", "canceled" => "icon--circle-off" }
   end
 
   def priority_icons

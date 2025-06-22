@@ -56,7 +56,7 @@
                 </td>
                 <td class="whitespace-nowrap">
                   <%= button_tag class: "btn btn--plain p-1" do %>
-                    <span class="icon icon--ellipsis-horizontal" aria-hidden="true"></span>
+                    <span class="icon icon--ellipsis" aria-hidden="true"></span>
                     <span class="sr-only">Open menu</span>
                   <% end %>
                 </td>
@@ -77,7 +77,7 @@
         <div class="text-sm font-medium"><%= "Page #{@pagy.page} of #{@pagy.pages}" %></div>
         <nav class="flex items-center gap shrink-0" style="--btn-padding: .5rem;" aria-label="Pagination">
           <%= link_to pagy_url_for(@pagy, 1), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
-            <span class="icon icon--chevron-double-left" aria-hidden="true"></span>
+            <span class="icon icon--chevrons-left" aria-hidden="true"></span>
             <span class="sr-only">Go to first page</span>
           <% end %>
           <%= link_to pagy_url_for(@pagy, @pagy.prev || @pagy.page), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
@@ -89,7 +89,7 @@
             <span class="sr-only">Go to next page</span>
           <% end %>
           <%= link_to pagy_url_for(@pagy, @pagy.last), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
-            <span class="icon icon--chevron-double-right" aria-hidden="true"></span>
+            <span class="icon icon--chevrons-right" aria-hidden="true"></span>
             <span class="sr-only">Go to last page</span>
           <% end %>
         </nav>
