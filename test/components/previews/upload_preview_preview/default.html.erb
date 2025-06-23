@@ -1,4 +1,4 @@
-<%= tag.div class: "flex items-center gap", data: { controller: "upload-preview", upload_preview_default_image_value: asset_url("default-avatar.svg") } do %>
+<%= tag.div class: "flex items-center gap", data: { controller: "upload-preview", upload_preview_default_image_value: asset_url("avatar.svg") } do %>
   <label class="flex items-center gap">
     <div class="btn btn--icon">
       <%= file_field_tag :avatar, class: "sr-only", accept: "image/*", data: { upload_preview_target: "input", action: "upload-preview#previewImage" } %>
