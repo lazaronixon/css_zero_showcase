@@ -1,0 +1,12 @@
+<div class="color-scheme" data-controller="popover color-scheme" data-popover-placement-value="bottom-start">
+  <button type="button" class="btn btn--icon" data-popover-target="button" data-action="popover#toggle">
+    <span class="icon icon--sun"></span>
+    <span class="icon icon--moon"></span>
+  </button>
+
+  <div popover class="popover menu" data-popover-target="menu">
+    <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setLight">Light</button>
+    <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setDark">Dark</button>
+    <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setSystem">System</button>
+  </div>
+</div>

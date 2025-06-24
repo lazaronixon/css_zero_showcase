@@ -36,6 +36,8 @@ img.icon {
 .icon--share { --svg: url("share.svg"); }
 .icon--camera { --svg: url("camera.svg"); }
 .icon--minus { --svg: url("minus.svg"); }
+.icon--sun { --svg: url("sun.svg"); }
+.icon--moon { --svg: url("moon.svg"); }
 
 /****************************************************************
 * Showcase icons
