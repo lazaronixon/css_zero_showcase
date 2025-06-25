@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html data-color-scheme="<%= lookbook_display(:theme) %>" data-controller="color-scheme">
+<% if lookbook_display(:color_scheme_controller) %>
+<html data-controller="color-scheme">
+<% else %>
+<html data-color-scheme="<%= lookbook_display(:theme) %>">
+<% end %>
   <head>
     <title>Component Preview</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -15,7 +19,7 @@
 
   <body data-controller="lightbox fullscreen local-time">
     <div style="padding: <%= lookbook_display(:padding, "1.5rem") %>">
-      <% if params.dig(:lookbook, :display, :centered) == true %>
+      <% if lookbook_display(:centered) %>
         <div class="centered-layout" style="max-width: <%= lookbook_display(:max_width, "100%") %>"><%= yield %></div>
       <% else %>
         <div style="max-width: <%= lookbook_display(:max_width, "100%") %>"><%= yield %></div>
