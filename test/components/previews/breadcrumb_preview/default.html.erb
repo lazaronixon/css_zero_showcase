@@ -1,7 +1,12 @@
 <nav class="breadcrumb" aria-label="Breadcrumb">
   <%= link_to "Home", "#home" %>
-  <%= tag.span class: "icon icon--chevron-right", aria: { hidden: true } %>
+  <span class="icon icon--chevron-right" aria-hidden="true"></span>
+  <button class="inline-flex" type="button">
+    <span class="icon icon--ellipsis" aria-hidden="true"></span>
+    <span class="sr-only">Toggle menu</span>
+  </button>
+  <span class="icon icon--chevron-right" aria-hidden="true"></span>
   <%= link_to "Components", "#components" %>
-  <%= tag.span class: "icon icon--chevron-right", aria: { hidden: true } %>
-  <%= tag.span "Breadcrumb", class: "text-primary", aria: { disabled: true, current: "page" }, role: "link" %>
+  <span class="icon icon--chevron-right" aria-hidden="true"></span>
+  <span class="text-primary" aria-disabled="true" aria-current="page" role="link">Breadcrumb</span>
 </nav>
