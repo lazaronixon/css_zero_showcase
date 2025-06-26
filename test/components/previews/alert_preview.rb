@@ -3,6 +3,9 @@
 class AlertPreview < Lookbook::Preview
   def default
   end
+  
+  def positive
+  end  
 
   def negative
   end
