@@ -17,7 +17,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body data-controller="lightbox fullscreen local-time">
+  <body data-controller="lightbox fullscreen local-time timezone-cookie">
     <div style="padding: <%= lookbook_display(:padding, "1.5rem") %>">
       <% if lookbook_display(:centered) %>
         <div class="centered-layout" style="max-width: <%= lookbook_display(:max_width, "100%") %>"><%= yield %></div>
