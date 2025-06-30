@@ -1,12 +1,11 @@
 import { Controller } from "@hotwired/stimulus"
 import { Chart, registerables } from "https://esm.sh/chart.js@4.4.9?standalone"
 
-Chart.register(...registerables)
-
 export default class extends Controller {
   static values = { type: { type: String, default: "line" }, data: Object, options: Object }
 
   initialize() {
+    Chart.register(...registerables)
     Chart.defaults.backgroundColor = getComputedStyle(document.body).backgroundColor
     Chart.defaults.borderColor = getComputedStyle(document.body).borderColor
     Chart.defaults.color = getComputedStyle(document.body).color
