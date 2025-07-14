@@ -30,7 +30,7 @@ class ButtonPreview < Lookbook::Preview
   def with_icon
   end
 
-  def only_icon    
+  def only_icon
   end
   # @!endgroup
 

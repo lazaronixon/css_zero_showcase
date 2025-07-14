@@ -43,7 +43,6 @@ img.icon {
 /****************************************************************
 * Showcase icons
 *****************************************************************/
-.icon--terminal { --svg: url("terminal.svg"); }
 .icon--circle-alert { --svg: url("circle-alert.svg"); }
 .icon--grip-vertical { --svg: url("grip-vertical.svg"); }
 .icon--circle-plus { --svg: url("circle-plus.svg"); }
