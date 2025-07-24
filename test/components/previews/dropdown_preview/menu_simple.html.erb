@@ -4,7 +4,7 @@
   </button>
 
   <div popover class="popover" style="--popover-size: 8rem;" data-popover-target="menu">
-    <div id="menu" class="menu" data-controller="menu" data-action="keydown.up->menu#prev keydown.down->menu#next" role="menu" aria-labelledby="menu_button">
+    <div id="menu" class="menu" data-controller="menu" data-action="keydown->menu#navigate" role="menu" aria-labelledby="menu_button">
       <%= link_to "Edit", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
       <%= link_to "Make a copy", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
       <%= link_to "Favorite", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>

@@ -4,7 +4,7 @@
   </button>
 
   <div popover class="popover" style="--popover-size: 14rem;" data-popover-target="menu">
-    <div id="menu" class="menu" data-controller="menu" data-action="keydown.up->menu#prev keydown.down->menu#next" role="menu" aria-labelledby="menu_button">
+    <div id="menu" class="menu" data-controller="menu" data-action="keydown->menu#navigate" role="menu" aria-labelledby="menu_button">
       <%= render partial: "menu_items" %>
     </div>
   </div>
