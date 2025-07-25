@@ -1,7 +1,9 @@
-<button type="button" id="popover_button" class="btn" popovertarget="popover" >
-  Open popover
-</button>
+<div contents data-controller="popover" data-popover-placement-value="bottom-start">
+  <button type="button" id="popover_button" class="btn" data-popover-target="trigger" popovertarget="popover">
+    Open popover
+  </button>
 
-<div popover id="popover" class="popover" data-controller="anchor" data-anchor-to-value="popover_button" data-anchor-placement-value="bottom-start">
-  <%= render "dimensions_form" %>
+  <div popover id="popover" class="popover" data-popover-target="content">
+    <%= render "dimensions_form" %>
+  </div>
 </div>
