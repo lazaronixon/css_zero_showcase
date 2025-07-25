@@ -1,10 +1,10 @@
 <div contents data-controller="context-menu">
-  <div class="card text-sm flex items-center justify-center" style="block-size: 150px; inline-size: 300px;" data-action="contextmenu->context-menu#show:prevent click@document->context-menu#hide">
+  <div class="card text-sm flex items-center justify-center" style="block-size: 150px; inline-size: 300px;" data-action="contextmenu->context-menu#show:prevent">
     Right click here
   </div>
 
   <div popover="manual" class="popover" style="--popover-size: 14rem;" data-context-menu-target="menu">
-    <div id="context_menu" class="menu" role="menu" aria-label="Context Menu">
+    <div class="menu" data-controller="menu" data-action="keydown->menu#navigate" role="menu">
       <%= render partial: "menu_items" %>
     </div>
   </div>

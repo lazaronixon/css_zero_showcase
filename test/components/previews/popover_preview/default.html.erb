@@ -1,9 +1,7 @@
-<div contents data-controller="popover">
-  <button type="button" class="btn" data-popover-target="button" data-action="popover#toggle">
-    Open popover
-  </button>
+<button type="button" id="popover_button" class="btn" popovertarget="popover" >
+  Open popover
+</button>
 
-  <div popover class="popover" data-popover-target="menu">
-    <%= render "dimensions_form" %>
-  </div>
+<div popover id="popover" class="popover" data-controller="anchor" data-anchor-to-value="popover_button">
+  <%= render "dimensions_form" %>
 </div>
