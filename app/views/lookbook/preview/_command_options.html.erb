@@ -1,5 +1,5 @@
 <div class="command__group" role="group" aria-labelledby="suggestions">
-  <span class="command__group-header" id="suggestions">Suggestions</span>
+  <span id="suggestions" class="command__group-header">Suggestions</span>
   <%= link_to "", id: SecureRandom.hex, class: "btn command__item", data: { value: "calendar" }, role: "option" do %>
     <span class="icon icon--calendar" aria-hidden="true"></span>
     <span>Calendar</span>
@@ -14,7 +14,7 @@
   <% end %>
 </div>
 <div class="command__group" role="group" aria-labelledby="settings">
-  <span class="command__group-header" id="settings">Settings</span>
+  <span id="settings" class="command__group-header">Settings</span>
   <%= link_to "", id: SecureRandom.hex, class: "btn command__item", data: { value: "profile" }, role: "option" do %>
     <span class="icon icon--user" aria-hidden="true"></span>
     <span>Profile</span>
