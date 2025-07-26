@@ -1,31 +1,31 @@
 <div class="command__group" role="group" aria-labelledby="suggestions">
   <span class="command__group-header" id="suggestions">Suggestions</span>
-  <%= link_to "", class: "btn command__item", data: { value: "calendar" }, role: "option" do %>
+  <%= link_to "", id: SecureRandom.hex, class: "btn command__item", data: { value: "calendar" }, role: "option" do %>
     <span class="icon icon--calendar" aria-hidden="true"></span>
     <span>Calendar</span>
   <% end %>
-  <%= link_to "", class: "btn command__item", data: { value: "search emoji" }, role: "option" do %>
+  <%= link_to "", id: SecureRandom.hex, class: "btn command__item", data: { value: "search emoji" }, role: "option" do %>
     <span class="icon icon--smile" aria-hidden="true"></span>
     <span>Seach Emoji</span>
   <% end %>
-  <%= tag.a class: "btn command__item", data: { value: "calculator" }, aria: { disabled: true }, role: "option" do %>
+  <%= tag.a id: SecureRandom.hex, class: "btn command__item", data: { value: "calculator" }, aria: { disabled: true }, role: "option" do %>
     <span class="icon icon--calculator" aria-hidden="true"></span>
     <span>Calculator</span>
   <% end %>
 </div>
 <div class="command__group" role="group" aria-labelledby="settings">
   <span class="command__group-header" id="settings">Settings</span>
-  <%= link_to "", class: "btn command__item", data: { value: "profile" }, role: "option" do %>
+  <%= link_to "", id: SecureRandom.hex, class: "btn command__item", data: { value: "profile" }, role: "option" do %>
     <span class="icon icon--user" aria-hidden="true"></span>
     <span>Profile</span>
     <span class="command__item-key">⌘P</span>
   <% end %>
-  <%= link_to "", class: "btn command__item", data: { value: "billing" }, role: "option" do %>
+  <%= link_to "", id: SecureRandom.hex, class: "btn command__item", data: { value: "billing" }, role: "option" do %>
     <span class="icon icon--credit-card" aria-hidden="true"></span>
     <span>Billing</span>
     <span class="command__item-key">⌘B</span>
   <% end %>
-  <%= link_to "", class: "btn command__item", data: { value: "settings" }, role: "option" do %>
+  <%= link_to "", id: SecureRandom.hex, class: "btn command__item", data: { value: "settings" }, role: "option" do %>
     <span class="icon icon--settings" aria-hidden="true"></span>
     <span>Settings</span>
     <span class="command__item-key">⌘P</span>
