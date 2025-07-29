@@ -1,10 +1,10 @@
 <div contents data-controller="popover" data-popover-placement-value="bottom-start">
-  <button type="button" class="btn" data-popover-target="trigger" popovertarget="popover" aria-haspopup="true">
+  <button type="button" id="menu_button" class="btn" data-popover-target="trigger" popovertarget="popover" aria-haspopup="true">
     Open
   </button>
 
   <div popover id="popover" class="popover" style="--popover-size: 14rem;" data-popover-target="content">
-    <div class="menu" data-controller="menu" data-action="keydown->menu#navigate" role="menu"">
+    <div class="menu" data-controller="menu" data-action="keydown->menu#navigate" role="menu" aria-labelledby="menu_button">
       <div class="menu__header">Settings</div>
       <hr class="menu__separator" role="separator"/>
       <div class="btn menu__item" role="presentation">
