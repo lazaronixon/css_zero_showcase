@@ -1,0 +1,7 @@
+<div class="input input--actor input--copyable flex items-center gap" data-controller="input-copyable">
+  <%= text_field_tag "input_copyable", SecureRandom.base58(32), readonly: "readonly", data: { input_copyable_target: "input" } %>
+  <button type="button" class="btn btn--plain" data-action="input-copyable#copy">
+    <span class="icon icon--copy" aria-hidden="true"></span>
+    <span class="sr-only">Copy to clipboard</span>
+  </button>
+</div>
