@@ -7,21 +7,21 @@
     <div class="menu" data-controller="menu" data-action="keydown->menu#navigate" role="menu" aria-labelledby="menu_button">
       <div class="menu__header">Settings</div>
       <hr class="menu__separator" role="separator"/>
-      <div class="btn menu__item" role="presentation">
+      <div class="btn menu__item">
         <%= check_box_tag :check_recents, class: "checkbox", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-        <%= label_tag :check_recents, "Recents", class: "text-sm i-full" %>
+        <%= label_tag :check_recents, "Recents", class: "text-sm" %>
       </div>
-      <div class="btn menu__item" role="presentation">
+      <div class="btn menu__item">
         <%= check_box_tag :check_home, class: "checkbox", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-        <%= label_tag :check_home, "Home", class: "text-sm i-full" %>
+        <%= label_tag :check_home, "Home", class: "text-sm" %>
       </div>
-      <div class="btn menu__item" role="presentation">
+      <div class="btn menu__item">
         <%= check_box_tag :check_applications, class: "checkbox", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-        <%= label_tag :check_applications, "Applications", class: "text-sm i-full" %>
+        <%= label_tag :check_applications, "Applications", class: "text-sm" %>
       </div>
-      <div class="btn menu__item" role="presentation">
+      <div class="btn menu__item">
         <%= check_box_tag :check_desktop, class: "checkbox", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-        <%= label_tag :check_desktop, "Desktop", class: "text-sm i-full" %>
+        <%= label_tag :check_desktop, "Desktop", class: "text-sm" %>
       </div>
     </div>
   </div>
