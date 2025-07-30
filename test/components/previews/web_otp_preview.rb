@@ -1,6 +1,6 @@
 # @display max_width 400px
-# @js app/javascript/controllers/input_otp_controller.js
-class InputOtpPreview < Lookbook::Preview
+# @js app/javascript/controllers/web_otp_controller.js
+class WebOtpPreview < Lookbook::Preview
 
   # Links
   # ---
