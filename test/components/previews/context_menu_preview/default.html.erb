@@ -3,8 +3,8 @@
     Right click here
   </div>
 
-  <div popover="manual" class="popover" style="--popover-size: 14rem;" data-context-menu-target="content">
-    <div id="context_menu" class="menu" role="menu" aria-label="Context Menu">
+  <div popover="manual" class="popover" style="--popover-size: 14rem;" data-context-menu-target="content" role="menu" aria-label="Context Menu">
+    <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
       <%= render partial: "menu_items" %>
     </div>
   </div>

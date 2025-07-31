@@ -3,8 +3,8 @@
     Open
   </button>
 
-  <div popover id="popover" class="popover" style="--popover-size: 8rem;" data-popover-target="content">
-    <div class="menu" data-controller="menu" data-action="keydown->menu#navigate" role="menu" aria-label="Menu">
+  <div popover id="popover" class="popover" style="--popover-size: 8rem;" data-popover-target="content" role="menu" aria-label="Menu">
+    <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
       <%= link_to "Edit", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
       <%= link_to "Make a copy", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
       <%= link_to "Favorite", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
