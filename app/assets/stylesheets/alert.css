@@ -1,5 +1,5 @@
 .alert {
-  background-color: var(--alert-background, var(--color-bg));
+  background-color: var(--alert-background, var(--color-surface));
   border-radius: var(--rounded-lg);
   border: 1px solid var(--alert-border-color, var(--color-border));
   color: var(--alert-color, var(--color-text));
@@ -9,13 +9,9 @@
 }
 
 .alert--positive {
-  --alert-background: var(--color-positive);
-  --alert-border-color: transparent;
-  --alert-color: white;
+  --alert-color: oklch(from var(--color-positive) 70% c h);
 }
 
 .alert--negative {
-  --alert-background: var(--color-negative);
-  --alert-border-color: transparent;
-  --alert-color: white;
+  --alert-color: oklch(from var(--color-negative) 70% c h);
 }
