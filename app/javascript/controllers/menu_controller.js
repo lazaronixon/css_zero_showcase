@@ -23,7 +23,7 @@ export default class extends Controller {
       case " ":
       case "Enter":
         this.#cancel(event)
-        event.target.click()
+        this.#activate(event.target)
         break
       case "ArrowUp":
         this.#cancel(event)
@@ -47,6 +47,10 @@ export default class extends Controller {
   #cancel(event) {
     event.stopPropagation()
     event.preventDefault()
+  }
+
+  #activate(menuItem) {
+    menuItem.click()
   }
 
   #reset([ entry ]) {
