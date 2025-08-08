@@ -20,6 +20,11 @@ export default class extends Controller {
 
   navigate(event) {
     switch (event.key) {
+      case " ":
+      case "Enter":
+        this.#cancel(event)
+        event.target.click()
+        break
       case "ArrowUp":
         this.#cancel(event)
         this.#prev()
@@ -28,12 +33,10 @@ export default class extends Controller {
         this.#cancel(event)
         this.#next()
         break
-      case "PageUp":
       case "Home":
         this.#cancel(event)
         this.#first()
         break
-      case "PageDown":
       case "End":
         this.#cancel(event)
         this.#last()

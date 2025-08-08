@@ -9,9 +9,13 @@
 }
 
 .alert--positive {
-  --alert-color: oklch(from var(--color-positive) 70% c h);
+  --alert-background: var(--color-positive);
+  --alert-border-color: transparent;
+  --alert-color: white;
 }
 
 .alert--negative {
-  --alert-color: oklch(from var(--color-negative) 70% c h);
+  --alert-background: var(--color-negative);
+  --alert-border-color: transparent;
+  --alert-color: white;
 }
