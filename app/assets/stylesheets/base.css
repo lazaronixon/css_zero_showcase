@@ -46,4 +46,5 @@ body {
 
 ::selection {
   background-color: var(--color-selected);
+  color: var(--color-text);
 }
