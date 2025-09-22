@@ -1,6 +1,5 @@
 # @css app/assets/stylesheets/toggle.css
 class TogglePreview < Lookbook::Preview
-  # @!group Toggle
   def default
   end
 
@@ -9,5 +8,10 @@ class TogglePreview < Lookbook::Preview
 
   def with_text
   end
-  # @!endgroup
+
+  def checkbox
+  end
+
+  def radio
+  end
 end

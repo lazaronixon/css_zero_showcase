@@ -9,12 +9,4 @@ class CardPreview < Lookbook::Preview
 
   def disabled
   end
-
-  # @!group Selectable
-  def checkbox
-  end
-
-  def radio
-  end
-  # @!endgroup
 end
