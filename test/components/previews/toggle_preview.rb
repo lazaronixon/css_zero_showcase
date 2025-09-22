@@ -9,9 +9,11 @@ class TogglePreview < Lookbook::Preview
   def with_text
   end
 
+  # @!group Card
   def checkbox
   end
 
   def radio
   end
+  # @!endgroup
 end

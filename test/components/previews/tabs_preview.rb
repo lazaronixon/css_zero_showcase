@@ -17,5 +17,5 @@ class TabsPreview < Lookbook::Preview
 
   def buttons_icons
   end
-  # @!group Buttons
+  # @!endgroup
 end
