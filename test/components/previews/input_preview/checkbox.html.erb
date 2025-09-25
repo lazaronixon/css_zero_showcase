@@ -1,19 +1,24 @@
-<fieldset class="flex flex-col gap-half">
-  <legend class="sr-only">Settings</legend>
+<fieldset class="flex flex-col gap">
   <div class="flex items-center gap">
-    <%= check_box_tag :check_recents, 1, true, class: "checkbox" %>
-    <%= label_tag :check_recents, "Recents", class: "text-sm" %>
+    <%= check_box_tag :terms, class: "checkbox" %>
+    <%= label_tag :terms, "Accept terms and conditions", class: "text-sm font-medium" %>
+  </div>
+  <div class="flex items-start gap">
+    <%= check_box_tag :terms_2, 1, true, class: "checkbox" %>
+    <div class="flex flex-col gap-half">
+      <%= label_tag :terms_2, "Accept terms and conditions", class: "text-sm leading-none font-medium" %>
+      <p class="text-sm text-subtle ">By clicking this checkbox, you agree to the terms and conditions.</p>
+    </div>
   </div>
   <div class="flex items-center gap">
-    <%= check_box_tag :check_home, class: "checkbox" %>
-    <%= label_tag :check_home, "Home", class: "text-sm" %>
+    <%= check_box_tag :toggle, disabled: true, class: "checkbox" %>
+    <%= label_tag :toggle, "Enable notifications", class: "text-sm font-medium" %>
   </div>
-  <div class="flex items-center gap">
-    <%= check_box_tag :check_applications, class: "checkbox" %>
-    <%= label_tag :check_applications, "Applications", class: "text-sm" %>
-  </div>
-  <div class="flex items-center gap">
-    <%= check_box_tag :check_desktop, class: "checkbox" %>
-    <%= label_tag :check_desktop, "Desktop", class: "text-sm" %>
-  </div>
+  <label class="checkbox-card flex items-start gap" style="max-inline-size: 400px">
+    <%= check_box_tag :toggle_2, 1, true, class: "checkbox" %>
+    <div class="flex flex-col gap-half">
+      <h5 class="text-sm leading-none font-medium">Enable notifications</h5>
+      <p class="text-sm text-subtle">You can enable or disable notifications at any time.</p>
+    </div>
+  </label>
 </fieldset>

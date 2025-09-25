@@ -1,4 +1,4 @@
-# @display max_width 400px
+# @display max_width 450px
 # @css app/assets/stylesheets/input.css
 class InputPreview < Lookbook::Preview
   # @!group Default
@@ -71,13 +71,11 @@ class InputPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  # @!group Checkbox and Radio
   def checkbox
   end
 
   def radio
   end
-  # @!endgroup
 
   # @!group Validation
   def required_field

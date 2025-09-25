@@ -1,19 +1,14 @@
 <fieldset class="flex flex-col gap-half">
-  <legend class="sr-only">Settings</legend>
   <div class="flex items-center gap">
-    <%= radio_button_tag :setting, :recents, 1, class: "radio" %>
-    <%= label_tag :setting_recents, "Recents", class: "text-sm" %>
+    <%= radio_button_tag :setting, :default, class: "radio" %>
+    <%= label_tag :setting_default, "Default", class: "text-sm font-medium" %>
   </div>
   <div class="flex items-center gap">
-    <%= radio_button_tag :setting, :home, class: "radio" %>
-    <%= label_tag :setting_home, "Home", class: "text-sm" %>
+    <%= radio_button_tag :setting, :comfortable, 1, class: "radio" %>
+    <%= label_tag :setting_comfortable, "Comfortable", class: "text-sm font-medium" %>
   </div>
   <div class="flex items-center gap">
-    <%= radio_button_tag :setting, :applications, class: "radio" %>
-    <%= label_tag :setting_applications, "Applications", class: "text-sm" %>
-  </div>
-  <div class="flex items-center gap">
-    <%= radio_button_tag :setting, :desktop, class: "radio" %>
-    <%= label_tag :setting_desktop, "Desktop", class: "text-sm" %>
+    <%= radio_button_tag :setting, :compact, class: "radio" %>
+    <%= label_tag :setting_compact, "Compact", class: "text-sm font-medium" %>
   </div>
 </fieldset>
