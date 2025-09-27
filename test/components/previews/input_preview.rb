@@ -79,6 +79,18 @@ class InputPreview < Lookbook::Preview
   def radio
   end
 
+  # @!group Range
+  # - [range.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/range.css)
+  def range
+  end
+
+  def range_with_ticks
+  end
+
+  def range_vertical
+  end
+  # @!endgroup
+
   # @!group Validation
   def required_field
   end
