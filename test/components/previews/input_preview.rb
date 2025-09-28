@@ -71,16 +71,13 @@ class InputPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  # - [checkbox.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/checkbox.css)
   def checkbox
   end
 
-  # - [radio.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/radio.css)
   def radio
   end
 
   # @!group Range
-  # - [range.css](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/assets/stylesheets/range.css)
   def range
   end
 
