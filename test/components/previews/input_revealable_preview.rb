@@ -1,5 +1,5 @@
 # @display max_width 400px
-# @css app/assets/stylesheets/input-revealable.css
+# @css app/assets/stylesheets/input_revealable.css
 # @js app/javascript/controllers/input_revealable_controller.js
 class InputRevealablePreview < Lookbook::Preview
   def default
