@@ -1,14 +1,14 @@
 <fieldset class="flex flex-col gap-half">
   <div class="flex items-center gap">
-    <%= radio_button_tag :setting, :default, class: "radio" %>
+    <%= radio_button_tag :setting, :default, class: "input" %>
     <%= label_tag :setting_default, "Default", class: "text-sm font-medium" %>
   </div>
   <div class="flex items-center gap">
-    <%= radio_button_tag :setting, :comfortable, 1, class: "radio" %>
+    <%= radio_button_tag :setting, :comfortable, 1, class: "input" %>
     <%= label_tag :setting_comfortable, "Comfortable", class: "text-sm font-medium" %>
   </div>
   <div class="flex items-center gap">
-    <%= radio_button_tag :setting, :compact, class: "radio" %>
+    <%= radio_button_tag :setting, :compact, class: "input" %>
     <%= label_tag :setting_compact, "Compact", class: "text-sm font-medium" %>
   </div>
 </fieldset>

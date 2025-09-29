@@ -20,7 +20,7 @@
       <table class="table" data-controller="check-all">
         <thead>
           <tr>
-            <th><%= check_box_tag :check_all, class: "checkbox", data: { action: "check-all#check", check_all_target: "dependee" } %></th>
+            <th><%= check_box_tag :check_all, class: "input", data: { action: "check-all#check", check_all_target: "dependee" } %></th>
             <th>Task</th>
             <th><%= sort_link(@search, :title, class: "flex items-center") %></th>
             <th><%= sort_link(@search, :status, class: "flex items-center") %></th>
@@ -34,7 +34,7 @@
           <% else %>
             <% @tasks.each do |task| %>
               <tr>
-                <td><%= check_box_tag "selected_ids[]", task.id, class: "checkbox", data: { action: "check-all#check", check_all_target: "dependant" } %></td>
+                <td><%= check_box_tag "selected_ids[]", task.id, class: "input", data: { action: "check-all#check", check_all_target: "dependant" } %></td>
                 <td class="whitespace-nowrap"><%= task.id %></td>
                 <td class="whitespace-nowrap">
                   <div class="flex items-center gap">
