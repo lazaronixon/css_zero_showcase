@@ -9,4 +9,7 @@ class CardPreview < Lookbook::Preview
 
   def disabled
   end
+
+  def with_image
+  end
 end
