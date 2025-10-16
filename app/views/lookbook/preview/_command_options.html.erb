@@ -1,4 +1,4 @@
-<ul class="command__group" role="group" aria-labelledby="suggestions">
+<div class="command__group" role="group" aria-labelledby="suggestions">
   <span id="suggestions" class="command__group-header">Suggestions</span>
   <%= tag.div id: SecureRandom.hex, class: "btn command__item", data: { value: "calendar", href: "" }, role: "option" do %>
     <span class="icon icon--calendar" aria-hidden="true"></span>
@@ -12,7 +12,7 @@
     <span class="icon icon--calculator" aria-hidden="true"></span>
     <span>Calculator</span>
   <% end %>
-</ul>
+</div>
 <div class="command__group" role="group" aria-labelledby="settings">
   <span id="settings" class="command__group-header">Settings</span>
   <%= tag.div id: SecureRandom.hex, class: "btn command__item", data: { value: "profile", href: "" }, role: "option" do %>
