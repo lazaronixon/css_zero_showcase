@@ -2,4 +2,7 @@
 class HotkeyPreview < Lookbook::Preview
   def default
   end
+
+  def focus
+  end
 end
