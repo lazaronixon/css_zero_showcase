@@ -10,6 +10,9 @@ class ItemPreview < Lookbook::Preview
   def borderless
   end
 
+  def link
+  end
+
   def check
   end
 end
