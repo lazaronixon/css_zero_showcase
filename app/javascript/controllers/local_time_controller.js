@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = [ "time", "date", "shortdate", "datetime", "ago" ]
+  static targets = [ "time", "date", "shortdate", "datetime", "ago", "indays" ]
   static values  = { lessThanAMinuteAgoText: { type: String, default: "Less than a minute ago" } }
 
   #timer
@@ -11,11 +11,16 @@ export default class extends Controller {
     this.dateFormatter = new Intl.DateTimeFormat(undefined, { dateStyle: "long" })
     this.shortdateFormatter = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric" })
     this.datetimeFormatter = new Intl.DateTimeFormat(undefined, { timeStyle: "short", dateStyle: "short" })
-    this.agoFormatter = new TimeAgoFormat(undefined, { numeric: "always", lessThanAMinuteAgoText: this.lessThanAMinuteAgoTextValue })
+    this.indaysFormatter = new InDaysFormat(undefined, { numeric: "auto" })
+    this.agoFormatter = new TimeAgoFormat(undefined, { lessThanAMinuteAgoText: this.lessThanAMinuteAgoTextValue })
   }
 
   connect() {
     this.#timer = setInterval(() => this.#refreshRelativeTimes(), 30_000)
+  }
+
+  disconnect() {
+    clearInterval(this.#timer)
   }
 
   timeTargetConnected(target) {
@@ -38,14 +43,17 @@ export default class extends Controller {
     this.#formatTime(this.agoFormatter, target)
   }
 
+  indaysTargetConnected(target) {
+    this.#formatTime(this.indaysFormatter, target)
+  }
+
   #refreshRelativeTimes() {
     this.agoTargets.forEach(it => this.#formatTime(this.agoFormatter, it))
   }
 
   #formatTime(formatter, target) {
-    const secondsToDate = seconds => new Date(seconds * 1000)
-    const date = secondsToDate(parseInt(target.getAttribute("datetime")))
-    target.innerHTML = formatter.format(date)
+    const date = new Date(target.getAttribute("datetime"))
+    target.textContent = formatter.format(date)
     target.title = this.datetimeFormatter.format(date)
   }
 }
@@ -56,13 +64,13 @@ class TimeAgoFormat extends Intl.RelativeTimeFormat {
   }
 
   format(value) {
-    const seconds = (new Date() - value) / 1000
+    const seconds = (Date.now() - value) / 1000
     const minutes = seconds / 60
-    const hours   = seconds / 3600
-    const days    = seconds / 86400
-    const weeks   = seconds / 604800
-    const months  = seconds / 2629800
-    const years   = seconds / 31557600
+    const hours   = minutes / 60
+    const days    = hours / 24
+    const weeks   = days / 7
+    const months  = days / 30.4
+    const years   = days / 365
 
     if (years >= 1)   return super.format(-Math.floor(years), "year")
     if (months >= 1)  return super.format(-Math.floor(months), "month")
@@ -72,5 +80,11 @@ class TimeAgoFormat extends Intl.RelativeTimeFormat {
     if (minutes >= 1) return super.format(-Math.floor(minutes), "minute")
 
     return this.options.lessThanAMinuteAgoText || "Less than a minute ago"
+  }
+}
+
+class InDaysFormat extends Intl.RelativeTimeFormat {
+  format(value) {
+    return super.format((value - Date.now()) / 1000/60/60/24, "day")
   }
 }

@@ -16,10 +16,13 @@ class LocalTimePreview < Lookbook::Preview
   def shortdate
   end
 
-  def date_time
+  def datetime
   end
 
   def ago
+  end
+
+  def indays
   end
   # @!endgroup
 end
