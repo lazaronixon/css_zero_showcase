@@ -7,9 +7,6 @@ class CardPreview < Lookbook::Preview
   def fieldset
   end
 
-  def disabled
-  end
-
   def with_image
   end
 end
