@@ -21,8 +21,5 @@ class LocalTimePreview < Lookbook::Preview
 
   def ago
   end
-
-  def indays
-  end
   # @!endgroup
 end
