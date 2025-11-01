@@ -1,0 +1,3 @@
+<%= form_with url: nil, data: { controller: "form" } do |form| %>
+  <%= form.text_field :code, placeholder: "••••••", autocorrect: "off", autocapitalize: "none", spellcheck: false, autocomplete: "one-time-code", minlength: 6, maxlength: 6, class: "input input--otp", style: "--input-otp-size: 18ch", data: { action: "paste->form#submit", "1p-ignore": true } %>
+<% end %>

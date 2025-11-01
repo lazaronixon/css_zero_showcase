@@ -1,3 +1,0 @@
-<%= form_with url: nil, data: { controller: "web_otp" } do |form| %>
-  <%= form.text_field :otp_code, placeholder: "6-digit code*", required: true, autocomplete: "one-time-code", inputmode: "numeric", pattern: "\\d{6}", class: "input", data: { web_otp_target: "input" } %>
-<% end %>
