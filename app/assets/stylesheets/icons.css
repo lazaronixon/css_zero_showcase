@@ -29,6 +29,8 @@ img.icon {
 .icon--chevron-left { --svg: url("chevron-left.svg"); }
 .icon--chevron-right { --svg: url("chevron-right.svg"); }
 .icon--chevrons-up-down { --svg: url("chevrons-up-down.svg"); }
+.icon--circle-alert { --svg: url("circle-alert.svg"); }
+.icon--circle-check { --svg: url("circle-check.svg"); }
 .icon--copy { --svg: url("copy.svg"); }
 .icon--download { --svg: url("download.svg"); }
 .icon--ellipsis { --svg: url("ellipsis.svg"); }
@@ -56,8 +58,6 @@ img.icon {
 .icon--chevrons-left { --svg: url("chevrons-left.svg"); }
 .icon--chevrons-right { --svg: url("chevrons-right.svg"); }
 .icon--circle { --svg: url("circle.svg"); }
-.icon--circle-alert { --svg: url("circle-alert.svg"); }
-.icon--circle-check { --svg: url("circle-check.svg"); }
 .icon--circle-check-big { --svg: url("circle-check-big.svg"); }
 .icon--circle-off { --svg: url("circle-off.svg"); }
 .icon--circle-plus { --svg: url("circle-plus.svg"); }
