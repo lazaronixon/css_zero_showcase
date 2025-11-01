@@ -10,6 +10,9 @@ class FormPreview < Lookbook::Preview
   def submit_with_debounce
   end
 
+  def disable_submit_when_invalid
+  end
+
   # Implementation
   # ---
   # - [views](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/citizens)
