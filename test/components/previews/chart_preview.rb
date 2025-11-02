@@ -41,6 +41,5 @@ class ChartPreview < Lookbook::Preview
   # ---
   # - [Chart.js](https://github.com/chartjs/Chart.js)
   def mixed_chart
-
   end
 end
