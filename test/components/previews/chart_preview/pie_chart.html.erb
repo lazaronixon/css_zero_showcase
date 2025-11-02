@@ -1,8 +1,0 @@
-<% @chart_data = {
-  labels: [ "January", "February", "March", "April" ],
-  datasets: [{ label: "Dataset 1", backgroundColor: ["#93c5fd", "#fda4af", "#6ee7b7", "#c4b5fd"], data: [70, 40, 80, 25] }]
-} %>
-
-<div class="relative i-full" style="block-size: 400px;">
-  <%= tag.canvas aria: { label: "Example" }, role: "img", data: { controller: "chart", chart_type_value: "pie", chart_data_value: @chart_data.to_json } %>
-</div>

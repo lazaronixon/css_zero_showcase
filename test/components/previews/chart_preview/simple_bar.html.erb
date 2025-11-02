@@ -1,0 +1,14 @@
+<% @chart_data = {
+  xAxis: {
+    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+  },
+  yAxis: {},
+  series: [
+    {
+      type: 'bar',
+      data: [23, 24, 18, 25, 27, 28, 25]
+    }
+  ]
+} %>
+
+<%= tag.div style: "width: 800px;height:400px;", data: { controller: "chart", chart_data_value: @chart_data.to_json } %>

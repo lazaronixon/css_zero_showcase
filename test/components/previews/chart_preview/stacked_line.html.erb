@@ -1,0 +1,20 @@
+<% @chart_data = {
+  xAxis: {
+    data: ['A', 'B', 'C', 'D', 'E']
+  },
+  yAxis: {},
+  series: [
+    {
+      data: [10, 22, 28, 43, 49],
+      type: 'line',
+      stack: 'x'
+    },
+    {
+      data: [5, 4, 3, 5, 10],
+      type: 'line',
+      stack: 'x'
+    }
+  ]
+} %>
+
+<%= tag.div style: "width: 800px;height:400px;", data: { controller: "chart", chart_data_value: @chart_data.to_json } %>

@@ -1,46 +1,26 @@
-# @display max_width 800px
 # @js app/javascript/controllers/chart_controller.js
 class ChartPreview < Lookbook::Preview
-  # Dependencies
-  # ---
-  # - [Chart.js](https://github.com/chartjs/Chart.js)
-  def bar_chart
+  def simple_bar
   end
 
-  # Dependencies
-  # ---
-  # - [Chart.js](https://github.com/chartjs/Chart.js)
-  def bar_y_chart
+  def stacked_bar
   end
 
-  # Dependencies
-  # ---
-  # - [Chart.js](https://github.com/chartjs/Chart.js)
-  def line_chart
+  def simple_line
   end
 
-  # Dependencies
-  # ---
-  # - [Chart.js](https://github.com/chartjs/Chart.js)
-  def pie_chart
+  def simple_line
   end
 
-  # Dependencies
-  # ---
-  # - [Chart.js](https://github.com/chartjs/Chart.js)
-  def doughnut_chart
+  def simple_pie
   end
 
-  # Dependencies
-  # ---
-  # - [Chart.js](https://github.com/chartjs/Chart.js)
-  def bubble_chart
+  def simple_doughnut
   end
 
-  # Dependencies
-  # ---
-  # - [Chart.js](https://github.com/chartjs/Chart.js)
-  def mixed_chart
+  def simple_scatter
+  end
 
+  def responsive
   end
 end

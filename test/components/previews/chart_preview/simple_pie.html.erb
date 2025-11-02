@@ -1,0 +1,23 @@
+<% @chart_data = {
+  series: [
+    {
+      type: 'pie',
+      data: [
+        {
+          value: 335,
+          name: 'Direct Visit'
+        },
+        {
+          value: 234,
+          name: 'Union Ad'
+        },
+        {
+          value: 1548,
+          name: 'Search Engine'
+        }
+      ]
+    }
+  ]
+} %>
+
+<%= tag.div style: "width: 800px;height:400px;", data: { controller: "chart", chart_data_value: @chart_data.to_json } %>

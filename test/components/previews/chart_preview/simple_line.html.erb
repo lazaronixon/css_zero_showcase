@@ -1,0 +1,17 @@
+<% @chart_data = {
+  xAxis: {
+    type: 'category',
+    data: ['A', 'B', 'C']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      data: [120, 200, 150],
+      type: 'line'
+    }
+  ]
+} %>
+
+<%= tag.div style: "width: 800px;height:400px;", data: { controller: "chart", chart_data_value: @chart_data.to_json } %>

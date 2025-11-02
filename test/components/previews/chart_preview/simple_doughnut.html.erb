@@ -1,0 +1,24 @@
+<% @chart_data = {
+  series: [
+    {
+      type: 'pie',
+      data: [
+        {
+          value: 335,
+          name: 'A'
+        },
+        {
+          value: 234,
+          name: 'B'
+        },
+        {
+          value: 1548,
+          name: 'C'
+        }
+      ],
+      radius: ['40%', '70%']
+    }
+  ]
+} %>
+
+<%= tag.div style: "width: 800px;height:400px;", data: { controller: "chart", chart_data_value: @chart_data.to_json } %>
