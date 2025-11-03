@@ -3,11 +3,15 @@ class FruitsController < ApplicationController
   before_action :cant_be_greater_than_max_limit, only: :create
 
   def index
-    @fruits = Fruit.order(:key)
+    @fruits = Fruit.order(params[:randomize] ? "random()" : :key)
   end
 
   def create
     Fruit.create(fruit_params); redirect_to(fruits_path)
+  end
+
+  def randomize
+    redirect_to fruits_path(randomize: true)
   end
 
   def destroy

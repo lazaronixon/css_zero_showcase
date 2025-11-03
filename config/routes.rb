@@ -6,11 +6,14 @@ Rails.application.routes.draw do
   resources :paginables,  only: :index
   resources :tasks,       only: :index
   resources :sortables,   only: :update
-  resources :fruits,      only: %i(index create destroy)
+
+  resources :fruits, only: %i(index create destroy) do
+    post "randomize", on: :collection
+  end
 
   resources :citizens, only: %i(new edit create update) do
     post "on_country_change", on: :collection
-    post "on_state_change", on: :collection
+    post "on_state_change",   on: :collection
   end
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
