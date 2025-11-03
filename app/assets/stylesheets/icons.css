@@ -66,7 +66,6 @@ img.icon {
 .icon--circle-user { --svg: url("circle-user.svg"); }
 .icon--code { --svg: url("code.svg"); }
 .icon--credit-card { --svg: url("credit-card.svg"); }
-.icon--external-link { --svg: url("external-link.svg"); }
 .icon--frame { --svg: url("frame.svg"); }
 .icon--gallery-vertical-end { --svg: url("gallery-vertical-end.svg"); }
 .icon--grip-vertical { --svg: url("grip-vertical.svg"); }
