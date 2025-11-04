@@ -7,7 +7,7 @@ class FruitsController < ApplicationController
   end
 
   def create
-    Fruit.create(fruit_params); redirect_to(fruits_path)
+    Fruit.create!(fruit_params); redirect_to(fruits_path)
   end
 
   def randomize
