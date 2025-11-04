@@ -2,7 +2,7 @@
   <button type="button" class="btn" data-action="dialog#showModal">Show dialog</button>
 
   <dialog class="dialog" style="--dialog-size: 430px;" data-dialog-target="content" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
-    <button type="button" class="btn btn--plain dialog__close" data-action="click->dialog#close">
+    <button type="button" class="btn btn--plain dialog__close" data-action="dialog#close">
       <span class="icon icon--x" aria-hidden="true"></span>
       <span class="sr-only">Close</span>
     </button>
