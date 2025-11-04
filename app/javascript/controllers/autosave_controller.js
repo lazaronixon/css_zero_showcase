@@ -42,7 +42,6 @@ export default class extends Controller {
 
   #updateAppearance(saving) {
     this.element.ariaBusy = saving
-    this.submitTarget.ariaDisabled = saving
     this.submitTarget.disabled = saving
   }
 
