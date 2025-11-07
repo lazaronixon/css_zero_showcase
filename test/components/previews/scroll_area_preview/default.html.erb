@@ -1,9 +1,9 @@
 <div class="overflow-x-auto rounded-md border" style="block-size: 18rem; inline-size: 12rem;">
   <div class="p-4">
     <h4 class="mbe-4 text-sm font-medium leading-none">Tags</h4>
-    <% (1..50).reverse_each do |tag| %>
-    <div class="text-sm"><%= "v1.2.0-beta.#{tag}" %></div>
-    <hr class="mb-2">
+    <% (1..50).reverse_each do |version| %>
+      <%= tag.div "v1.2.0-beta.#{version}", class: "text-sm" %>
+      <%= tag.div nil, class: "separator-horizontal mb-2" %>
     <% end %>
   </div>
 </div>
