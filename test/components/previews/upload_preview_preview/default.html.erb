@@ -11,7 +11,7 @@
     </div>
   </label>
 
-  <label class="btn btn--icon btn--negative" data-action="upload-preview#clear">
+  <label class="btn btn--icon btn--negative" data-action="click->upload-preview#clear">
     <%= hidden_field_tag "remove_avatar", false, data: { upload_preview_target: "removeInput" } %>
     <span class="icon icon--minus" style="--icon-size: 1.25rem" aria-hidden="true"></span>
     <span class="sr-only">Remove avatar</span>
