@@ -5,7 +5,7 @@
   </div>
 
   <%= search_form_for @search, class: "flex items-center justify-between gap mbe-4" do |form| %>
-    <div class="flex items-center grow gap">
+    <div class="flex items-center flex-item-grow gap">
       <%= form.search_field :title_i_cont, placeholder: "Filter tasks...", autocomplete: "off", class: "input", style: "max-inline-size: 250px" %>
       <%= form.select :status_eq, %w(backlog todo in_progress done canceled), { include_blank: "Status" }, { class: "input", style: "--input-inline-size: 85px" } %>
       <%= form.select :priority_eq, %w(low medium high), { include_blank: "Priority" }, { class: "input", style: "--input-inline-size: 85px" } %>
@@ -75,7 +75,7 @@
           <%= form.select :limit, [10, 20, 30, 40, 50], { selected: @pagy.limit }, { class: "input", style: "--input-inline-size: 70px" } %>
         <% end %>
         <div class="text-sm font-medium"><%= "Page #{@pagy.page} of #{@pagy.pages}" %></div>
-        <nav class="flex items-center gap shrink-0" style="--btn-padding: .5rem;" aria-label="Pagination">
+        <nav class="flex items-center flex-item-no-shrink gap" style="--btn-padding: .5rem;" aria-label="Pagination">
           <%= link_to pagy_url_for(@pagy, 1), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
             <span class="icon icon--chevrons-left" aria-hidden="true"></span>
             <span class="sr-only">Go to first page</span>
