@@ -1,9 +1,9 @@
 # @css app/assets/stylesheets/group.css
 class GroupPreview < Lookbook::Preview
-  def inline
+  def default
   end
 
-  def block
+  def vertical
   end
 
   def input
