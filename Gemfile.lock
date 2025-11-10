@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/lazaronixon/css-zero.git
+  revision: 778f7cc0cbffd5ea3a667009ad3f02d7a254797d
+  specs:
+    css-zero (3.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -95,7 +101,6 @@ GEM
     concurrent-ruby (1.3.5)
     connection_pool (2.5.4)
     crass (1.0.6)
-    css-zero (3.0.0)
     css_parser (1.21.1)
       addressable
     date (3.5.0)
@@ -311,7 +316,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
-  css-zero (~> 3.0.0)
+  css-zero!
   debug
   geared_pagination
   importmap-rails
