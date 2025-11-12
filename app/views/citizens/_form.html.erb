@@ -1,4 +1,4 @@
-<%= form_with model: citizen, class: "card flex flex-col gap", data: { controller: "form" } do |form| %>
+<%= form_with model: citizen, html: { autocomplete: "off" }, class: "card flex flex-col gap", data: { controller: "form" } do |form| %>
   <div class="flex flex-col">
     <h3 class="font-semibold leading-none mbe-1">Citizen</h3>
     <p class="text-sm text-subtle">Select yout country, state, and city.</p>
