@@ -2,12 +2,12 @@
 
 apple:
   description: 🍎 Apple
-  key: apple
+  position: 0
 
 banana:
   description: 🍌 Banana
-  key: banana
+  position: 1
 
 cherry:
   description: 🍒 Cherry
-  key: cherry
+  position: 2

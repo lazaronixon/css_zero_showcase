@@ -3,7 +3,7 @@ class FruitsController < ApplicationController
   before_action :cant_be_greater_than_max_limit, only: :create
 
   def index
-    @fruits = Fruit.order(params[:randomize] ? "random()" : :key)
+    @fruits = Fruit.order(:position)
   end
 
   def create
@@ -11,7 +11,7 @@ class FruitsController < ApplicationController
   end
 
   def randomize
-    redirect_to fruits_path(randomize: true)
+    update_positions; redirect_to(fruits_path)
   end
 
   def destroy
@@ -25,6 +25,10 @@ class FruitsController < ApplicationController
 
     def cant_be_greater_than_max_limit
       head :unprocessable_entity if Fruit.count >= 10
+    end
+
+    def update_positions
+      Fruit.order("random()").each_with_index { |it, idx| it.update! position: idx }
     end
 
     def fruit_params
