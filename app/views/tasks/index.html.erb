@@ -70,25 +70,25 @@
     <div class="flex items-center">
       <div class="text-sm text-subtle show@md">Total of <%= @pagy.count %> record(s).</div>
       <div class="flex items-center mis-auto justify-end" style="column-gap: 1rem">
-        <%= form_with url: pagy_url_for(@pagy, 1), class: "flex items-center gap show@md", method: :get, data: { controller: "form", action: "change->form#submit" } do |form| %>
+        <%= form_with url: @pagy.page_url(:first), class: "flex items-center gap show@md", method: :get, data: { controller: "form", action: "change->form#submit" } do |form| %>
           <%= form.label :limit, "Rows per page", class: "text-sm font-medium" %>
           <%= form.select :limit, [10, 20, 30, 40, 50], { selected: @pagy.limit }, { class: "input", style: "--input-inline-size: 70px" } %>
         <% end %>
         <div class="text-sm font-medium"><%= "Page #{@pagy.page} of #{@pagy.pages}" %></div>
         <nav class="flex items-center flex-item-no-shrink gap" style="--btn-padding: .5rem;" aria-label="Pagination">
-          <%= link_to pagy_url_for(@pagy, 1), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
+          <%= link_to @pagy.page_url(:first), class: "btn", aria: { disabled: @pagy.previous.nil? }.compact_blank do %>
             <span class="icon icon--chevrons-left" aria-hidden="true"></span>
             <span class="sr-only">Go to first page</span>
           <% end %>
-          <%= link_to pagy_url_for(@pagy, @pagy.prev || @pagy.page), class: "btn", aria: { disabled: @pagy.prev.nil? }.compact_blank do %>
+          <%= link_to @pagy.page_url(:previous), class: "btn", aria: { disabled: @pagy.previous.nil? }.compact_blank do %>
             <span class="icon icon--chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Go to previous page</span>
           <% end %>
-          <%= link_to pagy_url_for(@pagy, @pagy.next || @pagy.page), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
+          <%= link_to @pagy.page_url(:next), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
             <span class="icon icon--chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Go to next page</span>
           <% end %>
-          <%= link_to pagy_url_for(@pagy, @pagy.last), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
+          <%= link_to @pagy.page_url(:last), class: "btn", aria: { disabled: @pagy.next.nil? }.compact_blank do %>
             <span class="icon icon--chevrons-right" aria-hidden="true"></span>
             <span class="sr-only">Go to last page</span>
           <% end %>

@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  include Pagy::Backend
+  include Pagy::Method
 
   def index
     @search = Task.ransack(params[:q])
