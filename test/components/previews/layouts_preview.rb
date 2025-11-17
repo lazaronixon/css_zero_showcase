@@ -1,4 +1,5 @@
 # @display padding 0px
+# @js app/javascript/controllers/toggle_class_controller.js
 # @css app/assets/stylesheets/layouts.css
 class LayoutsPreview < ViewComponent::Preview
   # Partials
