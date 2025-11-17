@@ -7,7 +7,7 @@
   mask-image: var(--svg);
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-size: var(--icon-size, 1em);
+  mask-size: var(--icon-size, 1rem);
   pointer-events: none;
   user-select: none;
 }
@@ -38,6 +38,7 @@ img.icon {
 .icon--menu { --svg: url("menu.svg"); }
 .icon--minus { --svg: url("minus.svg"); }
 .icon--moon { --svg: url("moon.svg"); }
+.icon--panel-left { --svg: url("panel-left.svg"); }
 .icon--search { --svg: url("search.svg"); }
 .icon--share { --svg: url("share.svg"); }
 .icon--sun { --svg: url("sun.svg"); }
