@@ -1,10 +1,10 @@
-<div class="sidebar-layout">
+<div class="sidebar-layout" data-controller="toggle-class" data-toggle-class-toggle-class="closed">
   <aside id="sidebar">
     <%= render "sidebar_menu" %>
   </aside>
 
   <main id="main">
-    <%= render "mobile_menu" %>
+    <%= render "breadcrumb_menu" %>
     <% 25.times do %><div class="rounded-lg bg-shade" style="min-block-size: 3rem"></div><% end %>
   </main>
 </div>

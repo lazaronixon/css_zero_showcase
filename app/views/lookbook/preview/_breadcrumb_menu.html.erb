@@ -1,0 +1,28 @@
+<header class="flex items-center gap show@md">
+  <button type="button" class="btn btn--borderless p-1" data-action="toggle-class#toggle">
+    <span class="icon icon--panel-left" aria-hidden="true"></span>
+    <span class="sr-only">Toggle Sidebar</span>
+  </button>
+  <div class="separator-vertical mi-1" style="--sep-size: 1rem"></div>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <%= link_to "Building Your Application", "#" %>
+    <span class="icon icon--chevron-right" aria-hidden="true"></span>
+    <span class="text-primary" aria-disabled="true" aria-current="page" role="link">Data Fetching</span>
+  </nav>
+</header>
+
+<header class="flex items-center gap hide@md" data-controller="dialog">
+  <button type="button" class="btn btn--borderless p-1" data-action="dialog#showModal">
+    <span class="icon icon--panel-left" aria-hidden="true"></span>
+    <span class="sr-only">Toggle Sidebar</span>
+  </button>
+  <div class="separator-vertical mi-1" style="--sep-size: 1rem"></div>
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <span class="text-primary" aria-disabled="true" aria-current="page" role="link">Data Fetching</span>
+  </nav>
+  <dialog class="sheet sheet--left" style="--sheet-size: 288px;" data-dialog-target="content" data-action="click->dialog#closeOnClickOutside">
+    <div class="sheet__content p-2">
+      <%= render "sidebar_menu" %>
+    </div>
+  </dialog>
+</header>

@@ -35,7 +35,6 @@ img.icon {
 .icon--copy { --svg: url("copy.svg"); }
 .icon--download { --svg: url("download.svg"); }
 .icon--ellipsis { --svg: url("ellipsis.svg"); }
-.icon--menu { --svg: url("menu.svg"); }
 .icon--minus { --svg: url("minus.svg"); }
 .icon--moon { --svg: url("moon.svg"); }
 .icon--panel-left { --svg: url("panel-left.svg"); }
