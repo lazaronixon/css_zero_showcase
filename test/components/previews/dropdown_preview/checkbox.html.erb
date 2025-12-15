@@ -1,28 +1,26 @@
-<div contents data-controller="popover" data-popover-placement-value="bottom-start">
-  <button type="button" class="btn" data-popover-target="trigger" popovertarget="popover" aria-haspopup="true">
-    Open
-  </button>
+<button type="button" class="btn" popovertarget="dropdown" aria-haspopup="true">
+  Open
+</button>
 
-  <div popover id="popover" class="popover" style="--popover-size: 14rem;" data-popover-target="content" role="menu" aria-label="Menu">
-    <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
-      <div class="menu__header">Settings</div>
-      <hr class="menu__separator" role="separator"/>
-      <div class="btn menu__item">
-        <%= check_box_tag :check_recents, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-        <%= label_tag :check_recents, "Recents", class: "flex-item-grow text-sm" %>
-      </div>
-      <div class="btn menu__item">
-        <%= check_box_tag :check_home, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-        <%= label_tag :check_home, "Home", class: "flex-item-grow text-sm" %>
-      </div>
-      <div class="btn menu__item">
-        <%= check_box_tag :check_applications, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-        <%= label_tag :check_applications, "Applications", class: "flex-item-grow text-sm" %>
-      </div>
-      <div class="btn menu__item">
-        <%= check_box_tag :check_desktop, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-        <%= label_tag :check_desktop, "Desktop", class: "flex-item-grow text-sm" %>
-      </div>
+<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 14rem;" role="menu" aria-label="Menu">
+  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+    <div class="menu__header">Settings</div>
+    <hr class="menu__separator" role="separator"/>
+    <div class="btn menu__item">
+      <%= check_box_tag :check_recents, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      <%= label_tag :check_recents, "Recents", class: "flex-item-grow text-sm" %>
+    </div>
+    <div class="btn menu__item">
+      <%= check_box_tag :check_home, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      <%= label_tag :check_home, "Home", class: "flex-item-grow text-sm" %>
+    </div>
+    <div class="btn menu__item">
+      <%= check_box_tag :check_applications, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      <%= label_tag :check_applications, "Applications", class: "flex-item-grow text-sm" %>
+    </div>
+    <div class="btn menu__item">
+      <%= check_box_tag :check_desktop, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      <%= label_tag :check_desktop, "Desktop", class: "flex-item-grow text-sm" %>
     </div>
   </div>
 </div>

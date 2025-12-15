@@ -1,15 +1,13 @@
-<div contents data-controller="popover" data-popover-placement-value="bottom-start">
-  <button type="button" class="btn btn--icon" data-popover-target="trigger" popovertarget="color_scheme_popover" aria-haspopup="true">
-    <span class="icon icon--sun icon--color-scheme-light" aria-hidden="true"></span>
-    <span class="icon icon--moon icon--color-scheme-dark" aria-hidden="true"></span>
-    <span class="sr-only">Theme switcher</span>
-  </button>
+<button type="button" class="btn btn--icon" popovertarget="color_scheme_popover" aria-haspopup="true">
+  <span class="icon icon--sun icon--color-scheme-light" aria-hidden="true"></span>
+  <span class="icon icon--moon icon--color-scheme-dark" aria-hidden="true"></span>
+  <span class="sr-only">Theme switcher</span>
+</button>
 
-  <div popover id="color_scheme_popover" class="popover" data-popover-target="content" role="menu" aria-label="Menu">
-    <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
-      <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setLight" data-menu-target="item" role="menuitem">Light</button>
-      <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setDark" data-menu-target="item" role="menuitem">Dark</button>
-      <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setSystem" data-menu-target="item" role="menuitem">System</button>
-    </div>
+<div popover id="color_scheme_popover" class="popover popover--block-end-start" role="menu" aria-label="Menu">
+  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+    <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setLight" data-menu-target="item" role="menuitem">Light</button>
+    <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setDark" data-menu-target="item" role="menuitem">Dark</button>
+    <button type="button" class="btn menu__item" data-action="popover#hide color-scheme#setSystem" data-menu-target="item" role="menuitem">System</button>
   </div>
 </div>
