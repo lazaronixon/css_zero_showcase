@@ -6,10 +6,6 @@ class PopoverPreview < Lookbook::Preview
   # Partials
   # ---
   # - [\_dimensions_form.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_dimensions_form.html.erb)
-  #
-  # Dependencies
-  # ---
-  # - [Floating UI](https://floating-ui.com)
   def default
   end
 
@@ -17,25 +13,12 @@ class PopoverPreview < Lookbook::Preview
   # ---
   # - [\_dimensions_form.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_dimensions_form.html.erb)
   #
-  # Dependencies
-  # ---
-  # - [Floating UI](https://floating-ui.com)
   def placement
   end
 
-  # Dependencies
-  # ---
-  # - [Floating UI](https://floating-ui.com)
-  def hover_card
+  def hover
   end
 
-  # @!group Tooltip
-  # @display centered false
-  # @display padding 1.5rem
-  def tooltip_custom
+  def tooltip
   end
-
-  def tooltip_native
-  end
-  # @!endgroup
 end
