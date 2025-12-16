@@ -11,8 +11,8 @@
   </nav>
 </header>
 
-<header class="flex items-center gap hide@md" data-controller="dialog">
-  <button type="button" class="btn btn--borderless p-1" data-action="dialog#showModal">
+<header class="flex items-center gap hide@md">
+  <button type="button" class="btn btn--borderless p-1" commandfor="breadcrumb_menu" command="show-modal">
     <span class="icon icon--panel-left" aria-hidden="true"></span>
     <span class="sr-only">Toggle Sidebar</span>
   </button>
@@ -20,7 +20,7 @@
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <span class="text-primary" aria-disabled="true" aria-current="page" role="link">Data Fetching</span>
   </nav>
-  <dialog class="sheet sheet--left" style="--sheet-size: 288px;" data-dialog-target="content" data-action="click->dialog#closeOnClickOutside">
+  <dialog id="breadcrumb_menu" class="sheet sheet--left" style="--sheet-size: 288px;" closedby="any">
     <div class="sheet__content p-2">
       <%= render "sidebar_menu" %>
     </div>

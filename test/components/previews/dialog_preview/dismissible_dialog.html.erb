@@ -1,13 +1,11 @@
-<div contents data-controller="dialog">
-  <button type="button" class="btn" data-action="dialog#showModal">Show dialog</button>
+<button type="button" class="btn" commandfor="dismissible_dialog" command="show-modal">Show dialog</button>
 
-  <dialog class="dialog" style="--dialog-size: 430px;" data-dialog-target="content" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
-    <button type="button" class="btn btn--plain dialog__close" data-action="dialog#close">
-      <span class="icon icon--x" aria-hidden="true"></span>
-      <span class="sr-only">Close</span>
-    </button>
-    <div class="dialog__content">
-      <%= render "profile_form" %>
-    </div>
-  </dialog>
-</div>
+<dialog id="dismissible_dialog" class="dialog" style="--dialog-size: 430px;" closedby="any" aria-label="Edit profile">
+  <button type="button" class="btn btn--plain dialog__close" commandfor="dismissible_dialog" command="close">
+    <span class="icon icon--x" aria-hidden="true"></span>
+    <span class="sr-only">Close</span>
+  </button>
+  <div class="dialog__content">
+    <%= render "profile_form" %>
+  </div>
+</dialog>

@@ -1,10 +1,10 @@
-<div class="hide@md" data-controller="dialog">
-  <button type="button" class="btn btn--icon" data-action="dialog#showModal">
+<div class="hide@md">
+  <button type="button" class="btn btn--icon" commandfor="mobile_menu" command="show-modal">
     <span class="icon icon--panel-left" style="--icon-size: 1.25rem" aria-hidden="true"></span>
     <span class="sr-only">Open menu</span>
   </button>
 
-  <dialog class="sheet sheet--left" style="--sheet-size: 288px;" data-dialog-target="content" data-action="click->dialog#closeOnClickOutside">
+  <dialog id="mobile_menu" class="sheet sheet--left" style="--sheet-size: 288px;" closedby="any">
     <div class="sheet__content p-2">
       <%= render "sidebar_menu" %>
     </div>

@@ -1,13 +1,11 @@
-<div contents data-controller="dialog">
-  <button type="button" class="btn" data-action="dialog#showModal">Open sheet</button>
+<button type="button" class="btn" commandfor="sheet" command="show-modal">Open sheet</button>
 
-  <dialog class="sheet sheet--right" data-dialog-target="content" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
-    <button type="button" class="btn btn--plain sheet__close" data-action="dialog#close">
-      <span class="icon icon--x" aria-hidden="true"></span>
-      <span class="sr-only">Close</span>
-    </button>
-    <div class="sheet__content">
-      <%= render "profile_form" %>
-    </div>
-  </dialog>
-</div>
+<dialog id="sheet" class="sheet sheet--right" aria-label="Edit profile" closedby="any">
+  <button type="button" class="btn btn--plain sheet__close" commandfor="sheet" command="close">
+    <span class="icon icon--x" aria-hidden="true"></span>
+    <span class="sr-only">Close</span>
+  </button>
+  <div class="sheet__content">
+    <%= render "profile_form" %>
+  </div>
+</dialog>
