@@ -1,18 +1,18 @@
-<nav class="flex items-center gap-half" style="--btn-padding: .375rem .75rem" aria-label="Pagination">
-  <%= link_to "#page-1", class: "btn btn--borderless", aria: { label: "Previous page" } do %>
+<nav class="pagination" aria-label="Pagination">
+  <%= link_to "#page-1", class: "btn pagination__button", aria: { label: "Previous page" } do %>
     <span class="icon icon--chevron-left" aria-hidden="true"></span>
     <span>Previous</span>
   <% end %>
 
-  <%= link_to "1", "#page-1", class: "btn btn--borderless" %>
-  <%= link_to "2", "#page-2", class: "btn", aria: { current: "page" } %>
-  <%= link_to "3", "#page-3", class: "btn btn--borderless" %>
+  <%= link_to "1", "#page-1", class: "btn pagination__button" %>
+  <%= link_to "2", "#page-2", class: "btn pagination__button", aria: { current: "page" } %>
+  <%= link_to "3", "#page-3", class: "btn pagination__button" %>
 
-  <div class="flex items-center pi-2" aria-hidden="true">
+  <div class="inline-flex items-center pi-2" aria-hidden="true">
     <span class="icon icon--ellipsis"></span>
   </div>
 
-  <%= link_to "#page-3", class: "btn btn--borderless", aria: { label: "Next page" } do %>
+  <%= link_to "#page-3", class: "btn pagination__button", aria: { label: "Next page" } do %>
     <span>Next</span>
     <span class="icon icon--chevron-right" aria-hidden="true"></span>
   <% end %>
