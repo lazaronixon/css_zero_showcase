@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/lazaronixon/css-zero.git
-  revision: af4f0f56fd27c59cfb2e108a977b0c375476ea0d
+  revision: 56a1e0e21b046272810c5770830c78a04a4bee61
   specs:
     css-zero (3.2.0)
 
@@ -129,7 +129,7 @@ GEM
       prism (>= 1.3.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    jbuilder (2.14.1)
+    jbuilder (2.15.0)
       actionview (>= 7.0.0)
       activesupport (>= 7.0.0)
     json (2.19.5)
