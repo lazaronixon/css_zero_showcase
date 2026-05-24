@@ -1,4 +1,1 @@
-<label>
-  <%= tag.progress value: 75, max: 100, class: "progress", role: "progressbar" %>
-  <span class="sr-only">Loading progress</span>
-</label>
+<%= tag.progress value: 75, max: 100, class: "progress", role: "progressbar", aria: { label: "Loading progress" } %>

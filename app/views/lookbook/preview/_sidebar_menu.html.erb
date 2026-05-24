@@ -18,7 +18,7 @@
             <span class="icon icon--square-terminal" aria-hidden="true"></span>
             <span class="overflow-ellipsis">Playground</span>
           </summary>
-          <nav class="sidebar-menu__sub">
+          <nav class="sidebar-menu__sub" aria-label="Playground">
             <%= link_to "History", "#", class: "btn sidebar-menu__button", aria: { current: "page" } %>
             <%= link_to "Starred", "#", class: "btn sidebar-menu__button" %>
             <%= link_to "Settings", "#", class: "btn sidebar-menu__button" %>
@@ -29,7 +29,7 @@
             <span class="icon icon--bot" aria-hidden="true"></span>
             <span class="overflow-ellipsis">Models</span>
           </summary>
-          <nav class="sidebar-menu__sub">
+          <nav class="sidebar-menu__sub" aria-label="Models">
             <%= link_to "Genesis", "#", class: "btn sidebar-menu__button" %>
             <%= link_to "Explorer", "#", class: "btn sidebar-menu__button" %>
             <%= link_to "Quantum", "#", class: "btn sidebar-menu__button" %>
@@ -40,7 +40,7 @@
             <span class="icon icon--book-open" aria-hidden="true"></span>
             <span class="overflow-ellipsis">Documentation</span>
           </summary>
-          <nav class="sidebar-menu__sub">
+          <nav class="sidebar-menu__sub" aria-label="Documentation">
             <%= link_to "Documentation", "#", class: "btn sidebar-menu__button" %>
             <%= link_to "Get Started", "#", class: "btn sidebar-menu__button" %>
             <%= link_to "Tutorials", "#", class: "btn sidebar-menu__button" %>
@@ -52,7 +52,7 @@
             <span class="icon icon--settings-2" aria-hidden="true"></span>
             <span class="overflow-ellipsis">Settings</span>
           </summary>
-          <nav class="sidebar-menu__sub">
+          <nav class="sidebar-menu__sub" aria-label="Settings">
             <%= link_to "General", "#", class: "btn sidebar-menu__button" %>
             <%= link_to "Teams", "#", class: "btn sidebar-menu__button" %>
             <%= link_to "Billing", "#", class: "btn sidebar-menu__button" %>
@@ -63,7 +63,7 @@
     </div>
     <div class="sidebar-menu__group">
       <div class="sidebar-menu__group-label">Projects</div>
-      <nav class="sidebar-menu__items">
+      <nav class="sidebar-menu__items" aria-label="Projects">
         <%= link_to "#", class: "btn sidebar-menu__button" do %>
           <span class="icon icon--frame" aria-hidden="true"></span>
           <span class="overflow-ellipsis">Design Engineering</span>
