@@ -5,7 +5,7 @@ class ColorSchemePreview < Lookbook::Preview
   # Initialization
   # ---
   # ```html
-  # <html data-controller="color-scheme">...</html>
+  # <html data-controller="color-scheme" data-color-scheme="system">...</html>
   # ```
   def default
   end
