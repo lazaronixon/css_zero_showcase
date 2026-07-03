@@ -10,13 +10,37 @@ class ChartPreview < Lookbook::Preview
   # Dependencies
   # ---
   # - [Chart.js](https://github.com/chartjs/Chart.js)
+  def area_chart_multiple
+  end
+
+  # Dependencies
+  # ---
+  # - [Chart.js](https://github.com/chartjs/Chart.js)
   def bar_chart
   end
 
   # Dependencies
   # ---
   # - [Chart.js](https://github.com/chartjs/Chart.js)
+  def bar_chart_multiple
+  end
+
+  # Dependencies
+  # ---
+  # - [Chart.js](https://github.com/chartjs/Chart.js)
+  def bar_chart_horizontal
+  end
+
+  # Dependencies
+  # ---
+  # - [Chart.js](https://github.com/chartjs/Chart.js)
   def line_chart
+  end
+
+  # Dependencies
+  # ---
+  # - [Chart.js](https://github.com/chartjs/Chart.js)
+  def line_chart_multiple
   end
 
   # Dependencies

@@ -5,9 +5,9 @@
   ]
 } %>
 
-<% @chart_options = { scales: {
-  x: { border: { display: false }, grid: { display: false, tickLength: 0 } },
-  y: { border: { display: false }, grid: { tickLength: 0 }, ticks: { display: false } }
+<% @chart_options = { indexAxis: "y", interaction: { axis: "y" }, scales: {
+  x: { border: { display: false }, grid: { display: false, tickLength: 0 }, ticks: { display: false } },
+  y: { border: { display: false }, grid: { display: false, tickLength: 0 } }
 } } %>
 
 <div class="relative i-full" style="block-size: 400px;">
