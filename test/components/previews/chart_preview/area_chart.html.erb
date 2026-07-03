@@ -6,6 +6,11 @@
   ]
 } %>
 
+<% @chart_options = { scales: {
+  x: { border: { display: false }, grid: { display: false, tickLength: 0 } },
+  y: { border: { display: false }, grid: { tickLength: 0 }, ticks: { display: false } }
+} } %>
+
 <div class="relative i-full" style="block-size: 400px;">
-  <%= tag.canvas aria: { label: "Example" }, role: "img", data: { controller: "chart", chart_type_value: "line", chart_data_value: @chart_data.to_json } %>
+  <%= tag.canvas aria: { label: "Example" }, role: "img", data: { controller: "chart", chart_type_value: "line", chart_data_value: @chart_data.to_json, chart_options_value: @chart_options.to_json } %>
 </div>
