@@ -6,7 +6,7 @@
   ]
 } %>
 
-<% @chart_options = { interaction: { mode: "index" }, scales: {
+<% @chart_options = { interaction: { mode: "index" }, plugins: { legend: { display: true } }, scales: {
   x: { border: { display: false }, grid: { display: false, tickLength: 0 } },
   y: { border: { display: false }, grid: { tickLength: 0 }, ticks: { display: false } }
 } } %>
