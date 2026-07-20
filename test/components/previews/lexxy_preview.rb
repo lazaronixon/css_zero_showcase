@@ -8,4 +8,7 @@ class LexxyPreview < Lookbook::Preview
 
   def sticky_toolbar
   end
+
+  def content
+  end
 end
