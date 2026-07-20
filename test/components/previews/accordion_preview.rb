@@ -1,4 +1,4 @@
-# @display max_width 450px
+# @display max_width 385px
 # @css app/assets/stylesheets/accordion.css
 class AccordionPreview < Lookbook::Preview
   def default

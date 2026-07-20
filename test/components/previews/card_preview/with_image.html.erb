@@ -3,17 +3,14 @@
     <%= image_tag "unsplash-4.webp", alt: "Card image" %>
   </figure>
 
-  <div class="p-6">
+  <div class="flex flex-col gap p-4">
     <div class="flex flex-col">
-      <h3 class="font-semibold leading-none mbe-1">Card Title</h3>
+      <h3 class="font-medium leading-none mbe-1">Card Title</h3>
+      <p class="text-sm text-subtle">A card component has a figure, a body part, and inside body there are title and actions parts</p>
     </div>
 
-    <div class="flex flex-col gap mb-2">
-      A card component has a figure, a body part, and inside body there are title and actions parts
+    <div class="flex items-center gap">
+      <button type="button" class="btn btn--primary flex-1">Read more</button>
     </div>
-
-    <div class="flex items-center justify-end gap">
-      <button type="button" class="btn btn--primary">Read more</button>
-    </div>
-  <div>
+  </div>
 </div>
