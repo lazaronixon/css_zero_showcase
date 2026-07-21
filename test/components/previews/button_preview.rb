@@ -24,6 +24,9 @@ class ButtonPreview < Lookbook::Preview
 
   def disabled
   end
+
+  def feedback
+  end
   # @!endgroup
 
   # @!group Icon
