@@ -1,12 +1,18 @@
 <% if flash[:notice] %>
   <div popover="manual" class="flash" data-controller="flash sound" data-action="animationend->flash#hide" data-sound-connect-value="success" role="alert">
-    <div class="flash__content"><%= flash[:notice] %></div>
+    <div class="flash__content flex items-center gap">
+      <span class="icon icon--circle-check" style="--icon-size: 1.25rem" aria-hidden="true"></span>
+      <span class="font-medium"><%= flash[:notice] %></span>
+    </div>
   </div>
 <% end %>
 
 <% if flash[:alert] %>
-  <div popover="manual" class="flash flash--negative" data-controller="flash sound" data-action="animationend->flash#hide" data-sound-connect-value="error" role="alert">
-    <div class="flash__content"><%= flash[:alert] %></div>
+  <div popover="manual" class="flash" data-controller="flash sound" data-action="animationend->flash#hide" data-sound-connect-value="error" role="alert">
+    <div class="flash__content flex items-center gap">
+      <span class="icon icon--circle-alert" style="--icon-size: 1.25rem" aria-hidden="true"></span>
+      <span class="font-medium"><%= flash[:alert] %></span>
+    </div>
   </div>
 <% end %>
 
@@ -16,7 +22,7 @@
     <p class="text-subtle">Add subtle audio cues to interactions like clicks, toggles, and form submissions.</p>
   </div>
 
-  <div class="flex items-center gap">
+  <div class="flex flex-wrap items-center gap">
     <%= button_to tag.span("Success"), main_app.success_sounds_path, class: "btn btn--busy btn--feedback", "data-action": "sound#loading" %>
     <%= button_to tag.span("Failure"), main_app.failure_sounds_path, class: "btn btn--busy btn--feedback", "data-action": "sound#loading" %>
     <%= button_tag "Tactile", type: "button", class: "btn btn--feedback", "data-action": "pointerdown->sound#press pointerup->sound#release" %>
