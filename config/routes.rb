@@ -6,6 +6,11 @@ Rails.application.routes.draw do
   resources :paginables,  only: :index
   resources :tasks,       only: :index
   resources :sortables,   only: :update
+  
+  resources :sounds do
+    post "success", on: :collection
+    post "failure", on: :collection
+  end
 
   resources :fruits, only: %i(index create destroy) do
     post "randomize", on: :collection
