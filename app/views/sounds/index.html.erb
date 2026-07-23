@@ -16,7 +16,7 @@
   </div>
 <% end %>
 
-<div class="container flex flex-col justify-center gap p-4" style="row-gap: 2.5rem; --container-width: 25rem">
+<div class="container flex flex-col justify-center gap p-4" style="row-gap: 2.5rem; --container-width: 28rem">
   <div class="flex flex-col">
     <h2 class="text-2xl font-bold">Sound feedback</h2>
     <p class="text-subtle">Add subtle audio cues to interactions like clicks, toggles, and form submissions.</p>
@@ -31,10 +31,6 @@
       <%= check_box_tag :btn_toggle, "data-action": "sound#toggle" %><span>Toggle</span>
     </label>
 
-    <%= button_tag "Disabled", type: "button", class: "btn", disabled: true %>
-  </div>
-
-  <div class="flex items-center gap">
     <div contents>
       <button type="button" class="btn btn--feedback" data-action="pointerdown->sound#press pointerup->sound#release" popovertarget="dropdown" aria-haspopup="true">
         Dropdown
@@ -122,6 +118,8 @@
     <%= label_tag :status, "Airplane Mode", class: "text-sm font-medium" %>
   </div>
 
+  <%= select_tag :fruits, options_for_select(["Apple", "Banana", "Blueberry", "Grapes", "Pineaple"]), class: "input", "data-action": "sound#toggle" %>
+
   <div class="input input--actor input--copyable flex items-center gap" data-controller="input-copyable">
     <%= text_field_tag "input_copyable", SecureRandom.base58(32), readonly: "readonly", data: { input_copyable_target: "input" } %>
     <button type="button" class="btn btn--plain" data-action="input-copyable#copy sound#sparkle">
@@ -145,6 +143,10 @@
       <span class="sr-only">Clear input</span>
     </button>
   </div>
+
+  <%= form_with url: nil, data: { controller: "form", action: "submit->sound#success" } do |form| %>
+    <%= form.text_field :code, placeholder: "••••••", autocorrect: "off", autocapitalize: "none", spellcheck: false, autocomplete: "one-time-code", maxlength: 6, class: "input input--otp", style: "inline-size: 100%", data: { action: "paste->form#submit sound#tick", "1p-ignore": true } %>
+  <% end %>
 
   <div class="carousel" data-controller="carousel" data-action="keydown.left->carousel#prev keydown.right->carousel#next keydown->sound#page" role="region" aria-roledescription="carousel">
     <button type="button" class="btn btn--icon" data-action="carousel#prev sound#page">
