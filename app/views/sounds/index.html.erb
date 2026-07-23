@@ -55,6 +55,22 @@
 
     <div contents data-controller="dialog">
       <button type="button" class="btn btn--feedback" data-action="dialog#showModal sound#bloom">
+        Sheet
+      </button>
+
+      <dialog class="sheet sheet--left" data-dialog-target="content" data-action="click->dialog#closeOnClickOutside close->sound#droplet" aria-label="Edit profile">
+        <button type="button" class="btn btn--plain sheet__close" data-action="dialog#close">
+          <span class="icon icon--x" aria-hidden="true"></span>
+          <span class="sr-only">Close</span>
+        </button>
+        <div class="sheet__content">
+          <%= render "lookbook/preview/profile_form" %>
+        </div>
+      </dialog>
+    </div>
+
+    <div contents data-controller="dialog">
+      <button type="button" class="btn btn--feedback" data-action="dialog#showModal sound#bloom">
         Dialog
       </button>
 
