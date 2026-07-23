@@ -28,6 +28,7 @@
   transition-behavior: allow-discrete;
   transition-duration: var(--time-100);
   transition-property: display, opacity, transform;
+  transform-origin: top;
 
   /* Exit stage to */
   opacity: 0;
