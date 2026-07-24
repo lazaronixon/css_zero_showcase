@@ -152,6 +152,26 @@
     <%= form.text_field :code, placeholder: "••••••", autocorrect: "off", autocapitalize: "none", spellcheck: false, autocomplete: "one-time-code", maxlength: 6, class: "input input--otp", style: "--input-otp-size: 18ch", data: { action: "paste->form#submit sound#tick", "1p-ignore": true } %>
   <% end %>
 
+  <nav class="pagination justify-center" aria-label="Pagination">
+    <%= link_to "#", class: "btn pagination__button", "data-action": "sound#page", aria: { label: "Previous page" } do %>
+      <span class="icon icon--chevron-left" aria-hidden="true"></span>
+      <span>Previous</span>
+    <% end %>
+
+    <%= link_to "1", "#", class: "btn pagination__button", "data-action": "sound#page" %>
+    <%= link_to "2", "#", class: "btn pagination__button", "data-action": "sound#page", aria: { current: "page" } %>
+    <%= link_to "3", "#", class: "btn pagination__button", "data-action": "sound#page" %>
+
+    <div class="inline-flex items-center pi-2" aria-hidden="true">
+      <span class="icon icon--ellipsis"></span>
+    </div>
+
+    <%= link_to "#", class: "btn pagination__button", "data-action": "sound#page", aria: { label: "Next page" } do %>
+      <span>Next</span>
+      <span class="icon icon--chevron-right" aria-hidden="true"></span>
+    <% end %>
+  </nav>
+
   <div class="carousel" data-controller="carousel" data-action="keydown.left->carousel#prev keydown.right->carousel#next keydown->sound#page" role="region" aria-roledescription="carousel">
     <button type="button" class="btn btn--icon" data-action="carousel#prev sound#page">
       <span class="icon icon--chevron-left" aria-hidden="true"></span>
@@ -181,26 +201,6 @@
       <span class="sr-only">Next slide</span>
     </button>
   </div>
-
-  <nav class="pagination justify-center" aria-label="Pagination">
-    <%= link_to "#", class: "btn pagination__button", "data-action": "sound#page", aria: { label: "Previous page" } do %>
-      <span class="icon icon--chevron-left" aria-hidden="true"></span>
-      <span>Previous</span>
-    <% end %>
-
-    <%= link_to "1", "#", class: "btn pagination__button", "data-action": "sound#page" %>
-    <%= link_to "2", "#", class: "btn pagination__button", "data-action": "sound#page", aria: { current: "page" } %>
-    <%= link_to "3", "#", class: "btn pagination__button", "data-action": "sound#page" %>
-
-    <div class="inline-flex items-center pi-2" aria-hidden="true">
-      <span class="icon icon--ellipsis"></span>
-    </div>
-
-    <%= link_to "#", class: "btn pagination__button", "data-action": "sound#page", aria: { label: "Next page" } do %>
-      <span>Next</span>
-      <span class="icon icon--chevron-right" aria-hidden="true"></span>
-    <% end %>
-  </nav>
 
   <div class="accordion">
     <details name="my_accordion">
