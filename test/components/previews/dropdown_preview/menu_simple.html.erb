@@ -4,12 +4,12 @@
 
 <div popover id="dropdown" class="popover popover--block-end-start"  style="--popover-size: 8rem;" role="menu" aria-label="Menu">
   <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
-    <%= link_to "Edit", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
-    <%= link_to "Make a copy", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
-    <%= link_to "Favorite", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+    <%= link_to "Edit", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+    <%= link_to "Make a copy", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+    <%= link_to "Favorite", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
     <hr class="menu__separator" role="separator"/>
-    <%= link_to "Classify", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+    <%= link_to "Classify", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
     <hr class="menu__separator" role="separator"/>
-    <%= link_to "Delete", "", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+    <%= link_to "Delete", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
   </div>
 </div>

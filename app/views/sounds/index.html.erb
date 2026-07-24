@@ -38,13 +38,13 @@
 
       <div popover id="dropdown" class="popover popover--block-end-start"  style="--popover-size: 8rem;" role="menu" aria-label="Menu">
         <div class="menu" data-controller="menu" data-action="keydown->menu#navigate keydown->sound#tick">
-          <%= link_to "Edit", "", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
-          <%= link_to "Make a copy", "", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
-          <%= link_to "Favorite", "", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+          <%= link_to "Edit", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+          <%= link_to "Make a copy", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+          <%= link_to "Favorite", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
           <hr class="menu__separator" role="separator"/>
-          <%= link_to "Classify", "", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+          <%= link_to "Classify", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
           <hr class="menu__separator" role="separator"/>
-          <%= link_to "Delete", "", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+          <%= link_to "Delete", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
         </div>
       </div>
     </div>
@@ -87,11 +87,11 @@
   </div>
 
   <nav class="breadcrumb" aria-label="Breadcrumb">
-    <%= link_to "Home", "#home", "data-action": "mouseenter->sound#tick" %>
+    <%= link_to "Home", "#", "data-action": "mouseenter->sound#tick" %>
     <span class="icon icon--chevron-right" aria-hidden="true"></span>
-    <%= link_to "Layouts", "#layouts", "data-action": "mouseenter->sound#tick" %>
+    <%= link_to "Layouts", "#", "data-action": "mouseenter->sound#tick" %>
     <span class="icon icon--chevron-right" aria-hidden="true"></span>
-    <%= link_to "Components", "#components", "data-action": "mouseenter->sound#tick" %>
+    <%= link_to "Components", "#", "data-action": "mouseenter->sound#tick" %>
     <span class="icon icon--chevron-right" aria-hidden="true"></span>
     <span class="text-primary" aria-disabled="true" aria-current="page" role="link">Breadcrumb</span>
   </nav>
@@ -183,20 +183,20 @@
   </div>
 
   <nav class="pagination justify-center" aria-label="Pagination">
-    <%= tag.a class: "btn pagination__button", "data-action": "sound#page", aria: { label: "Previous page" } do %>
+    <%= link_to "#", class: "btn pagination__button", "data-action": "sound#page", aria: { label: "Previous page" } do %>
       <span class="icon icon--chevron-left" aria-hidden="true"></span>
       <span>Previous</span>
     <% end %>
 
-    <%= tag.a "1", class: "btn pagination__button", "data-action": "sound#page"%>
-    <%= tag.a "2", class: "btn pagination__button", "data-action": "sound#page", aria: { current: "page" } %>
-    <%= tag.a "3", class: "btn pagination__button", "data-action": "sound#page" %>
+    <%= link_to "1", "#", class: "btn pagination__button", "data-action": "sound#page" %>
+    <%= link_to "2", "#", class: "btn pagination__button", "data-action": "sound#page", aria: { current: "page" } %>
+    <%= link_to "3", "#", class: "btn pagination__button", "data-action": "sound#page" %>
 
     <div class="inline-flex items-center pi-2" aria-hidden="true">
       <span class="icon icon--ellipsis"></span>
     </div>
 
-    <%= tag.a class: "btn pagination__button", "data-action": "sound#page", aria: { label: "Next page" } do %>
+    <%= link_to "#", class: "btn pagination__button", "data-action": "sound#page", aria: { label: "Next page" } do %>
       <span>Next</span>
       <span class="icon icon--chevron-right" aria-hidden="true"></span>
     <% end %>
