@@ -21,6 +21,7 @@
     transition-behavior: allow-discrete;
     transition-duration: var(--time-100);
     transition-property: display, overlay, opacity;
+    transition-timing-function: var(--ease-out-3);
   }
 
   /* Exit stage to */
