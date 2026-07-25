@@ -15,7 +15,7 @@
   transition-behavior: allow-discrete;
   transition-duration: var(--time-100);
   transition-property: display, overlay, opacity, transform;
-  transition-timing-function: ease-out;
+  transition-timing-function: var(--ease-out-3);
 
   &::backdrop {
     transition-behavior: allow-discrete;

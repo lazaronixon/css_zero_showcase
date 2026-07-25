@@ -14,7 +14,7 @@
   inline-size: var(--switch-inline-size);
   transition-duration: var(--time-150);
   transition-property: background-color;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: var(--ease-out-3);
 
   &:checked {
     background-color: var(--color-primary);
@@ -33,7 +33,7 @@
     display: block;
     transition-duration: var(--time-150);
     transition-property: translate;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: var(--ease-out-3);
   }
 
   &:focus-visible {
