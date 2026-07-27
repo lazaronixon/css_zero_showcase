@@ -49,41 +49,37 @@
       </div>
     </div>
 
-    <div contents data-controller="dialog">
-      <button type="button" class="btn btn--feedback" data-action="dialog#showModal sound#bloom">
-        Sheet
+    <button type="button" class="btn btn--feedback" commandfor="sheet" command="show-modal" data-action="sound#bloom">
+      Sheet
+    </button>
+
+    <button type="button" class="btn btn--feedback" commandfor="dialog" command="show-modal" data-action="sound#bloom">
+      Dialog
+    </button>
+
+    <dialog id="sheet" class="sheet sheet--left" data-controller="dialog" data-action="click->dialog#closeOnClickOutside close->sound#droplet" aria-label="Edit profile">
+      <button type="button" class="btn btn--plain sheet__close" commandfor="sheet" command="close">
+        <span class="icon icon--x" aria-hidden="true"></span>
+        <span class="sr-only">Close</span>
       </button>
+      <div class="sheet__content">
+        <%= render "lookbook/preview/profile_form", close_target: "sheet" %>
+      </div>
+    </dialog>
 
-      <dialog class="sheet sheet--left" data-dialog-target="content" data-action="click->dialog#closeOnClickOutside close->sound#droplet" aria-label="Edit profile">
-        <button type="button" class="btn btn--plain sheet__close" data-action="dialog#close">
-          <span class="icon icon--x" aria-hidden="true"></span>
-          <span class="sr-only">Close</span>
-        </button>
-        <div class="sheet__content">
-          <%= render "lookbook/preview/profile_form" %>
+    <dialog id="dialog" class="dialog" style="--dialog-size: 24rem;" data-action="close->sound#droplet" role="alertdialog" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
+      <div class="dialog__content">
+        <h2 class="font-medium leading-none mbe-2" id="dialog_label">Are you absolutely sure?</h2>
+        <p class="text-sm text-balance text-subtle mbe-4" id="dialog_desc">
+          This action cannot be undone. This will permanently delete your account and remove your data from our servers.
+        </p>
+
+        <div class="flex items-center justify-end gap">
+          <button type="button" class="btn" commandfor="dialog" command="close">Cancel</button>
+          <button type="button" class="btn btn--primary">Continue</button>
         </div>
-      </dialog>
-    </div>
-
-    <div contents data-controller="dialog">
-      <button type="button" class="btn btn--feedback" data-action="dialog#showModal sound#bloom">
-        Dialog
-      </button>
-
-      <dialog class="dialog" style="--dialog-size: 24rem;" data-dialog-target="content" data-action="close->sound#droplet" role="alertdialog" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
-        <div class="dialog__content">
-          <h2 class="font-medium leading-none mbe-2" id="dialog_label">Are you absolutely sure?</h2>
-          <p class="text-sm text-balance text-subtle mbe-4" id="dialog_desc">
-            This action cannot be undone. This will permanently delete your account and remove your data from our servers.
-          </p>
-
-          <div class="flex items-center justify-end gap">
-            <button type="button" class="btn" data-action="dialog#close">Cancel</button>
-            <button type="button" class="btn btn--primary">Continue</button>
-          </div>
-        </div>
-      </dialog>
-    </div>
+      </div>
+    </dialog>
   </div>
 
   <nav class="breadcrumb" aria-label="Breadcrumb">
