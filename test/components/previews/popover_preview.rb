@@ -1,7 +1,6 @@
 # @display centered true
 # @display padding 0px
 # @css app/assets/stylesheets/popover.css
-# @js app/javascript/controllers/popover_controller.js
 class PopoverPreview < Lookbook::Preview
   # Partials
   # ---
@@ -16,9 +15,11 @@ class PopoverPreview < Lookbook::Preview
   def placement
   end
 
+  # - [interest_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/interest_controller.js)
   def hover
   end
 
+  # - [interest_controller.js](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/javascript/controllers/interest_controller.js)
   def tooltip
   end
 end

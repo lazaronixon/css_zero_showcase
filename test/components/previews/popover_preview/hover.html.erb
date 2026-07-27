@@ -1,12 +1,10 @@
-<div contents data-controller="popover" data-action="mouseenter->popover#debouncedShow mouseleave->popover#debouncedHide">
-  <a href="#" class="text-link" data-popover-target="trigger">
-    @rails
-  </a>
+<a href="#" class="text-link" data-controller="interest" data-interest-for-value="rails_card">
+  @rails
+</a>
 
-  <div popover="hint" class="popover" data-popover-target="content" role="dialog">
-    <div class="flex flex-col p-4">
-      <h2 class="text-lg font-semibold">Ruby on Rails</h2>
-      <p class="text-sm text-subtle">The webframework that changed the world.</p>
-    </div>
+<div id="rails_card" popover="hint" class="popover" role="dialog">
+  <div class="flex flex-col p-4">
+    <h2 class="text-lg font-semibold">Ruby on Rails</h2>
+    <p class="text-sm text-subtle">The webframework that changed the world.</p>
   </div>
 </div>
