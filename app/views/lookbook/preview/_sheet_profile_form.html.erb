@@ -17,7 +17,7 @@
   </div>
 
   <div class="flex items-center justify-end gap">
-    <%= tag.button "Cancel", type: "button", class: "btn", commandfor: close_target, command: "close" %>
+    <button type="button" class="btn" commandfor="sheet" command="close">Cancel</button>
     <%= form.submit "Save changes", class: "btn btn--primary" %>
   </div>
 <% end %>
