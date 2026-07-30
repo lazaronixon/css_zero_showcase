@@ -23,11 +23,11 @@
           <%= form.text_field :username, value: "@lazaronixon", class: "input" %>
         </div>
       </div>
-    </div>
 
-    <div class="dialog__footer flex items-center justify-end gap">
-      <button type="button" class="btn" commandfor="dismissible_dialog" command="close">Cancel</button>
-      <%= form.submit "Save changes", class: "btn btn--primary" %>
+      <div class="dialog__footer flex items-center justify-end gap">
+        <button type="button" class="btn" commandfor="dismissible_dialog" command="close">Cancel</button>
+        <%= form.submit "Save changes", class: "btn btn--primary" %>
+      </div>
     </div>
   <% end %>
 </dialog>
