@@ -5,6 +5,9 @@ class ProgressPreview < Lookbook::Preview
   def default
   end
 
+  def with_label
+  end
+
   def indeterminate
   end
   # @!endgroup
