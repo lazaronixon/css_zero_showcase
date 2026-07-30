@@ -1,7 +1,7 @@
 <% if flash[:notice] %>
   <div popover="manual" class="flash" data-controller="flash sound" data-action="animationend->flash#hide" data-sound-connect-value="success" role="alert">
     <div class="flash__content flex items-center gap">
-      <span class="icon icon--circle-check" style="--icon-size: 1.25rem" aria-hidden="true"></span>
+      <span class="icon icon--circle-check" aria-hidden="true"></span>
       <span class="font-medium"><%= flash[:notice] %></span>
     </div>
   </div>
@@ -10,7 +10,7 @@
 <% if flash[:alert] %>
   <div popover="manual" class="flash" data-controller="flash sound" data-action="animationend->flash#hide" data-sound-connect-value="error" role="alert">
     <div class="flash__content flex items-center gap">
-      <span class="icon icon--circle-alert" style="--icon-size: 1.25rem" aria-hidden="true"></span>
+      <span class="icon icon--circle-alert" aria-hidden="true"></span>
       <span class="font-medium"><%= flash[:alert] %></span>
     </div>
   </div>
