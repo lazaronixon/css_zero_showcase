@@ -1,7 +1,7 @@
 # @display max_width 540px
 # @css app/assets/stylesheets/list.css
 class ListPreview < Lookbook::Preview
-  def default
+  def basic
   end
 
   def muted

@@ -2,11 +2,11 @@
 # @js app/javascript/controllers/datepicker_controller.js
 # @css app/assets/stylesheets/datepicker.css
 class DatepickerPreview < Lookbook::Preview
-  # @!group Default
+  # @!group Basic
   # Dependencies
   # ---
   # - [Flatpickr](https://github.com/flatpickr/flatpickr)
-  def default
+  def basic
   end
 
   def datetime

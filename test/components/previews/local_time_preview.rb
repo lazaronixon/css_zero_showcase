@@ -6,7 +6,7 @@ class LocalTimePreview < Lookbook::Preview
   # ```html
   # <body data-controller="local-time">...</body>
   # ```
-  # @!group Default
+  # @!group Basic
   def time
   end
 

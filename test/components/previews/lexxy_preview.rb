@@ -1,6 +1,6 @@
 # @css app/assets/stylesheets/lexxy.css
 class LexxyPreview < Lookbook::Preview
-  def default
+  def basic
   end
 
   def borderless

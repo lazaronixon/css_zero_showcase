@@ -17,6 +17,6 @@ class TimezoneCookiePreview < Lookbook::Preview
   #  end
   #end
   # ```
-  def default
+  def basic
   end
 end

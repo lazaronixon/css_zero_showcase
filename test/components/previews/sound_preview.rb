@@ -9,6 +9,6 @@ class SoundPreview < Lookbook::Preview
   # Dependencies
   # ---
   # - [Cuelume](https://github.com/Danilaa1/cuelume)
-  def default
+  def basic
   end
 end

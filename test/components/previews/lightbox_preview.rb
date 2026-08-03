@@ -7,6 +7,6 @@ class LightboxPreview < Lookbook::Preview
   # ```html
   # <body data-controller="lightbox">...</body>
   # ```
-  def default
+  def basic
   end
 end

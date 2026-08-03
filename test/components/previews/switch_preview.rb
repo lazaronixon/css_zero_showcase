@@ -1,7 +1,7 @@
 # @css app/assets/stylesheets/switch.css
 class SwitchPreview < Lookbook::Preview
   # @!group Switch
-  def default
+  def basic
   end
 
   def disabled

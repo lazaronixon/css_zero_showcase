@@ -1,7 +1,7 @@
 # @css app/assets/stylesheets/avatar.css
 class AvatarPreview < Lookbook::Preview
-  # @!group Default
-  def default
+  # @!group Basic
+  def basic
   end
 
   def button

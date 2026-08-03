@@ -2,7 +2,7 @@
 # @css app/assets/stylesheets/progress.css
 class ProgressPreview < Lookbook::Preview
   # @!group Progress
-  def default
+  def basic
   end
 
   def with_label

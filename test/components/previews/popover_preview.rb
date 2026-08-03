@@ -5,7 +5,7 @@ class PopoverPreview < Lookbook::Preview
   # Partials
   # ---
   # - [\_dimensions_form.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/lookbook/preview/_dimensions_form.html.erb)
-  def default
+  def basic
   end
 
   # Partials

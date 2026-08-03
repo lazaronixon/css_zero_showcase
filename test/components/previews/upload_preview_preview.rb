@@ -8,6 +8,6 @@ class UploadPreviewPreview < Lookbook::Preview
   # ```ruby
   # user.avatar.purge if params[:remove_avatar] == 'true'
   # ```
-  def default
+  def basic
   end
 end

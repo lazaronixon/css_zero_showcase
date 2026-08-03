@@ -1,7 +1,7 @@
 # @css app/assets/stylesheets/skeleton.css
 class SkeletonPreview < Lookbook::Preview
   # @!group Skeleton
-  def default
+  def basic
   end
 
   def card

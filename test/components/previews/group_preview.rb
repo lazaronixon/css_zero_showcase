@@ -1,7 +1,7 @@
 # @display max_width 320px
 # @css app/assets/stylesheets/group.css
 class GroupPreview < Lookbook::Preview
-  def default
+  def basic
   end
 
   def vertical

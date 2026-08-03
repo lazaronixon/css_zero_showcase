@@ -1,5 +1,5 @@
 class ScrollAreaPreview < Lookbook::Preview
-  def default
+  def basic
   end
 
   def horizontal

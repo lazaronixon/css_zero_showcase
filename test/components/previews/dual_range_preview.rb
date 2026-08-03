@@ -5,6 +5,6 @@
     # Dependencies
     # ---
     # - [Dual-range Input](https://github.com/Stanko/dual-range-input)
-    def default
+    def basic
     end
   end

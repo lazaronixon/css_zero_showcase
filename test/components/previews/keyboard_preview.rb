@@ -1,6 +1,6 @@
 # @css app/assets/stylesheets/keyboard.css
 class KeyboardPreview < Lookbook::Preview
-  def default
+  def basic
   end
 
   def button

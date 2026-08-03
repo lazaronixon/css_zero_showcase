@@ -8,6 +8,6 @@ class InfiniteScrollPreview < Lookbook::Preview
   # Dependencies
   # ---
   # - [Geared Pagination](https://github.com/basecamp/geared_pagination)
-  def default
+  def basic
   end
 end

@@ -1,11 +1,11 @@
 # @display max_width 400px
 # @js app/javascript/controllers/inputmask_controller.js
 class InputmaskPreview < Lookbook::Preview
-  # @!group Default
+  # @!group Basic
   # Dependencies
   # ---
   # - [Maska](https://github.com/beholdr/maska)
-  def default
+  def basic
   end
 
   def integer

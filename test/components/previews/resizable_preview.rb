@@ -5,7 +5,7 @@ class ResizablePreview < Lookbook::Preview
   # Dependencies
   # ---
   # - [Split.js](https://github.com/nathancahill/split)
-  def default
+  def basic
   end
 
   # Dependencies

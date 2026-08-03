@@ -1,7 +1,7 @@
 # @css app/assets/stylesheets/flash.css
 # @js app/javascript/controllers/flash_controller.js
 class FlashPreview < Lookbook::Preview
-  def default
+  def basic
   end
 
   def success

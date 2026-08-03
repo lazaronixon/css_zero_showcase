@@ -5,7 +5,7 @@ class DropzonePreview < Lookbook::Preview
   # Dependencies
   # ---
   # - [Dropzone](https://github.com/NicolasCARPi/dropzone)
-  def default
+  def basic
   end
 
   # Dependencies

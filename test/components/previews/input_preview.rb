@@ -1,7 +1,7 @@
 # @display max_width 450px
 # @css app/assets/stylesheets/input.css
 class InputPreview < Lookbook::Preview
-  # @!group Default
+  # @!group Basic
   def text_field
   end
 

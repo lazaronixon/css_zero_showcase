@@ -5,6 +5,6 @@ class FullscreenPreview < Lookbook::Preview
   # ```html
   # <body data-controller="fullscreen">...</body>
   # ```
-  def default
+  def basic
   end
 end

@@ -7,6 +7,6 @@ class ColorSchemePreview < Lookbook::Preview
   # ```html
   # <html data-controller="color-scheme" data-color-scheme="system">...</html>
   # ```
-  def default
+  def basic
   end
 end

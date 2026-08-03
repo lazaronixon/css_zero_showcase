@@ -1,6 +1,6 @@
 # @js app/javascript/controllers/hotkey_controller.js
 class HotkeyPreview < Lookbook::Preview
-  def default
+  def basic
   end
 
   def focus

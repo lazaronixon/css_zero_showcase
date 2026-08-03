@@ -5,7 +5,7 @@ class IconsPreview < Lookbook::Preview
   # Dependencies
   # ---
   # - [Lucide](https://lucide.dev)
-  def default
+  def basic
   end
 
   def color

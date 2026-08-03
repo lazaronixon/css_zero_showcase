@@ -1,6 +1,6 @@
 # @css app/assets/stylesheets/toggle.css
 class TogglePreview < Lookbook::Preview
-  def default
+  def basic
   end
 
   def borderless

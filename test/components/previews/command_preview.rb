@@ -8,7 +8,7 @@ class CommandPreview < Lookbook::Preview
   # Dependencies
   # ---
   # - [combobox-nav](https://github.com/github/combobox-nav)
-  def default
+  def basic
   end
 
   # Links

@@ -2,6 +2,6 @@
 # @css app/assets/stylesheets/input_revealable.css
 # @js app/javascript/controllers/input_revealable_controller.js
 class InputRevealablePreview < Lookbook::Preview
-  def default
+  def basic
   end
 end
