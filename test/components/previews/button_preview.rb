@@ -41,7 +41,4 @@ class ButtonPreview < Lookbook::Preview
   # check [here](https://turbo.hotwired.dev/reference/attributes#automatically-added-attributes).
   def busy
   end
-
-  def size
-  end
 end
