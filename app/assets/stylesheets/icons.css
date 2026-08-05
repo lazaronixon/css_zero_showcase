@@ -78,5 +78,6 @@ img.icon {
 .icon--smile { --svg: url("smile.svg"); }
 .icon--square-terminal { --svg: url("square-terminal.svg"); }
 .icon--timer { --svg: url("timer.svg"); }
+.icon--triangle-alert { --svg: url("triangle-alert.svg"); }
 .icon--user { --svg: url("user.svg"); }
 .icon--zap { --svg: url("zap.svg"); }

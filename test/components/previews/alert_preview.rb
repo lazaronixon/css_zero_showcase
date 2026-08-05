@@ -6,4 +6,10 @@ class AlertPreview < Lookbook::Preview
 
   def negative
   end
+
+  def action
+  end
+
+  def colors
+  end
 end
