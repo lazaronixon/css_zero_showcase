@@ -72,6 +72,7 @@ img.icon {
 .icon--grip-vertical { --svg: url("grip-vertical.svg"); }
 .icon--italic { --svg: url("italic.svg"); }
 .icon--map { --svg: url("map.svg"); }
+.icon--plus { --svg: url("plus.svg"); }
 .icon--settings { --svg: url("settings.svg"); }
 .icon--settings-2 { --svg: url("settings-2.svg"); }
 .icon--sliders-vertical { --svg: url("sliders-vertical.svg"); }
