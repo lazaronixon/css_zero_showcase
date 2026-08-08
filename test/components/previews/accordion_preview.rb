@@ -3,4 +3,16 @@
 class AccordionPreview < Lookbook::Preview
   def basic
   end
+
+  def multiple
+  end
+
+  def disabled
+  end
+
+  def borders
+  end
+
+  def card
+  end
 end

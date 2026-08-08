@@ -1,6 +1,5 @@
 # @css app/assets/stylesheets/avatar.css
 class AvatarPreview < Lookbook::Preview
-  # @!group Basic
   def basic
   end
 
@@ -10,7 +9,21 @@ class AvatarPreview < Lookbook::Preview
   def fallback
   end
 
+  def badge
+  end
+
+  def badge_icon
+  end
+
   def group
   end
-  # @!endgroup
+
+  def group_count
+  end
+
+  def group_count_icon
+  end
+
+  def size
+  end
 end
