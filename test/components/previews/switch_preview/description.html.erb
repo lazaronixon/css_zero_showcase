@@ -1,0 +1,7 @@
+<div class="flex items-start gap" style="max-inline-size: 24rem">
+  <div class="flex flex-1 flex-col">
+    <%= label_tag :focus_mode, "Share across devices", class: "text-sm font-medium mbe-1" %>
+    <p class="text-sm text-subtle">Focus is shared across devices, and turns off when you leave the app.</p>
+  </div>
+  <%= check_box_tag :focus_mode, class: "switch", role: "switch" %>
+</div>

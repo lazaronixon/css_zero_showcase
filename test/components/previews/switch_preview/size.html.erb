@@ -1,0 +1,11 @@
+<div class="flex flex-col gap">
+  <div class="flex items-center gap">
+    <%= check_box_tag :switch_small, class: "switch", role: "switch", style: "--switch-size: .75rem" %>
+    <%= label_tag :switch_small, "Small", class: "text-sm font-medium" %>
+  </div>
+
+  <div class="flex items-center gap">
+    <%= check_box_tag :switch_default, class: "switch", role: "switch" %>
+    <%= label_tag :switch_default, "Default", class: "text-sm font-medium" %>
+  </div>
+</div>
