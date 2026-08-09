@@ -1,0 +1,23 @@
+<button type="button" class="btn" popovertarget="popover">
+  Open popover
+</button>
+
+<div popover id="popover" class="popover popover--block-end-start" role="dialog" style="--popover-size: 16rem">
+  <%= form_with url: nil, class: "flex flex-col gap p-3" do |form| %>
+    <div class="flex flex-col">
+      <h3 class="font-medium leading-none mbe-1">Dimensions</h3>
+      <p class="text-sm text-subtle">Set the dimensions for the layer.</p>
+    </div>
+
+    <div class="flex flex-col gap">
+      <div class="flex items-center gap">
+        <%= form.label :width, class: "text-sm font-medium leading-none", style: "inline-size: 50%;" %>
+        <%= form.text_field :width, value: "100%", class: "input", autofocus: true %>
+      </div>
+      <div class="flex items-center gap">
+        <%= form.label :height, class: "text-sm font-medium leading-none", style: "inline-size: 50%;" %>
+        <%= form.text_field :height, value: "25px", class: "input" %>
+      </div>
+    </div>
+  <% end %>
+</div>
