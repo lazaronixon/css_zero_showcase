@@ -1,0 +1,21 @@
+<button type="button" class="btn" commandfor="alert_dialog_media_small" command="show-modal">Show dialog</button>
+
+<dialog id="alert_dialog_media_small" class="dialog" style="--dialog-size: 20rem;" role="alertdialog" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
+  <div class="dialog__content">
+    <div class="flex flex-col items-center">
+      <div class="flex items-center justify-center flex-item-no-shrink p-2 bg-shade rounded-md mbe-4">
+        <span class="icon icon--bluetooth" style="--icon-size: 1.5rem" aria-hidden="true"></span>
+      </div>
+
+      <h2 class="font-medium leading-none text-center mbe-2" id="dialog_label">Allow accessory to connect?</h2>
+      <p class="text-sm text-balance text-center text-subtle" id="dialog_desc">
+        Do you want to allow the USB accessory to connect to this device?
+      </p>
+    </div>
+
+    <div class="dialog__footer flex items-center gap mbs-4">
+      <button type="button" class="btn flex-1" commandfor="alert_dialog_media_small" command="close">Don't allow</button>
+      <button type="button" class="btn btn--primary flex-1">Allow</button>
+    </div>
+  </div>
+</dialog>

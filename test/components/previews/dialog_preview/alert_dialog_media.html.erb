@@ -1,0 +1,23 @@
+<button type="button" class="btn" commandfor="alert_dialog_media" command="show-modal">Share project</button>
+
+<dialog id="alert_dialog_media" class="dialog" style="--dialog-size: 24rem;" role="alertdialog" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
+  <div class="dialog__content">
+    <div class="flex items-start gap" style="column-gap: 1rem">
+      <div class="flex items-center justify-center flex-item-no-shrink p-2 bg-shade rounded-md">
+        <span class="icon icon--circle-fading-plus" style="--icon-size: 1.5rem" aria-hidden="true"></span>
+      </div>
+
+      <div class="flex flex-col">
+        <h2 class="font-medium leading-none mbe-2" id="dialog_label">Share this project?</h2>
+        <p class="text-sm text-balance text-subtle" id="dialog_desc">
+          Anyone with the link will be able to view and edit this project.
+        </p>
+      </div>
+    </div>
+
+    <div class="dialog__footer flex items-center justify-end gap mbs-4">
+      <button type="button" class="btn" commandfor="alert_dialog_media" command="close">Cancel</button>
+      <button type="button" class="btn btn--primary">Share</button>
+    </div>
+  </div>
+</dialog>

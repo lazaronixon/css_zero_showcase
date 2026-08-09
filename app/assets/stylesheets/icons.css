@@ -52,6 +52,7 @@ img.icon {
 .icon--arrow-up { --svg: url("arrow-up.svg"); }
 .icon--arrow-up-right { --svg: url("arrow-up-right.svg"); }
 .icon--badge-check { --svg: url("badge-check.svg"); }
+.icon--bluetooth { --svg: url("bluetooth.svg"); }
 .icon--bold { --svg: url("bold.svg"); }
 .icon--book-open { --svg: url("book-open.svg"); }
 .icon--bookmark { --svg: url("bookmark.svg"); }
@@ -64,6 +65,7 @@ img.icon {
 .icon--circle { --svg: url("circle.svg"); }
 .icon--circle-check-big { --svg: url("circle-check-big.svg"); }
 .icon--circle-fading-arrow-up { --svg: url("circle-fading-arrow-up.svg"); }
+.icon--circle-fading-plus { --svg: url("circle-fading-plus.svg"); }
 .icon--circle-off { --svg: url("circle-off.svg"); }
 .icon--circle-plus { --svg: url("circle-plus.svg"); }
 .icon--circle-question-mark { --svg: url("circle-question-mark.svg"); }
@@ -86,6 +88,7 @@ img.icon {
 .icon--smile { --svg: url("smile.svg"); }
 .icon--square-terminal { --svg: url("square-terminal.svg"); }
 .icon--timer { --svg: url("timer.svg"); }
+.icon--trash-2 { --svg: url("trash-2.svg"); }
 .icon--triangle-alert { --svg: url("triangle-alert.svg"); }
 .icon--user { --svg: url("user.svg"); }
 .icon--zap { --svg: url("zap.svg"); }
