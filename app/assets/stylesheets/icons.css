@@ -100,6 +100,7 @@ img.icon {
 .icon--trash { --svg: url("trash.svg"); }
 .icon--trash-2 { --svg: url("trash-2.svg"); }
 .icon--triangle-alert { --svg: url("triangle-alert.svg"); }
+.icon--underline { --svg: url("underline.svg"); }
 .icon--user { --svg: url("user.svg"); }
 .icon--wallet { --svg: url("wallet.svg"); }
 .icon--zap { --svg: url("zap.svg"); }
