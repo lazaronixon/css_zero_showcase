@@ -2,24 +2,22 @@
   Open
 </button>
 
-<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 14rem;" role="menu" aria-label="Menu">
+<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 10rem;" role="menu" aria-label="Menu">
   <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
-    <div class="menu__header">Settings</div>
-    <div class="btn menu__item">
-      <%= check_box_tag :check_recents, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-      <%= label_tag :check_recents, "Recents", class: "flex-item-grow text-sm" %>
-    </div>
-    <div class="btn menu__item">
-      <%= check_box_tag :check_home, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-      <%= label_tag :check_home, "Home", class: "flex-item-grow text-sm" %>
-    </div>
-    <div class="btn menu__item">
-      <%= check_box_tag :check_applications, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-      <%= label_tag :check_applications, "Applications", class: "flex-item-grow text-sm" %>
-    </div>
-    <div class="btn menu__item">
-      <%= check_box_tag :check_desktop, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
-      <%= label_tag :check_desktop, "Desktop", class: "flex-item-grow text-sm" %>
+    <div class="menu__group" role="group" aria-labelledby="appearance">
+      <div class="menu__header" id="appearance">Appearance</div>
+      <div class="btn menu__item">
+        <%= label_tag :status_bar, "Status Bar", class: "flex-item-grow text-sm" %>
+        <%= check_box_tag :status_bar, "1", true, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      </div>
+      <div class="btn menu__item" aria-disabled="true">
+        <%= label_tag :activity_bar, "Activity Bar", class: "flex-item-grow text-sm" %>
+        <%= check_box_tag :activity_bar, "1", false, class: "input", disabled: true, role: "menuitemcheckbox" %>
+      </div>
+      <div class="btn menu__item">
+        <%= label_tag :panel, "Panel", class: "flex-item-grow text-sm" %>
+        <%= check_box_tag :panel, "1", false, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      </div>
     </div>
   </div>
 </div>

@@ -1,0 +1,26 @@
+<button type="button" class="btn" popovertarget="dropdown" aria-haspopup="true">
+  Payment Method
+</button>
+
+<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 14rem;" role="menu" aria-label="Menu">
+  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+    <div class="menu__group" role="group" aria-labelledby="payment_method">
+      <div class="menu__header" id="payment_method">Select Payment Method</div>
+      <div class="btn menu__item">
+        <span class="icon icon--credit-card" aria-hidden="true"></span>
+        <%= label_tag :payment_method_card, "Credit Card", class: "flex-item-grow text-sm" %>
+        <%= radio_button_tag :payment_method, :card, true, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
+      </div>
+      <div class="btn menu__item">
+        <span class="icon icon--wallet" aria-hidden="true"></span>
+        <%= label_tag :payment_method_paypal, "PayPal", class: "flex-item-grow text-sm" %>
+        <%= radio_button_tag :payment_method, :paypal, false, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
+      </div>
+      <div class="btn menu__item">
+        <span class="icon icon--building-2" aria-hidden="true"></span>
+        <%= label_tag :payment_method_bank, "Bank Transfer", class: "flex-item-grow text-sm" %>
+        <%= radio_button_tag :payment_method, :bank, false, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
+      </div>
+    </div>
+  </div>
+</div>

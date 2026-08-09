@@ -1,0 +1,25 @@
+<button type="button" class="btn" popovertarget="dropdown" aria-haspopup="true">
+  Actions
+</button>
+
+<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 8rem;" role="menu" aria-label="Menu">
+  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+    <div class="menu__group" role="group">
+      <%= link_to "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+        <span class="icon icon--pencil" aria-hidden="true"></span>
+        <span>Edit</span>
+      <% end %>
+      <%= link_to "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+        <span class="icon icon--share" aria-hidden="true"></span>
+        <span>Share</span>
+      <% end %>
+    </div>
+    <hr class="menu__separator" role="separator"/>
+    <div class="menu__group" role="group">
+      <%= link_to "#", class: "btn menu__item text-negative", data: { menu_target: "item" }, role: "menuitem" do %>
+        <span class="icon icon--trash" aria-hidden="true"></span>
+        <span>Delete</span>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -2,25 +2,22 @@
   Open
 </button>
 
-<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 14rem;" role="menu" aria-label="Menu">
+<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 8rem;" role="menu" aria-label="Menu">
   <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
-    <div class="menu__header">Settings</div>
-    <hr class="menu__separator" role="separator"/>
-    <div class="btn menu__item">
-      <%= radio_button_tag :setting, :recents, 1, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
-      <%= label_tag :setting_recents, "Recents", class: "flex-item-grow text-sm" %>
-    </div>
-    <div class="btn menu__item">
-      <%= radio_button_tag :setting, :home, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
-      <%= label_tag :setting_home, "Home", class: "flex-item-grow text-sm" %>
-    </div>
-    <div class="btn menu__item">
-      <%= radio_button_tag :setting, :applications, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
-      <%= label_tag :setting_applications, "Applications", class: "flex-item-grow text-sm" %>
-    </div>
-    <div class="btn menu__item">
-      <%= radio_button_tag :setting, :desktop, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
-      <%= label_tag :setting_desktop, "Desktop", class: "flex-item-grow text-sm" %>
+    <div class="menu__group" role="group" aria-labelledby="panel_position">
+      <div class="menu__header" id="panel_position">Panel Position</div>
+      <div class="btn menu__item">
+        <%= label_tag :position_top, "Top", class: "flex-item-grow text-sm" %>
+        <%= radio_button_tag :position, :top, false, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
+      </div>
+      <div class="btn menu__item">
+        <%= label_tag :position_bottom, "Bottom", class: "flex-item-grow text-sm" %>
+        <%= radio_button_tag :position, :bottom, true, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
+      </div>
+      <div class="btn menu__item">
+        <%= label_tag :position_right, "Right", class: "flex-item-grow text-sm" %>
+        <%= radio_button_tag :position, :right, false, class: "input", data: { menu_target: "item" }, role: "menuitemradio" %>
+      </div>
     </div>
   </div>
 </div>

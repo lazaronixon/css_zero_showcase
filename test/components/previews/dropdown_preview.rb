@@ -1,15 +1,27 @@
 # @css app/assets/stylesheets/menu.css
 # @js app/javascript/controllers/menu_controller.js
 class DropdownPreview < Lookbook::Preview
-  def menu_simple
+  def basic
   end
 
-  def menu_complete
+  def shortcuts
+  end
+
+  def icons
   end
 
   def checkbox
   end
 
+  def checkbox_icons
+  end
+
   def radio
+  end
+
+  def radio_icons
+  end
+
+  def destructive
   end
 end

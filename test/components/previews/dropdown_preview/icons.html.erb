@@ -1,0 +1,27 @@
+<button type="button" class="btn" popovertarget="dropdown" aria-haspopup="true">
+  Open
+</button>
+
+<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 10rem;" role="menu" aria-label="Menu">
+  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+    <div class="menu__group" role="group">
+      <%= link_to "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+        <span class="icon icon--user" aria-hidden="true"></span>
+        <span>Profile</span>
+      <% end %>
+      <%= link_to "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+        <span class="icon icon--credit-card" aria-hidden="true"></span>
+        <span>Billing</span>
+      <% end %>
+      <%= link_to "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" do %>
+        <span class="icon icon--settings" aria-hidden="true"></span>
+        <span>Settings</span>
+      <% end %>
+    </div>
+    <hr class="menu__separator" role="separator"/>
+    <%= link_to "#", class: "btn menu__item text-negative", data: { menu_target: "item" }, role: "menuitem" do %>
+      <span class="icon icon--log-out" aria-hidden="true"></span>
+      <span>Log out</span>
+    <% end %>
+  </div>
+</div>

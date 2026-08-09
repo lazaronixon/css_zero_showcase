@@ -1,0 +1,20 @@
+<button type="button" class="btn" popovertarget="dropdown" aria-haspopup="true">
+  Open
+</button>
+
+<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 8rem;" role="menu" aria-label="Menu">
+  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+    <div class="menu__group" role="group" aria-labelledby="my_account">
+      <div class="menu__header" id="my_account">My Account</div>
+      <%= link_to "Profile", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <%= link_to "Billing", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <%= link_to "Settings", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+    </div>
+    <hr class="menu__separator" role="separator"/>
+    <div class="menu__group" role="group">
+      <%= link_to "GitHub", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <%= link_to "Support", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <%= tag.a "API", class: "btn menu__item", role: "menuitem", tabindex: "-1", aria: { disabled: true } %>
+    </div>
+  </div>
+</div>

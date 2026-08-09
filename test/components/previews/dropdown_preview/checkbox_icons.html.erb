@@ -1,0 +1,26 @@
+<button type="button" class="btn" popovertarget="dropdown" aria-haspopup="true">
+  Notifications
+</button>
+
+<div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 14rem;" role="menu" aria-label="Menu">
+  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+    <div class="menu__group" role="group" aria-labelledby="notification_preferences">
+      <div class="menu__header" id="notification_preferences">Notification Preferences</div>
+      <div class="btn menu__item">
+        <span class="icon icon--mail" aria-hidden="true"></span>
+        <%= label_tag :email_notifications, "Email", class: "flex-item-grow text-sm" %>
+        <%= check_box_tag :email_notifications, "1", true, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      </div>
+      <div class="btn menu__item">
+        <span class="icon icon--message-square" aria-hidden="true"></span>
+        <%= label_tag :sms_notifications, "SMS", class: "flex-item-grow text-sm" %>
+        <%= check_box_tag :sms_notifications, "1", false, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      </div>
+      <div class="btn menu__item">
+        <span class="icon icon--bell" aria-hidden="true"></span>
+        <%= label_tag :push_notifications, "Push", class: "flex-item-grow text-sm" %>
+        <%= check_box_tag :push_notifications, "1", true, class: "input", data: { menu_target: "item" }, role: "menuitemcheckbox" %>
+      </div>
+    </div>
+  </div>
+</div>
