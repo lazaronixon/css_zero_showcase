@@ -9,4 +9,7 @@ class GroupPreview < Lookbook::Preview
 
   def input
   end
+
+  def sizes
+  end
 end

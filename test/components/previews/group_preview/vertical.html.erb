@@ -1,5 +1,8 @@
-<div class="group-vertical" role="group" aria-label="Vertical example">
-  <%= button_tag "Profile",  type: "button", class: "btn" %>
-  <%= button_tag "Settings", type: "button", class: "btn" %>
-  <%= button_tag "Message",  type: "button", class: "btn" %>
+<div class="group-vertical" role="group" aria-label="Media controls">
+  <%= button_tag type: "button", class: "btn btn--feedback btn--icon", aria: { label: "Zoom In" } do %>
+    <span class="icon icon--plus" aria-hidden="true"></span>
+  <% end %>
+  <%= button_tag type: "button", class: "btn btn--feedback btn--icon", aria: { label: "Zoom Out" } do %>
+    <span class="icon icon--minus" aria-hidden="true"></span>
+  <% end %>
 </div>

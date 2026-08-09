@@ -1,0 +1,28 @@
+<div class="flex flex-col items-start gap">
+  <div class="group" role="group" aria-label="Small example">
+    <%= button_tag "Small",  type: "button", class: "btn btn--sm" %>
+    <%= button_tag "Button", type: "button", class: "btn btn--sm" %>
+    <%= button_tag "Group",  type: "button", class: "btn btn--sm" %>
+    <%= button_tag type: "button", class: "btn btn--icon-sm", aria: { label: "Add" } do %>
+      <span class="icon icon--plus" aria-hidden="true"></span>
+    <% end %>
+  </div>
+
+  <div class="group" role="group" aria-label="Default example">
+    <%= button_tag "Default", type: "button", class: "btn" %>
+    <%= button_tag "Button",  type: "button", class: "btn" %>
+    <%= button_tag "Group",   type: "button", class: "btn" %>
+    <%= button_tag type: "button", class: "btn btn--icon", aria: { label: "Add" } do %>
+      <span class="icon icon--plus" aria-hidden="true"></span>
+    <% end %>
+  </div>
+
+  <div class="group" role="group" aria-label="Large example">
+    <%= button_tag "Large",  type: "button", class: "btn btn--lg" %>
+    <%= button_tag "Button", type: "button", class: "btn btn--lg" %>
+    <%= button_tag "Group",  type: "button", class: "btn btn--lg" %>
+    <%= button_tag type: "button", class: "btn btn--icon-lg", aria: { label: "Add" } do %>
+      <span class="icon icon--plus" aria-hidden="true"></span>
+    <% end %>
+  </div>
+</div>

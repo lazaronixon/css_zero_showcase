@@ -1,4 +1,6 @@
 <div class="group" role="group" aria-label="Input example">
-  <%= text_field_tag "email", nil, placeholder: "Email", class: "input" %>
-  <%= button_tag "Subscribe", type: "button", class: "btn" %>
+  <%= search_field_tag "query", nil, placeholder: "Search...", class: "input" %>
+  <%= button_tag type: "button", class: "btn btn--feedback btn--icon", aria: { label: "Search" } do %>
+    <span class="icon icon--search" aria-hidden="true"></span>
+  <% end %>
 </div>

@@ -1,5 +1,17 @@
-<div class="group" role="group" aria-label="Basic example">
-  <%= button_tag "Profile",  type: "button", class: "btn" %>
-  <%= button_tag "Settings", type: "button", class: "btn" %>
-  <%= button_tag "Message",  type: "button", class: "btn" %>
+<div class="flex items-center gap" role="group" aria-label="Email actions">
+  <%= button_tag type: "button", class: "btn btn--icon", aria: { label: "Go Back" } do %>
+    <span class="icon icon--arrow-left" aria-hidden="true"></span>
+  <% end %>
+
+  <div class="group">
+    <%= button_tag "Archive", type: "button", class: "btn" %>
+    <%= button_tag "Report",  type: "button", class: "btn" %>
+  </div>
+
+  <div class="group">
+    <%= button_tag "Snooze", type: "button", class: "btn" %>
+    <%= button_tag type: "button", class: "btn btn--icon", aria: { label: "More Options" } do %>
+      <span class="icon icon--ellipsis" aria-hidden="true"></span>
+    <% end %>
+  </div>
 </div>
