@@ -9,4 +9,7 @@ class CardPreview < Lookbook::Preview
 
   def with_image
   end
+
+  def size
+  end
 end

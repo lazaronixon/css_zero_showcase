@@ -1,16 +1,19 @@
 <div class="card flex flex-col overflow-hidden p-0">
   <figure>
-    <%= image_tag "unsplash-4.webp", alt: "Card image" %>
+    <%= image_tag "unsplash-4.webp", alt: "Event cover", class: "aspect-widescreen i-full object-cover", style: "filter: var(--brightness-75) var(--grayscale)" %>
   </figure>
 
   <div class="flex flex-col gap p-4">
-    <div class="flex flex-col">
-      <h3 class="font-medium leading-none mbe-1">Card Title</h3>
-      <p class="text-sm text-subtle">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="flex items-start gap">
+      <div class="flex flex-col flex-item-grow">
+        <h3 class="font-medium leading-none mbe-1">Design systems meetup</h3>
+        <p class="text-sm text-subtle">A practical talk on component APIs, accessibility, and shipping faster.</p>
+      </div>
+      <div class="badge badge--secondary">Featured</div>
     </div>
 
-    <div class="card__footer flex items-center gap">
-      <button type="button" class="btn btn--primary flex-1">Read more</button>
+    <div class="card__footer flex">
+      <button type="button" class="btn btn--primary flex-1">View Event</button>
     </div>
   </div>
 </div>

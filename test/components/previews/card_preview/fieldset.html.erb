@@ -1,22 +1,31 @@
 <%= form_with url: nil, html: { autocomplete: "off" }, contents: true do |form| %>
   <fieldset class="card flex flex-col gap">
-    <legend class="i-fit font-medium leading-none ">Create project</legend>
+    <legend class="i-fit font-medium leading-none">Login to your account</legend>
 
-    <div class="flex flex-col gap mbe-1">
+    <div class="flex items-start gap">
+      <p class="text-sm text-subtle flex-item-grow">Enter your email below to login to your account</p>
+
+      <%= link_to "Sign Up", "#", class: "btn btn--plain" %>
+    </div>
+
+    <div class="flex flex-col gap">
       <div class="flex flex-col gap-half">
-        <%= form.label :name, class: "text-sm font-medium leading-none" %>
-        <%= form.text_field :name, placeholder: "Name of your project", class: "input" %>
+        <%= form.label :email, class: "text-sm font-medium leading-none" %>
+        <%= form.email_field :email, placeholder: "m@example.com", required: true, class: "input" %>
       </div>
 
       <div class="flex flex-col gap-half">
-        <%= form.label :framework, class: "text-sm font-medium leading-none" %>
-        <%= form.select :framework, [["Ruby on Rails", "ruby"], ["Laravel", "laravel"], ["Next", "next"]], {}, class: "input" %>
+        <div class="flex items-center">
+          <%= form.label :password, class: "text-sm font-medium leading-none" %>
+          <%= link_to "Forgot your password?", "#", class: "text-sm mis-auto" %>
+        </div>
+        <%= form.password_field :password, required: true, class: "input" %>
       </div>
     </div>
 
-    <div class="card__footer flex items-center gap">
-      <button type="reset" class="btn">Reset</button>
-      <%= form.submit "Destroy", class: "btn btn--primary" %>
+    <div class="card__footer flex flex-col gap-half">
+      <%= form.submit "Login", class: "btn btn--primary" %>
+      <button type="button" class="btn">Login with Google</button>
     </div>
   </fieldset>
 <% end %>
