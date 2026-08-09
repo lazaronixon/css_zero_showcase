@@ -24,6 +24,6 @@ class AvatarPreview < Lookbook::Preview
   def group_count_icon
   end
 
-  def size
+  def sizes
   end
 end
