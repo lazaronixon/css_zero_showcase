@@ -1,10 +1,18 @@
 # @css app/assets/stylesheets/skeleton.css
+# @css app/assets/stylesheets/card.css
 class SkeletonPreview < Lookbook::Preview
-  # @!group Skeleton
-  def basic
+  def text
+  end
+
+  def avatar
   end
 
   def card
   end
-  # @!endgroup
+
+  def form
+  end
+
+  def table
+  end
 end
