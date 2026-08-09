@@ -1,21 +1,30 @@
-# @display max_width 540px
+# @display max_width 512px
 # @css app/assets/stylesheets/list.css
 class ListPreview < Lookbook::Preview
-  def basic
+  def variants
   end
 
-  def muted
+  def size
   end
 
-  def borderless
+  def icon
+  end
+
+  def avatar
+  end
+
+  def image
+  end
+
+  def header
+  end
+
+  def group
   end
 
   def link
   end
 
   def check
-  end
-
-  def multiple
   end
 end

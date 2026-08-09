@@ -1,0 +1,27 @@
+<div class="list">
+  <div class="list-row flex items-center gap">
+    <span class="avatar self-start" style="--avatar-size: 2.5rem">
+      <%= image_tag "cartoon.jpg", alt: "ER" %>
+    </span>
+    <div class="flex flex-1 flex-col">
+      <h5 class="leading-none font-medium mbe-1">Evil Rabbit</h5>
+      <p class="text-subtle">Last seen 5 months ago</p>
+    </div>
+    <button type="button" class="btn btn--icon" aria-label="Invite">
+      <span class="icon icon--plus" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="list-row flex items-center gap">
+    <div class="avatar-group self-start">
+      <span class="avatar show@sm"><%= image_tag "lazaronixon.jpg", alt: "CN" %></span>
+      <span class="avatar show@sm"><%= image_tag "elon.jpg", alt: "LR" %></span>
+      <span class="avatar"><%= image_tag "cartoon.jpg", alt: "ER" %></span>
+    </div>
+    <div class="flex flex-1 flex-col">
+      <h5 class="leading-none font-medium mbe-1">No Team Members</h5>
+      <p class="text-subtle">Invite your team to collaborate on this project.</p>
+    </div>
+    <button type="button" class="btn">Invite</button>
+  </div>
+</div>

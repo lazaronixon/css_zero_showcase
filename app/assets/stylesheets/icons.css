@@ -76,11 +76,13 @@ img.icon {
 .icon--code { --svg: url("code.svg"); }
 .icon--credit-card { --svg: url("credit-card.svg"); }
 .icon--dot { --svg: url("dot.svg"); }
+.icon--external-link { --svg: url("external-link.svg"); }
 .icon--frame { --svg: url("frame.svg"); }
 .icon--gallery-vertical-end { --svg: url("gallery-vertical-end.svg"); }
 .icon--git-branch { --svg: url("git-branch.svg"); }
 .icon--git-fork { --svg: url("git-fork.svg"); }
 .icon--grip-vertical { --svg: url("grip-vertical.svg"); }
+.icon--inbox { --svg: url("inbox.svg"); }
 .icon--italic { --svg: url("italic.svg"); }
 .icon--log-out { --svg: url("log-out.svg"); }
 .icon--mail { --svg: url("mail.svg"); }
@@ -90,6 +92,7 @@ img.icon {
 .icon--plus { --svg: url("plus.svg"); }
 .icon--settings { --svg: url("settings.svg"); }
 .icon--settings-2 { --svg: url("settings-2.svg"); }
+.icon--shield-alert { --svg: url("shield-alert.svg"); }
 .icon--sliders-vertical { --svg: url("sliders-vertical.svg"); }
 .icon--smile { --svg: url("smile.svg"); }
 .icon--square-terminal { --svg: url("square-terminal.svg"); }
