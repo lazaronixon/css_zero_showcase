@@ -30,6 +30,9 @@ class ButtonPreview < Lookbook::Preview
   def icon
   end
 
+  def sizes
+  end
+
   def with_icon
   end
 
