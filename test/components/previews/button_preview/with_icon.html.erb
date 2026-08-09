@@ -1,4 +1,10 @@
-<%= button_tag type: "button", class: "btn" do %>
-  <span class="icon icon--circle-plus" aria-hidden="true"></span>
-  <span>Add user</span>
-<% end %>
+<div class="flex items-center gap">
+  <%= button_tag type: "button", class: "btn" do %>
+    <span class="icon icon--git-branch" aria-hidden="true"></span>
+    <span>New Branch</span>
+  <% end %>
+  <%= button_tag type: "button", class: "btn" do %>
+    <span>Fork</span>
+    <span class="icon icon--git-fork" aria-hidden="true"></span>
+  <% end %>
+</div>

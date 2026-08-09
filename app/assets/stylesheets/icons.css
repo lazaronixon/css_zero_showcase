@@ -63,6 +63,7 @@ img.icon {
 .icon--chevrons-right { --svg: url("chevrons-right.svg"); }
 .icon--circle { --svg: url("circle.svg"); }
 .icon--circle-check-big { --svg: url("circle-check-big.svg"); }
+.icon--circle-fading-arrow-up { --svg: url("circle-fading-arrow-up.svg"); }
 .icon--circle-off { --svg: url("circle-off.svg"); }
 .icon--circle-plus { --svg: url("circle-plus.svg"); }
 .icon--circle-question-mark { --svg: url("circle-question-mark.svg"); }
@@ -73,6 +74,8 @@ img.icon {
 .icon--dot { --svg: url("dot.svg"); }
 .icon--frame { --svg: url("frame.svg"); }
 .icon--gallery-vertical-end { --svg: url("gallery-vertical-end.svg"); }
+.icon--git-branch { --svg: url("git-branch.svg"); }
+.icon--git-fork { --svg: url("git-fork.svg"); }
 .icon--grip-vertical { --svg: url("grip-vertical.svg"); }
 .icon--italic { --svg: url("italic.svg"); }
 .icon--map { --svg: url("map.svg"); }
