@@ -1,16 +1,16 @@
-<div class="flex flex-col gap" style="max-inline-size: 24rem; --row-gap: 1.25rem">
+<div class="list">
   <label class="list-row list-row--check flex items-start gap">
     <div class="flex flex-1 flex-col">
-      <span class="text-sm font-medium mbe-1">Share across devices</span>
-      <p class="text-sm text-subtle">Focus is shared across devices, and turns off when you leave the app.</p>
+      <h5 class="leading-none font-medium mbe-1">Share across devices</h5>
+      <p class="text-subtle">Focus is shared across devices, and turns off when you leave the app.</p>
     </div>
     <%= check_box_tag :share_devices, class: "switch", role: "switch" %>
   </label>
 
   <label class="list-row list-row--check flex items-start gap">
     <div class="flex flex-1 flex-col">
-      <span class="text-sm font-medium mbe-1">Enable notifications</span>
-      <p class="text-sm text-subtle">Receive notifications when focus mode is enabled or disabled.</p>
+      <h5 class="leading-none font-medium mbe-1">Enable notifications</h5>
+      <p class="text-subtle">Receive notifications when focus mode is enabled or disabled.</p>
     </div>
     <%= check_box_tag :notifications, checked: true, class: "switch", role: "switch" %>
   </label>
