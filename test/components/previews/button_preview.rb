@@ -36,6 +36,9 @@ class ButtonPreview < Lookbook::Preview
   def with_icon
   end
 
+  def rounded
+  end
+
   # Turbo adds `aria-busy` to the form while the form request is in progress,
   # check [here](https://turbo.hotwired.dev/reference/attributes#automatically-added-attributes).
   def busy
