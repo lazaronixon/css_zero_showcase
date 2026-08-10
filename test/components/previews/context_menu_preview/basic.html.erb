@@ -1,9 +1,15 @@
 <div contents data-controller="context-menu">
-  <div class="card text-sm flex items-center justify-center" style="block-size: 150px;" data-action="contextmenu->context-menu#show:prevent click@document->context-menu#hide">
+  <div class="card text-sm flex items-center justify-center aspect-widescreen" data-action="contextmenu->context-menu#show:prevent click@document->context-menu#hide">
     Right click here
   </div>
 
-  <div popover="manual" class="popover popover--unanchored" style="--popover-size: 14rem;" data-context-menu-target="content" role="menu" aria-label="Context Menu">
-    <div class="menu"><%= render partial: "menu_items" %></div>
+  <div popover="manual" class="popover popover--unanchored" style="--popover-size: 8rem;" data-context-menu-target="content" role="menu" aria-label="Context Menu">
+    <div class="menu">
+      <div class="menu__group" role="group">
+        <%= link_to "Back", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+        <%= link_to "Forward", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+        <%= link_to "Reload", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      </div>
+    </div>
   </div>
 </div>
