@@ -16,6 +16,9 @@ class DialogPreview < Lookbook::Preview
   def alert_dialog_destructive
   end
 
-  def dismissible_dialog
+  def dialog_basic
+  end
+
+  def dialog_no_close
   end
 end

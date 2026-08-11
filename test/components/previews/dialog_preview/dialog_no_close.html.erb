@@ -1,0 +1,10 @@
+<button type="button" class="btn" commandfor="dialog_no_close" command="show-modal">No Close Button</button>
+
+<dialog id="dialog_no_close" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
+  <div class="dialog__content">
+    <h3 class="font-medium leading-none mbe-1" id="dialog_label">No Close Button</h3>
+    <p class="text-sm text-subtle" id="dialog_desc">
+      This dialog doesn't have a close button in the top-right corner.
+    </p>
+  </div>
+</dialog>

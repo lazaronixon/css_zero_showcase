@@ -1,7 +1,7 @@
-<button type="button" class="btn" commandfor="dismissible_dialog" command="show-modal">Show dialog</button>
+<button type="button" class="btn" commandfor="dialog_basic" command="show-modal">Show dialog</button>
 
-<dialog id="dismissible_dialog" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
-  <button type="button" class="btn btn--plain dialog__close" commandfor="dismissible_dialog" command="close">
+<dialog id="dialog_basic" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
+  <button type="button" class="btn btn--plain dialog__close" commandfor="dialog_basic" command="close">
     <span class="icon icon--x" aria-hidden="true"></span>
     <span class="sr-only">Close</span>
   </button>
@@ -25,7 +25,7 @@
       </div>
 
       <div class="dialog__footer flex items-center justify-end gap">
-        <button type="button" class="btn" commandfor="dismissible_dialog" command="close">Cancel</button>
+        <button type="button" class="btn" commandfor="dialog_basic" command="close">Cancel</button>
         <%= form.submit "Save changes", class: "btn btn--primary" %>
       </div>
     </div>
