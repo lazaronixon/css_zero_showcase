@@ -1,0 +1,27 @@
+<fieldset class="flex flex-col gap">
+  <legend class="sr-only">Spacing</legend>
+
+  <div class="flex items-start gap">
+    <%= radio_button_tag :spacing, :default, false, class: "input" %>
+    <div class="flex flex-col">
+      <%= label_tag :spacing_default, "Default", class: "text-sm font-medium leading-none mbe-1" %>
+      <p class="text-sm text-subtle">Standard spacing for most use cases.</p>
+    </div>
+  </div>
+
+  <div class="flex items-start gap">
+    <%= radio_button_tag :spacing, :comfortable, true, class: "input" %>
+    <div class="flex flex-col">
+      <%= label_tag :spacing_comfortable, "Comfortable", class: "text-sm font-medium leading-none mbe-1" %>
+      <p class="text-sm text-subtle">More space between elements.</p>
+    </div>
+  </div>
+
+  <div class="flex items-start gap">
+    <%= radio_button_tag :spacing, :compact, false, class: "input" %>
+    <div class="flex flex-col">
+      <%= label_tag :spacing_compact, "Compact", class: "text-sm font-medium leading-none mbe-1" %>
+      <p class="text-sm text-subtle">Minimal spacing for dense layouts.</p>
+    </div>
+  </div>
+</fieldset>

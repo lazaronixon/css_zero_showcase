@@ -1,6 +1,6 @@
 # @css app/assets/stylesheets/input.css
 # @css app/assets/stylesheets/table.css
-# @display max_width 384px
+# @display max_width 640px
 class CheckboxPreview < Lookbook::Preview
   def basic
   end
@@ -14,7 +14,6 @@ class CheckboxPreview < Lookbook::Preview
   def group
   end
 
-  # @display max_width 640px
   def table
   end
 end

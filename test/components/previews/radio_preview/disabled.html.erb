@@ -1,0 +1,18 @@
+<fieldset class="flex flex-col gap-half">
+  <legend class="sr-only">Options</legend>
+
+  <div class="flex items-center gap">
+    <%= radio_button_tag :option, :one, false, disabled: true, class: "input" %>
+    <%= label_tag :option_one, "Disabled", class: "text-sm font-normal opacity-50" %>
+  </div>
+
+  <div class="flex items-center gap">
+    <%= radio_button_tag :option, :two, true, class: "input" %>
+    <%= label_tag :option_two, "Option 2", class: "text-sm font-normal" %>
+  </div>
+
+  <div class="flex items-center gap">
+    <%= radio_button_tag :option, :three, false, class: "input" %>
+    <%= label_tag :option_three, "Option 3", class: "text-sm font-normal" %>
+  </div>
+</fieldset>

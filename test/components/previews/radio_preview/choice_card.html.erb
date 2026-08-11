@@ -1,0 +1,27 @@
+<fieldset class="list">
+  <legend class="sr-only">Subscription plan</legend>
+
+  <label class="list-row list-row--check flex items-start gap">
+    <div class="flex flex-1 flex-col">
+      <h5 class="leading-none font-medium mbe-1">Plus</h5>
+      <p class="text-subtle">For individuals and small teams.</p>
+    </div>
+    <%= radio_button_tag :plan, :plus, true, class: "input" %>
+  </label>
+
+  <label class="list-row list-row--check flex items-start gap">
+    <div class="flex flex-1 flex-col">
+      <h5 class="leading-none font-medium mbe-1">Pro</h5>
+      <p class="text-subtle">For growing businesses.</p>
+    </div>
+    <%= radio_button_tag :plan, :pro, false, class: "input" %>
+  </label>
+
+  <label class="list-row list-row--check flex items-start gap">
+    <div class="flex flex-1 flex-col">
+      <h5 class="leading-none font-medium mbe-1">Enterprise</h5>
+      <p class="text-subtle">For large teams and enterprises.</p>
+    </div>
+    <%= radio_button_tag :plan, :enterprise, false, class: "input" %>
+  </label>
+</fieldset>

@@ -1,0 +1,22 @@
+<fieldset class="flex flex-col gap">
+  <legend class="i-fit text-sm font-medium leading-none">Subscription Plan</legend>
+
+  <p class="text-sm text-subtle">Yearly and lifetime plans offer significant savings.</p>
+
+  <div class="flex flex-col gap-half">
+    <div class="flex items-center gap">
+      <%= radio_button_tag :billing, :monthly, true, class: "input" %>
+      <%= label_tag :billing_monthly, "Monthly ($9.99/month)", class: "text-sm font-normal" %>
+    </div>
+
+    <div class="flex items-center gap">
+      <%= radio_button_tag :billing, :yearly, false, class: "input" %>
+      <%= label_tag :billing_yearly, "Yearly ($99.99/year)", class: "text-sm font-normal" %>
+    </div>
+
+    <div class="flex items-center gap">
+      <%= radio_button_tag :billing, :lifetime, false, class: "input" %>
+      <%= label_tag :billing_lifetime, "Lifetime ($299.99)", class: "text-sm font-normal" %>
+    </div>
+  </div>
+</fieldset>

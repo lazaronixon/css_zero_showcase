@@ -71,9 +71,6 @@ class InputPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  def radio
-  end
-
   # @!group Range
   def range
   end
