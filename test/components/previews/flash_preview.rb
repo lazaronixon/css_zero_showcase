@@ -15,4 +15,7 @@ class FlashPreview < Lookbook::Preview
 
   def description
   end
+
+  def action
+  end
 end
