@@ -24,4 +24,7 @@ class DialogPreview < Lookbook::Preview
 
   def dialog_sticky_footer
   end
+
+  def dialog_scrollable_content
+  end
 end

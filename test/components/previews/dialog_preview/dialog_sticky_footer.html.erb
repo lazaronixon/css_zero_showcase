@@ -1,6 +1,10 @@
 <button type="button" class="btn" commandfor="dialog_sticky_footer" command="show-modal">Sticky Footer</button>
 
 <dialog id="dialog_sticky_footer" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside" aria-labelledby="dialog_label" aria-describedby="dialog_desc">
+  <button type="button" class="btn btn--plain dialog__close" commandfor="dialog_sticky_footer" command="close">
+    <span class="icon icon--x" aria-hidden="true"></span>
+    <span class="sr-only">Close</span>
+  </button>
   <div class="dialog__content">
     <h3 class="font-medium leading-none mbe-1" id="dialog_label">Sticky Footer</h3>
     <p class="text-sm text-subtle" id="dialog_desc">
@@ -20,7 +24,7 @@
     </div>
 
     <div class="dialog__footer flex items-center justify-end gap">
-      <button type="button" class="btn" commandfor="dialog_sticky_footer" command="close" autofocus>Close</button>
+      <button type="button" class="btn" commandfor="dialog_sticky_footer" command="close">Close</button>
     </div>
   </div>
 </dialog>
