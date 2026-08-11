@@ -1,0 +1,31 @@
+<button type="button" class="btn" commandfor="sheet" command="show-modal">Open</button>
+
+<dialog id="sheet" class="sheet sheet--right" data-controller="dialog" data-action="click->dialog#closeOnClickOutside" aria-labelledby="sheet_label" aria-describedby="sheet_desc">
+  <button type="button" class="btn btn--plain sheet__close" commandfor="sheet" command="close">
+    <span class="icon icon--x" aria-hidden="true"></span>
+    <span class="sr-only">Close</span>
+  </button>
+  <%= form_with url: nil, html: { autocomplete: "off" }, class: "sheet__content flex flex-col gap" do |form| %>
+    <div class="flex flex-col">
+      <h3 class="font-medium leading-none mbe-1" id="sheet_label">Edit profile</h3>
+      <p class="text-sm text-subtle" id="sheet_desc">Make changes to your profile here. Click save when you're done.</p>
+    </div>
+
+    <div class="flex-1 flex flex-col gap">
+      <div class="flex flex-col gap-half">
+        <%= form.label :name, class: "text-sm font-medium leading-none" %>
+        <%= form.text_field :name, value: "Pedro Duarte", class: "input", autofocus: true %>
+      </div>
+
+      <div class="flex flex-col gap-half">
+        <%= form.label :username, class: "text-sm font-medium leading-none" %>
+        <%= form.text_field :username, value: "@peduarte", class: "input" %>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-half">
+      <%= form.submit "Save changes", class: "btn btn--primary" %>
+      <button type="button" class="btn" commandfor="sheet" command="close">Close</button>
+    </div>
+  <% end %>
+</dialog>

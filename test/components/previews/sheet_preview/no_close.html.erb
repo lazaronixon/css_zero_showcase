@@ -1,0 +1,10 @@
+<button type="button" class="btn" commandfor="sheet" command="show-modal">Open sheet</button>
+
+<dialog id="sheet" class="sheet sheet--right" data-controller="dialog" data-action="click->dialog#closeOnClickOutside" aria-labelledby="sheet_label" aria-describedby="sheet_desc">
+  <div class="sheet__content">
+    <h3 class="font-medium leading-none mbe-1" id="sheet_label">No Close Button</h3>
+    <p class="text-sm text-subtle" id="sheet_desc">
+      This sheet doesn't have a close button in the top-right corner. Click outside to close.
+    </p>
+  </div>
+</dialog>
