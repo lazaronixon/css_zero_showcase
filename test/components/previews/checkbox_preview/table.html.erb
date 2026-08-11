@@ -1,0 +1,36 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th class="i-min"><span class="sr-only">Select</span></th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= check_box_tag :row_1, 1, true, class: "input", aria: { label: "Select Sarah Chen" } %></td>
+      <td class="font-medium">Sarah Chen</td>
+      <td>sarah.chen@example.com</td>
+      <td>Admin</td>
+    </tr>
+    <tr>
+      <td><%= check_box_tag :row_2, 1, false, class: "input", aria: { label: "Select Marcus Rodriguez" } %></td>
+      <td class="font-medium">Marcus Rodriguez</td>
+      <td>marcus.rodriguez@example.com</td>
+      <td>User</td>
+    </tr>
+    <tr>
+      <td><%= check_box_tag :row_3, 1, false, class: "input", aria: { label: "Select Priya Patel" } %></td>
+      <td class="font-medium">Priya Patel</td>
+      <td>priya.patel@example.com</td>
+      <td>User</td>
+    </tr>
+    <tr>
+      <td><%= check_box_tag :row_4, 1, false, class: "input", aria: { label: "Select David Kim" } %></td>
+      <td class="font-medium">David Kim</td>
+      <td>david.kim@example.com</td>
+      <td>Editor</td>
+    </tr>
+  </tbody>
+</table>

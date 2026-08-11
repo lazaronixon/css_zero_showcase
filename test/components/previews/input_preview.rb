@@ -71,9 +71,6 @@ class InputPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  def checkbox
-  end
-
   def radio
   end
 

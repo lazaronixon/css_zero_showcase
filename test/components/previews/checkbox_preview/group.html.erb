@@ -1,0 +1,27 @@
+<fieldset class="flex flex-col gap">
+  <legend class="i-fit text-sm font-medium leading-none mbe-1">Show these items on the desktop:</legend>
+
+  <p class="text-sm text-subtle">Select the items you want to show on the desktop.</p>
+
+  <div class="flex flex-col gap-half">
+    <div class="flex items-center gap">
+      <%= check_box_tag :hard_disks, 1, true, class: "input" %>
+      <%= label_tag :hard_disks, "Hard disks", class: "text-sm font-normal" %>
+    </div>
+
+    <div class="flex items-center gap">
+      <%= check_box_tag :external_disks, 1, true, class: "input" %>
+      <%= label_tag :external_disks, "External disks", class: "text-sm font-normal" %>
+    </div>
+
+    <div class="flex items-center gap">
+      <%= check_box_tag :cds_dvds, 1, false, class: "input" %>
+      <%= label_tag :cds_dvds, "CDs, DVDs, and iPods", class: "text-sm font-normal" %>
+    </div>
+
+    <div class="flex items-center gap">
+      <%= check_box_tag :connected_servers, 1, false, class: "input" %>
+      <%= label_tag :connected_servers, "Connected servers", class: "text-sm font-normal" %>
+    </div>
+  </div>
+</fieldset>
