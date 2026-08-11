@@ -18,4 +18,10 @@ class CommandPreview < Lookbook::Preview
   # - [combobox-nav](https://github.com/github/combobox-nav)
   def groups
   end
+
+  # Dependencies
+  # ---
+  # - [combobox-nav](https://github.com/github/combobox-nav)
+  def scrollable
+  end
 end

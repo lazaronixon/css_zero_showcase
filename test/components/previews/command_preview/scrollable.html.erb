@@ -1,0 +1,33 @@
+<% items = [
+     [ "icon--calendar",    "Calendar",     "⌘C" ],
+     [ "icon--smile",       "Search Emoji", "⌘E" ],
+     [ "icon--calculator",  "Calculator",   "⌘K" ],
+     [ "icon--user",        "Profile",      "⌘P" ],
+     [ "icon--credit-card", "Billing",      "⌘B" ],
+     [ "icon--settings",    "Settings",     "⌘S" ]
+   ] %>
+
+<button type="button" class="btn" commandfor="command_dialog" command="show-modal">Open Menu</button>
+
+<dialog id="command_dialog" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside">
+  <div class="command border-0" data-controller="command" data-action="combobox-commit->command#commit">
+    <label class="command__input input input--actor flex items-center gap">
+      <span class="icon icon--search" aria-hidden="true"></span>
+      <%= text_field_tag "search", nil, data: { command_target: "input", action: "command#filter" }, autofocus: true, autocomplete: "off", placeholder: "Type a command or search..." %>
+    </label>
+    <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">
+      <% %w[ Suggestions Tools Account More ].each do |heading| %>
+        <%= tag.div class: "command__group", role: "group", aria: { labelledby: heading.downcase } do %>
+          <%= tag.span heading, id: heading.downcase, class: "command__group-header" %>
+          <% items.each do |icon, label, shortcut| %>
+            <%= tag.div id: SecureRandom.hex, class: "btn command__item", data: { command_target: "item", value: label.downcase, href: "#" }, role: "option" do %>
+              <%= tag.span class: "icon #{icon}", aria: { hidden: true } %>
+              <%= tag.span label %>
+              <%= tag.span shortcut, class: "command__item-key" %>
+            <% end %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</dialog>
