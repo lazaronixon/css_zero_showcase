@@ -1,9 +1,8 @@
 # @css app/assets/stylesheets/avatar.css
+# @css app/assets/stylesheets/menu.css
+# @js app/javascript/controllers/menu_controller.js
 class AvatarPreview < Lookbook::Preview
   def basic
-  end
-
-  def button
   end
 
   def fallback
@@ -25,5 +24,11 @@ class AvatarPreview < Lookbook::Preview
   end
 
   def sizes
+  end
+
+  def button
+  end
+
+  def dropdown
   end
 end

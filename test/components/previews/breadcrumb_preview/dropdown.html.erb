@@ -1,0 +1,22 @@
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <%= link_to "Home", "#" %>
+  <span class="icon icon--dot" aria-hidden="true"></span>
+
+  <button type="button" class="btn btn--plain font-normal" style="--btn-color: var(--color-text-subtle)" popovertarget="breadcrumb_dropdown" aria-haspopup="true">
+    Components
+    <span class="icon icon--chevron-down" aria-hidden="true"></span>
+  </button>
+
+  <span class="icon icon--dot" aria-hidden="true"></span>
+  <span class="text-primary" aria-disabled="true" aria-current="page" role="link">Breadcrumb</span>
+</nav>
+
+<div popover id="breadcrumb_dropdown" class="popover popover--block-end-start" role="menu" aria-label="Components">
+  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+    <div class="menu__group" role="group">
+      <%= link_to "Documentation", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <%= link_to "Themes", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+      <%= link_to "GitHub", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
+    </div>
+  </div>
+</div>

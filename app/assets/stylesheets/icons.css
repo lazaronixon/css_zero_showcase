@@ -27,6 +27,7 @@ img.icon {
 * Open-source icon library with a consistent style
 *****************************************************************/
 .icon--camera { --svg: url("camera.svg"); }
+.icon--chevron-down { --svg: url("chevron-down.svg"); }
 .icon--chevron-left { --svg: url("chevron-left.svg"); }
 .icon--chevron-right { --svg: url("chevron-right.svg"); }
 .icon--chevrons-up-down { --svg: url("chevrons-up-down.svg"); }
