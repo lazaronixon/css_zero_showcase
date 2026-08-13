@@ -1,4 +1,5 @@
 <label class="input input--actor flex items-center gap">
   <span class="icon icon--search" aria-hidden="true"></span>
-  <%= text_field_tag "actor_field", nil %>
+  <%= search_field_tag "actor_field", nil, placeholder: "Search..." %>
+  <span class="text-subtle whitespace-nowrap">12 results</span>
 </label>
