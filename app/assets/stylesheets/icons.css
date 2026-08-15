@@ -88,6 +88,7 @@ img.icon {
 .icon--message-square { --svg: url("message-square.svg"); }
 .icon--pencil { --svg: url("pencil.svg"); }
 .icon--plus { --svg: url("plus.svg"); }
+.icon--refresh-cw { --svg: url("refresh-cw.svg"); }
 .icon--settings { --svg: url("settings.svg"); }
 .icon--settings-2 { --svg: url("settings-2.svg"); }
 .icon--shield-alert { --svg: url("shield-alert.svg"); }
