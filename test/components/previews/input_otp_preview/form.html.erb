@@ -1,0 +1,44 @@
+<%= form_with url: main_app.slow_action_path, class: "card flex flex-col gap", data: { controller: "form", action: "input-otp:complete->form#submit" } do |form| %>
+  <div class="flex flex-col">
+    <h3 class="font-medium leading-none mbe-1">Verify your login</h3>
+    <p class="text-sm text-subtle">Enter the verification code we sent to your email address: <span class="font-medium">m@example.com</span>.</p>
+  </div>
+
+  <div class="flex flex-col gap-half">
+    <div class="flex items-center justify-between">
+      <%= label_tag :otp_verification, "Verification code", class: "text-sm font-medium leading-none" %>
+
+      <button type="button" class="btn btn--xs">
+        <span class="icon icon--refresh-cw" aria-hidden="true"></span>
+        Resend Code
+      </button>
+    </div>
+
+    <input-otp appearance="seamless" required class="input-otp--lg i-fit">
+      <input-otp-group>
+        <input-otp-slot></input-otp-slot>
+        <input-otp-slot></input-otp-slot>
+        <input-otp-slot></input-otp-slot>
+      </input-otp-group>
+
+      <input-otp-separator role="separator">
+        <span class="icon icon--minus" aria-hidden="true"></span>
+      </input-otp-separator>
+
+      <input-otp-group>
+        <input-otp-slot></input-otp-slot>
+        <input-otp-slot></input-otp-slot>
+        <input-otp-slot></input-otp-slot>
+      </input-otp-group>
+
+      <%= text_field_tag :otp_verification %>
+    </input-otp>
+
+    <p class="text-sm text-subtle"><%= link_to "I no longer have access to this email address.", "#", class: "text-primary", style: "text-decoration: underline" %></p>
+  </div>
+
+  <div class="card__footer flex flex-col gap-half">
+    <%= form.submit "Verify", class: "btn btn--primary i-full" %>
+    <p class="text-sm text-subtle">Having trouble signing in? <%= link_to "Contact support", "#", class: "text-primary", style: "text-decoration: underline" %></p>
+  </div>
+<% end %>
