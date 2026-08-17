@@ -1,0 +1,18 @@
+<div class="flex items-center gap">
+  <div class="flex items-center gap">
+    <%= label_tag :limit, "Rows per page", class: "text-sm font-medium" %>
+    <%= select_tag :limit, options_for_select([10, 25, 50, 100], 25), class: "input", style: "--input-inline-size: 70px" %>
+  </div>
+
+  <nav class="pagination" aria-label="Pagination">
+    <%= link_to "#", class: "btn pagination__button", aria: { label: "Previous page" } do %>
+      <span class="icon icon--chevron-left" aria-hidden="true"></span>
+      <span>Previous</span>
+    <% end %>
+
+    <%= link_to "#", class: "btn pagination__button", aria: { label: "Next page" } do %>
+      <span>Next</span>
+      <span class="icon icon--chevron-right" aria-hidden="true"></span>
+    <% end %>
+  </nav>
+</div>
