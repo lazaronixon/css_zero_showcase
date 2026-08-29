@@ -1,0 +1,9 @@
+#!/bin/bash -e
+
+# Runs the latest Herb linter for HTML+ERB templates.
+#
+#   bin/herb            # lint everything
+#   bin/herb --fix      # lint and autocorrect
+#   bin/herb app/views  # lint a subset
+
+exec npx --yes @herb-tools/linter "$@"
