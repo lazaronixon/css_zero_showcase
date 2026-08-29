@@ -49,9 +49,9 @@ linter:
   # include:
   #   - '**/*.xml.erb'
   #
-  # # Patterns to exclude from linting
-  # exclude:
-  #   - 'app/views/admin/**/*'
+  # Patterns to exclude from linting
+  exclude:
+    - 'app/views/active_storage/blobs/_blob.html.erb'
 
   rules:
     erb-require-trailing-newline:

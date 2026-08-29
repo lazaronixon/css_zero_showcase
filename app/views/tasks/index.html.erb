@@ -74,7 +74,7 @@
           <%= form.label :limit, "Rows per page", class: "text-sm font-medium" %>
           <%= form.select :limit, [10, 20, 30, 40, 50], { selected: @pagy.limit }, { class: "input", style: "--input-inline-size: 70px" } %>
         <% end %>
-        <div class="text-sm font-medium"><%= "Page #{@pagy.page} of #{@pagy.pages}" %></div>
+        <div class="text-sm font-medium">Page <%= @pagy.page %> of <%= @pagy.pages %></div>
         <nav class="flex items-center flex-item-no-shrink gap" style="--btn-padding: .5rem;" aria-label="Pagination">
           <%= link_to @pagy.page_url(:first), class: "btn", aria: { disabled: @pagy.previous.nil? }.compact_blank do %>
             <span class="icon icon--chevrons-left" aria-hidden="true"></span>
