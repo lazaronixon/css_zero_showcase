@@ -2,6 +2,11 @@
 # @css app/assets/stylesheets/menu.css
 # @js app/javascript/controllers/menu_controller.js
 class AvatarPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add avatar dropdown
+  # ```
   def basic
   end
 

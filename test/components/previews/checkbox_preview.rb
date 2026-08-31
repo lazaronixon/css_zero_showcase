@@ -2,6 +2,11 @@
 # @css app/assets/stylesheets/table.css
 # @display max_width 640px
 class CheckboxPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add input table
+  # ```
   def basic
   end
 

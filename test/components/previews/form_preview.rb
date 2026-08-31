@@ -1,6 +1,15 @@
 # @display max_width 400px
 # @js app/javascript/controllers/form_controller.js
 class FormPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add form
+  # ```
+  #
+  # Dependencies
+  # ---
+  # - [just-debounce-it](https://github.com/angus-c/just)
   def submit_on_change
   end
 

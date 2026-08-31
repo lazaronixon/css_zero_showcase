@@ -2,6 +2,12 @@
 # @js app/javascript/controllers/combobox_controller.js
 # @css app/assets/stylesheets/combobox.css
 class ComboboxPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add combobox
+  # ```
+  #
   # Dependencies
   # ---
   # - [Tom Select](https://github.com/orchidjs/tom-select)
@@ -10,10 +16,6 @@ class ComboboxPreview < Lookbook::Preview
   end
 
   # @!group Select
-  # Dependencies
-  # ---
-  # - [Tom Select](https://github.com/orchidjs/tom-select)
-  # - [Request.js](https://github.com/rails/request.js)
   def single
   end
 
@@ -27,17 +29,9 @@ class ComboboxPreview < Lookbook::Preview
   end
   # @!endgroup
 
-  # Dependencies
-  # ---
-  # - [Tom Select](https://github.com/orchidjs/tom-select)
-  # - [Request.js](https://github.com/rails/request.js)
   def multiple
   end
 
-  # Dependencies
-  # ---
-  # - [Tom Select](https://github.com/orchidjs/tom-select)
-  # - [Request.js](https://github.com/rails/request.js)
   def translation
   end
 
@@ -46,11 +40,6 @@ class ComboboxPreview < Lookbook::Preview
   # - [index.json.jbuilder](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/searchables/index.json.jbuilder)
   # - [searchables_controller.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/controllers/searchables_controller.rb)
   # - [movie.rb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/models/movie.rb)
-  #
-  # Dependencies
-  # ---
-  # - [Tom Select](https://github.com/orchidjs/tom-select)
-  # - [Request.js](https://github.com/rails/request.js)
   def remote
   end
 end

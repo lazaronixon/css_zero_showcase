@@ -1,6 +1,11 @@
 # @css app/assets/stylesheets/tabs.css
 # @js app/javascript/controllers/tabs_controller.js
 class TabsPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add tabs
+  # ```
   def complete
   end
 

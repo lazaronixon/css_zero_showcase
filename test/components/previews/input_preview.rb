@@ -2,6 +2,11 @@
 # @css app/assets/stylesheets/input.css
 class InputPreview < Lookbook::Preview
   # @!group Basic
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add input
+  # ```
   def text_field
   end
 

@@ -1,8 +1,19 @@
 # @js app/javascript/controllers/sortable_controller.js
 class SortablePreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add sortable
+  # ```
+  #
   # Implementation
   # ---
-  # Each move creates a request like `PUT requests_url?position=3&parent_id=1`.
+  # Dropping an item sends one request — `PUT` to that item's
+  # `data-url-value`, with the new position and parent in the query string:
+  #
+  # ```bash
+  # PUT /sortables/12?position=3&parent_id=1
+  # ```
   #
   # Dependencies
   # ---
@@ -11,25 +22,9 @@ class SortablePreview < Lookbook::Preview
   def simple
   end
 
-  # Implementation
-  # ---
-  # Each move creates a request like `PUT requests_url?position=3&parent_id=1`.
-  #
-  # Dependencies
-  # ---
-  # - [SortableJS](https://github.com/SortableJS/Sortable)
-  # - [Request.js](https://github.com/rails/request.js)
   def handle
   end
 
-  # Implementation
-  # ---
-  # Each move creates a request like `PUT requests_url?position=3&parent_id=1`.
-  #
-  # Dependencies
-  # ---
-  # - [SortableJS](https://github.com/SortableJS/Sortable)
-  # - [Request.js](https://github.com/rails/request.js)
   def shared
   end
 end

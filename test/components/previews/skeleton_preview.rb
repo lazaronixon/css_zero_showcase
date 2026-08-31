@@ -1,6 +1,11 @@
 # @css app/assets/stylesheets/skeleton.css
 # @css app/assets/stylesheets/card.css
 class SkeletonPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add skeleton
+  # ```
   def text
   end
 

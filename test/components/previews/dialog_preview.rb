@@ -1,6 +1,11 @@
 # @css app/assets/stylesheets/dialog.css
 # @js app/javascript/controllers/dialog_controller.js
 class DialogPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add dialog
+  # ```
   def alert_dialog
   end
 

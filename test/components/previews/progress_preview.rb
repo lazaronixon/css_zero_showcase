@@ -2,6 +2,11 @@
 # @css app/assets/stylesheets/progress.css
 class ProgressPreview < Lookbook::Preview
   # @!group Progress
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add progress
+  # ```
   def basic
   end
 

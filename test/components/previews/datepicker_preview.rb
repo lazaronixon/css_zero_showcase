@@ -3,6 +3,12 @@
 # @css app/assets/stylesheets/datepicker.css
 class DatepickerPreview < Lookbook::Preview
   # @!group Basic
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add datepicker
+  # ```
+  #
   # Dependencies
   # ---
   # - [Flatpickr](https://github.com/flatpickr/flatpickr)

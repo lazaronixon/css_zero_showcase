@@ -1,6 +1,11 @@
 # @display max_width 600px
 # @css app/assets/stylesheets/table.css
 class TablePreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add table
+  # ```
   def basic
   end
 

@@ -1,5 +1,10 @@
 # @css app/assets/stylesheets/badge.css
 class BadgePreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add badge
+  # ```
   def variants
   end
 

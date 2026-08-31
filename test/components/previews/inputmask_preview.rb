@@ -2,6 +2,12 @@
 # @js app/javascript/controllers/inputmask_controller.js
 class InputmaskPreview < Lookbook::Preview
   # @!group Basic
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add inputmask
+  # ```
+  #
   # Dependencies
   # ---
   # - [Maska](https://github.com/beholdr/maska)

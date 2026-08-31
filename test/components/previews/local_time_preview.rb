@@ -1,12 +1,17 @@
 # @js app/javascript/controllers/local_time_controller.js
 class LocalTimePreview < Lookbook::Preview
-  # Initialization
-  # ----
+  # @!group Basic
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add local_time
+  # ```
   #
+  # Initialization
+  # ---
   # ```html
   # <body data-controller="local-time">...</body>
   # ```
-  # @!group Basic
   def time
   end
 

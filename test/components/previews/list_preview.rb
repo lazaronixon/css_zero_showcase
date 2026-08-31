@@ -1,6 +1,11 @@
 # @display max_width 512px
 # @css app/assets/stylesheets/list.css
 class ListPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add list
+  # ```
   def variants
   end
 

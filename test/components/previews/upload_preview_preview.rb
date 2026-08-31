@@ -1,12 +1,16 @@
 # @js app/javascript/controllers/upload_preview_controller.js
 class UploadPreviewPreview < Lookbook::Preview
-  # Example
+  # Install
   # ---
-  # You can remove the attachment in the update
-  # request using the hidden input value.
+  # ```bash
+  # bin/rails generate css_zero:add upload_preview
+  # ```
   #
+  # Implementation
+  # ---
   # ```ruby
-  # user.avatar.purge if params[:remove_avatar] == 'true'
+  # user.update!(user_params)
+  # user.avatar.purge if params[:remove_avatar] == "true"
   # ```
   def basic
   end

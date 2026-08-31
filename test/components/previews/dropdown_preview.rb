@@ -1,6 +1,11 @@
 # @css app/assets/stylesheets/menu.css
 # @js app/javascript/controllers/menu_controller.js
 class DropdownPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add dropdown
+  # ```
   def basic
   end
 

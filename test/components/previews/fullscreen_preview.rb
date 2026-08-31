@@ -1,5 +1,11 @@
 # @js app/javascript/controllers/fullscreen_controller.js
 class FullscreenPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add fullscreen
+  # ```
+  #
   # Initialization
   # ---
   # ```html

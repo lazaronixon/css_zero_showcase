@@ -1,5 +1,9 @@
 class EmptyPreview < Lookbook::Preview
-  # Depencencies
+  # Install
+  # ---
+  # Nothing to install — this is built from utilities you already have.
+  #
+  # Dependencies
   # ---
   # - [unDraw](https://undraw.co/illustrations)
   def basic

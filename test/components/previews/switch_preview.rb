@@ -1,6 +1,11 @@
 # @css app/assets/stylesheets/switch.css
 # @css app/assets/stylesheets/list.css
 class SwitchPreview < Lookbook::Preview
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add switch list
+  # ```
   def basic
   end
 

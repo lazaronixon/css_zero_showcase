@@ -1,6 +1,11 @@
 # @js app/javascript/controllers/sound_controller.js
 class SoundPreview < Lookbook::Preview
-
+  # Install
+  # ---
+  # ```bash
+  # bin/rails generate css_zero:add sound
+  # ```
+  #
   # Implementation
   # ---
   # - [index.html.erb](https://github.com/lazaronixon/css_zero_showcase/blob/main/app/views/sounds/index.html.erb)
