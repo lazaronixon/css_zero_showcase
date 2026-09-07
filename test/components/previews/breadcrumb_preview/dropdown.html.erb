@@ -12,7 +12,7 @@
 </nav>
 
 <div popover id="breadcrumb_dropdown" class="popover popover--block-end-start" role="menu" aria-label="Components">
-  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+  <div class="menu" data-controller="menu" autofocus>
     <div class="menu__group" role="group">
       <%= link_to "Documentation", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
       <%= link_to "Themes", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>

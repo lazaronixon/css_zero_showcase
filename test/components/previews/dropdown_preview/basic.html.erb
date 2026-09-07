@@ -3,7 +3,7 @@
 </button>
 
 <div popover id="dropdown" class="popover popover--block-end-start" style="--popover-size: 8rem;" role="menu" aria-label="Menu">
-  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+  <div class="menu" data-controller="menu">
     <div class="menu__group" role="group" aria-labelledby="my_account">
       <div class="menu__header" id="my_account">My Account</div>
       <%= link_to "Profile", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>

@@ -37,7 +37,7 @@
       </button>
 
       <div popover id="dropdown" class="popover popover--block-end-start"  style="--popover-size: 8rem;" role="menu" aria-label="Menu">
-        <div class="menu" data-controller="menu" data-action="keydown->menu#navigate keydown->sound#tick">
+        <div class="menu" data-controller="menu" data-action="keydown->sound#tick" autofocus>
           <%= link_to "Edit", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
           <%= link_to "Make a copy", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
           <%= link_to "Favorite", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>

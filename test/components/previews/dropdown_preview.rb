@@ -6,6 +6,10 @@ class DropdownPreview < Lookbook::Preview
   # ```bash
   # bin/rails generate css_zero:add dropdown
   # ```
+  #
+  # Dependencies
+  # ---
+  # - [Roving UX](https://github.com/argyleink/roving-ux)
   def basic
   end
 

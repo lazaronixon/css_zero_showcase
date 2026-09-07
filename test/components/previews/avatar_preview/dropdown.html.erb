@@ -3,7 +3,7 @@
 </button>
 
 <div popover id="avatar_dropdown" class="popover popover--block-end-start" style="--popover-size: 8rem;" role="menu" aria-label="Account">
-  <div class="menu" data-controller="menu" data-action="keydown->menu#navigate">
+  <div class="menu" data-controller="menu" autofocus>
     <div class="menu__group" role="group">
       <%= link_to "Profile", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
       <%= link_to "Billing", "#", class: "btn menu__item", data: { menu_target: "item" }, role: "menuitem" %>
