@@ -31,23 +31,9 @@
       <%= check_box_tag :btn_toggle, "data-action": "sound#toggle" %><span>Toggle</span>
     </label>
 
-    <div contents>
-      <button type="button" class="btn btn--feedback" data-action="pointerdown->sound#press pointerup->sound#release" popovertarget="dropdown" aria-haspopup="true">
-        Dropdown
-      </button>
-
-      <div popover id="dropdown" class="popover popover--block-end-start"  style="--popover-size: 8rem;" role="menu" aria-label="Menu">
-        <div class="menu" data-controller="menu" data-action="keydown->sound#tick" autofocus>
-          <%= link_to "Edit", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
-          <%= link_to "Make a copy", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
-          <%= link_to "Favorite", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
-          <hr class="menu__separator" role="separator">
-          <%= link_to "Classify", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
-          <hr class="menu__separator" role="separator">
-          <%= link_to "Delete", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
-        </div>
-      </div>
-    </div>
+    <button type="button" class="btn btn--feedback" data-action="pointerdown->sound#press pointerup->sound#release" popovertarget="dropdown" aria-haspopup="true">
+      Dropdown
+    </button>
 
     <button type="button" class="btn btn--feedback" commandfor="sheet" command="show-modal" data-action="sound#bloom">
       Sheet
@@ -56,6 +42,18 @@
     <button type="button" class="btn btn--feedback" commandfor="dialog" command="show-modal" data-action="sound#bloom">
       Dialog
     </button>
+
+    <div popover id="dropdown" class="popover popover--block-end-start"  style="--popover-size: 8rem;" role="menu" aria-label="Menu">
+      <div class="menu" data-controller="menu" data-action="keydown->sound#tick">
+        <%= link_to "Edit", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+        <%= link_to "Make a copy", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+        <%= link_to "Favorite", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+        <hr class="menu__separator" role="separator">
+        <%= link_to "Classify", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+        <hr class="menu__separator" role="separator">
+        <%= link_to "Delete", "#", class: "btn menu__item", data: { menu_target: "item", action: "mouseenter->sound#tick" }, role: "menuitem" %>
+      </div>
+    </div>
 
     <dialog id="sheet" class="sheet sheet--left" data-controller="dialog" data-action="click->dialog#closeOnClickOutside close->sound#droplet" aria-label="Edit profile">
       <button type="button" class="btn btn--plain sheet__close" commandfor="sheet" command="close">
