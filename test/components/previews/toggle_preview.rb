@@ -3,7 +3,7 @@ class TogglePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add button toggle
+  # bin/rails g css_zero button toggle
   # ```
   def basic
   end

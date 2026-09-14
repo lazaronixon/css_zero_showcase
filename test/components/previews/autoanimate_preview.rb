@@ -3,7 +3,7 @@ class AutoanimatePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add autoanimate
+  # bin/rails g css_zero autoanimate
   # ```
   #
   # Implementation

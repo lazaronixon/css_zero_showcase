@@ -5,7 +5,7 @@ class ResizablePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add resizable
+  # bin/rails g css_zero resizable
   # ```
   #
   # Dependencies

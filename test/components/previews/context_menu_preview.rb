@@ -4,7 +4,7 @@ class ContextMenuPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add context_menu
+  # bin/rails g css_zero context_menu
   # ```
   def basic
   end

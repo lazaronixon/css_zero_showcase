@@ -4,7 +4,7 @@ class FormPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add form
+  # bin/rails g css_zero form
   # ```
   #
   # Dependencies

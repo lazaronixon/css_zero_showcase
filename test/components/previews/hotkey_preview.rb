@@ -3,7 +3,7 @@ class HotkeyPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add hotkey
+  # bin/rails g css_zero hotkey
   # ```
   def basic
   end

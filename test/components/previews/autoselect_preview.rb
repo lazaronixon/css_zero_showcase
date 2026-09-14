@@ -4,7 +4,7 @@ class AutoselectPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add autoselect
+  # bin/rails g css_zero autoselect
   # ```
   def basic
   end

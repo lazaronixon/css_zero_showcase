@@ -3,7 +3,7 @@ class UploadPreviewPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add upload_preview
+  # bin/rails g css_zero upload_preview
   # ```
   #
   # Implementation

@@ -4,7 +4,7 @@ class LocalTimePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add local_time
+  # bin/rails g css_zero local_time
   # ```
   #
   # Initialization

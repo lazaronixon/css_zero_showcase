@@ -3,7 +3,7 @@ class TimezoneCookiePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add timezone_cookie
+  # bin/rails g css_zero timezone_cookie
   # ```
   #
   # Initialization

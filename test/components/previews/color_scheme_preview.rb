@@ -5,7 +5,7 @@ class ColorSchemePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add color_scheme
+  # bin/rails g css_zero color_scheme
   # ```
   #
   # Initialization

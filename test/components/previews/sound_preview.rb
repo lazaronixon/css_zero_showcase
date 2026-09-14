@@ -3,7 +3,7 @@ class SoundPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add sound
+  # bin/rails g css_zero sound
   # ```
   #
   # Implementation

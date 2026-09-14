@@ -4,7 +4,7 @@ class TabsPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add tabs
+  # bin/rails g css_zero tabs
   # ```
   def complete
   end

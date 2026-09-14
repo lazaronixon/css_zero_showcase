@@ -3,7 +3,7 @@ class BadgePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add badge
+  # bin/rails g css_zero badge
   # ```
   def variants
   end

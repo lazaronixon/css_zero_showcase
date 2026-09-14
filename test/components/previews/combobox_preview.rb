@@ -5,7 +5,7 @@ class ComboboxPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add combobox
+  # bin/rails g css_zero combobox
   # ```
   #
   # Dependencies

@@ -4,7 +4,7 @@ class CollapsiblePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add collapsible
+  # bin/rails g css_zero collapsible
   # ```
   def basic
   end

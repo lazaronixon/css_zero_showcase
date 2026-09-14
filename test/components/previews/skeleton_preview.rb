@@ -4,7 +4,7 @@ class SkeletonPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add skeleton
+  # bin/rails g css_zero skeleton
   # ```
   def text
   end

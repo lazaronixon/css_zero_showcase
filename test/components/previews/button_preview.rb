@@ -3,7 +3,7 @@ class ButtonPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add button
+  # bin/rails g css_zero button
   # ```
   def default
   end

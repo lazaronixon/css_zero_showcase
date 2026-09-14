@@ -4,7 +4,7 @@ class GroupPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add group
+  # bin/rails g css_zero group
   # ```
   def basic
   end

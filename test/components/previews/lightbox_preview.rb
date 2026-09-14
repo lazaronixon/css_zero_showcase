@@ -4,7 +4,7 @@ class LightboxPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add lightbox
+  # bin/rails g css_zero lightbox
   # ```
   #
   # Initialization

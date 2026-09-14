@@ -3,7 +3,7 @@ class SortablePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add sortable
+  # bin/rails g css_zero sortable
   # ```
   #
   # Implementation

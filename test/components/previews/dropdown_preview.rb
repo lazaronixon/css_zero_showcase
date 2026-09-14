@@ -4,7 +4,7 @@ class DropdownPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add dropdown
+  # bin/rails g css_zero dropdown
   # ```
   #
   # Dependencies

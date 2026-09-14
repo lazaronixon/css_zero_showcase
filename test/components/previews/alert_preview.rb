@@ -4,7 +4,7 @@ class AlertPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add alert
+  # bin/rails g css_zero alert
   # ```
   def basic
   end

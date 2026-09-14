@@ -3,7 +3,7 @@ class BackNavigationPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add back_navigation
+  # bin/rails g css_zero back_navigation
   # ```
   def basic
   end

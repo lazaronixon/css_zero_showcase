@@ -3,7 +3,7 @@ class CheckAllPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add check_all
+  # bin/rails g css_zero check_all
   # ```
   def basic
   end

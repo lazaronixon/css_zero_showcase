@@ -5,7 +5,7 @@ class CheckboxPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add input table
+  # bin/rails g css_zero input table
   # ```
   def basic
   end

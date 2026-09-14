@@ -4,7 +4,7 @@ class AccordionPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add accordion
+  # bin/rails g css_zero accordion
   # ```
   def basic
   end

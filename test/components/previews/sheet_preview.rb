@@ -4,7 +4,7 @@ class SheetPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add sheet
+  # bin/rails g css_zero sheet
   # ```
   def basic
   end

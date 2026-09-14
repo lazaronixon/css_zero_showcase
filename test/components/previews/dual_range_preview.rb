@@ -5,7 +5,7 @@ class DualRangePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails generate css_zero:add dual_range
+  # bin/rails g css_zero dual_range
   # ```
   #
   # Dependencies
