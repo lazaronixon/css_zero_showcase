@@ -3,7 +3,7 @@ class LexxyPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero lexxy
+  # bin/rails g css_zero:add lexxy
   # ```
   #
   # Dependencies

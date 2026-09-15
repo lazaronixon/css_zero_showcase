@@ -3,7 +3,7 @@ class PaginationPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero pagination
+  # bin/rails g css_zero:add pagination
   # ```
   def basic
   end

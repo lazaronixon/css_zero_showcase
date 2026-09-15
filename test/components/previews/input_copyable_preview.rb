@@ -5,7 +5,7 @@ class InputCopyablePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero input_copyable
+  # bin/rails g css_zero:add input_copyable
   # ```
   def basic
   end

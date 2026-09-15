@@ -4,7 +4,7 @@ class TablePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero table
+  # bin/rails g css_zero:add table
   # ```
   def basic
   end

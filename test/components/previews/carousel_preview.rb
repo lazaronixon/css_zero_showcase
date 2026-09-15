@@ -4,7 +4,7 @@ class CarouselPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero carousel
+  # bin/rails g css_zero:add carousel
   # ```
   def basic
   end

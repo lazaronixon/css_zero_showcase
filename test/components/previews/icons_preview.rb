@@ -5,7 +5,7 @@ class IconsPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero icons
+  # bin/rails g css_zero:add icons
   # ```
   #
   # Dependencies

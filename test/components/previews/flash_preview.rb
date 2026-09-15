@@ -4,7 +4,7 @@ class FlashPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero flash
+  # bin/rails g css_zero:add flash
   # ```
   def basic
   end

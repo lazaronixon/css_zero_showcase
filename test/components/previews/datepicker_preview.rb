@@ -6,7 +6,7 @@ class DatepickerPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero datepicker
+  # bin/rails g css_zero:add datepicker
   # ```
   #
   # Dependencies

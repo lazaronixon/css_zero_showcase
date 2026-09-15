@@ -5,7 +5,7 @@ class InputmaskPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero inputmask
+  # bin/rails g css_zero:add inputmask
   # ```
   #
   # Dependencies

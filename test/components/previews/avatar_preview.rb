@@ -5,7 +5,7 @@ class AvatarPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero avatar dropdown
+  # bin/rails g css_zero:add avatar dropdown
   # ```
   def basic
   end

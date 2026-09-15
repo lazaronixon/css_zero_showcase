@@ -5,7 +5,7 @@ class InputPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero input
+  # bin/rails g css_zero:add input
   # ```
   def text_field
   end

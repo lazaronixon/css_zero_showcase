@@ -4,7 +4,7 @@ class RadioPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero input list
+  # bin/rails g css_zero:add input list
   # ```
   #
   # @display max_width 384px

@@ -4,7 +4,7 @@ class DialogPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero dialog
+  # bin/rails g css_zero:add dialog
   # ```
   def alert_dialog
   end

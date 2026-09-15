@@ -4,7 +4,7 @@ class ChartPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero chart
+  # bin/rails g css_zero:add chart
   # ```
   #
   # Dependencies

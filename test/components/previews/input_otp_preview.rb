@@ -4,7 +4,7 @@ class InputOtpPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero input_otp
+  # bin/rails g css_zero:add input_otp
   # ```
   #
   # Dependencies

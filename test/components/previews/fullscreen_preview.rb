@@ -3,7 +3,7 @@ class FullscreenPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero fullscreen
+  # bin/rails g css_zero:add fullscreen
   # ```
   #
   # Initialization

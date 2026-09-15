@@ -4,7 +4,7 @@ class CommandPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero command dialog
+  # bin/rails g css_zero:add command dialog
   # ```
   #
   # Dependencies

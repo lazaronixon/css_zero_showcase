@@ -5,7 +5,7 @@ class LayoutsPreview < ViewComponent::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero layouts
+  # bin/rails g css_zero:add layouts
   # ```
   #
   # Implementation

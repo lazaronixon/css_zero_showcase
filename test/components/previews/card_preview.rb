@@ -4,7 +4,7 @@ class CardPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero card
+  # bin/rails g css_zero:add card
   # ```
   def basic
   end

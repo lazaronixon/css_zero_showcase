@@ -4,7 +4,7 @@ class TurboConfirmPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero turbo_confirm
+  # bin/rails g css_zero:add turbo_confirm
   # ```
   def button
   end

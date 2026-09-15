@@ -5,7 +5,7 @@ class PopoverPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero popover
+  # bin/rails g css_zero:add popover
   # ```
   def basic
   end

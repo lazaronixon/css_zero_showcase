@@ -5,7 +5,7 @@ class InputClearablePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero input_clearable
+  # bin/rails g css_zero:add input_clearable
   # ```
   def basic
   end

@@ -4,7 +4,7 @@ class WebSharePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero web_share
+  # bin/rails g css_zero:add web_share
   # ```
   def url
   end

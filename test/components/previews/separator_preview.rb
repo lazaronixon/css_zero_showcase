@@ -4,7 +4,7 @@ class SeparatorPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero separator
+  # bin/rails g css_zero:add separator
   # ```
   def vertical
   end

@@ -3,7 +3,7 @@ class KeyboardPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero keyboard
+  # bin/rails g css_zero:add keyboard
   # ```
   def basic
   end

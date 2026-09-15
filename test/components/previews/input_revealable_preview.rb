@@ -5,7 +5,7 @@ class InputRevealablePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero input_revealable
+  # bin/rails g css_zero:add input_revealable
   # ```
   def basic
   end

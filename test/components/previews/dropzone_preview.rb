@@ -5,7 +5,7 @@ class DropzonePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero dropzone
+  # bin/rails g css_zero:add dropzone
   # ```
   #
   # Dependencies

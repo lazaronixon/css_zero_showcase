@@ -5,7 +5,7 @@ class BreadcrumbPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero breadcrumb dropdown
+  # bin/rails g css_zero:add breadcrumb dropdown
   # ```
   def basic
   end

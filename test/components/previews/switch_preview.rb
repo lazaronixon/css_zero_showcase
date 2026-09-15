@@ -4,7 +4,7 @@ class SwitchPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero switch list
+  # bin/rails g css_zero:add switch list
   # ```
   def basic
   end

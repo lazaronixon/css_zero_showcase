@@ -4,7 +4,7 @@ class ListPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero list
+  # bin/rails g css_zero:add list
   # ```
   def variants
   end

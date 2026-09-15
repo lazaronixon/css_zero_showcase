@@ -4,7 +4,7 @@ class AutosavePreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero autosave
+  # bin/rails g css_zero:add autosave
   # ```
   #
   # Dependencies

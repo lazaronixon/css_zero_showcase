@@ -5,7 +5,7 @@ class ProgressPreview < Lookbook::Preview
   # Install
   # ---
   # ```bash
-  # bin/rails g css_zero progress
+  # bin/rails g css_zero:add progress
   # ```
   def basic
   end
