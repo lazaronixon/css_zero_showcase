@@ -60,6 +60,8 @@ gem "css-zero", github: "lazaronixon/css-zero"
 #gem "css-zero", path: "~/Development/css-zero"
 #gem "css-zero", "~> 3.0.0"
 
+gem "json", "< 3"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
