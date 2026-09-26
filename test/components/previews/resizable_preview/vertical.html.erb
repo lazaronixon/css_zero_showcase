@@ -1,9 +1,15 @@
-<div class="resizable-vertical rounded-lg border" style="block-size: 450px;" data-controller="resizable" data-resizable-direction-value="vertical">
-  <div class="flex items-center justify-center p-6" data-resizable-target="element" data-size="25">
-    <span class="font-semibold">Header</span>
-  </div>
+<resizable-group class="rounded-lg border" orientation="vertical" style="block-size: 450px;">
+  <resizable-panel default-size="25">
+    <div class="flex items-center justify-center b-full p-6">
+      <span class="font-semibold">Header</span>
+    </div>
+  </resizable-panel>
 
-  <div class="flex items-center justify-center p-6" data-resizable-target="element" data-size="75">
-    <span class="font-semibold">Content</span>
-  </div>
-</div>
+  <resizable-separator></resizable-separator>
+
+  <resizable-panel default-size="75">
+    <div class="flex items-center justify-center b-full p-6">
+      <span class="font-semibold">Content</span>
+    </div>
+  </resizable-panel>
+</resizable-group>
