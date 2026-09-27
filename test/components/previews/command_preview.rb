@@ -1,5 +1,5 @@
-# @js app/javascript/controllers/command_controller.js
 # @css app/assets/stylesheets/command.css
+# @js app/javascript/controllers/command_controller.js
 class CommandPreview < Lookbook::Preview
   # Install
   # ---
@@ -9,8 +9,7 @@ class CommandPreview < Lookbook::Preview
   #
   # Dependencies
   # ---
-  # - [combobox-nav](https://github.com/github/combobox-nav)
-  # - [just-debounce-it](https://github.com/angus-c/just)
+  # - [cmdk-zero](https://github.com/lazaronixon/cmdk-zero)
   def basic
   end
 

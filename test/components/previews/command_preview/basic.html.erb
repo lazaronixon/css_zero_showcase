@@ -1,18 +1,18 @@
 <button type="button" class="btn" commandfor="command_dialog" command="show-modal">Open Menu</button>
 
 <dialog id="command_dialog" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside">
-  <div class="command border-0" data-controller="command" data-action="combobox-commit->command#commit">
-    <label class="command__input input input--actor flex items-center gap">
+  <cmdk-root label="Command Menu" data-controller="command" data-action="cmdk:select->command#visit">
+    <label class="input input--actor flex items-center gap mbe-1">
       <span class="icon icon--search" aria-hidden="true"></span>
-      <%= text_field_tag "search", nil, data: { command_target: "input", action: "command#filter" }, autocomplete: "off", placeholder: "Type a command or search..." %>
+      <%= text_field_tag "search", nil, autocomplete: "off", autofocus: true, placeholder: "Type a command or search..." %>
     </label>
-    <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">
-      <div class="command__group" role="group" aria-labelledby="suggestions">
-        <span id="suggestions" class="command__group-header">Suggestions</span>
-        <%= tag.div "Calendar", id: SecureRandom.hex, class: "btn command__item", data: { command_target: "item", value: "calendar", href: "#" }, role: "option" %>
-        <%= tag.div "Search Emoji", id: SecureRandom.hex, class: "btn command__item", data: { command_target: "item", value: "search emoji", href: "#" }, role: "option" %>
-        <%= tag.div "Calculator", id: SecureRandom.hex, class: "btn command__item", data: { command_target: "item", value: "calculator", href: "#" }, role: "option" %>
-      </div>
-    </div>
-  </div>
+    <cmdk-list>
+      <cmdk-empty>No results found.</cmdk-empty>
+      <cmdk-group heading="Suggestions">
+        <cmdk-item data-href="#">Calendar</cmdk-item>
+        <cmdk-item data-href="#">Search Emoji</cmdk-item>
+        <cmdk-item data-href="#">Calculator</cmdk-item>
+      </cmdk-group>
+    </cmdk-list>
+  </cmdk-root>
 </dialog>

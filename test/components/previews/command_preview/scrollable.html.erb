@@ -10,24 +10,24 @@
 <button type="button" class="btn" commandfor="command_dialog" command="show-modal">Open Menu</button>
 
 <dialog id="command_dialog" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside">
-  <div class="command border-0" data-controller="command" data-action="combobox-commit->command#commit">
-    <label class="command__input input input--actor flex items-center gap">
+  <cmdk-root label="Command Menu" data-controller="command" data-action="cmdk:select->command#visit">
+    <label class="input input--actor flex items-center gap mbe-1">
       <span class="icon icon--search" aria-hidden="true"></span>
-      <%= text_field_tag "search", nil, data: { command_target: "input", action: "command#filter" }, autocomplete: "off", placeholder: "Type a command or search..." %>
+      <%= text_field_tag "search", nil, autocomplete: "off", autofocus: true, placeholder: "Type a command or search..." %>
     </label>
-    <div class="command__list" data-command-target="list" role="listbox" aria-label="Commands">
+    <cmdk-list>
+      <cmdk-empty>No results found.</cmdk-empty>
       <% %w[ Suggestions Tools Account More ].each do |heading| %>
-        <%= tag.div class: "command__group", role: "group", aria: { labelledby: heading.downcase } do %>
-          <%= tag.span heading, id: heading.downcase, class: "command__group-header" %>
+        <%= content_tag "cmdk-group", heading: heading do %>
           <% items.each do |icon, label, shortcut| %>
-            <%= tag.div id: SecureRandom.hex, class: "btn command__item", data: { command_target: "item", value: label.downcase, href: "#" }, role: "option" do %>
+            <%= content_tag "cmdk-item", value: "#{label} #{heading}", data: { href: "#" } do %>
               <%= tag.span class: "icon #{icon}", aria: { hidden: true } %>
               <%= tag.span label %>
-              <%= tag.span shortcut, class: "command__item-key" %>
+              <%= tag.kbd shortcut, class: "mis-auto text-xs text-subtle" %>
             <% end %>
           <% end %>
         <% end %>
       <% end %>
-    </div>
-  </div>
+    </cmdk-list>
+  </cmdk-root>
 </dialog>
