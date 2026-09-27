@@ -1,15 +1,6 @@
-<% items = [
-     [ "icon--calendar",    "Calendar",     "⌘C" ],
-     [ "icon--smile",       "Search Emoji", "⌘E" ],
-     [ "icon--calculator",  "Calculator",   "⌘K" ],
-     [ "icon--user",        "Profile",      "⌘P" ],
-     [ "icon--credit-card", "Billing",      "⌘B" ],
-     [ "icon--settings",    "Settings",     "⌘S" ]
-   ] %>
-
 <button type="button" class="btn" commandfor="command_dialog" command="show-modal">Open Menu</button>
 
-<dialog id="command_dialog" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside">
+<dialog id="command_dialog" class="dialog overflow-hidden" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside">
   <cmdk-root label="Command Menu" data-controller="command" data-action="cmdk:select->command#visit">
     <label class="input input--actor flex items-center gap mbe-1">
       <span class="icon icon--search" aria-hidden="true"></span>
@@ -17,17 +8,127 @@
     </label>
     <cmdk-list>
       <cmdk-empty>No results found.</cmdk-empty>
-      <% %w[ Suggestions Tools Account More ].each do |heading| %>
-        <%= content_tag "cmdk-group", heading: heading do %>
-          <% items.each do |icon, label, shortcut| %>
-            <%= content_tag "cmdk-item", value: "#{label} #{heading}", data: { href: "#" } do %>
-              <%= tag.span class: "icon #{icon}", aria: { hidden: true } %>
-              <%= tag.span label %>
-              <%= tag.kbd shortcut, class: "mis-auto text-xs text-subtle" %>
-            <% end %>
-          <% end %>
-        <% end %>
-      <% end %>
+      <cmdk-group heading="Navigation">
+        <cmdk-item value="Home" data-href="#">
+          <span class="icon icon--house" aria-hidden="true"></span>
+          <span>Home</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘H</kbd>
+        </cmdk-item>
+        <cmdk-item value="Inbox" data-href="#">
+          <span class="icon icon--inbox" aria-hidden="true"></span>
+          <span>Inbox</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘I</kbd>
+        </cmdk-item>
+        <cmdk-item value="Documents" data-href="#">
+          <span class="icon icon--file-text" aria-hidden="true"></span>
+          <span>Documents</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘D</kbd>
+        </cmdk-item>
+        <cmdk-item value="Folders" data-href="#">
+          <span class="icon icon--folder" aria-hidden="true"></span>
+          <span>Folders</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘F</kbd>
+        </cmdk-item>
+      </cmdk-group>
+      <cmdk-separator></cmdk-separator>
+      <cmdk-group heading="Actions">
+        <cmdk-item value="New File" data-href="#">
+          <span class="icon icon--plus" aria-hidden="true"></span>
+          <span>New File</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘N</kbd>
+        </cmdk-item>
+        <cmdk-item value="New Folder" data-href="#">
+          <span class="icon icon--folder-plus" aria-hidden="true"></span>
+          <span>New Folder</span>
+          <kbd class="mis-auto text-xs text-subtle">⇧⌘N</kbd>
+        </cmdk-item>
+        <cmdk-item value="Copy" data-href="#">
+          <span class="icon icon--copy" aria-hidden="true"></span>
+          <span>Copy</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘C</kbd>
+        </cmdk-item>
+        <cmdk-item value="Cut" data-href="#">
+          <span class="icon icon--scissors" aria-hidden="true"></span>
+          <span>Cut</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘X</kbd>
+        </cmdk-item>
+        <cmdk-item value="Paste" data-href="#">
+          <span class="icon icon--clipboard-paste" aria-hidden="true"></span>
+          <span>Paste</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘V</kbd>
+        </cmdk-item>
+        <cmdk-item value="Delete" data-href="#">
+          <span class="icon icon--trash" aria-hidden="true"></span>
+          <span>Delete</span>
+          <kbd class="mis-auto text-xs text-subtle">⌫</kbd>
+        </cmdk-item>
+      </cmdk-group>
+      <cmdk-separator></cmdk-separator>
+      <cmdk-group heading="View">
+        <cmdk-item value="Grid View" data-href="#">
+          <span class="icon icon--layout-grid" aria-hidden="true"></span>
+          <span>Grid View</span>
+        </cmdk-item>
+        <cmdk-item value="List View" data-href="#">
+          <span class="icon icon--list" aria-hidden="true"></span>
+          <span>List View</span>
+        </cmdk-item>
+        <cmdk-item value="Zoom In" data-href="#">
+          <span class="icon icon--zoom-in" aria-hidden="true"></span>
+          <span>Zoom In</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘+</kbd>
+        </cmdk-item>
+        <cmdk-item value="Zoom Out" data-href="#">
+          <span class="icon icon--zoom-out" aria-hidden="true"></span>
+          <span>Zoom Out</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘-</kbd>
+        </cmdk-item>
+      </cmdk-group>
+      <cmdk-separator></cmdk-separator>
+      <cmdk-group heading="Account">
+        <cmdk-item value="Profile" data-href="#">
+          <span class="icon icon--user" aria-hidden="true"></span>
+          <span>Profile</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘P</kbd>
+        </cmdk-item>
+        <cmdk-item value="Billing" data-href="#">
+          <span class="icon icon--credit-card" aria-hidden="true"></span>
+          <span>Billing</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘B</kbd>
+        </cmdk-item>
+        <cmdk-item value="Settings" data-href="#">
+          <span class="icon icon--settings" aria-hidden="true"></span>
+          <span>Settings</span>
+          <kbd class="mis-auto text-xs text-subtle">⌘S</kbd>
+        </cmdk-item>
+        <cmdk-item value="Notifications" data-href="#">
+          <span class="icon icon--bell" aria-hidden="true"></span>
+          <span>Notifications</span>
+        </cmdk-item>
+        <cmdk-item value="Help &amp; Support" data-href="#">
+          <span class="icon icon--circle-question-mark" aria-hidden="true"></span>
+          <span>Help &amp; Support</span>
+        </cmdk-item>
+      </cmdk-group>
+      <cmdk-separator></cmdk-separator>
+      <cmdk-group heading="Tools">
+        <cmdk-item value="Calculator" data-href="#">
+          <span class="icon icon--calculator" aria-hidden="true"></span>
+          <span>Calculator</span>
+        </cmdk-item>
+        <cmdk-item value="Calendar" data-href="#">
+          <span class="icon icon--calendar" aria-hidden="true"></span>
+          <span>Calendar</span>
+        </cmdk-item>
+        <cmdk-item value="Image Editor" data-href="#">
+          <span class="icon icon--image" aria-hidden="true"></span>
+          <span>Image Editor</span>
+        </cmdk-item>
+        <cmdk-item value="Code Editor" data-href="#">
+          <span class="icon icon--code" aria-hidden="true"></span>
+          <span>Code Editor</span>
+        </cmdk-item>
+      </cmdk-group>
     </cmdk-list>
   </cmdk-root>
 </dialog>
