@@ -1,4 +1,4 @@
-@import url("https://esm.sh/cmdk-zero@0.0.2/dist/cmdk-zero.css");
+@import url("https://esm.sh/cmdk-zero@0.0.3/dist/cmdk-zero.css");
 
 cmdk-root {
   --cmdk-padding: var(--size-2);
@@ -58,6 +58,10 @@ cmdk-root {
   }
 }
 
+cmdk-list {
+  scrollbar-width: none;
+}
+
 cmdk-group-heading {
   font-weight: var(--font-medium);
 }
@@ -65,4 +69,8 @@ cmdk-group-heading {
 cmdk-item > kbd {
   font-family: var(--font-system-ui);
   letter-spacing: var(--tracking-widest);
+}
+
+.dialog--cmdk {
+  overflow: clip;
 }

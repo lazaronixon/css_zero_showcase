@@ -1,6 +1,6 @@
 <button type="button" class="btn" commandfor="command_dialog" command="show-modal">Open Menu</button>
 
-<dialog id="command_dialog" class="dialog overflow-hidden" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside">
+<dialog id="command_dialog" class="dialog dialog--cmdk" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside">
   <cmdk-root label="Command Menu" data-controller="command" data-action="cmdk:select->command#visit">
     <label class="input input--actor flex items-center gap mbe-1">
       <span class="icon icon--search" aria-hidden="true"></span>
