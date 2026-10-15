@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
   static targets = [ "title", "text" ]
-  static values  = { defaultConfirmText: { type: String, default: "This action cannot be undone and may have permanent consequences." } }
+  static values  = { defaultConfirmText: { type: String, default: "Are you sure?" } }
 
   #confirmCallback = null
 
@@ -20,8 +20,16 @@ export default class extends Controller {
 
   #confirm(message, target) {
     this.titleTarget.textContent = message
-    this.textTarget.textContent  = target.dataset.turboConfirmText || this.defaultConfirmTextValue
+    this.textTarget.textContent  = this.#confirmTextFor(target)
     this.element.showModal()
+    return this.#waitForConfirmation()
+  }
+
+  #confirmTextFor(target) {
+    return target.dataset.turboConfirmText || this.defaultConfirmTextValue
+  }
+
+  #waitForConfirmation() {
     return new Promise(resolve => (this.#confirmCallback = resolve))
   }
 }
