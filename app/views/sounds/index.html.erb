@@ -56,10 +56,12 @@
     </div>
 
     <dialog id="sheet" class="sheet sheet--left" data-controller="dialog" data-action="click->dialog#closeOnClickOutside close->sound#droplet" aria-label="Edit profile">
-      <button type="button" class="btn btn--plain sheet__close" commandfor="sheet" command="close">
-        <span class="icon icon--x" aria-hidden="true"></span>
-        <span class="sr-only">Close</span>
-      </button>
+      <div class="sheet__close">
+        <button type="button" class="btn btn--icon-sm btn--borderless" commandfor="sheet" command="close">
+          <span class="icon icon--x" aria-hidden="true"></span>
+          <span class="sr-only">Close</span>
+        </button>
+      </div>
       <div class="sheet__content">
         <%= render "lookbook/preview/sheet_profile_form" %>
       </div>

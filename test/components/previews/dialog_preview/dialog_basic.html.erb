@@ -1,10 +1,12 @@
 <button type="button" class="btn" commandfor="dialog_basic" command="show-modal">Show dialog</button>
 
 <dialog id="dialog_basic" class="dialog" style="--dialog-size: 24rem;" data-controller="dialog" data-action="click->dialog#closeOnClickOutside" aria-label="Edit profile">
-  <button type="button" class="btn btn--plain dialog__close" commandfor="dialog_basic" command="close">
-    <span class="icon icon--x" aria-hidden="true"></span>
-    <span class="sr-only">Close</span>
-  </button>
+  <div class="dialog__close">
+    <button type="button" class="btn btn--icon-sm btn--borderless" commandfor="dialog_basic" command="close">
+      <span class="icon icon--x" aria-hidden="true"></span>
+      <span class="sr-only">Close</span>
+    </button>
+  </div>
   <%= form_with url: nil, html: { autocomplete: "off", contents: true } do |form| %>
     <div class="dialog__content flex flex-col gap">
       <div class="flex flex-col">
