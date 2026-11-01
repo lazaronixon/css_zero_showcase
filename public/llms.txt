@@ -19,7 +19,7 @@ Repository: https://github.com/lazaronixon/css_zero_showcase (small, easiest to 
 
 ## Foundations
 
-In the css-zero gem at `app/assets/stylesheets/css-zero/` (`bundle show css-zero`, or https://github.com/lazaronixon/css-zero). `utilities.css` has the utility classes, `reset.css` the base element styles, and the other files design tokens.
+In the css-zero gem at `app/assets/stylesheets/css-zero/`. `utilities.css` has the utility classes, `reset.css` the base element styles, and the other files design tokens.
 
 ## Notes
 
