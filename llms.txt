@@ -1,0 +1,100 @@
+# CSS Zero Showcase
+
+> Recipes for CSS Zero, a Rails gem that copies plain CSS, Stimulus controllers, and SVG icons into your app. It has no view helpers: you add a component's files with a generator, then copy its markup into your views.
+
+## Building a component
+
+1. **Find the recipe.** Open the component's link below. It returns JSON with one entry per variant. Download the variant's markup from its `download_url`.
+2. **Add the files.** Run `bin/rails generate css_zero:add <name>`, where `<name>` is the link text, for example `bin/rails generate css_zero:add dialog`.
+3. **Add what the markup uses.** If the markup uses classes or a `data-controller` from another component, add that component too. For example, `icon icon--x` needs `icons`. A missing component gives no error, so the element just looks or works wrong.
+4. **Paste the markup.** Change the ids, text, and URLs. Keep the classes and the `data-controller`, `data-action`, `commandfor`, and `command` attributes.
+5. **Style with Foundations.** Use the classes in `utilities` for layout, spacing, and typography, and the CSS variables in the other Foundations files for custom values. Do not hard-code colors or sizes.
+
+Some recipes are not installer names:
+
+- `aspect_ratio`, `empty`, `infinite_scroll`, `scroll_area` use only utilities, so there is nothing to add.
+- `checkbox` needs `input table`.
+- `radio` needs `input list`.
+
+## Components
+
+* [accordion](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/accordion_preview)
+* [alert](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/alert_preview)
+* [aspect_ratio](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/aspect_ratio_preview)
+* [autoanimate](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/autoanimate_preview)
+* [autosave](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/autosave_preview)
+* [autoselect](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/autoselect_preview)
+* [avatar](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/avatar_preview)
+* [back_navigation](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/back_navigation_preview)
+* [badge](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/badge_preview)
+* [breadcrumb](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/breadcrumb_preview)
+* [button](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/button_preview)
+* [card](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/card_preview)
+* [carousel](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/carousel_preview)
+* [chart](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/chart_preview)
+* [check_all](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/check_all_preview)
+* [checkbox](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/checkbox_preview)
+* [collapsible](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/collapsible_preview)
+* [color_scheme](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/color_scheme_preview)
+* [combobox](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/combobox_preview)
+* [command](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/command_preview)
+* [context_menu](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/context_menu_preview)
+* [datepicker](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/datepicker_preview)
+* [dialog](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/dialog_preview)
+* [dropdown](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/dropdown_preview)
+* [dropzone](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/dropzone_preview)
+* [dual_range](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/dual_range_preview)
+* [empty](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/empty_preview)
+* [flash](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/flash_preview)
+* [form](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/form_preview)
+* [fullscreen](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/fullscreen_preview)
+* [group](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/group_preview)
+* [hotkey](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/hotkey_preview)
+* [icons](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/icons_preview)
+* [infinite_scroll](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/infinite_scroll_preview)
+* [input](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/input_preview)
+* [input_clearable](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/input_clearable_preview)
+* [input_copyable](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/input_copyable_preview)
+* [input_otp](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/input_otp_preview)
+* [input_revealable](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/input_revealable_preview)
+* [inputmask](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/inputmask_preview)
+* [keyboard](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/keyboard_preview)
+* [layouts](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/layouts_preview)
+* [lexxy](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/lexxy_preview)
+* [lightbox](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/lightbox_preview)
+* [list](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/list_preview)
+* [local_time](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/local_time_preview)
+* [pagination](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/pagination_preview)
+* [popover](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/popover_preview)
+* [progress](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/progress_preview)
+* [radio](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/radio_preview)
+* [resizable](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/resizable_preview)
+* [scroll_area](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/scroll_area_preview)
+* [separator](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/separator_preview)
+* [sheet](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/sheet_preview)
+* [skeleton](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/skeleton_preview)
+* [sortable](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/sortable_preview)
+* [sound](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/sound_preview)
+* [switch](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/switch_preview)
+* [table](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/table_preview)
+* [tabs](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/tabs_preview)
+* [timezone_cookie](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/timezone_cookie_preview)
+* [toggle](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/toggle_preview)
+* [turbo_confirm](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/turbo_confirm_preview)
+* [upload_preview](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/upload_preview_preview)
+* [web_share](https://api.github.com/repos/lazaronixon/css_zero_showcase/contents/test/components/previews/web_share_preview)
+
+## Foundations
+
+Raw CSS files. `utilities` defines the utility classes. The other files define design tokens as CSS variables.
+
+* [animations](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/animations.css)
+* [borders](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/borders.css)
+* [colors](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/colors.css)
+* [effects](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/effects.css)
+* [filters](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/filters.css)
+* [sizes](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/sizes.css)
+* [transforms](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/transforms.css)
+* [transitions](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/transitions.css)
+* [typography](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/typography.css)
+* [utilities](https://raw.githubusercontent.com/lazaronixon/css-zero/master/app/assets/stylesheets/css-zero/utilities.css)
