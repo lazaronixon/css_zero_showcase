@@ -14,16 +14,18 @@ Repository: https://github.com/lazaronixon/css_zero_showcase (small, easiest to 
 - `test/components/previews/<component>_preview/*.html.erb`: one file per variant.
 - `test/components/previews/<component>_preview.rb`: comments with the install command, and where needed, dependencies, backend code, and markup that goes outside the recipe.
 - `app/views/lookbook/preview/`: partials some recipes render.
-- `app/assets/images/`: demo images only.
+- `app/assets/stylesheets/icons.css`, `app/assets/images/*.svg`: every icon the recipes use, each an `.icon--<name>` class and its SVG. `css_zero:add icons` installs only a few.
+- `app/assets/images/*.jpg`, `*.webp`: demo photos.
 
 ## Foundations
 
-In the css-zero gem at `app/assets/stylesheets/css-zero/` (`bundle show css-zero`, or https://github.com/lazaronixon/css-zero). `utilities.css` has the utility classes; the other files have design tokens.
+In the css-zero gem at `app/assets/stylesheets/css-zero/` (`bundle show css-zero`, or https://github.com/lazaronixon/css-zero). `utilities.css` has the utility classes, `reset.css` the base element styles, and the other files design tokens.
 
 ## Notes
 
 - Recipes are examples. Adapt them to the app.
 - A recipe can use other components, such as `icon` from `icons`. A missing component fails silently.
-- Ids are referenced by `commandfor`, `popovertarget`, and label `for`. Keep them in sync.
+- Keep the Stimulus wiring: controllers, actions, targets, and values (`data-*` or a Rails `data:` hash).
+- Ids can change, as long as the `commandfor` and `popovertarget` attributes that point to them change too.
 - Use semantic colors, not the raw palette (`--zinc-500`), so dark mode works.
-- Recipes follow css-zero main. Older gem releases may lack newer classes.
+- Recipes follow css-zero master. Older gem releases may lack newer classes.
